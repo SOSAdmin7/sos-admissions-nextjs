@@ -29,10 +29,19 @@ async function fetchPostContent(slug: string): Promise<string | null> {
     if (!res.ok) return null;
     const data = await res.json();
     if (!data[0]?.content?.rendered) return null;
-    return data[0].content.rendered;
+    return fixWordPressLazyImages(data[0].content.rendered);
   } catch {
     return null;
   }
+}
+
+/** WordPress/Sucuri lazy-loading replaces img src with a 1x1 GIF placeholder
+ *  and stores the real URL in data-orig-src. Swap them back. */
+function fixWordPressLazyImages(html: string): string {
+  return html.replace(
+    /<img([^>]*)src="data:image\/gif;base64,[^"]*"([^>]*)data-orig-src="([^"]*)"([^>]*)>/g,
+    '<img$1src="$3"$2$4>'
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

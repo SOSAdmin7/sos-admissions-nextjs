@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-navy: #0F2B4C;
+  --color-navy-light: #1A4E8A;
+  --color-blue: #2563EB;
+  --color-blue-light: #3B82F6;
+  --color-gold: #D4A843;
+  --color-gold-light: #E8C97A;
+  --color-cream: #FAF8F4;
+  --color-warm-gray: #F5F3EF;
+  --color-slate: #475569;
+  --color-charcoal: #1E293B;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: 'Georgia', 'Times New Roman', serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1E293B;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

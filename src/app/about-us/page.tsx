@@ -12,31 +12,31 @@ export default function AboutPage() {
     {
       name: 'David Buntt, MD, MBA',
       title: 'Manager of Admissions Consultants for Health Professionals',
-      image: 'https://sosadmissions.com/wp-content/uploads/2025/09/David-Buntt.webp',
+      image: '/images/team/david-buntt.webp',
       bio: 'Dr. Buntt served on the Hebrew University admissions committee during medical school, completed his medical studies at Hadassah Medical Center, and later earned his MBA from UCLA. He also led admissions at the Southern California College of Osteopathic Medicine and has helped hundreds of healthcare applicants since 2011.',
     },
     {
       name: 'Matt Hatway',
       title: 'Manager of College Admissions Services',
-      image: 'https://sosadmissions.com/wp-content/uploads/2025/11/Matt.png',
+      image: '/images/team/matt-hatway.png',
       bio: 'Matt earned his BA from USC and his MBA from UCLA Anderson School of Management. He previously worked as an HR director at a Bay Area nonprofit, where he recruited and interviewed candidates from top universities, and he now brings that hiring perspective to college admissions strategy.',
     },
     {
       name: 'Joseph Ingam, MBA, CFA',
       title: 'Manager of Admissions Consultants',
-      image: 'https://sosadmissions.com/wp-content/uploads/2025/09/Joseph-Ingam.webp',
+      image: '/images/team/joseph-ingam.webp',
       bio: 'Joseph has more than fourteen years of success helping applicants earn admission to top colleges, graduate schools, business schools, law schools, medical schools, and residency programs. His background includes admissions and career counseling roles at Chicago Booth, UCLA Anderson, and Saint Louis University School of Medicine, along with extensive interview coaching and resume work.',
     },
     {
       name: 'Pattie Kim',
       title: 'Lead Application Essay Writer',
-      image: 'https://sosadmissions.com/wp-content/uploads/2025/09/Pattie-Kim.webp',
+      image: '/images/team/pattie-kim.webp',
       bio: 'Since 2009, Pattie has helped applicants develop stronger essays for selective college and graduate programs. Before joining SOS Admissions, she worked as a copywriter in Los Angeles and also served in the Claremont McKenna College admissions office.',
     },
     {
       name: 'Peter Glasser',
       title: 'Senior Manager of MBA Admissions Consultants',
-      image: 'https://sosadmissions.com/wp-content/uploads/2025/11/peter.png',
+      image: '/images/team/peter-glasser.png',
       bio: 'Peter specializes in MBA and business school admissions consulting. He previously served as an alumni interviewer for Harvard admissions and later worked as an executive recruiter, giving him a strong perspective on both academic selection and professional positioning.',
     },
   ];

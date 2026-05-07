@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ChevronRight,
   ChevronLeft,
@@ -600,14 +601,14 @@ function TeamSpotlight() {
       title: 'Founder & Lead Consultant',
       credentials: 'U. Chicago (BA), UCLA Anderson (MBA)',
       highlight: 'Former admissions at Booth & Anderson. 27 years guiding students to top programs.',
-      initials: 'JI',
+      image: '/images/team/joseph-ingam.webp',
     },
     {
       name: 'Peter Glasser',
       title: 'Senior Consultant',
       credentials: 'Harvard (BA), UCLA Anderson (MBA)',
       highlight: 'Specializes in Ivy League and top-20 university admissions strategy.',
-      initials: 'PG',
+      image: '/images/team/peter-glasser.png',
     },
   ];
 
@@ -627,8 +628,14 @@ function TeamSpotlight() {
               key={member.name}
               className="bg-[#F8F9FA] rounded-xl p-8 text-center border border-gray-100"
             >
-              <div className="w-20 h-20 bg-[#1B2B4B] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
-                {member.initials}
+              <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-[#1B2B4B]">{member.name}</h3>
               <p className="text-[#E8613C] font-medium text-sm mb-2">{member.title}</p>

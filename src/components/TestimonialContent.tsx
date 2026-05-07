@@ -56,7 +56,7 @@ export function TestimonialContent() {
 
                 {/* Service Badge */}
                 <div className="mt-4">
-                  <span className="inline-block bg-blue bg-opacity-10 text-blue text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="inline-block rounded-full bg-[#EAF2FF] px-3 py-1 text-xs font-semibold text-[#1D4ED8]">
                     {testimonial.serviceName}
                   </span>
                 </div>
@@ -141,7 +141,7 @@ export function TestimonialContent() {
                       {testimonial.schoolsAdmitted.map((school, idx) => (
                         <span
                           key={idx}
-                          className="bg-blue bg-opacity-10 text-blue text-xs px-3 py-1 rounded-full"
+                          className="rounded-full bg-[#EAF2FF] px-3 py-1 text-xs font-medium text-[#1D4ED8]"
                         >
                           {school}
                         </span>
@@ -157,7 +157,7 @@ export function TestimonialContent() {
                   {testimonial.location && (
                     <p className="text-xs text-slate-500 mb-3">{testimonial.location}</p>
                   )}
-                  <span className="inline-block bg-gold bg-opacity-20 text-gold text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="inline-block rounded-full bg-[#FFF4D8] px-3 py-1 text-xs font-semibold text-[#A16207]">
                     {testimonial.serviceName}
                   </span>
                 </div>

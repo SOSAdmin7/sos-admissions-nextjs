@@ -3,7 +3,7 @@ import { generateMetadata as generatePageMetadata } from '@/lib/metadata';
 import { PaymentForm } from '@/components/PaymentForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Payment - SOS Admissions',
+  title: 'Payment',
   description:
     'Secure payment processing for SOS Admissions consulting services. Choose your service package and complete payment.',
   path: '/payment',

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { PurchaseForm } from '../purchase/PurchaseForm';
 
 export const metadata: Metadata = {
-  title: 'Admissions Consulting Packages - SOS Admissions',
+  title: 'Admissions Consulting Packages',
   description:
     'View our admissions consulting packages and get started with SOS Admissions. Expert guidance for college, graduate school, medical school, and more.',
   alternates: {

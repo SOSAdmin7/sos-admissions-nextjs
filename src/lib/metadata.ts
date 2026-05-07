@@ -408,7 +408,7 @@ export function generateContactMetadata(): Metadata {
     title: 'Contact Us',
     description:
       'Get in touch with SOS Admissions. Schedule a consultation with our expert admissions consultants today.',
-    path: '/contact',
+    path: '/contact-us',
     keywords: ['contact', 'schedule consultation', 'get in touch'],
       });
 }

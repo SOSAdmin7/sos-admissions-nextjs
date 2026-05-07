@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { InfoFormClient } from './InfoFormClient';
 
 export const metadata: Metadata = {
-  title: 'Request Information - SOS Admissions',
+  title: 'Request Information',
   description: 'Request more information about SOS Admissions consulting services.',
   robots: { index: false, follow: false },
 };

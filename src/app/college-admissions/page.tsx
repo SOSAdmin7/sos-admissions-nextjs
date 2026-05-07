@@ -7,7 +7,7 @@ const BelowFoldContent = dynamic(() => import('./CollegeAdmissionsContent'), {
 });
 
 export const metadata: Metadata = {
-  title: 'College Admissions Consulting | Expert Help Since 1998 | SOS Admissions',
+  title: 'College Admissions Consulting | Expert Help Since 1998',
   description:
     'Get into your dream college with guidance from former admissions officers. 27+ years, 98% acceptance rate to top colleges. Transparent pricing from $5,175. Free consultation.',
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'admissions consulting Los Angeles',
   ],
   openGraph: {
-    title: 'College Admissions Consulting | SOS Admissions',
+    title: 'College Admissions Consulting',
     description:
       '27+ years helping students get into top colleges. Former admissions officers. 98% acceptance rate. Transparent pricing. Free consultation.',
     type: 'website',

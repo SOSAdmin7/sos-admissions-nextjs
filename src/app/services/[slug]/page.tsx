@@ -15,15 +15,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!service) {
     return {
-      title: 'Service Not Found | SOS Admissions',
+      title: 'Service Not Found',
     };
   }
 
   return {
-    title: `${service.title} | SOS Admissions`,
+    title: service.title,
     description: service.shortDescription,
     openGraph: {
-      title: `${service.title} | SOS Admissions`,
+      title: service.title,
       description: service.shortDescription,
       type: 'website',
     },

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { PurchaseForm } from './PurchaseForm';
 
 export const metadata: Metadata = {
-  title: 'Get Started - SOS Admissions',
+  title: 'Get Started',
   description: 'Begin your admissions consulting journey with SOS Admissions.',
   robots: { index: false, follow: false },
 };

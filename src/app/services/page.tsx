@@ -23,11 +23,11 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Our Services | SOS Admissions',
+  title: 'Our Services',
   description:
     'Explore our comprehensive range of admission consulting services for undergraduate, graduate, healthcare, and professional programs.',
   openGraph: {
-    title: 'Our Services | SOS Admissions',
+    title: 'Our Services',
     description:
       'Explore our comprehensive range of admission consulting services for undergraduate, graduate, healthcare, and professional programs.',
     type: 'website',

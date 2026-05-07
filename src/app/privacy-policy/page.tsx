@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | SOS Admissions',
+  title: 'Privacy Policy',
   description: 'Read our privacy policy to understand how SOS Admissions protects your personal information.',
   robots: 'index, follow',
 };

@@ -11,12 +11,8 @@ import {
   Mail,
   Clock,
   Shield,
-  Users,
   Target,
-  FileText,
   Mic2,
-  Award,
-  BookOpen,
   Star,
   ClipboardList,
   Search,
@@ -116,12 +112,12 @@ function StatCounters() {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-12 md:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-4xl sm:text-5xl font-bold text-[#1B2B4B] mb-2">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B2B4B] mb-2">
                 <AnimatedCounter
                   target={stat.target}
                   suffix={stat.suffix}
@@ -173,11 +169,11 @@ function ServiceCards() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-12 md:py-20 bg-[#F8F9FA]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">What We Help You With</h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
             SOS Admissions provides college admissions consulting services for freshman applicants and transfer students. You can get help with a specific part of your application or purchase a package for everything.
           </p>
         </div>
@@ -187,7 +183,7 @@ function ServiceCards() {
             <ScrollReveal
               key={service.title}
               delay={i * 100}
-              className="relative bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all"
+              className="relative bg-white rounded-xl p-6 md:p-8 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all"
             >
               {service.badge && (
                 <span className="absolute top-4 right-4 bg-[#E8613C] text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -198,7 +194,7 @@ function ServiceCards() {
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-[#1B2B4B] mb-3">{service.title}</h3>
-              <p className="text-gray-500 leading-relaxed">{service.desc}</p>
+              <p className="text-base text-gray-500 leading-relaxed">{service.desc}</p>
             </ScrollReveal>
           ))}
         </div>
@@ -228,7 +224,7 @@ function Differentiators() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">The SOS Difference</h2>
@@ -286,11 +282,11 @@ function ProcessTimeline() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-12 md:py-20 bg-[#F8F9FA]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">Our Process</h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
             A proven, step-by-step approach refined over 27 years and thousands of clients.
           </p>
         </div>
@@ -389,13 +385,13 @@ function PricingSection() {
   ];
 
   return (
-    <section id="pricing" className="py-16 md:py-24 bg-white">
+    <section id="pricing" className="py-12 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
             Transparent Pricing
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
             No hidden fees. No surprise invoices. Every service clearly priced so you can plan with
             confidence. Start with Application Planning and upgrade anytime; your payment is credited
             toward the full package.
@@ -530,7 +526,7 @@ function TestimonialCarousel() {
   }, [testimonials.length]);
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-12 md:py-20 bg-[#F8F9FA]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -548,7 +544,7 @@ function TestimonialCarousel() {
                 <Star key={i} className="w-5 h-5 text-[#F5A623] fill-[#F5A623]" />
               ))}
             </div>
-            <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 italic">
+            <blockquote className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 italic">
               &ldquo;{testimonials[current].quote}&rdquo;
             </blockquote>
             <div>
@@ -616,11 +612,11 @@ function TeamSpotlight() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">Meet Your Team</h2>
-          <p className="text-lg text-gray-500">
+          <p className="text-base md:text-lg text-gray-500">
             Over 70 team members. Here are the consultants who lead our college admissions practice.
           </p>
         </div>
@@ -692,7 +688,7 @@ function FAQAccordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-12 md:py-20 bg-[#F8F9FA]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -736,19 +732,19 @@ function FAQAccordion() {
 /* ───────────────────────── FINAL CTA ───────────────────────── */
 function FinalCTA() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-[#0D1B2A] to-[#1B2B4B]">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-[#0D1B2A] to-[#1B2B4B]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Get Expert Help With Your College Application
         </h2>
-        <p className="text-lg text-slate-300 mb-10 max-w-xl mx-auto">
-          Book a free 15-minute consultation with our team. No pressure. No commitment.
+        <p className="text-base md:text-lg text-slate-300 mb-8 max-w-xl mx-auto">
+          Talk with our team about school selection, essays, activity descriptions, interviews, or full application support.
         </p>
         <Link
           href="/contact-us"
-          className="inline-flex items-center gap-2 bg-[#E8613C] hover:bg-[#D4522E] text-white font-bold py-4 px-10 rounded-full text-lg transition-colors shadow-lg shadow-[#E8613C]/25 mb-6"
+          className="inline-flex items-center gap-2 bg-[#E8613C] hover:bg-[#D4522E] text-white font-bold py-3.5 px-8 rounded-full text-base md:text-lg transition-colors shadow-lg shadow-[#E8613C]/25 mb-5"
         >
-          Book Your Free Consultation
+          Schedule a Consultation
           <ChevronRight className="w-5 h-5" />
         </Link>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-slate-400 text-sm">

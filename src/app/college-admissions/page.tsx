@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
-import { HeroSection, VideoSection, TrustBar, UniversityLogos } from './AboveFold';
+import { HeroSection, TrustBar, UniversityLogos } from './AboveFold';
 
 const BelowFoldContent = dynamic(() => import('./CollegeAdmissionsContent'), {
   loading: () => <div className="min-h-screen" />,
@@ -116,7 +116,6 @@ export default function CollegeAdmissionsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData) }}
       />
       <HeroSection />
-      <VideoSection />
       <TrustBar />
       <UniversityLogos />
       <BelowFoldContent />

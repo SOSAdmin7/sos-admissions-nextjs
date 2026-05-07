@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
       { source: "/basket", destination: "/payment", permanent: true },
       { source: "/checkout", destination: "/payment", permanent: true },
       { source: "/my-account", destination: "/", permanent: true },
-      { source: "/purchase", destination: "/payment", permanent: true },
+      // /purchase is now a live page (email purchase funnel) - redirect removed
 
       // Chinese pages (preserve paths)
       { source: "/china", destination: "/international-students", permanent: true },
@@ -46,11 +46,10 @@ const nextConfig: NextConfig = {
       { source: "/additional-school-v2", destination: "/payment", permanent: true },
       { source: "/add-program", destination: "/payment", permanent: true },
       { source: "/add-school", destination: "/payment", permanent: true },
-      { source: "/admissions-options-page", destination: "/services", permanent: true },
-      { source: "/admissions-options-page-2", destination: "/services", permanent: true },
+      // /admissions-options-page is now a live page (public purchase funnel) - redirect removed
+      { source: "/admissions-options-page-2", destination: "/admissions-options-page", permanent: true },
 
-      // Info/preliminary forms
-      { source: "/info-form", destination: "/contact-us", permanent: true },
+      // /info-form is now a live page (email info funnel) - redirect removed
       { source: "/preliminary-information-form2", destination: "/contact-us", permanent: true },
 
       // Service page aliases
@@ -73,20 +72,18 @@ const nextConfig: NextConfig = {
       // Service sub-pages → main service pages
       { source: "/medical-school-admissions-consulting", destination: "/medical-school-application", permanent: true },
       { source: "/nursing-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/general-nursing", destination: "/services", permanent: true },
-      { source: "/np-admissions", destination: "/services", permanent: true },
-      { source: "/nurse-practitioner-admissions", destination: "/services", permanent: true },
-      { source: "/crna-admissions", destination: "/services", permanent: true },
+      // /general-nursing, /nurse-practitioner-admissions, /crna-admissions now route to /services/[slug]
+      { source: "/np-admissions", destination: "/services/nurse-practitioner-admissions", permanent: true },
       { source: "/optometry-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/physician-assistant-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/pa-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/psychology-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/psychology-counseling-admissions", destination: "/services", permanent: true },
-      { source: "/veterinary-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/veterinary-school-admissions", destination: "/services", permanent: true },
+      { source: "/physician-assistant-school-admissions-consulting", destination: "/services/pa-school-admissions", permanent: true },
+      { source: "/pa-school-admissions-consulting", destination: "/services/pa-school-admissions", permanent: true },
+      { source: "/psychology-school-admissions-consulting", destination: "/services/psychology-counseling-admissions", permanent: true },
+      // /psychology-counseling-admissions now routes to /services/[slug]
+      { source: "/veterinary-school-admissions-consulting", destination: "/services/veterinary-school-admissions", permanent: true },
+      // /veterinary-school-admissions now routes to /services/[slug]
       { source: "/speech-language-pathology-slp-admissions-consultant", destination: "/services", permanent: true },
-      { source: "/computer-science-admissions-consultant", destination: "/services", permanent: true },
-      { source: "/bs-md-admissions-consulting", destination: "/medical-school-application", permanent: true },
+      { source: "/computer-science-admissions-consultant", destination: "/services/computer-science-admissions", permanent: true },
+      { source: "/bs-md-admissions-consulting", destination: "/services/bs-md-programs", permanent: true },
       { source: "/phd-application-consulting", destination: "/graduate-school-application", permanent: true },
       { source: "/high-school-application", destination: "/private-school-admissions", permanent: true },
       { source: "/dental-school-application", destination: "/dental-school-admissions-consulting", permanent: true },

@@ -24,16 +24,21 @@ export function ContactForm() {
 
       if (!res.ok) throw new Error('Failed to send');
 
-      // Track form submission
-      const dl = (window as any).dataLayer;
-      if (dl) {
-        dl.push({
-          event: 'form_submission',
-          form_type: 'contact',
-          form_name: 'consultation_request',
-          service_interest: formData.service || 'general',
-        });
-      }
+      // Push enhanced conversions data + track form submission
+      const dl = (window as any).dataLayer || [];
+      const nameParts = (formData.name as string || '').split(' ');
+      dl.push({
+        event: 'form_submit',
+        form_type: 'contact',
+        form_name: 'consultation_request',
+        service_interest: formData.service || 'general',
+        enhanced_conversions: {
+          email: formData.email,
+          phone_number: formData.phone,
+          first_name: nameParts[0] || '',
+          last_name: nameParts.slice(1).join(' ') || '',
+        },
+      });
 
       setSubmitted(true);
       e.currentTarget.reset();

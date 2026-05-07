@@ -57,6 +57,10 @@ export function PaymentForm() {
     setIsLoading(true);
     setError('');
 
+    // Read funnel source from URL query param (set by /purchase or /admissions-options-page)
+    const urlParams = new URLSearchParams(window.location.search);
+    const source = urlParams.get('source') || 'direct';
+
     try {
       const res = await fetch('/api/checkout', {
         method: 'POST',
@@ -65,6 +69,7 @@ export function PaymentForm() {
           serviceId: selected.id,
           serviceName: selected.name,
           price: selected.price,
+          source,
         }),
       });
 

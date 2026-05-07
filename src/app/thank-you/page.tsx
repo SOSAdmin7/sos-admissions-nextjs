@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, Mail, Clock } from 'lucide-react';
 import { generateThankYouMetadata } from '@/lib/metadata';
-import { GTMScript } from '@/components/GTMScript';
+import { ThankYouConversion } from './ConversionScript';
 
 export const metadata: Metadata = generateThankYouMetadata();
 
 export default function ThankYouPage() {
   return (
     <>
-      <GTMScript />
+      <ThankYouConversion />
 
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white py-20">
         <div className="max-w-2xl w-full">
@@ -114,7 +114,7 @@ export default function ThankYouPage() {
               <a href="tel:310-951-4008" className="text-blue hover:underline">
                 Call: 310-951-4008
               </a>
-              <span className="text-slate-300 hidden sm:inline">•</span>
+              <span className="text-slate-300 hidden sm:inline">&bull;</span>
               <a href="mailto:info@sosadmissions.com" className="text-blue hover:underline">
                 Email: info@sosadmissions.com
               </a>

@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, Mail, Phone, AlertCircle } from 'lucide-react';
 import { generateThankYouPaymentMetadata } from '@/lib/metadata';
-import { GTMPaymentScript } from '@/components/GTMScript';
+import { ThankYouPaymentConversion } from './ConversionScript';
 
 export const metadata: Metadata = generateThankYouPaymentMetadata();
 
 export default function ThankYouPaymentPage() {
   return (
     <>
-      <GTMPaymentScript />
+      <ThankYouPaymentConversion />
 
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white py-20">
         <div className="max-w-2xl w-full">

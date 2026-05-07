@@ -6,13 +6,14 @@ export const dynamic = 'force-dynamic';
 export async function POST(request: Request) {
   try {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-    const { serviceId, serviceName, price, customerName, customerEmail, customerPhone } = await request.json();
+    const { serviceId, serviceName, price, customerName, customerEmail, customerPhone, source } = await request.json();
 
     if (!serviceId || !serviceName || !price) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sos-admissions-nextjs.vercel.app';
+    const funnelSource = source || 'direct';
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -21,6 +22,7 @@ export async function POST(request: Request) {
         customerName: customerName || '',
         customerPhone: customerPhone || '',
         serviceId,
+        funnel_source: funnelSource,
       },
       line_items: [
         {
@@ -36,7 +38,7 @@ export async function POST(request: Request) {
         },
       ],
       mode: 'payment',
-      success_url: `${siteUrl}/thank-you-payment?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${siteUrl}/thank-you-payment?session_id={CHECKOUT_SESSION_ID}&source=${funnelSource}`,
       cancel_url: `${siteUrl}/get-started`,
     });
 

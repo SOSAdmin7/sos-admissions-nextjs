@@ -1014,25 +1014,6 @@ export const services: Service[] = [
       footnote: 'All a la carte payments credit toward a package.',
     },
   },
-  // Support Services
-  {
-    id: 'application-planning-evaluation',
-    title: 'Application Planning & Evaluation',
-    slug: 'application-planning-evaluation',
-    category: 'support',
-    shortDescription: 'Get expert feedback on your application strategy, school list, and overall competitiveness before you apply.',
-    longDescription: 'Our Application Planning & Evaluation service provides a comprehensive review of your admissions profile. Whether you are just starting to build your school list or want an expert second opinion on your application strategy, our consultants will assess your academic record, test scores, extracurriculars, and goals to create a personalized roadmap for success. This service is ideal for applicants at any stage who want clarity and confidence before committing to a full consulting package.',
-    icon: 'Award',
-    heroStatement: 'Expert Application Planning & Evaluation',
-    features: [
-      'Comprehensive profile assessment',
-      'School list review and recommendations',
-      'Competitiveness evaluation for target programs',
-      'Application timeline and milestone planning',
-      'Strengths and weaknesses analysis',
-      'Personalized strategy recommendations',
-    ],
-  },
 ];
 
 // Helper function to get service by slug

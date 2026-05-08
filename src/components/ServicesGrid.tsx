@@ -25,7 +25,6 @@ const serviceLinks = [
   { label: 'General Nursing', href: '/services/general-nursing' },
   { label: 'Veterinary School Admissions', href: '/services/veterinary-school-admissions' },
   { label: 'BS-MD Programs', href: '/services/bs-md-programs' },
-  { label: 'Application Planning & Evaluation', href: '/services/application-planning-evaluation' },
 ];
 
 export function ServicesGrid() {

@@ -137,35 +137,90 @@ function StatCounters() {
 function ServiceCards() {
   const services = [
     {
+      icon: <ClipboardList className="w-7 h-7" />,
+      title: 'Application Planning and Evaluation Service',
+      price: '$465',
+      desc: 'The most common starting point for new clients. Two 45-minute consultations plus independent review of essays, recommendations, school selection, resume/CV, and overall candidacy.',
+      badge: 'Most clients start here',
+    },
+    {
       icon: <Search className="w-7 h-7" />,
-      title: 'School Selection',
-      desc: 'We analyze your profile, grades, and test scores to build a balanced school list of safety, mid-range, and reach schools. We know what each school is looking for. $1,375',
+      title: 'School Selection Service',
+      price: '$1,375',
+      desc: 'Professional guidance on the best safety, target, and reach schools for your profile and goals.',
     },
     {
       icon: <PenTool className="w-7 h-7" />,
-      title: 'Application Essays',
-      desc: 'Common App essays, school-specific supplements, UC essays, and transfer application essays. We help you write essays that stand out. Starting at $985.',
+      title: 'Common Application Essay / Coalition Application Essay',
+      price: '$985',
+      desc: 'The primary essay for college applications, written or revised with admissions strategy in mind.',
     },
     {
-      icon: <ClipboardList className="w-7 h-7" />,
-      title: 'Activity Descriptions',
-      desc: 'Common Application, UC, and Coalition activity descriptions. We turn your experiences into clear, effective 150-character narratives. $1,175',
+      icon: <PenTool className="w-7 h-7" />,
+      title: 'Common Application School-Specific Essays for 1 School',
+      price: '$1,485',
+      desc: 'Also applies to school-specific essays for the Coalition Application.',
     },
     {
-      icon: <Mail className="w-7 h-7" />,
-      title: 'Letters of Recommendation',
-      desc: 'We help select the right recommenders, coach them on what to write, and draft letters for supervisors, coaches, and community leaders. $885 per letter.',
-    },
-    {
-      icon: <Mic2 className="w-7 h-7" />,
-      title: 'Interview Coaching',
-      desc: 'A 2-hour interview coaching session plus a 1-hour follow-up mock interview with former admissions officers. $1,275',
+      icon: <PenTool className="w-7 h-7" />,
+      title: 'University of California Essays / Long Essay',
+      price: '$1,485',
+      desc: 'For UC applications and long-form essays under 1,500 words.',
     },
     {
       icon: <Package className="w-7 h-7" />,
-      title: 'Complete Application Package',
-      desc: 'Everything above in one package with unlimited hours. We handle your entire application from start to finish. You just sign and submit. Starting at $5,175.',
-      badge: 'MOST POPULAR',
+      title: 'Academic Resume or CV / College Bragg Sheet',
+      price: '$975',
+      desc: 'Admissions-focused resume writing and positioning for student achievements, activities, and leadership.',
+    },
+    {
+      icon: <ClipboardList className="w-7 h-7" />,
+      title: 'Common App, UC, or Coalition Activity Descriptions',
+      price: '$1,175',
+      desc: 'Concise, strategic writing for activity entries and short-form accomplishment descriptions.',
+    },
+    {
+      icon: <Mic2 className="w-7 h-7" />,
+      title: 'College Interview Coaching / Transfer Interview Coaching',
+      price: '$1,275',
+      desc: 'Two-hour coaching plus a mock interview to help you present yourself clearly and confidently.',
+    },
+    {
+      icon: <Mail className="w-7 h-7" />,
+      title: 'Letter of Recommendation',
+      price: '$885',
+      desc: 'Drafting support and recommender guidance for strong, relevant recommendation letters.',
+    },
+    {
+      icon: <PenTool className="w-7 h-7" />,
+      title: 'Waitlist Appeal Letter / Letter of Continued Interest',
+      price: '$985',
+      desc: 'Strategic waitlist writing support when you need to reinforce your fit and continued interest.',
+    },
+    {
+      icon: <Package className="w-7 h-7" />,
+      title: 'Complete College Application or Transfer Application Package',
+      price: '$5,175 + $775/additional school',
+      desc: 'Unlimited-hours support for one school, with each additional school added at the standard rate.',
+      badge: 'Complete application package',
+    },
+    {
+      icon: <Package className="w-7 h-7" />,
+      title: 'Complete College Application Package for Five Schools',
+      price: '$7,500 + $775/additional school',
+      desc: 'Five-school complete application package with unlimited-hours support across the list.',
+    },
+    {
+      icon: <Package className="w-7 h-7" />,
+      title: 'Complete College Application Package for Ten Schools',
+      price: '$10,600 + $775/additional school',
+      desc: 'Ten-school complete application package for students building a broad and strategic list.',
+    },
+    {
+      icon: <Clock className="w-7 h-7" />,
+      title: 'Rush Fee (per incident)',
+      price: '$500',
+      desc: 'Call for details when timing is unusually compressed and rush handling is required.',
     },
   ];
 
@@ -175,7 +230,7 @@ function ServiceCards() {
         <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">What We Help You With</h2>
           <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-            SOS Admissions provides college admissions consulting services for freshman applicants and transfer students. You can get help with a specific part of your application or purchase a package for everything.
+            SOS Admissions provides college admissions consulting services for freshman applicants and transfer students. Every priced college service from the original SOS college page is listed here, and any individual service can later be credited only toward a complete application package.
           </p>
         </div>
 
@@ -187,7 +242,7 @@ function ServiceCards() {
               className="relative bg-white rounded-xl p-6 md:p-8 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all"
             >
               {service.badge && (
-                <span className="absolute top-4 right-4 bg-[#E8613C] text-white text-xs font-bold px-3 py-1 rounded-full">
+                <span className="absolute top-4 right-4 bg-[#E8613C] text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-[0.08em]">
                   {service.badge}
                 </span>
               )}
@@ -195,6 +250,7 @@ function ServiceCards() {
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-[#1B2B4B] mb-3">{service.title}</h3>
+              <p className="text-lg font-semibold text-[#1B2B4B] mb-2">{service.price}</p>
               <p className="text-base text-gray-500 leading-relaxed">{service.desc}</p>
             </ScrollReveal>
           ))}
@@ -258,7 +314,7 @@ function ProcessTimeline() {
     {
       num: '02',
       title: 'Application Planning & Evaluation',
-      desc: 'A comprehensive assessment of your profile, grades, test scores, and overall candidacy. Two 45-minute consultations to map your strategy. ($465, credited toward any package.)',
+      desc: 'A comprehensive assessment of your profile, grades, test scores, and overall candidacy. Two 45-minute consultations to map your strategy. ($465, and it can later be credited only toward a complete application package.)',
     },
     {
       num: '03',
@@ -330,18 +386,18 @@ function ProcessTimeline() {
 function PricingSection() {
   const tiers = [
     {
-      name: 'Application Planning',
+      name: 'Application Planning and Evaluation Service',
       price: '$465',
       desc: 'Introductory service with expert advice on essays, letters of rec, school selection, resume/CV, and more. Includes two sessions of 45 minutes each and several hours of independent research.',
       features: [
         'Profile, goals, and strategy assessment',
         'Two 45-minute consultations',
         'Grades, test scores, and candidacy review',
-        'Credited toward any comprehensive package',
+        'Can later be credited only toward a complete application package',
       ],
     },
     {
-      name: 'Comprehensive Package',
+      name: 'Complete College Application or Transfer Application Package',
       price: '$5,175',
       desc: 'Everything you need for one school, plus $775 per additional school',
       highlighted: true,
@@ -358,11 +414,11 @@ function PricingSection() {
       ],
     },
     {
-      name: '5-School Package',
+      name: 'Complete College Application Package for Five Schools',
       price: '$7,500',
       desc: 'Best value for students applying to multiple schools',
       features: [
-        'Everything in Comprehensive',
+        'Everything in the complete application package',
         '5 schools included',
         'Additional schools at $775 each',
         'Cross-application narrative consistency',
@@ -370,19 +426,32 @@ function PricingSection() {
         'Priority scheduling',
       ],
     },
+    {
+      name: 'Complete College Application Package for Ten Schools',
+      price: '$10,600',
+      desc: 'For applicants building a broad and strategic list',
+      features: [
+        'Everything in the complete application package',
+        '10 schools included',
+        'Additional schools at $775 each',
+        'Broader reach, target, and safety coverage',
+        'Priority scheduling across the larger application list',
+      ],
+    },
   ];
 
   const alaCarte = [
     { service: 'Application Planning and Evaluation', price: '$465' },
     { service: 'Common App Essay / Coalition App Essay', price: '$985' },
-    { service: 'School-Specific Essays (1 school)', price: '$985' },
+    { service: 'Common Application School-Specific Essays for 1 School', price: '$1,485' },
     { service: 'UC Essays / Long Essay (under 1,500 words)', price: '$1,485' },
     { service: 'Academic Resume or CV / College Bragg Sheet', price: '$975' },
     { service: 'Activity Descriptions (Common App, UC, or Coalition)', price: '$1,175' },
     { service: 'School Selection Service', price: '$1,375' },
     { service: 'Interview Coaching', price: '$1,275' },
-    { service: 'Letter of Recommendation', price: '$885/letter' },
+    { service: 'Letter of Recommendation', price: '$885' },
     { service: 'Waitlist Appeal Letter or Letter of Continued Interest', price: '$985' },
+    { service: 'Rush Fee (per incident)', price: '$500 (Call for Details)' },
   ];
 
   return (
@@ -394,8 +463,8 @@ function PricingSection() {
           </h2>
           <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
             No hidden fees. No surprise invoices. Every service clearly priced so you can plan with
-            confidence. Start with Application Planning and upgrade anytime; your payment is credited
-            toward the full package.
+            confidence. Start with Application Planning and Evaluation and, if you upgrade later,
+            that payment can be credited only toward a complete application package.
           </p>
         </div>
 
@@ -458,7 +527,9 @@ function PricingSection() {
             ))}
           </div>
           <p className="text-center text-gray-400 text-sm mt-6">
-            50% discount on essay services for each additional school after the first. All a la carte payments credit toward a package.
+            50% discount on essay services for each additional school after the first. Payments for
+            individual services can later be credited only toward a complete application package.
+            Individual services cannot be credited toward other individual services.
           </p>
         </div>
 
@@ -684,7 +755,7 @@ function FAQAccordion() {
     },
     {
       q: 'What if I only need help with essays, not the full package?',
-      a: 'We offer a la carte services for exactly this reason. Personal statement editing starts at $985. If you later decide to upgrade to a comprehensive package, the amount you have already paid is credited toward the package price.',
+      a: 'We offer individual services for exactly this reason. Personal statement editing starts at $985. If you later decide to upgrade to a complete application package, the amount you have already paid can be credited toward that complete application package price. One individual service cannot be credited toward another individual service.',
     },
     {
       q: 'How many students do you take per admissions cycle?',

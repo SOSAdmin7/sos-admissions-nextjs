@@ -343,7 +343,7 @@ function FinalCTA({ title }: { title: string }) {
           </a>
         </div>
         <p className="text-blue-200/70 text-sm max-w-xl mx-auto">
-          Contact us via FaceTime, Google Chat, Zoom, or Skype from anywhere in the world, or come to our office in the Beverly Hills area of Los Angeles.
+          Contact us via FaceTime, Google Chat, Zoom, or WhatsApp from anywhere in the world, or come to our office in the Beverly Hills area of Los Angeles.
         </p>
       </div>
     </section>

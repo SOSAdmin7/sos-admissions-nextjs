@@ -966,7 +966,7 @@ export const services: Service[] = [
         { service: 'Interview Coaching', price: '$1,275' },
         { service: 'Letter of Recommendation', price: '$885/letter' },
       ],
-      footnote: 'All a la carte payments credit toward a package. Contact us via FaceTime, Google Chat, Zoom, or Skype from anywhere in the world.',
+      footnote: 'All a la carte payments credit toward a package. Contact us via FaceTime, Google Chat, Zoom, or WhatsApp from anywhere in the world.',
     },
   },
   {

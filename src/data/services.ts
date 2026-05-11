@@ -38,6 +38,21 @@ export interface Service {
 const PACKAGE_CREDIT_NOTE =
   'Payments for individual services can later be credited only toward a complete application package. Individual services cannot be credited toward another individual service.';
 
+const STANDARD_APPLICATION_CYCLE_NOTE =
+  'These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee.';
+
+const MBA_APPLICATION_CYCLE_NOTE =
+  'These prices apply to one application cycle. MBA financial aid essays are not included. For any services not covered by the package, our standard per-service fee applies.';
+
+const LAW_APPLICATION_CYCLE_NOTE =
+  'These prices apply to one application cycle. For any services not included in the package, our standard per-service fee applies.';
+
+const MEDICAL_APPLICATION_CYCLE_NOTE =
+  'These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard individual service fee.';
+
+const PRIVATE_SCHOOL_APPLICATION_CYCLE_NOTE =
+  'This applies to one application cycle for private school. For other services not included in the package, we charge our standard hourly fee.';
+
 const RUSH_FEE_ITEM: PricingItem = {
   service: 'Rush Fee (per incident)',
   price: '$500 (Call for Details)',
@@ -245,9 +260,9 @@ export const services: Service[] = [
         },
         {
           name: 'Complete Graduate School Application Package',
-          price: '$5,175',
-          description: 'Masters: $5,175 for the first school + $775 for each additional school. Unlimited hours.',
-          features: ['Everything in Application Planning', 'Statement of purpose / personal statement', 'School selection', 'Interview preparation', 'Unlimited letters of recommendation', 'Resume/CV writing', 'Final application review'],
+          price: 'Masters: $5,175 / Doctorate: $5,675',
+          description: 'First-school package pricing for masters and doctorate applicants, plus $775 for each additional school. Unlimited hours.',
+          features: ['Everything in application planning and evaluation', 'Statement of purpose / personal statement', 'School selection', 'Interview preparation', 'Unlimited letters of recommendation', 'Resume/CV writing', 'Final application review'],
           popular: true,
         },
         {
@@ -274,7 +289,7 @@ export const services: Service[] = [
         { service: 'Graduate School Interview Coaching', price: '$1,275' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${STANDARD_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
   {
@@ -332,7 +347,7 @@ export const services: Service[] = [
         { service: 'Graduate School Interview Coaching', price: '$975' },
         { service: 'Waitlist Appeal Letter / Letter of Continued Interest', price: '$985' },
       ],
-      footnote: `${PACKAGE_CREDIT_NOTE} This page follows the legacy PhD application consulting pricing published on the current SOS site.`,
+      footnote: `${STANDARD_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE} This page follows the legacy PhD application consulting pricing published on the current SOS site.`,
     },
   },
 
@@ -422,7 +437,7 @@ export const services: Service[] = [
         { service: 'Premium MBA Interview Coaching', price: '$1,275' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE} MBA financial aid essays are not included in the complete application packages.`,
+      footnote: `${MBA_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
   {
@@ -487,7 +502,7 @@ export const services: Service[] = [
         { service: 'AMCAS, AACOMAS, OMSAS, ERAS, CanMEDS, or TMDSAS Activity Descriptions', price: '$1,175' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `${PACKAGE_CREDIT_NOTE} Financial aid and essays associated with financial aid are not included in the complete application package.`,
+      footnote: `${MEDICAL_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
   {
@@ -547,7 +562,7 @@ export const services: Service[] = [
         { service: 'School-Specific Secondary Essays / Supplemental Essays', price: 'Varies – Call for Specifics' },
         { service: 'Traditional / Panel Interview Coaching + Mock Interview', price: '$1,275' },
         { service: 'MMI Interview Coaching + Mock Interview', price: '$1,675' },
-        { service: 'Academic Resume or CV', price: '$975' },
+        { service: 'Academic Resume/CV Creation', price: '$975' },
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'AADSAS / CAAPID Experience Descriptions', price: '$1,175' },
       ],
@@ -615,7 +630,7 @@ export const services: Service[] = [
         { service: 'Law School Interview Coaching / Video Interview Coaching', price: '$1,275' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing covers all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${LAW_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
 
@@ -828,7 +843,7 @@ export const services: Service[] = [
         { service: 'Computer Science Graduate School Interview Coaching', price: '$1,275' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${STANDARD_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
   {
@@ -891,7 +906,7 @@ export const services: Service[] = [
         { service: 'Psychology & Counseling Graduate School Interview Coaching', price: '$1,275' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${STANDARD_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
   {
@@ -1012,7 +1027,7 @@ export const services: Service[] = [
         { service: 'Personal Statement for PA School', price: '$985' },
         { service: 'School-Specific Secondary Essays / Supplemental Essays', price: 'Pricing Based on Length – Call for Specifics' },
         { service: 'Traditional Interview Coaching + Mock Interview', price: '$1,275' },
-        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,475' },
+        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,675' },
         { service: 'Academic Resume/CV Creation', price: '$975' },
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'CASPA Activity Descriptions', price: '$1,175' },
@@ -1256,7 +1271,7 @@ export const services: Service[] = [
         { service: 'MMI Interview Coaching', price: '$1,675' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${STANDARD_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
   {
@@ -1321,7 +1336,7 @@ export const services: Service[] = [
         { service: 'MMI Interview Coaching', price: '$1,675' },
         RUSH_FEE_ITEM,
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${STANDARD_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
 
@@ -1449,7 +1464,7 @@ export const services: Service[] = [
     slug: 'international-students',
     category: 'undergraduate',
     shortDescription: 'Expert help for international students applying to colleges and universities in the United States and Canada.',
-    longDescription: 'We have served students from over 80 countries. Our consultants understand the unique challenges international applicants face, from demonstrating English proficiency to navigating application differences. We offer communication via WhatsApp, Zoom, FaceTime, and Google Chat for international families across all time zones.',
+    longDescription: 'We have served students from over 80 countries. Our consultants understand the unique challenges international applicants face, from demonstrating English proficiency to navigating application differences. We offer communication via WhatsApp, Zoom, FaceTime, and Google Chat for international families across all time zones. Package recommendations and pricing depend on the type of school you are applying to, so we guide international applicants to the correct college, graduate, MBA, law, or healthcare admissions page.',
     icon: 'Globe',
     heroStatement: 'Admissions Consulting for International Students',
     features: [
@@ -1462,31 +1477,6 @@ export const services: Service[] = [
       'Financial aid strategy for international students',
       'Communication via WhatsApp, Zoom, FaceTime, Google Chat',
     ],
-    pricing: {
-      tiers: [
-        {
-          name: 'Application Planning and Evaluation Service',
-          price: '$465',
-          description: 'Introductory service. Two 45-minute sessions and several hours of independent research.',
-          features: ['Profile and strategy assessment', 'Two 45-minute consultations', 'Candidacy review', 'Can later be credited only toward a complete application package'],
-        },
-        {
-          name: 'Complete Application Package',
-          price: '$5,175',
-          description: 'Everything you need for one school, plus $775 for each additional school. Unlimited hours.',
-          features: ['Everything in Application Planning', 'Personal statement and all supplements', 'School selection', 'Interview preparation', 'Unlimited letters of recommendation', 'Resume/CV writing'],
-          popular: true,
-        },
-      ],
-      alaCarte: [
-        { service: 'Application Planning and Evaluation', price: '$465' },
-        { service: 'Personal Statement / Essay', price: '$985' },
-        { service: 'School Selection Service', price: '$1,375' },
-        { service: 'Interview Coaching', price: '$1,275' },
-        { service: 'Letter of Recommendation', price: '$885' },
-      ],
-      footnote: `${PACKAGE_CREDIT_NOTE} Contact us via FaceTime, Google Chat, Zoom, or WhatsApp from anywhere in the world.`,
-    },
   },
   {
     id: 'private-school-k12',
@@ -1539,7 +1529,7 @@ export const services: Service[] = [
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'Interview Coaching', price: '$1,275' },
       ],
-      footnote: `Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools when content can be reused. ${PACKAGE_CREDIT_NOTE}`,
+      footnote: `${PRIVATE_SCHOOL_APPLICATION_CYCLE_NOTE} ${PACKAGE_CREDIT_NOTE}`,
     },
   },
 ];

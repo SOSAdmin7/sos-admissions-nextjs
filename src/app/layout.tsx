@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PhoneBar } from "@/components/PhoneBar";
 import { GTMScript, GTMNoScript } from "@/components/GTMProvider";
 
 const inter = Inter({
@@ -69,6 +70,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col antialiased">
         <GTMNoScript />
         <GTMScript />
+        <PhoneBar />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, ChevronDown, Phone } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
@@ -120,15 +120,8 @@ export default function Header() {
               )}
             </nav>
 
-            {/* Desktop CTA + Phone */}
-            <div className="hidden lg:flex items-center gap-5">
-              <a
-                href="tel:+13109514008"
-                className="flex items-center gap-1.5 text-sm text-[#1B2B4B] font-medium hover:text-[#E8613C] transition-colors"
-              >
-                <Phone size={14} />
-                (310) 951-4008
-              </a>
+            {/* Desktop CTA */}
+            <div className="hidden lg:flex items-center gap-4">
               <Link
                 href="/get-started"
                 className="px-6 py-2.5 bg-[#E8613C] text-white font-semibold rounded-full hover:bg-[#D4522E] transition-colors shadow-sm text-sm"
@@ -137,15 +130,8 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Mobile Phone + Menu */}
-            <div className="lg:hidden flex items-center gap-1">
-              <a
-                href="tel:+13109514008"
-                className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-[#1B2B4B] hover:text-[#E8613C] transition-colors px-2.5 py-1.5 rounded-full bg-[#F8F9FA] border border-gray-200"
-              >
-                <Phone size={12} />
-                (310) 951-4008
-              </a>
+            {/* Mobile Menu Toggle */}
+            <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="p-2 text-[#495057] hover:text-[#1B2B4B] transition-colors"

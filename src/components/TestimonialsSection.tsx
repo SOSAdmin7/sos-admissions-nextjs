@@ -75,8 +75,8 @@ export function TestimonialsSection() {
         </div>
 
         {/* Navigation Dots */}
-        <div className="flex justify-center items-center gap-4">
-          <div className="flex gap-2">
+        <div className="flex justify-center items-center gap-4 overflow-hidden">
+          <div className="flex gap-2 flex-wrap justify-center">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -84,7 +84,7 @@ export function TestimonialsSection() {
                   setCurrent(index);
                   setAutoplay(false);
                 }}
-                className={`transition-all duration-300 rounded-full ${
+                className={`transition-all duration-300 rounded-full flex-shrink-0 ${
                   index === current
                     ? 'bg-gold w-3 h-3'
                     : 'bg-white/30 w-2 h-2 hover:bg-white/60'
@@ -94,7 +94,7 @@ export function TestimonialsSection() {
             ))}
           </div>
 
-          <div className="flex gap-2 ml-4">
+          <div className="flex gap-2 flex-shrink-0">
             <button
               onClick={handlePrev}
               className="p-2 text-white hover:bg-white/10 rounded-lg transition-all duration-300"

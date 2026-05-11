@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import { LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
 import { PurchaseForm } from '../purchase/PurchaseForm';
 
 export const metadata: Metadata = {
@@ -21,6 +23,9 @@ export default function AdmissionsOptionsPage() {
           <p className="text-lg text-slate-600">
             Fill out the form below to get started. We will match you with the right consultant for your needs.
           </p>
+          <div className="mt-8">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
         </div>
       </section>
 

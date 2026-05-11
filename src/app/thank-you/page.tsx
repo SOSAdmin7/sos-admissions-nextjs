@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, Mail, Clock } from 'lucide-react';
+import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 import { generateThankYouMetadata } from '@/lib/metadata';
 import { ThankYouConversion } from './ConversionScript';
 
@@ -11,8 +13,12 @@ export default function ThankYouPage() {
     <>
       <ThankYouConversion />
 
-      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white py-20">
+      <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white py-20">
         <div className="max-w-2xl w-full">
+          <div className="mb-10">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
+
           {/* Success Message */}
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12 text-center">
             {/* Icon */}
@@ -122,6 +128,11 @@ export default function ThankYouPage() {
           </div>
         </div>
       </section>
+
+      <LegacyImageGallery
+        title="Legacy Thank You Page Asset"
+        images={[LEGACY_IMAGES.faqPromo]}
+      />
     </>
   );
 }

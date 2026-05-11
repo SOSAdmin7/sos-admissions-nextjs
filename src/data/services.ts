@@ -87,7 +87,7 @@ export const services: Service[] = [
       tiers: [
         {
           name: 'Application Planning and Evaluation Service',
-          price: '$465',
+          price: '$365',
           description: 'Introductory service with expert advice on essays, letters of rec, school selection, resume/CV, and more. Includes two sessions of 45 minutes each with the client and several hours of independent research by our staff.',
           features: [
             'Profile, goals, and strategy assessment',
@@ -139,7 +139,7 @@ export const services: Service[] = [
         },
       ],
       alaCarte: [
-        { service: 'Application Planning and Evaluation', price: '$465' },
+        { service: 'Application Planning and Evaluation', price: '$365' },
         { service: 'Common App Essay / Coalition App Essay', price: '$985' },
         { service: 'Common Application School-Specific Essays for 1 School', price: '$1,485', note: 'Also applies to school-specific essays for the Coalition Application' },
         { service: 'UC Essays / Long Essay (under 1,500 words)', price: '$1,485' },
@@ -472,20 +472,20 @@ export const services: Service[] = [
         },
         {
           name: 'Complete Medical School Application Package',
-          price: '$5,675',
+          price: 'Masters: $5,175 / Doctorate: $5,675',
           description: 'Everything you need for one school, plus $775 for each additional school. Unlimited hours.',
           features: ['Everything in Application Planning', 'Personal statement', 'All secondary essays', 'School selection', 'Interview preparation (traditional and MMI)', 'Unlimited letters of recommendation', 'Resume/CV writing', 'Activity descriptions'],
           popular: true,
         },
         {
           name: 'Complete Medical School Application Package for Five Schools',
-          price: '$8,000',
+          price: 'Masters: $7,500 / Doctorate: $8,000',
           description: 'For students applying to multiple medical schools. Unlimited hours.',
           features: ['Everything in the complete medical school application package', '5 schools included', 'Additional schools at $775 each'],
         },
         {
           name: 'Complete Medical School Application Package for Ten Schools',
-          price: '$11,100',
+          price: 'Masters: $10,600 / Doctorate: $11,100',
           description: 'Ten-school package for MD and DO applicants. Unlimited hours.',
           features: ['Everything in the complete medical school application package', '10 schools included', 'Additional schools at $775 each'],
         },
@@ -561,7 +561,7 @@ export const services: Service[] = [
         { service: 'Personal Statement for Dental School', price: '$985' },
         { service: 'School-Specific Secondary Essays / Supplemental Essays', price: 'Varies – Call for Specifics' },
         { service: 'Traditional / Panel Interview Coaching + Mock Interview', price: '$1,275' },
-        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,675' },
+        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,475' },
         { service: 'Academic Resume/CV Creation', price: '$975' },
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'AADSAS / CAAPID Experience Descriptions', price: '$1,175' },
@@ -797,7 +797,7 @@ export const services: Service[] = [
         { service: 'Academic Resume/CV Creation', price: '$975' },
         { service: 'School Selection Service', price: '$1,375' },
         { service: 'Traditional Interview Coaching + Mock Interview', price: '$1,275' },
-        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,675' },
+        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,475' },
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'CASPA Activity Descriptions', price: '$1,175' },
         RUSH_FEE_ITEM,
@@ -1239,6 +1239,8 @@ export const services: Service[] = [
         { service: 'Academic Resume/CV Creation', price: '$1,475' },
         { service: 'Traditional Interview Coaching + Mock Interview', price: '$1,775' },
         { service: 'MMI Interview Coaching + Mock Interview', price: '$1,975' },
+        { service: 'Traditional Interview Coaching + Mock Interview (Legacy Rate)', price: '$1,275' },
+        { service: 'MMI Interview Coaching + Mock Interview (Legacy Rate)', price: '$1,675' },
         { service: 'Letter of Recommendation', price: '$985' },
         { service: 'NursingCAS Activity Descriptions', price: '$1,675' },
         RUSH_FEE_ITEM,
@@ -1401,8 +1403,8 @@ export const services: Service[] = [
     ],
     pricing: {
       alaCarte: [
-        { service: 'Personal Statement / Essay (under 900 words)', price: '$985' },
-        { service: 'Long Personal Statement (under 1,500 words)', price: '$1,485' },
+        { service: 'Personal Statement / Essay (under 900 words)', price: '$985', note: 'Subsequent schools: $442.50' },
+        { service: 'Long Personal Statement (under 1,500 words)', price: '$1,485', note: 'Subsequent schools: $742.50' },
         { service: 'Short Essay (under 300 words)', price: '$785' },
         { service: 'Medical School Personal Statement', price: '$985' },
         { service: 'Additional School (same essay, modified)', price: '50% of original price' },
@@ -1460,8 +1462,8 @@ export const services: Service[] = [
     ],
     pricing: {
       alaCarte: [
-        { service: 'Letter of Recommendation (full draft)', price: '$885' },
-        { service: 'Bullet Points for Recommender', price: '$885' },
+        { service: 'Letter of Recommendation (full draft)', price: '$685' },
+        { service: 'Bullet Points for Recommender', price: '$685' },
       ],
       footnote: 'Unlimited letters of recommendation included in all complete application packages at no extra cost.',
     },
@@ -1487,8 +1489,9 @@ export const services: Service[] = [
     ],
     pricing: {
       alaCarte: [
-        { service: 'Hourly Tutoring', price: '$125/hour' },
-        { service: '30-Hour Complete Test Prep Package', price: '$3,050' },
+        { service: '10 Hours of SAT Tutoring / ACT Tutoring', price: '$1750' },
+        { service: 'SAT Prep / ACT Prep Package (30 Hours)', price: '$3050' },
+        { service: 'Application Planning and Evaluation Service', price: '$465' },
       ],
       footnote: 'We recommend the 30-hour package as our experience shows this is the amount of time needed to cover all important topics on the test.',
     },

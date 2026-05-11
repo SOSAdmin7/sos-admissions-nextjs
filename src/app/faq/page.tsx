@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import { LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
 import { generateFAQMetadata } from '@/lib/metadata';
 import { FAQAccordion } from '@/components/FAQAccordion';
 
@@ -84,6 +86,9 @@ export default function FAQPage() {
           <p className="text-xl text-slate-600">
             Find answers to common questions about our services and the admissions process.
           </p>
+          <div className="mt-8">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
         </div>
       </section>
 

@@ -821,7 +821,7 @@ export const services: Service[] = [
         },
         {
           name: 'Complete Computer Science Graduate School Application Package for Five Schools',
-          price: 'Masters: $7,500 / Doctorate: $11,200',
+          price: 'Masters: $7,500 / Doctorate: $8,000',
           description: 'Five-school package pricing for computer science graduate applicants.',
           features: ['Everything in the complete computer science application package', '5 schools included', 'Additional schools at $775 each', 'Doctorate applicants use the doctorate package price'],
         },
@@ -884,7 +884,7 @@ export const services: Service[] = [
         },
         {
           name: 'Complete Psychology & Counseling Graduate School Application Package for Five Schools',
-          price: 'Masters: $7,500 / Doctorate: $11,200',
+          price: 'Masters: $7,500 / Doctorate: $8,000',
           description: 'Five-school package pricing for psychology and counseling applicants.',
           features: ['Everything in the complete psychology & counseling application package', '5 schools included', 'Additional schools at $775 each', 'Doctorate applicants use the doctorate package price'],
         },
@@ -1367,7 +1367,7 @@ export const services: Service[] = [
         { service: 'Personal Statement / Essay (under 900 words)', price: '$985' },
         { service: 'Long Personal Statement (under 1,500 words)', price: '$1,485' },
         { service: 'Short Essay (under 300 words)', price: '$785' },
-        { service: 'Medical School Personal Statement', price: '$885' },
+        { service: 'Medical School Personal Statement', price: '$985' },
         { service: 'Additional School (same essay, modified)', price: '50% of original price' },
         { service: 'Waitlist Appeal Letter', price: '$985' },
       ],

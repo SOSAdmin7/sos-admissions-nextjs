@@ -149,6 +149,13 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Service Locations */}
+        <div className="border-t border-gray-700 pt-8 mb-8">
+          <p className="text-gray-400 text-sm text-center">
+            Serving students in Los Angeles, San Francisco, Las Vegas, Vancouver, Chicago, Seattle, Denver, New Orleans, Philadelphia, San Diego, Montreal, Houston, Toronto, Miami, Pittsburgh, Washington D.C., St. Louis, New York, Phoenix, Boston, Dallas, and worldwide via video conferencing.
+          </p>
+        </div>
+
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm">

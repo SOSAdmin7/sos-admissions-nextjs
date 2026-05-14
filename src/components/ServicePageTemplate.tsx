@@ -617,11 +617,9 @@ const defaultFAQs = [
 
 /* ───────────────────────── VIDEO COMPONENTS ───────────────────────── */
 const programVideos: { [key: string]: { id: string; title: string } } = {
-  'dental-school': { id: 'H79abHGaiQM', title: 'Medical School & Residency Admissions Consultant' },
-  'private-school-k12': { id: 'OY7A3vsqIPE', title: 'Private School Admissions Consultants' },
   'international-students': { id: 'o0vsmq-Wue0', title: 'Admissions Consulting for International Students' },
-  'standardized-test-prep': { id: '5axgzPmFV94', title: 'SAT Prep / ACT Prep' },
   'nursing-programs': { id: 'v0K0udm4yZ0', title: 'Graduate School Admissions Consulting' },
+  'phd-programs': { id: 'v0K0udm4yZ0', title: 'Graduate School Admissions Consulting' },
 };
 
 function YouTubeFacade({ videoId, title }: { videoId: string; title: string }) {

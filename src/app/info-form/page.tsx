@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
 import { InfoFormClient } from './InfoFormClient';
 
 export const metadata: Metadata = {
@@ -20,9 +18,6 @@ export default function InfoFormPage() {
           <p className="text-lg text-slate-600">
             Fill out the form below and one of our admissions experts will reach out to discuss how we can help.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 

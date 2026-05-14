@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
 import { generateMetadata as generatePageMetadata } from '@/lib/metadata';
 import { PaymentForm } from '@/components/PaymentForm';
 
@@ -23,9 +21,6 @@ export default function PaymentPage() {
           <p className="text-xl text-slate-600">
             Choose your service and complete payment to get started with SOS Admissions.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 

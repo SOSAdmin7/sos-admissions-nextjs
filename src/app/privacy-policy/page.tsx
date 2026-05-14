@@ -104,6 +104,10 @@ export default function PrivacyPolicyPage() {
       title: 'California Privacy Rights',
       content: `If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what information is collected, the right to delete information, and the right to opt out of the sale of information. We do not sell personal information.`,
     },
+    {
+      title: 'Refund Policy',
+      content: `Those who purchase packages and then request refunds are billed at hourly rates for the services rendered and refunded the balance (if any) of their package cost.`,
+    },
   ];
 
   return (

@@ -97,6 +97,8 @@ export function ContactForm() {
     { icon: MessageSquare, name: 'Google Chat' },
     { icon: Video, name: 'Zoom' },
     { icon: MessageSquare, name: 'WhatsApp' },
+    { icon: MessageSquare, name: 'WeChat' },
+    { icon: Video, name: 'Skype' },
     { icon: MapPin, name: 'In-Person' },
   ];
 

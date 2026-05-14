@@ -82,8 +82,31 @@ function AnimatedCounter({
 }
 
 /* ───────────────────────── STAT COUNTERS ───────────────────────── */
-function StatCounters() {
-  const stats = [
+const SERVICE_STATS: Record<string, { target: number; suffix: string; label: string; decimals?: number }[]> = {
+  'law-school': [
+    { target: 27, suffix: '+', label: 'Years of Experience' },
+    { target: 96.1, suffix: '%', label: 'Law School Acceptance Rate', decimals: 1 },
+    { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
+  ],
+  'medical-residency': [
+    { target: 27, suffix: '+', label: 'Years of Experience' },
+    { target: 98.4, suffix: '%', label: 'Residency Match Rate', decimals: 1 },
+    { target: 1000, suffix: '+', label: 'Successful Matches' },
+  ],
+  'dental-school': [
+    { target: 27, suffix: '+', label: 'Years of Experience' },
+    { target: 94.3, suffix: '%', label: 'Dental School Acceptance Rate', decimals: 1 },
+    { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
+  ],
+  'personal-statement-writing': [
+    { target: 27, suffix: '+', label: 'Years of Experience' },
+    { target: 17000, suffix: '+', label: 'Personal Statements Written' },
+    { target: 98, suffix: '%', label: 'Client Acceptance Rate' },
+  ],
+};
+
+function StatCounters({ slug }: { slug?: string }) {
+  const stats = (slug && SERVICE_STATS[slug]) || [
     { target: 27, suffix: '+', label: 'Years of Experience' },
     { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
     { target: 98, suffix: '%', label: 'Client Acceptance Rate' },
@@ -99,7 +122,7 @@ function StatCounters() {
                 <AnimatedCounter
                   target={stat.target}
                   suffix={stat.suffix}
-                  decimals={0}
+                  decimals={stat.decimals ?? 0}
                 />
               </div>
               <p className="text-gray-500 text-sm sm:text-base">{stat.label}</p>
@@ -627,7 +650,7 @@ export default function ServicePageTemplate({ slug, legacyVariant }: ServicePage
       />
 
       {/* Stats */}
-      <StatCounters />
+      <StatCounters slug={slug} />
 
       <LegacyImageGallery
         title={legacyAssets.galleryTitle}

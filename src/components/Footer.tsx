@@ -112,7 +112,7 @@ export default function Footer() {
               {/* Social Links */}
               <div className="flex gap-4 pt-2">
                 <a
-                  href="https://www.linkedin.com/company-beta/18161539/"
+                  href="https://www.linkedin.com/company/sos-admissions/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -123,7 +123,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.facebook.com/sosadmissions/"
+                  href="https://www.facebook.com/SOS-Admissions-270199346720032/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -134,7 +134,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UCK2J4TknPx-nQL8Ne2VuTJQ"
+                  href="https://www.youtube.com/channel/UCTSIQyJw3qq56Icoh_1pP1g"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"

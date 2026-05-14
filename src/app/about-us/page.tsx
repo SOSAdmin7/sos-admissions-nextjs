@@ -2,8 +2,6 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Award, Users, Zap, Target, CheckCircle2 } from 'lucide-react';
-import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 import { generateAboutMetadata } from '@/lib/metadata';
 
 // Export metadata for SEO
@@ -87,9 +85,6 @@ export default function AboutPage() {
           <p className="text-lg text-slate-600">
             Transforming admissions anxiety into acceptance celebrations for over 27 years.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 
@@ -119,11 +114,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <LegacyImageGallery
-        title="Legacy About Page Assets"
-        images={[LEGACY_IMAGES.cnnAppearance, LEGACY_IMAGES.resumeService]}
-      />
 
       {/* Mission Section */}
       <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-warm-gray">

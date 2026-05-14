@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield } from 'lucide-react';
-import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -121,16 +119,8 @@ export default function PrivacyPolicyPage() {
           <p className="text-xl text-slate-600">
             How SOS Admissions protects your personal information
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
-
-      <LegacyImageGallery
-        title="Legacy Privacy Page Asset"
-        images={[LEGACY_IMAGES.privacyPromo]}
-      />
 
       {/* Content Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">

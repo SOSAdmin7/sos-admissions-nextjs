@@ -14,5 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function MedicalResidencyInterviewPage() {
-  return <ServicePageTemplate slug="interview-coaching" legacyVariant="medical-residency-interview" />;
+  return <ServicePageTemplate slug="interview-coaching" />;
 }

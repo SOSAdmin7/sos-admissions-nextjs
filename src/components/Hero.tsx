@@ -8,7 +8,7 @@ const stats = [
   { label: 'Years of Experience', value: '27+' },
   { label: 'Ivy League Acceptances', value: '1,000+' },
   { label: 'Client Acceptance Rate', value: '98%' },
-  { label: 'Team Members', value: '70+' },
+  { label: 'Countries Served', value: '80+' },
 ];
 
 export function Hero() {

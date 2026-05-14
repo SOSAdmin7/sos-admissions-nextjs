@@ -103,6 +103,16 @@ const SERVICE_STATS: Record<string, { target: number; suffix: string; label: str
     { target: 17000, suffix: '+', label: 'Personal Statements Written' },
     { target: 98, suffix: '%', label: 'Client Acceptance Rate' },
   ],
+  'masters-degree': [
+    { target: 27, suffix: '+', label: 'Years of Experience' },
+    { target: 96.1, suffix: '%', label: 'Masters & PhD Acceptance Rate', decimals: 1 },
+    { target: 17000, suffix: '+', label: 'Graduate Applicants Helped' },
+  ],
+  'private-school-k12': [
+    { target: 27, suffix: '+', label: 'Years of Experience' },
+    { target: 96.1, suffix: '%', label: 'Private School Acceptance Rate', decimals: 1 },
+    { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
+  ],
 };
 
 function StatCounters({ slug }: { slug?: string }) {

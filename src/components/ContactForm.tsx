@@ -82,13 +82,13 @@ export function ContactForm() {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Beverly Hills & Los Angeles, CA',
-      href: 'https://maps.google.com/?q=Beverly+Hills+CA',
+      value: '10866 Wilshire Blvd., Los Angeles, CA 90024',
+      href: 'https://maps.google.com/?q=10866+Wilshire+Blvd+Los+Angeles+CA+90024',
     },
     {
       icon: Clock,
-      label: 'Availability',
-      value: 'Flexible scheduling available',
+      label: 'Office Hours',
+      value: '6:00 a.m. to 9:00 p.m. PT, 7 days a week',
     },
   ];
 

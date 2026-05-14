@@ -66,14 +66,14 @@ export default function AboutPage() {
       icon: Award,
       title: 'Results',
       description:
-        'Our track record speaks for itself: 68% Ivy League placement rate and consistent admission to top programs.',
+        'Our track record speaks for itself: 1,000+ Ivy League acceptances and consistent admission to top programs.',
     },
   ];
 
   const stats = [
     { number: '27+', label: 'Years of Experience', highlight: true },
-    { number: '2,500+', label: 'Successful Students', highlight: false },
-    { number: '98%', label: 'Client Satisfaction', highlight: false },
+    { number: '1,000+', label: 'Ivy League Acceptances', highlight: false },
+    { number: '98%', label: 'Client Acceptance Rate', highlight: false },
   ];
 
   return (
@@ -157,12 +157,12 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 pt-8 border-t border-white border-opacity-30">
               <div>
-                <div className="text-3xl font-bold text-gold mb-2">50+</div>
-                <div className="text-sm opacity-90">Expert Consultants</div>
+                <div className="text-3xl font-bold text-gold mb-2">1,000+</div>
+                <div className="text-sm opacity-90">Ivy League Acceptances</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-gold mb-2">15+</div>
-                <div className="text-sm opacity-90">Program Specialties</div>
+                <div className="text-3xl font-bold text-gold mb-2">80+</div>
+                <div className="text-sm opacity-90">Countries Served</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-gold mb-2">100%</div>
@@ -254,9 +254,9 @@ export default function AboutPage() {
               'All consultants graduated from top-30 universities',
               '27+ years of proven track record and success',
               '98% client satisfaction rate',
-              '68% Ivy League placement rate',
+              '1,000+ Ivy League acceptances',
               'Personalized, one-on-one attention for every student',
-              'Comprehensive services across 15+ program types',
+              'Serving students from over 80 countries worldwide',
               'Transparent pricing with no hidden fees',
               'Available via video, phone, email, and in-person in Beverly Hills',
             ].map((item, index) => (

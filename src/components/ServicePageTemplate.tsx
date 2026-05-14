@@ -407,7 +407,13 @@ function PricingSection({
 
         {/* Tier Cards */}
         {tiers && tiers.length > 0 && (
-          <div className={`grid grid-cols-1 gap-8 mb-12 ${tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : tiers.length >= 3 ? 'md:grid-cols-3' : 'max-w-lg mx-auto'}`}>
+          <div className={`grid grid-cols-1 gap-8 mb-12 ${
+              tiers.length === 1 ? 'max-w-lg mx-auto'
+            : tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto'
+            : tiers.length === 3 ? 'md:grid-cols-3'
+            : tiers.length === 4 ? 'md:grid-cols-2 max-w-5xl mx-auto'
+            : 'md:grid-cols-2 lg:grid-cols-3'
+          }`}>
             {tiers.map((tier, idx) => (
               <div
                 key={tier.name}

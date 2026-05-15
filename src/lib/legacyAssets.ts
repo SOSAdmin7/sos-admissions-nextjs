@@ -39,7 +39,7 @@ export const LEGACY_IMAGES = {
   schoolClients: img('/images/legacy/school-clients-have-gone-to.webp', 'SOS Admissions clients have gone to top healthcare and graduate schools', true),
   dentalClients: img('/images/legacy/dental-school-clients.webp', 'SOS Admissions dental school clients have gone to top dental programs', true),
   lawClients: img('/images/legacy/logos_law.webp', 'SOS Admissions law school clients have gone to top law schools', true),
-  veterinaryClients: img('/images/legacy/vetschool-logos.webp', 'SOS Admissions veterinary school clients have gone to top veterinary schools', true),
+  veterinaryClients: img('/images/legacy/vetschool-logos-1.webp', 'SOS Admissions veterinary school clients have gone to top veterinary schools', true),
   cnnAppearance: img('/images/legacy/sos-latest-appearance-on-cnn.webp', 'SOS Admissions latest appearance on CNN'),
   resumeService: img('/images/legacy/sosresumeservice.webp', 'SOS Admissions resume service'),
   faqPromo: img('/images/legacy/sos-frequently-asked-questions.webp', 'SOS Admissions frequently asked questions'),
@@ -216,6 +216,7 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
     galleryTitle: 'Legacy International Student Assets',
     gallery: [
       LEGACY_IMAGES.newsGraphic,
+      LEGACY_IMAGES.startIcon,
       LEGACY_IMAGES.intlHomeIcon,
       LEGACY_IMAGES.intlAdmissionsIcon,
       LEGACY_IMAGES.intlGuidanceIcon,

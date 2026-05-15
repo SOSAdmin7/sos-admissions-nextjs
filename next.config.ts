@@ -70,7 +70,6 @@ const nextConfig: NextConfig = {
       { source: "/physician-assistant-school-personal-statement", destination: "/personal-statement", permanent: true },
 
       // Service sub-pages → main service pages
-      { source: "/medical-school-admissions-consulting", destination: "/medical-school-application", permanent: true },
       { source: "/nursing-school-admissions-consulting", destination: "/services", permanent: true },
       // /general-nursing, /nurse-practitioner-admissions, /crna-admissions now route to /services/[slug]
       { source: "/np-admissions", destination: "/services/nurse-practitioner-admissions", permanent: true },
@@ -84,12 +83,9 @@ const nextConfig: NextConfig = {
       { source: "/speech-language-pathology-slp-admissions-consultant", destination: "/services", permanent: true },
       { source: "/computer-science-admissions-consultant", destination: "/services/computer-science-admissions", permanent: true },
       { source: "/bs-md-admissions-consulting", destination: "/services/bs-md-programs", permanent: true },
-      { source: "/phd-application-consulting", destination: "/graduate-school-application", permanent: true },
+      { source: "/phd-application-consulting", destination: "/phd-application", permanent: true },
       { source: "/high-school-application", destination: "/private-school-admissions", permanent: true },
       { source: "/dental-school-application", destination: "/dental-school-admissions-consulting", permanent: true },
-
-      // Interview sub-pages (already have dedicated pages, but add aliases)
-      { source: "/medical-residency-interview", destination: "/college-interviews", permanent: true },
 
       // Sample essays & reference letters → services
       { source: "/sos-admissions-sample-application-essays", destination: "/personal-statement", permanent: true },

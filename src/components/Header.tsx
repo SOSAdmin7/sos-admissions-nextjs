@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, ChevronDown, Phone } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
 const MobileMenu = dynamic(() => import('./MobileMenu'), { ssr: false });
@@ -67,12 +68,15 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-[72px] lg:h-[76px]">
             {/* Logo + Tagline */}
-            <Link href="/" className="flex-shrink-0 flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="text-2xl font-extrabold text-[#E8613C] tracking-tight">SOS</span>
-                <span className="text-2xl font-medium text-[#1B2B4B]">Admissions</span>
-              </div>
-              <span className="text-[11px] sm:text-xs text-[#6C757D] tracking-wide mt-[-2px]">Get Into Your Dream School</span>
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/images/legacy/sosheader.webp"
+                alt="SOS Admissions"
+                width={473}
+                height={85}
+                priority
+                className="h-10 w-auto sm:h-11"
+              />
             </Link>
 
             {/* Desktop Navigation */}

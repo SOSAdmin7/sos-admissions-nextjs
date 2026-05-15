@@ -14,5 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function MBAInterviewPage() {
-  return <ServicePageTemplate slug="interview-coaching" />;
+  return <ServicePageTemplate slug="interview-coaching" legacyVariant="mba-interview" />;
 }

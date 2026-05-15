@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import { getServiceBySlug, type PricingItem, type PricingTier } from '@/data/services';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { LegacyImageGallery, LegacyStripSection, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO, getLegacyServiceAssets } from '@/lib/legacyAssets';
 import {
   ChevronRight,
   ChevronDown,
@@ -11,7 +13,6 @@ import {
   Phone,
   Mail,
   Shield,
-  Users,
   Award,
   Clock,
   Star,
@@ -79,77 +80,9 @@ function AnimatedCounter({
   );
 }
 
-/* ───────────────────────── TRUST BAR ───────────────────────── */
-function TrustBar() {
-  return (
-    <section className="bg-[#F8F9FA] py-8 border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-5">
-          <span className="text-xs uppercase tracking-[0.2em] text-gray-400 font-semibold">
-            As Featured In
-          </span>
-          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 sm:gap-x-10 md:gap-x-12">
-            <svg className="h-7 text-red-600 transition-colors" viewBox="0 0 120 40" fill="currentColor">
-              <text x="0" y="32" fontFamily="Arial Black, Arial" fontWeight="900" fontSize="36" letterSpacing="-2">CNN</text>
-            </svg>
-            <svg className="h-6 text-[#003366] transition-colors" viewBox="0 0 160 28" fill="currentColor">
-              <text x="0" y="23" fontFamily="Arial Black, Arial" fontWeight="900" fontSize="22" letterSpacing="0.5">FOX NEWS</text>
-            </svg>
-            <svg className="h-5 text-gray-800 transition-colors" viewBox="0 0 280 30" fill="currentColor">
-              <text x="0" y="24" fontFamily="Georgia, Times New Roman, serif" fontWeight="400" fontSize="18" fontStyle="italic" letterSpacing="0.5">The Wall Street Journal</text>
-            </svg>
-            <svg className="h-7 text-red-600 transition-colors" viewBox="0 0 140 40" fill="currentColor">
-              <text x="2" y="33" fontFamily="Times New Roman, Georgia, serif" fontWeight="700" fontSize="36" letterSpacing="5">TIME</text>
-            </svg>
-            <svg className="h-6 text-blue-700 transition-colors" viewBox="0 0 160 30" fill="currentColor">
-              <text x="0" y="24" fontFamily="Arial, Helvetica" fontWeight="700" fontSize="22" letterSpacing="1">NBC NEWS</text>
-            </svg>
-            <svg className="h-5 text-red-700 transition-colors" viewBox="0 0 180 24" fill="currentColor">
-              <text x="0" y="19" fontFamily="Georgia, Times New Roman, serif" fontWeight="700" fontSize="17" letterSpacing="0.3">China Daily</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 /* ───────────────────────── STAT COUNTERS ───────────────────────── */
-const SERVICE_STATS: Record<string, { target: number; suffix: string; label: string; decimals?: number }[]> = {
-  'law-school': [
-    { target: 27, suffix: '+', label: 'Years of Experience' },
-    { target: 96.1, suffix: '%', label: 'Law School Acceptance Rate', decimals: 1 },
-    { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
-  ],
-  'medical-residency': [
-    { target: 27, suffix: '+', label: 'Years of Experience' },
-    { target: 98.4, suffix: '%', label: 'Residency Match Rate', decimals: 1 },
-    { target: 1000, suffix: '+', label: 'Successful Matches' },
-  ],
-  'dental-school': [
-    { target: 27, suffix: '+', label: 'Years of Experience' },
-    { target: 94.3, suffix: '%', label: 'Dental School Acceptance Rate', decimals: 1 },
-    { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
-  ],
-  'personal-statement-writing': [
-    { target: 27, suffix: '+', label: 'Years of Experience' },
-    { target: 17000, suffix: '+', label: 'Personal Statements Written' },
-    { target: 98, suffix: '%', label: 'Client Acceptance Rate' },
-  ],
-  'masters-degree': [
-    { target: 27, suffix: '+', label: 'Years of Experience' },
-    { target: 96.1, suffix: '%', label: 'Masters & PhD Acceptance Rate', decimals: 1 },
-    { target: 17000, suffix: '+', label: 'Graduate Applicants Helped' },
-  ],
-  'private-school-k12': [
-    { target: 27, suffix: '+', label: 'Years of Experience' },
-    { target: 96.1, suffix: '%', label: 'Private School Acceptance Rate', decimals: 1 },
-    { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
-  ],
-};
-
-function StatCounters({ slug }: { slug?: string }) {
-  const stats = (slug && SERVICE_STATS[slug]) || [
+function StatCounters() {
+  const stats = [
     { target: 27, suffix: '+', label: 'Years of Experience' },
     { target: 1000, suffix: '+', label: 'Ivy League Acceptances' },
     { target: 98, suffix: '%', label: 'Client Acceptance Rate' },
@@ -165,7 +98,7 @@ function StatCounters({ slug }: { slug?: string }) {
                 <AnimatedCounter
                   target={stat.target}
                   suffix={stat.suffix}
-                  decimals={stat.decimals ?? 0}
+                  decimals={0}
                 />
               </div>
               <p className="text-gray-500 text-sm sm:text-base">{stat.label}</p>
@@ -407,13 +340,7 @@ function PricingSection({
 
         {/* Tier Cards */}
         {tiers && tiers.length > 0 && (
-          <div className={`grid grid-cols-1 gap-8 mb-12 ${
-              tiers.length === 1 ? 'max-w-lg mx-auto'
-            : tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto'
-            : tiers.length === 3 ? 'md:grid-cols-3'
-            : tiers.length === 4 ? 'md:grid-cols-2 max-w-5xl mx-auto'
-            : 'md:grid-cols-2 lg:grid-cols-3'
-          }`}>
+          <div className={`grid grid-cols-1 gap-8 mb-12 ${tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : tiers.length >= 3 ? 'md:grid-cols-3' : 'max-w-lg mx-auto'}`}>
             {tiers.map((tier, idx) => (
               <div
                 key={tier.name}
@@ -621,65 +548,13 @@ const defaultFAQs = [
   { q: 'What is your success rate?', a: 'Our overall client acceptance rate is 98%. We\'ve helped over 1,000 students gain admission to Ivy League schools alone. Every student\'s situation is different, and we provide honest assessments of your chances from the start.' },
 ];
 
-/* ───────────────────────── VIDEO COMPONENTS ───────────────────────── */
-const programVideos: { [key: string]: { id: string; title: string } } = {
-  'international-students': { id: 'o0vsmq-Wue0', title: 'Admissions Consulting for International Students' },
-  'nursing-programs': { id: 'v0K0udm4yZ0', title: 'Graduate School Admissions Consulting' },
-  'phd-programs': { id: 'v0K0udm4yZ0', title: 'Graduate School Admissions Consulting' },
-};
-
-function YouTubeFacade({ videoId, title }: { videoId: string; title: string }) {
-  const [loaded, setLoaded] = useState(false);
-  if (loaded) {
-    return (
-      <iframe
-        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`}
-        title={title}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        className="w-full h-full"
-      />
-    );
-  }
-  return (
-    <button
-      onClick={() => setLoaded(true)}
-      className="relative w-full h-full group cursor-pointer bg-black"
-      aria-label={`Play video: ${title}`}
-    >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
-        alt={title}
-        className="w-full h-full object-cover"
-        loading="eager"
-      />
-      <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-        <svg className="w-16 h-16 md:w-20 md:h-20 text-white drop-shadow-lg" viewBox="0 0 68 48">
-          <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/>
-          <path d="M45 24L27 14v20" fill="white"/>
-        </svg>
-      </div>
-    </button>
-  );
-}
-
-function VideoCard({ videoId, title }: { videoId: string; title: string }) {
-  return (
-    <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-      <div className="aspect-video">
-        <YouTubeFacade videoId={videoId} title={title} />
-      </div>
-    </div>
-  );
-}
-
 /* ───────────────────────── MAIN TEMPLATE ───────────────────────── */
 interface ServicePageTemplateProps {
   slug: string;
+  legacyVariant?: string;
 }
 
-export default function ServicePageTemplate({ slug }: ServicePageTemplateProps) {
+export default function ServicePageTemplate({ slug, legacyVariant }: ServicePageTemplateProps) {
   const service = getServiceBySlug(slug);
 
   if (!service) {
@@ -687,7 +562,8 @@ export default function ServicePageTemplate({ slug }: ServicePageTemplateProps) 
   }
 
   const faqs = programFAQs[slug] || defaultFAQs;
-  const video = programVideos[slug];
+  const legacyAssets = getLegacyServiceAssets(legacyVariant ?? slug);
+  const heroVideos = legacyAssets.extraVideos?.length ? legacyAssets.extraVideos : [DEFAULT_LEGACY_VIDEO];
 
   return (
     <div>
@@ -707,11 +583,11 @@ export default function ServicePageTemplate({ slug }: ServicePageTemplateProps) 
             {service.heroStatement}
           </h1>
 
-          {video && (
-            <div className="mb-6 md:mb-8 animate-[fadeInUp_0.6s_ease-out_0.18s_both]">
-              <VideoCard videoId={video.id} title={video.title} />
-            </div>
-          )}
+          <div className="mb-6 space-y-4 animate-[fadeInUp_0.6s_ease-out_0.18s_both]">
+            {heroVideos.map((video) => (
+              <LegacyYouTubeCard key={video.id} video={video} className="mx-auto" />
+            ))}
+          </div>
 
           <p className="text-lg md:text-xl text-blue-100/80 mb-10 max-w-3xl mx-auto animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
             {service.longDescription}
@@ -737,10 +613,19 @@ export default function ServicePageTemplate({ slug }: ServicePageTemplateProps) 
       </section>
 
       {/* Trust Bar */}
-      <TrustBar />
+      <LegacyStripSection
+        featuredStrip={legacyAssets.featuredStrip}
+        clientStrip={legacyAssets.clientStrip}
+        clientLabel={legacyAssets.clientLabel}
+      />
 
       {/* Stats */}
-      <StatCounters slug={slug} />
+      <StatCounters />
+
+      <LegacyImageGallery
+        title={legacyAssets.galleryTitle}
+        images={legacyAssets.gallery ?? []}
+      />
 
       {/* What's Included */}
       <section className="py-16 md:py-24 bg-white">

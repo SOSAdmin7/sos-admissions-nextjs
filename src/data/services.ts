@@ -87,7 +87,7 @@ export const services: Service[] = [
       tiers: [
         {
           name: 'Application Planning and Evaluation Service',
-          price: '$365',
+          price: '$465',
           description: 'Introductory service with expert advice on essays, letters of rec, school selection, resume/CV, and more. Includes two sessions of 45 minutes each with the client and several hours of independent research by our staff.',
           features: [
             'Profile, goals, and strategy assessment',
@@ -139,7 +139,7 @@ export const services: Service[] = [
         },
       ],
       alaCarte: [
-        { service: 'Application Planning and Evaluation', price: '$365' },
+        { service: 'Application Planning and Evaluation', price: '$465' },
         { service: 'Common App Essay / Coalition App Essay', price: '$985' },
         { service: 'Common Application School-Specific Essays for 1 School', price: '$1,485', note: 'Also applies to school-specific essays for the Coalition Application' },
         { service: 'UC Essays / Long Essay (under 1,500 words)', price: '$1,485' },
@@ -181,7 +181,7 @@ export const services: Service[] = [
       tiers: [
         {
           name: 'Application Planning and Evaluation Service',
-          price: '$465',
+          price: '$365',
           description: 'Introductory service with expert advice on essays, letters of rec, school selection, resume/CV, and more. Includes two 45-minute sessions and several hours of independent research.',
           features: ['Profile and strategy assessment', 'Two 45-minute consultations', 'Candidacy review', 'Can later be credited only toward a complete application package'],
         },
@@ -206,7 +206,7 @@ export const services: Service[] = [
         },
       ],
       alaCarte: [
-        { service: 'Application Planning and Evaluation', price: '$465' },
+        { service: 'Application Planning and Evaluation', price: '$365' },
         { service: 'Common App Essay / Coalition App Essay', price: '$985' },
         { service: 'Common Application School-Specific Essays for 1 School', price: '$1,485', note: 'Also applies to school-specific essays for the Coalition Application' },
         { service: 'UC Essays / Long Essay (under 1,500 words)', price: '$1,485' },
@@ -561,7 +561,7 @@ export const services: Service[] = [
         { service: 'Personal Statement for Dental School', price: '$985' },
         { service: 'School-Specific Secondary Essays / Supplemental Essays', price: 'Varies – Call for Specifics' },
         { service: 'Traditional / Panel Interview Coaching + Mock Interview', price: '$1,275' },
-        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,475' },
+        { service: 'MMI Interview Coaching + Mock Interview', price: '$1,675' },
         { service: 'Academic Resume/CV Creation', price: '$975' },
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'AADSAS / CAAPID Experience Descriptions', price: '$1,175' },
@@ -1050,6 +1050,7 @@ export const services: Service[] = [
         { service: 'School-Specific Secondary Essays / Supplemental Essays', price: 'Pricing Based on Length – Call for Specifics' },
         { service: 'Traditional Interview Coaching + Mock Interview', price: '$1,275' },
         { service: 'MMI Interview Coaching + Mock Interview', price: '$1,675' },
+        { service: 'Dedicated PA School MMI Interview Coaching + Mock Interview', price: '$1,475' },
         { service: 'Academic Resume/CV Creation', price: '$975' },
         { service: 'Letter of Recommendation', price: '$885' },
         { service: 'CASPA Activity Descriptions', price: '$1,175' },

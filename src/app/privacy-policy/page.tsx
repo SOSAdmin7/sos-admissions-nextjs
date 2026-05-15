@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield } from 'lucide-react';
+import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -102,10 +104,6 @@ export default function PrivacyPolicyPage() {
       title: 'California Privacy Rights',
       content: `If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what information is collected, the right to delete information, and the right to opt out of the sale of information. We do not sell personal information.`,
     },
-    {
-      title: 'Refund Policy',
-      content: `Those who purchase packages and then request refunds are billed at hourly rates for the services rendered and refunded the balance (if any) of their package cost.`,
-    },
   ];
 
   return (
@@ -119,8 +117,16 @@ export default function PrivacyPolicyPage() {
           <p className="text-xl text-slate-600">
             How SOS Admissions protects your personal information
           </p>
+          <div className="mt-8">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
         </div>
       </section>
+
+      <LegacyImageGallery
+        title="Legacy Privacy Page Asset"
+        images={[LEGACY_IMAGES.privacyPromo]}
+      />
 
       {/* Content Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">

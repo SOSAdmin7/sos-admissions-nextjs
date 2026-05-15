@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { Star } from 'lucide-react';
+import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 import { generateTestimonialsMetadata } from '@/lib/metadata';
 import { TestimonialContent } from '@/components/TestimonialContent';
 
@@ -21,8 +23,16 @@ export default function TestimonialsPage() {
             <Star className="w-6 h-6 fill-gold" />
             <span>98% Client Satisfaction Rate</span>
           </div>
+          <div className="mt-8">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
         </div>
       </section>
+
+      <LegacyImageGallery
+        title="Legacy Testimonials Asset"
+        images={[LEGACY_IMAGES.faqPromo]}
+      />
 
       <TestimonialContent />
     </>

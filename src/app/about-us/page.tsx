@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Award, Users, Zap, Target, CheckCircle2 } from 'lucide-react';
+import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 import { generateAboutMetadata } from '@/lib/metadata';
 
 // Export metadata for SEO
@@ -64,14 +66,14 @@ export default function AboutPage() {
       icon: Award,
       title: 'Results',
       description:
-        'Our track record speaks for itself: 1,000+ Ivy League acceptances and consistent admission to top programs.',
+        'Our track record speaks for itself: 68% Ivy League placement rate and consistent admission to top programs.',
     },
   ];
 
   const stats = [
     { number: '27+', label: 'Years of Experience', highlight: true },
-    { number: '1,000+', label: 'Ivy League Acceptances', highlight: false },
-    { number: '98%', label: 'Client Acceptance Rate', highlight: false },
+    { number: '2,500+', label: 'Successful Students', highlight: false },
+    { number: '98%', label: 'Client Satisfaction', highlight: false },
   ];
 
   return (
@@ -85,6 +87,9 @@ export default function AboutPage() {
           <p className="text-lg text-slate-600">
             Transforming admissions anxiety into acceptance celebrations for over 27 years.
           </p>
+          <div className="mt-8">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
         </div>
       </section>
 
@@ -114,6 +119,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <LegacyImageGallery
+        title="Legacy About Page Assets"
+        images={[LEGACY_IMAGES.cnnAppearance, LEGACY_IMAGES.resumeService]}
+      />
 
       {/* Mission Section */}
       <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-warm-gray">
@@ -147,12 +157,12 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 pt-8 border-t border-white border-opacity-30">
               <div>
-                <div className="text-3xl font-bold text-gold mb-2">1,000+</div>
-                <div className="text-sm opacity-90">Ivy League Acceptances</div>
+                <div className="text-3xl font-bold text-gold mb-2">50+</div>
+                <div className="text-sm opacity-90">Expert Consultants</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-gold mb-2">80+</div>
-                <div className="text-sm opacity-90">Countries Served</div>
+                <div className="text-3xl font-bold text-gold mb-2">15+</div>
+                <div className="text-sm opacity-90">Program Specialties</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-gold mb-2">100%</div>
@@ -244,9 +254,9 @@ export default function AboutPage() {
               'All consultants graduated from top-30 universities',
               '27+ years of proven track record and success',
               '98% client satisfaction rate',
-              '1,000+ Ivy League acceptances',
+              '68% Ivy League placement rate',
               'Personalized, one-on-one attention for every student',
-              'Serving students from over 80 countries worldwide',
+              'Comprehensive services across 15+ program types',
               'Transparent pricing with no hidden fees',
               'Available via video, phone, email, and in-person in Beverly Hills',
             ].map((item, index) => (

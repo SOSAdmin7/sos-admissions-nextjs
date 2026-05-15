@@ -2,6 +2,13 @@
 
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
+import { LegacyStripSection, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { LEGACY_IMAGES } from '@/lib/legacyAssets';
+
+const COLLEGE_LEGACY_VIDEO = {
+  id: 'zElrobt6cis',
+  title: 'College Admissions Consulting',
+} as const;
 
 /* ───────────────────────── HERO ───────────────────────── */
 export function HeroSection() {
@@ -16,6 +23,10 @@ export function HeroSection() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 animate-[fadeInUp_0.7s_ease-out_0.1s_both]">
           Expert College Admissions Consulting
         </h1>
+
+        <div className="mb-6 md:mb-8 animate-[fadeInUp_0.7s_ease-out_0.18s_both]">
+          <LegacyYouTubeCard video={COLLEGE_LEGACY_VIDEO} className="mx-auto" />
+        </div>
 
         <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto animate-[fadeInUp_0.7s_ease-out_0.2s_both]">
           Our college admissions consultants have helped thousands of clients get into top colleges
@@ -43,38 +54,23 @@ export function HeroSection() {
   );
 }
 
+export function VideoSection() {
+  return (
+    <section className="py-8 md:py-12 bg-[#F8F9FA]">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LegacyYouTubeCard video={COLLEGE_LEGACY_VIDEO} className="mx-auto" />
+      </div>
+    </section>
+  );
+}
+
 /* ───────────────────────── TRUST BAR ───────────────────────── */
 export function TrustBar() {
   return (
-    <section className="bg-[#F8F9FA] py-8 border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-5">
-          <span className="text-xs uppercase tracking-[0.2em] text-gray-400 font-semibold">
-            As Featured In
-          </span>
-          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 sm:gap-x-10 md:gap-x-12">
-            <svg className="h-7 text-red-600 transition-colors" viewBox="0 0 120 40" fill="currentColor">
-              <text x="0" y="32" fontFamily="Arial Black, Arial" fontWeight="900" fontSize="36" letterSpacing="-2">CNN</text>
-            </svg>
-            <svg className="h-6 text-[#003366] transition-colors" viewBox="0 0 160 28" fill="currentColor">
-              <text x="0" y="23" fontFamily="Arial Black, Arial" fontWeight="900" fontSize="22" letterSpacing="0.5">FOX NEWS</text>
-            </svg>
-            <svg className="h-5 text-gray-800 transition-colors" viewBox="0 0 280 30" fill="currentColor">
-              <text x="0" y="24" fontFamily="Georgia, Times New Roman, serif" fontWeight="400" fontSize="18" fontStyle="italic" letterSpacing="0.5">The Wall Street Journal</text>
-            </svg>
-            <svg className="h-7 text-red-600 transition-colors" viewBox="0 0 140 40" fill="currentColor">
-              <text x="2" y="33" fontFamily="Times New Roman, Georgia, serif" fontWeight="700" fontSize="36" letterSpacing="5">TIME</text>
-            </svg>
-            <svg className="h-6 text-blue-700 transition-colors" viewBox="0 0 160 30" fill="currentColor">
-              <text x="0" y="24" fontFamily="Arial, Helvetica" fontWeight="700" fontSize="22" letterSpacing="1">NBC NEWS</text>
-            </svg>
-            <svg className="h-5 text-red-700 transition-colors" viewBox="0 0 180 24" fill="currentColor">
-              <text x="0" y="19" fontFamily="Georgia, Times New Roman, serif" fontWeight="700" fontSize="17" letterSpacing="0.3">China Daily</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
+    <LegacyStripSection
+      featuredStrip={LEGACY_IMAGES.featuredInNews}
+      clientStrip={LEGACY_IMAGES.collegeClients}
+    />
   );
 }
 

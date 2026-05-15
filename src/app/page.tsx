@@ -1,5 +1,7 @@
 import { Hero } from "@/components/Hero";
+import { LegacyStripSection } from "@/components/LegacyMedia";
 import { ServicesGrid } from "@/components/ServicesGrid";
+import { LEGACY_IMAGES } from "@/lib/legacyAssets";
 import dynamic from "next/dynamic";
 
 const WhyChooseUs = dynamic(
@@ -26,6 +28,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <LegacyStripSection
+        featuredStrip={LEGACY_IMAGES.featuredInNews}
+        clientStrip={LEGACY_IMAGES.collegeClients}
+      />
       <ServicesGrid />
       <WhyChooseUs />
       <ProcessSection />

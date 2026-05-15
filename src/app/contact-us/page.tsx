@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { generateContactMetadata } from '@/lib/metadata';
+import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 import { ContactForm } from '@/components/ContactForm';
 
 export const metadata: Metadata = generateContactMetadata();
@@ -16,8 +18,16 @@ export default function ContactPage() {
           <p className="text-xl text-slate-600">
             Ready to start your admissions journey? Let's talk.
           </p>
+          <div className="mt-8">
+            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
+          </div>
         </div>
       </section>
+
+      <LegacyImageGallery
+        title="Legacy Contact Page Asset"
+        images={[LEGACY_IMAGES.contactImage]}
+      />
 
       <ContactForm />
     </>

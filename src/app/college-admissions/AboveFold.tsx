@@ -3,12 +3,14 @@
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { LegacyStripSection, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { LEGACY_IMAGES } from '@/lib/legacyAssets';
+import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 
 const COLLEGE_LEGACY_VIDEO = {
   id: 'zElrobt6cis',
   title: 'College Admissions Consulting',
 } as const;
+
+const COLLEGE_LEGACY_VIDEOS = [COLLEGE_LEGACY_VIDEO, DEFAULT_LEGACY_VIDEO] as const;
 
 /* ───────────────────────── HERO ───────────────────────── */
 export function HeroSection() {
@@ -24,8 +26,10 @@ export function HeroSection() {
           Expert College Admissions Consulting
         </h1>
 
-        <div className="mb-6 md:mb-8 animate-[fadeInUp_0.7s_ease-out_0.18s_both]">
-          <LegacyYouTubeCard video={COLLEGE_LEGACY_VIDEO} className="mx-auto" />
+        <div className="mb-6 md:mb-8 animate-[fadeInUp_0.7s_ease-out_0.18s_both] space-y-4">
+          {COLLEGE_LEGACY_VIDEOS.map((video) => (
+            <LegacyYouTubeCard key={video.id} video={video} className="mx-auto" />
+          ))}
         </div>
 
         <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto animate-[fadeInUp_0.7s_ease-out_0.2s_both]">
@@ -58,7 +62,11 @@ export function VideoSection() {
   return (
     <section className="py-8 md:py-12 bg-[#F8F9FA]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <LegacyYouTubeCard video={COLLEGE_LEGACY_VIDEO} className="mx-auto" />
+        <div className="space-y-4">
+          {COLLEGE_LEGACY_VIDEOS.map((video) => (
+            <LegacyYouTubeCard key={video.id} video={video} className="mx-auto" />
+          ))}
+        </div>
       </div>
     </section>
   );

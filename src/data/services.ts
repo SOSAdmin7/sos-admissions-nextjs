@@ -87,7 +87,7 @@ export const services: Service[] = [
       tiers: [
         {
           name: 'Application Planning and Evaluation Service',
-          price: '$465',
+          price: '$365',
           description: 'Introductory service with expert advice on essays, letters of rec, school selection, resume/CV, and more. Includes two sessions of 45 minutes each with the client and several hours of independent research by our staff.',
           features: [
             'Profile, goals, and strategy assessment',
@@ -318,7 +318,7 @@ export const services: Service[] = [
       tiers: [
         {
           name: 'Application Planning and Evaluation Service',
-          price: '$465',
+          price: '$365',
           description: 'Introductory service. Two 45-minute sessions and several hours of independent research.',
           features: ['Profile and strategy assessment', 'Two 45-minute consultations', 'Candidacy review', 'Can later be credited only toward a complete application package'],
         },
@@ -337,7 +337,7 @@ export const services: Service[] = [
         },
       ],
       alaCarte: [
-        { service: 'Application Planning and Evaluation', price: '$465' },
+        { service: 'Application Planning and Evaluation', price: '$365' },
         { service: 'School Selection Service', price: '$775' },
         { service: 'Personal Statement / Statement of Purpose / Application Essay (under 700 words)', price: '$985' },
         { service: 'Short Essay (under 300 words)', price: '$685' },

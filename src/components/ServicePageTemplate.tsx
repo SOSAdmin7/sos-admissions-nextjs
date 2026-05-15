@@ -563,7 +563,9 @@ export default function ServicePageTemplate({ slug, legacyVariant }: ServicePage
 
   const faqs = programFAQs[slug] || defaultFAQs;
   const legacyAssets = getLegacyServiceAssets(legacyVariant ?? slug);
-  const heroVideos = legacyAssets.extraVideos?.length ? legacyAssets.extraVideos : [DEFAULT_LEGACY_VIDEO];
+  const heroVideos = [DEFAULT_LEGACY_VIDEO, ...(legacyAssets.extraVideos ?? [])].filter(
+    (video, index, videos) => videos.findIndex((candidate) => candidate.id === video.id) === index
+  );
 
   return (
     <div>

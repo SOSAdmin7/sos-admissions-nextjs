@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Psychology & Counseling Admissions Consulting',
+  title: { absolute: 'Psychology & Counseling Admissions Consulting - SOS Admissions' },
   description:
-    'Application support for counseling, clinical psychology, MFT, and related graduate programs.',
+    'Expert psychology and counseling admissions consulting for clinical psychology PhD, PsyD, counseling psychology, MFT, and mental health counseling programs.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/psychology-counseling-admissions/',
+  },
   openGraph: {
-    title: 'Psychology & Counseling Admissions Consulting',
-    description: 'Application support for counseling, clinical psychology, MFT, and related graduate programs.',
+    title: 'Psychology & Counseling Admissions Consulting - SOS Admissions',
+    description:
+      'Expert psychology and counseling admissions consulting for clinical psychology PhD, PsyD, counseling psychology, MFT, and mental health counseling programs.',
+    url: 'https://sosadmissions.com/psychology-counseling-admissions/',
     type: 'website',
   },
 };

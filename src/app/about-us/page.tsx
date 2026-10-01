@@ -2,12 +2,23 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Award, Users, Zap, Target, CheckCircle2 } from 'lucide-react';
-import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
-import { generateAboutMetadata } from '@/lib/metadata';
 
 // Export metadata for SEO
-export const metadata: Metadata = generateAboutMetadata();
+export const metadata: Metadata = {
+  title: { absolute: 'About SOS Admissions | College & Medical School Admissions Consultants' },
+  description:
+    'Learn about SOS Admissions. Our expert consultants have 27+ years helping students get into top colleges, medical schools, law schools, and graduate programs.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/about-us/',
+  },
+  openGraph: {
+    title: 'About SOS Admissions | College & Medical School Admissions Consultants',
+    description:
+      'Learn about SOS Admissions. Our expert consultants have 27+ years helping students get into top colleges, medical schools, law schools, and graduate programs.',
+    url: 'https://sosadmissions.com/about-us/',
+    type: 'website',
+  },
+};
 
 export default function AboutPage() {
   const teamMembers = [
@@ -79,7 +90,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-14 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-navy">
             About SOS Admissions
@@ -87,14 +98,11 @@ export default function AboutPage() {
           <p className="text-lg text-slate-600">
             Transforming admissions anxiety into acceptance celebrations for over 27 years.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 
       {/* Story Section */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-navy">Our Story</h2>
           <div className="space-y-5 text-base md:text-lg text-slate-600">
@@ -120,13 +128,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <LegacyImageGallery
-        title="Legacy About Page Assets"
-        images={[LEGACY_IMAGES.cnnAppearance, LEGACY_IMAGES.resumeService]}
-      />
-
       {/* Mission Section */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-warm-gray">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12">
             <h2 className="text-3xl font-bold mb-6 text-navy">Our Mission</h2>
@@ -139,9 +142,22 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-navy">Our Expert Team</h2>
+
+          {/* Team Photo */}
+          <div className="mb-10 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+            <Image
+              src="/images/team/team-photo.jpg"
+              alt="The SOS Admissions team of expert admissions consultants"
+              width={785}
+              height={497}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
           <div className="bg-gradient-to-br from-navy-light to-blue rounded-lg p-8 sm:p-12 text-white">
             <div className="space-y-4 mb-8">
               <p className="text-base md:text-lg">
@@ -175,7 +191,7 @@ export default function AboutPage() {
 
       <section className="pb-12 md:pb-18 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {teamMembers.map((member) => (
               <article key={member.name} className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
                 <div className="flex flex-col sm:flex-row gap-5">
@@ -204,8 +220,29 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* CNN Appearance */}
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-navy">
+            Our Latest Appearance on CNN
+          </h2>
+          <p className="text-slate-600 mb-8">
+            Our head admissions consultant discussing college admissions on CNN&apos;s Smerconish.
+          </p>
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+            <Image
+              src="/images/legacy/sos-latest-appearance-on-cnn.webp"
+              alt="SOS Admissions head consultant Vijay Jojo Chokal-Ingam appearing on CNN"
+              width={763}
+              height={420}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-warm-gray">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-navy">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -228,7 +265,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-navy">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-navy">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
@@ -245,7 +282,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us - Highlights */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-navy">Why Choose SOS Admissions?</h2>
           <div className="space-y-4">
@@ -270,7 +307,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-18 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy-light">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy-light">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
           <p className="text-lg text-cream mb-8">
@@ -281,7 +318,7 @@ export default function AboutPage() {
               href="/contact-us"
               className="inline-block bg-gold text-navy px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition"
             >
-              Schedule Consultation
+              Schedule a Free Initial Consultation
             </Link>
             <Link
               href="/services"

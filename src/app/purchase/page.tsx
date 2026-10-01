@@ -1,12 +1,16 @@
 import { Metadata } from 'next';
-import { LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
 import { PurchaseForm } from './PurchaseForm';
 
 export const metadata: Metadata = {
-  title: 'Get Started',
-  description: 'Begin your admissions consulting journey with SOS Admissions.',
-  robots: { index: false, follow: false },
+  title: { absolute: 'Purchase Page - SOS Admissions' },
+  alternates: {
+    canonical: 'https://sosadmissions.com/purchase/',
+  },
+  openGraph: {
+    title: 'Purchase Page - SOS Admissions',
+    url: 'https://sosadmissions.com/purchase/',
+    type: 'website',
+  },
 };
 
 export default function PurchasePage() {
@@ -20,9 +24,6 @@ export default function PurchasePage() {
           <p className="text-lg text-slate-600">
             Fill out the form below and we will contact you to discuss your admissions goals and next steps.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 

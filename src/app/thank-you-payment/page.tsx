@@ -1,12 +1,19 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, Mail, Phone, AlertCircle } from 'lucide-react';
-import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
-import { generateThankYouPaymentMetadata } from '@/lib/metadata';
 import { ThankYouPaymentConversion } from './ConversionScript';
 
-export const metadata: Metadata = generateThankYouPaymentMetadata();
+export const metadata: Metadata = {
+  title: { absolute: 'Thank You Payment - SOS Admissions' },
+  alternates: {
+    canonical: 'https://sosadmissions.com/thank-you-payment/',
+  },
+  openGraph: {
+    title: 'Thank You Payment - SOS Admissions',
+    url: 'https://sosadmissions.com/thank-you-payment/',
+    type: 'website',
+  },
+};
 
 export default function ThankYouPaymentPage() {
   return (
@@ -15,9 +22,6 @@ export default function ThankYouPaymentPage() {
 
       <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white py-20">
         <div className="max-w-2xl w-full">
-          <div className="mb-10">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
 
           {/* Success Message */}
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12 text-center">
@@ -104,12 +108,6 @@ export default function ThankYouPaymentPage() {
                     310-951-4008
                   </a>
                 </div>
-                <div className="flex items-center justify-center gap-2 text-slate-600">
-                  <Mail className="w-5 h-5 text-blue" />
-                  <a href="mailto:info@sosadmissions.com" className="text-blue font-semibold hover:underline">
-                    info@sosadmissions.com
-                  </a>
-                </div>
               </div>
             </div>
 
@@ -156,10 +154,6 @@ export default function ThankYouPaymentPage() {
         </div>
       </section>
 
-      <LegacyImageGallery
-        title="Legacy Thank You Page Asset"
-        images={[LEGACY_IMAGES.faqPromo]}
-      />
     </>
   );
 }

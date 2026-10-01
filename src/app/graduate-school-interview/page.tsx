@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Graduate School Interview Preparation',
+  title: { absolute: 'Graduate School Interview Coaching | PhD & Masters - SOS Admissions' },
   description:
-    'Expert interview coaching for graduate school admissions. Mock interviews and feedback for Master\'s and PhD programs.',
+    'Expert graduate school interview coaching for PhD, masters, and doctoral programs. Mock interviews, question prep, and proven strategies to stand out.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/graduate-school-interview/',
+  },
   openGraph: {
-    title: 'Graduate School Interview Preparation',
+    title: 'Graduate School Interview Coaching | PhD & Masters - SOS Admissions',
     description:
-      'Expert interview coaching for graduate school admissions.',
+      'Expert graduate school interview coaching for PhD, masters, and doctoral programs. Mock interviews, question prep, and proven strategies to stand out.',
+    url: 'https://sosadmissions.com/graduate-school-interview/',
     type: 'website',
   },
 };

@@ -6,6 +6,6 @@ export const runtime = 'edge';
 export default function Image() {
   return generateOGImage(
     'Contact SOS Admissions',
-    'Schedule your free consultation today'
+    'Schedule your free initial consultation today'
   );
 }

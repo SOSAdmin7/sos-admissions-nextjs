@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
     ],
   },
   compress: true,
+  // Match old WordPress URL format exactly (https://sosadmissions.com/mba/)
+  trailingSlash: true,
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
@@ -69,36 +71,60 @@ const nextConfig: NextConfig = {
       { source: "/mba-personal-statement", destination: "/personal-statement", permanent: true },
       { source: "/physician-assistant-school-personal-statement", destination: "/personal-statement", permanent: true },
 
-      // Service sub-pages → main service pages
-      { source: "/nursing-school-admissions-consulting", destination: "/services", permanent: true },
-      // /general-nursing, /nurse-practitioner-admissions, /crna-admissions now route to /services/[slug]
-      { source: "/np-admissions", destination: "/services/nurse-practitioner-admissions", permanent: true },
-      { source: "/optometry-school-admissions-consulting", destination: "/services", permanent: true },
-      { source: "/physician-assistant-school-admissions-consulting", destination: "/services/pa-school-admissions", permanent: true },
-      { source: "/pa-school-admissions-consulting", destination: "/services/pa-school-admissions", permanent: true },
-      { source: "/psychology-school-admissions-consulting", destination: "/services/psychology-counseling-admissions", permanent: true },
-      // /psychology-counseling-admissions now routes to /services/[slug]
-      { source: "/veterinary-school-admissions-consulting", destination: "/services/veterinary-school-admissions", permanent: true },
-      // /veterinary-school-admissions now routes to /services/[slug]
-      { source: "/speech-language-pathology-slp-admissions-consultant", destination: "/services", permanent: true },
-      { source: "/computer-science-admissions-consultant", destination: "/services/computer-science-admissions", permanent: true },
-      { source: "/bs-md-admissions-consulting", destination: "/services/bs-md-programs", permanent: true },
-      { source: "/phd-application-consulting", destination: "/phd-application", permanent: true },
+      // Old WordPress alias pages → canonical pages (old-site URLs are canonical)
+      { source: "/nurse-practitioner-admissions", destination: "/np-admissions", permanent: true },
+      { source: "/optometry-school-admissions-consulting", destination: "/graduate-school-application", permanent: true },
+      { source: "/physician-assistant-school-admissions-consulting", destination: "/pa-school-admissions-consulting", permanent: true },
+      { source: "/psychology-school-admissions-consulting", destination: "/psychology-counseling-admissions", permanent: true },
+      { source: "/veterinary-school-admissions-consulting", destination: "/veterinary-school-admissions", permanent: true },
+      { source: "/speech-language-pathology-slp-admissions-consultant", destination: "/psychology-counseling-admissions", permanent: true },
       { source: "/high-school-application", destination: "/private-school-admissions", permanent: true },
-      { source: "/dental-school-application", destination: "/dental-school-admissions-consulting", permanent: true },
+      { source: "/interview-coaching-guide", destination: "/college-interviews", permanent: true },
 
-      // Sample essays & reference letters → services
+      // New-style paths (pre-rename) → old-site canonical paths
+      { source: "/computer-science-admissions", destination: "/computer-science-admissions-consultant", permanent: true },
+      { source: "/bs-md-admissions", destination: "/bs-md-admissions-consulting", permanent: true },
+      { source: "/dental-school-admissions-consulting", destination: "/dental-school-application", permanent: true },
+      { source: "/phd-application", destination: "/phd-application-consulting", permanent: true },
+      { source: "/pa-school-admissions", destination: "/pa-school-admissions-consulting", permanent: true },
+      { source: "/nursing-school-admissions", destination: "/nursing-school-admissions-consulting", permanent: true },
+
+      // Sample essays & reference letters
       { source: "/sos-admissions-sample-application-essays", destination: "/personal-statement", permanent: true },
-      { source: "/reference-letter-samples", destination: "/services", permanent: true },
-      { source: "/letters-of-recommendation", destination: "/services", permanent: true },
+      { source: "/reference-letter-samples", destination: "/letters-of-recommendation", permanent: true },
       { source: "/law-sample", destination: "/personal-statement", permanent: true },
       { source: "/medical-school-sample", destination: "/personal-statement", permanent: true },
 
-      // SAT/ACT prep
-      { source: "/sat-act-preparation", destination: "/services", permanent: true },
-
-      // Test page
+      // WordPress artifacts & test pages
+      { source: "/9138-2", destination: "/", permanent: true },
       { source: "/test", destination: "/", permanent: true },
+
+      // Old nav/category pages linked from blog post bodies (WP content)
+      { source: "/interview-prep", destination: "/college-interviews", permanent: true },
+      { source: "/medicine-healthcare", destination: "/medical-school-application", permanent: true },
+      { source: "/contact", destination: "/contact-us", permanent: true },
+      { source: "/college-admissions-essay-help", destination: "/personal-statement", permanent: true },
+      { source: "/graduate-school-admissions", destination: "/graduate-school-application", permanent: true },
+      { source: "/medical-school-application-services", destination: "/medical-school-application", permanent: true },
+      { source: "/medical-school-interview-preparation", destination: "/medical-school-interview", permanent: true },
+      { source: "/medical-school-interview-prep", destination: "/medical-school-interview", permanent: true },
+      { source: "/how-to-get-into-medical-school", destination: "/medical-school-application", permanent: true },
+      { source: "/medical-school", destination: "/medical-school-application", permanent: true },
+      { source: "/personal-statement-services", destination: "/personal-statement", permanent: true },
+      { source: "/medical-school-personal-statement-help", destination: "/personal-statement", permanent: true },
+      { source: "/application-writing-services", destination: "/personal-statement", permanent: true },
+      { source: "/interview-preparation", destination: "/college-interviews", permanent: true },
+      { source: "/admissions-interview-preparation", destination: "/college-interviews", permanent: true },
+      { source: "/letters-of-recommendation-services", destination: "/letters-of-recommendation", permanent: true },
+      { source: "/recommendation-letters", destination: "/letters-of-recommendation", permanent: true },
+      { source: "/law-school-admissions", destination: "/law-school-application", permanent: true },
+      { source: "/free-consultation", destination: "/contact-us", permanent: true },
+      { source: "/college-application", destination: "/college-admissions", permanent: true },
+
+      // Old WordPress taxonomy URLs (from the old sitemap)
+      { source: "/category/:slug*", destination: "/blog", permanent: true },
+      { source: "/tag/:slug*", destination: "/blog", permanent: true },
+      { source: "/element_category/:slug*", destination: "/", permanent: true },
 
       // Blog detail pages are now live at /blog/[slug]
     ];

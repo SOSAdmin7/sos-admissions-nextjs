@@ -1,4 +1,4 @@
-// Auto-generated from WordPress API - 157 posts
+// Auto-generated from WordPress API - 179 posts
 export type BlogPost = {
   slug: string;
   title: string;
@@ -1264,5 +1264,181 @@ export const blogPosts: BlogPost[] = [
     "date": "2017-11-28",
     "image": "https://sosadmissions.com/wp-content/uploads/2026/03/college-admissions-guide-2.webp",
     "category": "College Admissions"
+  },
+  {
+    "slug": "6805-2",
+    "title": "Crafting the Perfect Medical School Letter of Intent",
+    "excerpt": "Crafting the Perfect Medical School Letter of Intent: A Guide Alright, so you've jumped through all the hoops, aced your exams, and now you're eyeing that top-choice med school ...",
+    "date": "2024-09-06",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/blog-6805-1.webp",
+    "category": "Medical School"
+  },
+  {
+    "slug": "application-rejection-what-to-do-next",
+    "title": "How to Handle Application Rejection and What to Do Next",
+    "excerpt": "Look, there's no point in pretending rejection feels good. It doesn't. You've been riding this thing for months. Maybe years ...",
+    "date": "2026-05-12",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/application-rejection-comeback-1.webp",
+    "category": "General"
+  },
+  {
+    "slug": "college-application-essay",
+    "title": "How to Write a College Application Essay That Stands Out",
+    "excerpt": "Your college application essay is your chance to show admissions officers who you are as a person. And honestly, it's the part of your application that can make the biggest difference ...",
+    "date": "2026-05-19",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/college-application-essay-notebook.webp",
+    "category": "College Admissions"
+  },
+  {
+    "slug": "college-transfer-applications",
+    "title": "College Transfer Applications: How to Successfully Switch Schools",
+    "excerpt": "So you're at a college and its not working out the way you thought. Maybe you chose the wrong school. Maybe something changed ...",
+    "date": "2026-03-18",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/college-transfer-guide.webp",
+    "category": "College Admissions"
+  },
+  {
+    "slug": "computer-science-graduate-school-admissions",
+    "title": "Computer Science Graduate School Admissions Guide",
+    "excerpt": "Getting into a good computer science graduate program is not like applying to other fields and honestly most CS applicants don't understand the game ...",
+    "date": "2026-03-23",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/computer-science-grad-school.webp",
+    "category": "Graduate School"
+  },
+  {
+    "slug": "dental-school-admissions-guide",
+    "title": "Dental School Admissions: The Complete Guide to Getting In",
+    "excerpt": "Real talk. Getting into dental school is hard. Like actually hard, not just oh this will take some studying hard ...",
+    "date": "2026-03-30",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/hiking-1811970_640.webp",
+    "category": "Dental School"
+  },
+  {
+    "slug": "dental-school-personal-statement",
+    "title": "How to Write a Dental School Personal Statement That Actually Gets Read",
+    "excerpt": "Look, you're probably stressed about this. Everyone is. But the dental school personal statement? It's honestly where you get to be a real human for a moment ...",
+    "date": "2026-05-25",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/dental-school-personal-statement.webp",
+    "category": "Dental School"
+  },
+  {
+    "slug": "how-much-does-medical-school-cost",
+    "title": "How Much Does Medical School Cost and How to Pay for It",
+    "excerpt": "Medical school is expensive. Like legitimately one of the most expensive educations you can get in the US. Were talking somewhere between 200K and 350K ...",
+    "date": "2026-04-01",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/medical-school-cost-guide-2.webp",
+    "category": "Medical School"
+  },
+  {
+    "slug": "how-to-choose-a-medical-school",
+    "title": "How to Choose a Medical School: The Complete Guide",
+    "excerpt": "Getting into one medical school is hard enough. But what happens when you actually get multiple acceptances and have to choose? ...",
+    "date": "2026-03-25",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/library-7408106_640.webp",
+    "category": "Medical School"
+  },
+  {
+    "slug": "how-to-get-into-a-phd-program",
+    "title": "How to Get Into a PhD Program: The Complete Guide",
+    "excerpt": "PhD admissions? Totally different universe from anything you've done before. College admissions cared about your GPA and SAT ...",
+    "date": "2026-04-28",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/blog-9494-1.webp",
+    "category": "Graduate School"
+  },
+  {
+    "slug": "how-to-get-into-a-top-mba-program",
+    "title": "How to Get Into a Top MBA Program: What You Need to Know",
+    "excerpt": "Getting into a top MBA program is a different beast than getting into law school or undergrad. Schools want applicants who have actual work experience ...",
+    "date": "2026-04-30",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/mba-program-guide.webp",
+    "category": "MBA"
+  },
+  {
+    "slug": "how-to-get-into-an-ivy-league-school",
+    "title": "How to Get Into an Ivy League School: The Strategic Guide",
+    "excerpt": "Getting into an Ivy League school is hard. Like, really hard. Harvard has a 3% acceptance rate. These aren't schools where good grades alone are enough ...",
+    "date": "2026-05-04",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/ivy-league-guide.webp",
+    "category": "College Admissions"
+  },
+  {
+    "slug": "how-to-get-into-dental-school",
+    "title": "How to Get Into Dental School: A Complete Guide",
+    "excerpt": "Real talk. Getting into dental school is hard. It's competitive, expensive, and requires you to basically have your life together ...",
+    "date": "2026-04-20",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/dental-school-guide.webp",
+    "category": "Dental School"
+  },
+  {
+    "slug": "how-to-get-into-law-school",
+    "title": "How to Get Into Law School: A Complete Guide",
+    "excerpt": "Getting into law school isn't just about acing the LSAT and having a stellar GPA, though those definitely matter. There's a whole strategy that goes into building a competitive application ...",
+    "date": "2026-04-06",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/gavel-7499911_640.webp",
+    "category": "Law School"
+  },
+  {
+    "slug": "how-to-get-into-medical-school-low-gpa",
+    "title": "How to Get Into Medical School with a Low GPA",
+    "excerpt": "Okay so your GPA isn't where you wanted it to be. Maybe you had a rough freshman year. Maybe organic chemistry absolutely destroyed you ...",
+    "date": "2026-04-08",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/medical-school-low-gpa.webp",
+    "category": "Medical School"
+  },
+  {
+    "slug": "how-to-get-into-nursing-school",
+    "title": "How to Get Into Nursing School: A Complete Guide",
+    "excerpt": "So you want to get into nursing school. Except here's the thing: there's not just one path. There's like five different paths with different timelines ...",
+    "date": "2026-04-13",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/blog-9457-1.webp",
+    "category": "Nursing"
+  },
+  {
+    "slug": "how-to-get-into-pa-school",
+    "title": "How to Get Into PA School: A Complete Guide",
+    "excerpt": "Physician Assistant programs are incredibly competitive right now. A lot of people are interested in healthcare careers but don't want to do medical school ...",
+    "date": "2026-04-15",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/blog-9458-1.webp",
+    "category": "PA School"
+  },
+  {
+    "slug": "how-to-get-into-veterinary-school",
+    "title": "How to Get Into Veterinary School: A Complete Guide",
+    "excerpt": "Alright so you want to be a veterinarian. That's awesome but you need to know upfront: vet school is COMPETITIVE. Like medical school competitive ...",
+    "date": "2026-04-23",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/veterinary-school-guide.webp",
+    "category": "Veterinary School"
+  },
+  {
+    "slug": "how-to-get-patient-care-hours-pa-school",
+    "title": "How to Get Patient Care Hours for PA School",
+    "excerpt": "Patient care hours are basically the currency of PA school admissions. You can have a perfect GPA and an amazing GRE score, but if you don't have hours, you're not getting in ...",
+    "date": "2026-05-07",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/patient-care-hours-pa-school.webp",
+    "category": "PA School"
+  },
+  {
+    "slug": "letter-of-recommendation-medical-school",
+    "title": "How to Get a Strong Letter of Recommendation for Medical School",
+    "excerpt": "So here's the thing about recommendation letters for med school. Most people absolutely bomb this part without even realizing it ...",
+    "date": "2026-03-16",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/02/university-student-1548445_640.webp",
+    "category": "Medical School"
+  },
+  {
+    "slug": "medical-school-secondary-essays",
+    "title": "How to Write Medical School Secondary Essays Fast",
+    "excerpt": "So you submitted your AMCAS primary and you're feeling pretty good about yourself. Then about two weeks later your inbox starts blowing up with secondary applications ...",
+    "date": "2026-05-18",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/medical-school-secondary-essays-1.webp",
+    "category": "Medical School"
+  },
+  {
+    "slug": "mmi-interview-preparation",
+    "title": "How to Prepare for an MMI Interview",
+    "excerpt": "If you're applying to medical school or dentistry, there's a good chance you're going to encounter an MMI interview ...",
+    "date": "2026-05-14",
+    "image": "https://sosadmissions.com/wp-content/uploads/2026/03/mmi-interview-preparation.webp",
+    "category": "Medical School"
   }
 ];

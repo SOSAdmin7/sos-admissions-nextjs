@@ -1,14 +1,19 @@
 import { Metadata } from 'next';
-import { LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
 import { PurchaseForm } from '../purchase/PurchaseForm';
 
 export const metadata: Metadata = {
-  title: 'Admissions Consulting Packages',
+  title: { absolute: 'Admissions Consulting Services & Options - SOS Admissions' },
   description:
-    'View our admissions consulting packages and get started with SOS Admissions. Expert guidance for college, graduate school, medical school, and more.',
+    'Explore our admissions consulting services for college, graduate school, medical school, law school, MBA, and professional programs. Find the right package for you.',
   alternates: {
-    canonical: 'https://sosadmissions.com/admissions-options-page',
+    canonical: 'https://sosadmissions.com/admissions-options-page/',
+  },
+  openGraph: {
+    title: 'Admissions Consulting Services & Options - SOS Admissions',
+    description:
+      'Explore our admissions consulting services for college, graduate school, medical school, law school, MBA, and professional programs. Find the right package for you.',
+    url: 'https://sosadmissions.com/admissions-options-page/',
+    type: 'website',
   },
 };
 
@@ -23,9 +28,6 @@ export default function AdmissionsOptionsPage() {
           <p className="text-lg text-slate-600">
             Fill out the form below to get started. We will match you with the right consultant for your needs.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 

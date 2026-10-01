@@ -26,10 +26,14 @@ export const metadata: Metadata = {
   title: 'Our Services',
   description:
     'Explore our comprehensive range of admission consulting services for undergraduate, graduate, healthcare, and professional programs.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/services/',
+  },
   openGraph: {
     title: 'Our Services',
     description:
       'Explore our comprehensive range of admission consulting services for undergraduate, graduate, healthcare, and professional programs.',
+    url: 'https://sosadmissions.com/services/',
     type: 'website',
   },
 };
@@ -80,7 +84,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-blue py-16 md:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-blue py-10 md:py-14 lg:py-32">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue rounded-full blur-3xl"></div>
@@ -105,7 +109,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services by Category */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {Object.entries(servicesByCategory).map(([categoryKey, categoryServices]) => (
             <div key={categoryKey} className="mb-20 last:mb-0">
@@ -119,8 +123,12 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              {/* Services Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Services Grid — columns chosen per count so no card is left alone on a row */}
+              <div className={`grid grid-cols-1 gap-8 ${
+                  categoryServices.length === 2 ? 'md:grid-cols-2 max-w-4xl'
+                : categoryServices.length === 4 ? 'md:grid-cols-2'
+                : 'md:grid-cols-2 lg:grid-cols-3'
+              }`}>
                 {categoryServices.map((service) => (
                   <Link
                     key={service.id}
@@ -169,7 +177,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Summary Stats */}
-      <section className="bg-gradient-to-r from-navy-light to-blue py-16 md:py-24">
+      <section className="bg-gradient-to-r from-navy-light to-blue py-10 md:py-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -195,7 +203,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-cream">
+      <section className="py-10 md:py-14 bg-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Ready to Get Started?
@@ -208,7 +216,7 @@ export default function ServicesPage() {
               href="/contact-us"
               className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-yellow-500 text-navy font-bold py-4 px-8 rounded-lg transition-colors"
             >
-              Schedule a Free Consultation
+              Schedule a Free Initial Consultation
               <ChevronRight className="w-5 h-5" />
             </Link>
             <Link

@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'International Student Admissions Consulting',
+  title: { absolute: 'Admissions Consulting for International Students - SOS Admissions' },
   description:
-    'Specialized support for international student applications and visa navigation. Financial aid strategy and cultural fit coaching.',
+    'We have helped thousands of international students to successfully gain admissions to top colleges and graduate schools including MBA and medical school in the USA.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/international-students/',
+  },
   openGraph: {
-    title: 'International Student Admissions Consulting',
-    description: 'Specialized support for international student applications and visa navigation.',
+    title: 'Admissions Consulting for International Students - SOS Admissions',
+    description:
+      'We have helped thousands of international students to successfully gain admissions to top colleges and graduate schools including MBA and medical school in the USA.',
+    url: 'https://sosadmissions.com/international-students/',
     type: 'website',
   },
 };

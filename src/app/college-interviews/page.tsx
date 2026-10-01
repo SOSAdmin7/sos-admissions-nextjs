@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Interview Coaching & Preparation',
+  title: { absolute: 'College Interview Coaching | Alumni & Ivy League Prep - SOS Admissions' },
   description:
-    'One-on-one and group interview preparation with multiple practice sessions. Mock interviews with expert feedback.',
+    'Expert college interview coaching for alumni interviews, on-campus interviews, and Ivy League admissions. Practice mock interviews and ace your college interview.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/college-interviews/',
+  },
   openGraph: {
-    title: 'Interview Coaching & Preparation',
+    title: 'College Interview Coaching | Alumni & Ivy League Prep - SOS Admissions',
     description:
-      'One-on-one and group interview preparation with multiple practice sessions.',
+      'Expert college interview coaching for alumni interviews, on-campus interviews, and Ivy League admissions. Practice mock interviews and ace your college interview.',
+    url: 'https://sosadmissions.com/college-interviews/',
     type: 'website',
   },
 };

@@ -4,8 +4,9 @@ import { useState, useEffect, useRef } from 'react';
 import { getServiceBySlug, type PricingItem, type PricingTier } from '@/data/services';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { LegacyImageGallery, LegacyStripSection, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, getLegacyServiceAssets } from '@/lib/legacyAssets';
+import { LegacyYouTubeCard } from '@/components/LegacyMedia';
+import { TrustBar, SchoolLogos, type SchoolLogosVariant } from '@/components/TrustLogos';
+import { getLegacyServiceAssets } from '@/lib/legacyAssets';
 import {
   ChevronRight,
   ChevronDown,
@@ -89,19 +90,19 @@ function StatCounters() {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-8 md:py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-3 gap-3 sm:gap-8 md:gap-12">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-4xl sm:text-5xl font-bold text-[#1B2B4B] mb-2">
+              <div className="text-3xl sm:text-5xl font-bold text-[#1B2B4B] mb-2">
                 <AnimatedCounter
                   target={stat.target}
                   suffix={stat.suffix}
                   decimals={0}
                 />
               </div>
-              <p className="text-gray-500 text-sm sm:text-base">{stat.label}</p>
+              <p className="text-gray-500 text-xs sm:text-base [text-wrap:balance]">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -134,7 +135,7 @@ function Differentiators() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-10 md:py-14 bg-[#F8F9FA]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -200,7 +201,7 @@ function TestimonialCarousel() {
   }, [testimonials.length]);
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-10 md:py-14 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -244,7 +245,7 @@ function FAQSection({ faqs }: { faqs: { q: string; a: string }[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-10 md:py-14 bg-[#F8F9FA]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -281,7 +282,7 @@ function FAQSection({ faqs }: { faqs: { q: string; a: string }[] }) {
 /* ───────────────────────── FINAL CTA ───────────────────────── */
 function FinalCTA({ title }: { title: string }) {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066]">
+    <section className="py-10 md:py-14 bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Get Expert Help With Your {title} Application
@@ -294,7 +295,7 @@ function FinalCTA({ title }: { title: string }) {
             href="/contact-us"
             className="inline-flex items-center justify-center gap-2 bg-[#E8613C] hover:bg-[#D4522E] text-white font-semibold py-4 px-8 rounded-full transition-colors text-lg"
           >
-            Book Your Free Consultation
+            Schedule a Free Initial Consultation
             <ChevronRight className="w-5 h-5" />
           </Link>
         </div>
@@ -303,16 +304,36 @@ function FinalCTA({ title }: { title: string }) {
             <Phone size={16} />
             (310) 951-4008
           </a>
-          <a href="mailto:info@sosadmissions.com" className="flex items-center gap-2 hover:text-white transition-colors">
-            <Mail size={16} />
-            info@sosadmissions.com
-          </a>
         </div>
         <p className="text-blue-200/70 text-sm max-w-xl mx-auto">
           Contact us via FaceTime, Google Chat, Zoom, or WhatsApp from anywhere in the world, or come to our office in the Beverly Hills area of Los Angeles.
         </p>
       </div>
     </section>
+  );
+}
+
+/* Render an à-la-carte price so long/text prices stay tidy on narrow mobile columns.
+   - "$500 (Call for Details)"  → bold amount, small note underneath
+   - "$1,685"                   → kept on one line
+   - "Pricing Based on Length…" → smaller text that wraps as a balanced block, not word-per-line */
+function AlaCartePrice({ price }: { price: string }) {
+  const amountWithNote = price.match(/^(\$[\d,]+(?:\.\d+)?)\s*(\(.+\))$/);
+  if (amountWithNote) {
+    return (
+      <>
+        <span className="block">{amountWithNote[1]}</span>
+        <span className="block whitespace-nowrap text-xs font-normal text-gray-400">{amountWithNote[2]}</span>
+      </>
+    );
+  }
+  if (/^\$[\d,]+(?:\.\d+)?$/.test(price)) {
+    return <span className="whitespace-nowrap">{price}</span>;
+  }
+  return (
+    <span className="block text-xs sm:text-sm font-normal text-gray-500 [text-wrap:balance]">
+      {price}
+    </span>
   );
 }
 
@@ -327,7 +348,7 @@ function PricingSection({
   footnote?: string;
 }) {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-10 md:py-14 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -338,9 +359,17 @@ function PricingSection({
           </p>
         </div>
 
-        {/* Tier Cards */}
+        {/* Tier Cards — column count chosen per tier total to avoid a lonely orphan card */}
         {tiers && tiers.length > 0 && (
-          <div className={`grid grid-cols-1 gap-8 mb-12 ${tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : tiers.length >= 3 ? 'md:grid-cols-3' : 'max-w-lg mx-auto'}`}>
+          <div className={`grid grid-cols-1 gap-8 mb-12 ${
+              tiers.length === 1 ? 'max-w-md mx-auto'
+            : tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto'
+            : tiers.length === 3 ? 'md:grid-cols-3'
+            : tiers.length === 4 ? 'md:grid-cols-2 max-w-5xl mx-auto'
+            : tiers.length === 6 ? 'md:grid-cols-2 lg:grid-cols-3'
+            : tiers.length === 7 ? 'md:grid-cols-2 lg:grid-cols-4'
+            : 'md:grid-cols-2 lg:grid-cols-3'
+          }`}>
             {tiers.map((tier, idx) => (
               <div
                 key={tier.name}
@@ -352,7 +381,7 @@ function PricingSection({
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 {tier.popular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#E8613C] text-white text-xs font-semibold px-4 py-1 rounded-full uppercase tracking-wider">
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#E8613C] text-white text-xs font-semibold px-4 py-1 rounded-full uppercase tracking-wider">
                     Most Popular
                   </span>
                 )}
@@ -391,14 +420,14 @@ function PricingSection({
                 A La Carte Services
               </h3>
             )}
-            <div className="bg-[#F8F9FA] rounded-xl border border-gray-200 overflow-hidden">
+            <div className="bg-[#F8F9FA] rounded-xl border border-gray-200 overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 px-6 text-sm font-semibold text-[#1B2B4B] uppercase tracking-wider">
+                    <th className="text-left py-4 px-4 sm:px-6 text-sm font-semibold text-[#1B2B4B] uppercase tracking-wider">
                       Service
                     </th>
-                    <th className="text-right py-4 px-6 text-sm font-semibold text-[#1B2B4B] uppercase tracking-wider">
+                    <th className="text-right py-4 px-4 sm:px-6 text-sm font-semibold text-[#1B2B4B] uppercase tracking-wider">
                       Price
                     </th>
                   </tr>
@@ -409,14 +438,14 @@ function PricingSection({
                       key={i}
                       className={i < alaCarte.length - 1 ? 'border-b border-gray-100' : ''}
                     >
-                      <td className="py-4 px-6">
+                      <td className="py-4 px-4 sm:px-6">
                         <span className="text-[#1B2B4B] font-medium">{item.service}</span>
                         {item.note && (
                           <span className="block text-gray-400 text-sm mt-0.5">{item.note}</span>
                         )}
                       </td>
-                      <td className="py-4 px-6 text-right text-[#1B2B4B] font-semibold whitespace-nowrap">
-                        {item.price}
+                      <td className="py-4 px-4 sm:px-6 text-right text-[#1B2B4B] font-semibold align-top">
+                        <AlaCartePrice price={item.price} />
                       </td>
                     </tr>
                   ))}
@@ -440,7 +469,7 @@ function PricingSection({
 /* ───────────────────────── FIELDS SERVED ───────────────────────── */
 function FieldsServed({ fields }: { fields: string[] }) {
   return (
-    <section className="py-16 md:py-24 bg-[#F8F9FA]">
+    <section className="py-10 md:py-14 bg-[#F8F9FA]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -451,7 +480,7 @@ function FieldsServed({ fields }: { fields: string[] }) {
           {fields.map((field) => (
             <span
               key={field}
-              className="inline-block bg-white border border-gray-200 text-[#1B2B4B] font-medium text-sm px-4 py-2 rounded-full hover:border-[#E8613C] hover:text-[#E8613C] transition-colors"
+              className="inline-block whitespace-nowrap bg-white border border-gray-200 text-[#1B2B4B] font-medium text-sm px-4 py-2 rounded-full hover:border-[#E8613C] hover:text-[#E8613C] transition-colors"
             >
               {field}
             </span>
@@ -470,7 +499,7 @@ const programFAQs: { [key: string]: { q: string; a: string }[] } = {
     { q: 'Do I need to explain why I want to transfer?', a: 'Yes, the "Why Transfer?" essay is critical. Schools want to understand your motivation and ensure you have a clear, positive reason for transferring. We help you build a compelling narrative that avoids common pitfalls.' },
     { q: 'How is transfer admissions different from freshman admissions?', a: 'Transfer admissions focuses heavily on your college performance rather than high school. Schools want to see academic growth, maturity, and a clear reason for transferring. The essay and recommendations from college professors carry much more weight.' },
     { q: 'What does SOS Admissions\' transfer consulting include?', a: 'Our transfer package includes school selection strategy, essay development, activity list optimization, recommendation letter guidance, and application review. We guide you through every step from planning to submission.' },
-    { q: 'How much does transfer admissions consulting cost?', a: 'Our transfer consulting starts at $5,175 for the first school, with additional schools at $775 each. We also offer individual services like essay editing and application planning. Visit our pricing page or call us for details.' },
+    { q: 'How much does transfer admissions consulting cost?', a: 'Our transfer consulting starts at $7,175 for the first school, with additional schools at $875 each. We also offer individual services like essay editing and application planning. Visit our pricing page or call us for details.' },
   ],
   'international-students': [
     { q: 'Do you help with visa and immigration questions?', a: 'While we are not immigration attorneys, we guide international students through the application process including understanding F-1 visa requirements, SEVIS, and how admissions decisions affect your visa status. We can recommend immigration attorneys when needed.' },
@@ -490,14 +519,14 @@ const programFAQs: { [key: string]: { q: string; a: string }[] } = {
     { q: 'Do I need research experience to get into a top graduate program?', a: 'For research-oriented programs, yes. For professional master\'s programs, relevant work experience is often more valuable. We help you identify what your target programs prioritize and position your experience accordingly.' },
     { q: 'How do you help with the statement of purpose?', a: 'We guide you through developing a compelling narrative that connects your background, research interests, and career goals. Our advisors help you strike the right balance between academic depth and personal voice.' },
     { q: 'Can you help me choose which graduate programs to apply to?', a: 'Absolutely. School selection is one of our core services. We analyze your profile, career goals, and preferences to build a strategic list of reach, target, and safety programs.' },
-    { q: 'What does graduate school consulting cost?', a: 'Our consulting starts at $5,175 for the first school, with additional schools at $775 each. We also offer individual services like essay editing starting at $985. Call us for a personalized quote.' },
+    { q: 'What does graduate school consulting cost?', a: 'Our consulting starts at $7,175 for the first school, with additional schools at $875 each. We also offer individual services like essay editing starting at $1,185. Call us for a personalized quote.' },
   ],
   'mba-programs': [
     { q: 'What GMAT/GRE score do I need for a top MBA program?', a: 'Top 10 programs typically see median GMAT scores of 720-740. However, a strong score alone won\'t get you in. Schools evaluate your complete profile including work experience, leadership, and personal qualities.' },
     { q: 'How many years of work experience do I need?', a: 'Most top MBA programs prefer 3-7 years of professional experience. However, some programs accept candidates with less experience. We help you determine the right timing for your application.' },
     { q: 'Do you help with MBA scholarship applications?', a: 'Yes, we guide you through merit-based scholarship applications and help you write compelling scholarship essays. Many of our clients receive significant scholarship offers from their target programs.' },
     { q: 'What makes an MBA application stand out?', a: 'Beyond strong scores and experience, schools want authentic leadership stories, clear career goals, and genuine reasons for wanting an MBA. We help you identify and articulate what makes your story unique.' },
-    { q: 'How much does MBA admissions consulting cost?', a: 'Our MBA consulting starts at $5,175 for the first school, with additional schools at $775 each. Given the ROI of a top MBA, our clients consider this a worthwhile investment.' },
+    { q: 'How much does MBA admissions consulting cost?', a: 'Our MBA consulting starts at $7,175 for the first school, with additional schools at $875 each. Given the ROI of a top MBA, our clients consider this a worthwhile investment.' },
   ],
   'medical-school': [
     { q: 'When should I start preparing for medical school applications?', a: 'Ideally, start planning in your sophomore year of college. This gives you time to complete prerequisites, gain clinical experience, study for the MCAT, and build meaningful extracurriculars.' },
@@ -505,7 +534,7 @@ const programFAQs: { [key: string]: { q: string; a: string }[] } = {
     { q: 'Do you help with AMCAS, AACOMAS, and secondary applications?', a: 'Yes, we guide you through every step of the primary and secondary application process, including the AMCAS work and activities section, personal statement, and school-specific secondary essays.' },
     { q: 'How do you help with the medical school interview?', a: 'We provide interview preparation including traditional, MMI, and panel formats. Our mock interviews simulate real conditions so you feel confident and prepared on interview day.' },
     { q: 'Can you help career changers applying to medical school?', a: 'Absolutely. We have extensive experience helping non-traditional applicants, including career changers, post-bacc students, and those with gaps in their education. We help you present your unique path as a strength.' },
-    { q: 'What does medical school consulting cost?', a: 'Our consulting starts at $5,175. Given that medical school applications often involve 15-25 schools, our per-school additional rate of $775 provides significant value.' },
+    { q: 'What does medical school consulting cost?', a: 'Our consulting starts at $7,175. Given that medical school applications often involve 15-25 schools, our per-school additional rate of $875 provides significant value.' },
   ],
   'dental-school': [
     { q: 'What DAT score do I need for dental school?', a: 'Competitive applicants typically score 20+ on the DAT. Top programs look for 22+. We help you develop a study plan and timeline that works with your schedule.' },
@@ -524,29 +553,56 @@ const programFAQs: { [key: string]: { q: string; a: string }[] } = {
     { q: 'Does my undergraduate major matter for law school?', a: 'No specific major is required or preferred. Law schools value strong analytical thinking and writing skills from any discipline. What matters most is your GPA and LSAT score, followed by your personal statement and experience.' },
     { q: 'How do you help with law school personal statements?', a: 'We help you identify compelling themes from your experience and build a narrative that showcases your analytical abilities, character, and motivation for studying law. Each essay is adjusted to specific schools when required.' },
     { q: 'Can you help with scholarship negotiations?', a: 'Yes, we guide clients through scholarship negotiation strategies. Many law schools have room to increase initial offers, and we help you approach these conversations professionally.' },
-    { q: 'What does law school consulting cost?', a: 'Our consulting starts at $5,175 for the first school, with additional schools at $775 each. We also offer standalone personal statement and application review services.' },
+    { q: 'What does law school consulting cost?', a: 'Our consulting starts at $7,175 for the first school, with additional schools at $875 each. We also offer standalone personal statement and application review services.' },
   ],
   'personal-statement-writing': [
     { q: 'How long does the personal statement process take?', a: 'Typically 2-4 weeks from initial brainstorming to final draft. We work through multiple rounds of revision to ensure your essay is polished and compelling.' },
     { q: 'Do you write the essay for me?', a: 'No. The essay must be authentically yours. We guide you through brainstorming, help you identify your strongest stories, provide detailed feedback on drafts, and coach you through revisions. The voice and content are always yours.' },
     { q: 'Can you help with supplemental essays too?', a: 'Yes, we help with all types of application essays including "Why This School" supplements, diversity statements, and additional information sections.' },
-    { q: 'How much does personal statement help cost?', a: 'Personal statement editing starts at $985 for essays under 900 words and $1,485 for essays under 1,500 words. This includes multiple rounds of revision and detailed feedback.' },
+    { q: 'How much does personal statement help cost?', a: 'Personal statement editing starts at $1,185 for essays under 900 words and $1,685 for essays under 1,500 words. This includes multiple rounds of revision and detailed feedback.' },
   ],
   'interview-coaching': [
     { q: 'How many mock interview sessions do I need?', a: 'Most students benefit from 2-4 mock interview sessions. We start with a diagnostic session to assess your baseline, then work on specific areas for improvement in subsequent sessions.' },
     { q: 'Do you prepare for specific school interview formats?', a: 'Yes, we prepare you for traditional interviews, MMI (Multiple Mini Interview), group interviews, panel interviews, and alumni interviews. Each format requires a different approach.' },
     { q: 'What if my interview is virtual?', a: 'We provide specific coaching for virtual interviews, including technical setup, eye contact with the camera, and maintaining energy in a virtual format. Many of our mock sessions are conducted virtually.' },
-    { q: 'How much does interview coaching cost?', a: 'Interview coaching is $1,275 for college, graduate, law, MBA, and residency interviews. Medical school MMI coaching is $1,675. Each session includes a 2-hour coaching session and a 1-hour follow-up mock interview.' },
+    { q: 'How much does interview coaching cost?', a: 'Interview coaching is $1,475 for college, graduate, law, MBA, and residency interviews. Medical school MMI coaching is $1,675. Each session includes a 2-hour coaching session and a 1-hour follow-up mock interview.' },
   ],
 };
 
 const defaultFAQs = [
-  { q: 'How do I get started with SOS Admissions?', a: 'Simply fill out our contact form or call us at (310) 951-4008 to schedule a free consultation. We\'ll discuss your goals, timeline, and how we can help. There\'s no obligation.' },
+  { q: 'How do I get started with SOS Admissions?', a: 'Simply fill out our contact form or call us at (310) 951-4008 to schedule a free initial consultation. We\'ll discuss your goals, timeline, and how we can help. There\'s no obligation.' },
   { q: 'What makes SOS Admissions different from other consulting firms?', a: 'Our team includes former admissions committee members from selective universities, we\'ve been doing this for 27 years with thousands of clients, and we publish our pricing transparently. Every service is clearly priced on our website so you can plan with confidence.' },
   { q: 'Do you offer payment plans?', a: 'Yes, we offer flexible payment options. Contact us to discuss a plan that works for your family\'s budget.' },
   { q: 'Can you work with students remotely?', a: 'Absolutely. We work with students across the U.S. and in over 80 countries worldwide via video conferencing. Our remote services are just as effective as in-person consulting.' },
   { q: 'What is your success rate?', a: 'Our overall client acceptance rate is 98%. We\'ve helped over 1,000 students gain admission to Ivy League schools alone. Every student\'s situation is different, and we provide honest assessments of your chances from the start.' },
 ];
+
+
+/* ─────────────── per-program school logo sets ─────────────── */
+function getSchoolVariant(key: string): SchoolLogosVariant {
+  if (key.startsWith('mba')) return 'mba';
+  if (key.startsWith('law')) return 'law';
+  if (key.startsWith('dental')) return 'dental';
+  if (key.startsWith('pa-school')) return 'pa';
+  if (key.startsWith('veterinary')) return 'vet';
+  if (
+    key.startsWith('medical') ||
+    key.startsWith('bs-md')
+  ) return 'medical';
+  if (
+    key.includes('nursing') ||
+    key.includes('nurse') ||
+    key.includes('crna')
+  ) return 'nursing';
+  if (
+    key.startsWith('masters') ||
+    key.startsWith('phd') ||
+    key.startsWith('graduate') ||
+    key.startsWith('computer-science') ||
+    key.startsWith('psychology')
+  ) return 'grad';
+  return 'college';
+}
 
 /* ───────────────────────── MAIN TEMPLATE ───────────────────────── */
 interface ServicePageTemplateProps {
@@ -563,20 +619,20 @@ export default function ServicePageTemplate({ slug, legacyVariant }: ServicePage
 
   const faqs = programFAQs[slug] || defaultFAQs;
   const legacyAssets = getLegacyServiceAssets(legacyVariant ?? slug);
-  const heroVideos = [DEFAULT_LEGACY_VIDEO, ...(legacyAssets.extraVideos ?? [])].filter(
-    (video, index, videos) => videos.findIndex((candidate) => candidate.id === video.id) === index
-  );
+  // Only show page-specific videos — the default/generic video belongs on the homepage only
+  const heroVideos = legacyAssets.extraVideos ?? [];
+  const schoolVariant = getSchoolVariant(legacyVariant ?? slug);
 
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066] min-h-[70vh] flex items-center">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066]">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-96 h-96 bg-[#E8613C] rounded-full blur-[120px]" />
           <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#2A4066] rounded-full blur-[100px]" />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-14 md:py-20">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 md:py-12">
           <span className="inline-block text-[#E8613C] text-sm font-semibold uppercase tracking-[0.15em] mb-6 animate-[fadeInUp_0.5s_ease-out_both]">
             {service.title}
           </span>
@@ -600,7 +656,7 @@ export default function ServicePageTemplate({ slug, legacyVariant }: ServicePage
               href="/contact-us"
               className="inline-flex items-center justify-center gap-2 bg-[#E8613C] hover:bg-[#D4522E] text-white font-semibold py-4 px-8 rounded-full transition-colors text-lg shadow-lg shadow-[#E8613C]/25"
             >
-              Book Your Free Consultation
+              Schedule a Free Initial Consultation
               <ChevronRight className="w-5 h-5" />
             </Link>
           </div>
@@ -615,22 +671,16 @@ export default function ServicePageTemplate({ slug, legacyVariant }: ServicePage
       </section>
 
       {/* Trust Bar */}
-      <LegacyStripSection
-        featuredStrip={legacyAssets.featuredStrip}
-        clientStrip={legacyAssets.clientStrip}
-        clientLabel={legacyAssets.clientLabel}
-      />
+      <TrustBar />
+
+      {/* School Logos */}
+      <SchoolLogos variant={schoolVariant} />
 
       {/* Stats */}
       <StatCounters />
 
-      <LegacyImageGallery
-        title={legacyAssets.galleryTitle}
-        images={legacyAssets.gallery ?? []}
-      />
-
       {/* What's Included */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-10 md:py-14 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B4B] mb-4">
@@ -642,16 +692,23 @@ export default function ServicePageTemplate({ slug, legacyVariant }: ServicePage
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-            {service.features.map((feature, index) => (
+            {service.features.map((feature, index) => {
+              // An odd final box would sit alone on a half-width row — let it span the full width instead
+              const isLoneLast =
+                index === service.features.length - 1 && service.features.length % 2 === 1;
+              return (
               <div
                 key={index}
-                className="flex gap-3 p-5 rounded-xl bg-[#F8F9FA] border border-gray-100 animate-[fadeInUp_0.3s_ease-out_both]"
+                className={`flex gap-3 p-5 rounded-xl bg-[#F8F9FA] border border-gray-100 animate-[fadeInUp_0.3s_ease-out_both] ${
+                  isLoneLast ? 'md:col-span-2' : ''
+                }`}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <CheckCircle2 className="w-5 h-5 text-[#E8613C] flex-shrink-0 mt-0.5" />
                 <span className="text-[#1B2B4B] font-medium">{feature}</span>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

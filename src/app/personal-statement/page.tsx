@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Personal Statement Writing & Editing',
+  title: { absolute: 'Personal Statement Writing & Editing Services - SOS Admissions' },
   description:
-    'Professional essay coaching and editing for all types of statements. Brainstorming, narrative development, and polishing.',
+    'Expert personal statement writing for college, grad school, MBA, and law school applications. Professional editing to make your story stand out.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/personal-statement/',
+  },
   openGraph: {
-    title: 'Personal Statement Writing & Editing',
-    description: 'Professional essay coaching and editing for all types of statements.',
+    title: 'Personal Statement Writing & Editing Services - SOS Admissions',
+    description:
+      'Expert personal statement writing for college, grad school, MBA, and law school applications. Professional editing to make your story stand out.',
+    url: 'https://sosadmissions.com/personal-statement/',
     type: 'website',
   },
 };

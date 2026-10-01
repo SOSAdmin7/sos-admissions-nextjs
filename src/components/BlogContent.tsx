@@ -45,7 +45,7 @@ export function BlogContent() {
   const hasMore = visibleCount < filteredPosts.length;
 
   return (
-    <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-12 md:py-10 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           {/* Main Content */}
@@ -87,7 +87,7 @@ export function BlogContent() {
                     setSelectedCategory(cat);
                     setVisibleCount(POSTS_PER_PAGE);
                   }}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition ${
                     selectedCategory === cat
                       ? 'bg-[#E8613C] text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -169,9 +169,9 @@ export function BlogContent() {
                           setVisibleCount(POSTS_PER_PAGE);
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
-                        className="flex justify-between w-full text-sm text-gray-600 hover:text-[#E8613C] transition py-1"
+                        className="flex justify-between gap-2 w-full text-sm text-gray-600 hover:text-[#E8613C] transition py-1"
                       >
-                        <span>{cat}</span>
+                        <span className="whitespace-nowrap">{cat}</span>
                         <span className="text-gray-400">({count})</span>
                       </button>
                     </li>
@@ -190,7 +190,7 @@ export function BlogContent() {
                 href="/contact-us"
                 className="block text-center bg-[#E8613C] text-white font-semibold py-2.5 rounded-lg hover:bg-[#D4522E] transition text-sm"
               >
-                Free Consultation
+                Free Initial Consultation
               </Link>
             </div>
           </div>

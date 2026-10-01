@@ -16,7 +16,7 @@ const mobileNavItems = [
       { label: 'Medical School', href: '/medical-school-application' },
       { label: 'Medical Residency', href: '/medical-residency' },
       { label: 'Law School', href: '/law-school-application' },
-      { label: 'Dental School', href: '/dental-school-admissions-consulting' },
+      { label: 'Dental School', href: '/dental-school-application' },
       { label: 'Private School', href: '/private-school-admissions' },
     ],
   },

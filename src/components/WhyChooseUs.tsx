@@ -29,7 +29,7 @@ const differentiators = [
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 bg-white">
+    <section className="relative py-10 md:py-14 lg:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 animate-[fadeInUp_0.6s_ease-out_both]">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1B2B4B] mb-4">

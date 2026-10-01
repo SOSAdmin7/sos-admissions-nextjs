@@ -197,7 +197,7 @@ export const navigationConfig: NavConfig = {
     },
   ],
   ctaButton: {
-    label: 'Schedule Consultation',
+    label: 'Schedule a Free Initial Consultation',
     href: '/contact-us',
     variant: 'primary',
   },

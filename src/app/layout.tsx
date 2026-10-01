@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     description:
       "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications.",
   },
+  verification: {
+    google: "iCDvsYI-dc9o0s2Xky2Wd2QQ47UoIqpRDEGPFBxKHdk",
+  },
   robots: {
     index: true,
     follow: true,
@@ -51,9 +54,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "https://sosadmissions.com",
-  },
+  // No site-wide canonical: every page declares its own (old-site URL with
+  // trailing slash). A layout-level canonical would wrongly cascade.
 };
 
 export default function RootLayout({

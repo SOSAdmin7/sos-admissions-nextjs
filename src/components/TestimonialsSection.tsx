@@ -37,7 +37,7 @@ export function TestimonialsSection() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 bg-navy">
+    <section className="relative py-10 md:py-14 lg:py-32 bg-navy">
       <div className={`absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg%20width=%22100%22%20height=%22100%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cdefs%3E%3Cpattern%20id=%22grid%22%20width=%22100%22%20height=%22100%22%20patternUnits=%22userSpaceOnUse%22%3E%3Cpath%20d=%22M%20100%200%20L%200%200%200%20100%22%20fill=%22none%22%20stroke=%22white%22%20stroke-width=%220.5%22/%3E%3C/pattern%3E%3C/defs%3E%3Crect%20width=%22100%25%22%20height=%22100%25%22%20fill=%22url(%2523grid)%22/%3E%3C/svg%3E')]`} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

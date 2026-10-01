@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'College Transfer Admissions Consulting',
+  title: { absolute: 'College Transfer Admissions Consulting - SOS Admissions' },
   description:
-    'Strategic guidance for community college and current university students transferring up. Transfer narrative development and GPA optimization.',
+    'Expert college transfer admissions consulting for students transferring to Ivy League and top schools. We handle Common App, essays, and transfer strategy.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/college-transfers/',
+  },
   openGraph: {
-    title: 'College Transfer Admissions Consulting',
+    title: 'College Transfer Admissions Consulting - SOS Admissions',
     description:
-      'Strategic guidance for community college and current university students transferring up.',
+      'Expert college transfer admissions consulting for students transferring to Ivy League and top schools. We handle Common App, essays, and transfer strategy.',
+    url: 'https://sosadmissions.com/college-transfers/',
     type: 'website',
   },
 };

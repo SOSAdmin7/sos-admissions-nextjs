@@ -19,7 +19,7 @@ export default function Footer() {
                 { label: 'Medical Residency', href: '/medical-residency' },
                 { label: 'Law School', href: '/law-school-application' },
                 { label: 'MBA', href: '/mba' },
-                { label: 'Dental School', href: '/dental-school-admissions-consulting' },
+                { label: 'Dental School', href: '/dental-school-application' },
                 { label: 'Private School', href: '/private-school-admissions' },
               ].map((link) => (
                 <li key={link.href}>
@@ -97,13 +97,6 @@ export default function Footer() {
                 <Phone size={16} className="text-[#E8613C] flex-shrink-0" />
                 <span className="text-sm">(310) 951-4008</span>
               </a>
-              <a
-                href="mailto:info@sosadmissions.com"
-                className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
-              >
-                <Mail size={16} className="text-[#E8613C] flex-shrink-0" />
-                <span className="text-sm">info@sosadmissions.com</span>
-              </a>
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin size={16} className="text-[#E8613C] flex-shrink-0" />
                 <span className="text-sm">Beverly Hills &amp; Los Angeles, CA</span>
@@ -159,7 +152,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; 1998&ndash;2026 SOS Admissions. All rights reserved.
+            &copy; 1998 to 2026 SOS Admissions. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">

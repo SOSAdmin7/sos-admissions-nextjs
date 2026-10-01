@@ -19,7 +19,7 @@ const navItems = [
       { label: 'Medical School', href: '/medical-school-application' },
       { label: 'Medical Residency', href: '/medical-residency' },
       { label: 'Law School', href: '/law-school-application' },
-      { label: 'Dental School', href: '/dental-school-admissions-consulting' },
+      { label: 'Dental School', href: '/dental-school-application' },
       { label: 'Private School', href: '/private-school-admissions' },
     ],
   },
@@ -67,15 +67,15 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-[72px] lg:h-[76px]">
-            {/* Logo + Tagline */}
-            <Link href="/" className="flex-shrink-0">
+            {/* Logo + Tagline — shrinks on narrow screens so the phone pill never wraps */}
+            <Link href="/" className="flex-shrink min-w-0 mr-2">
               <Image
                 src="/images/legacy/sosheader.webp"
                 alt="SOS Admissions"
                 width={473}
                 height={85}
                 priority
-                className="h-10 w-auto sm:h-11"
+                className="h-7 min-[420px]:h-8 sm:h-11 w-auto"
               />
             </Link>
 
@@ -142,12 +142,12 @@ export default function Header() {
             </div>
 
             {/* Mobile Phone + Menu */}
-            <div className="lg:hidden flex items-center gap-1">
+            <div className="lg:hidden flex items-center gap-1 flex-shrink-0">
               <a
                 href="tel:+13109514008"
-                className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-[#1B2B4B] hover:text-[#E8613C] transition-colors px-2.5 py-1.5 rounded-full bg-[#F8F9FA] border border-gray-200"
+                className="flex items-center gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-[#1B2B4B] hover:text-[#E8613C] transition-colors px-3 py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
               >
-                <Phone size={12} />
+                <Phone size={15} className="flex-shrink-0" />
                 (310) 951-4008
               </a>
               <button

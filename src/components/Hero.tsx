@@ -29,7 +29,7 @@ export function Hero() {
             Expert Admissions Consulting Since 1998
           </h1>
           <p className="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
-            We help students get into top colleges, graduate schools, medical schools, law schools, and MBA programs. Our team of former admissions officers has guided thousands of clients to acceptance at the nation&apos;s most competitive programs.
+            We help students get into top colleges, medical schools, law schools, MBA programs, medical residency programs, nursing and healthcare programs, and a wide range of graduate programs. Our team of former admissions officers has guided thousands of clients to acceptance at the nation&apos;s most competitive programs.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function Hero() {
         <div className="max-w-3xl mx-auto mb-8 md:mb-10">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <div className="aspect-video">
-              <YouTubeFacade videoId="Jqe-SDu1yoU" title="SOS Admissions – College and Graduate School Admissions Consulting" />
+              <YouTubeFacade videoId="Jqe-SDu1yoU" title="SOS Admissions, College and Graduate School Admissions Consulting" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export function Hero() {
             href="/contact-us"
             className="px-8 py-3.5 bg-[#E8613C] text-white font-semibold rounded-lg hover:bg-[#D4522E] transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-[#E8613C]/25"
           >
-            Start Your Application Strategy
+            Schedule a Free Initial Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

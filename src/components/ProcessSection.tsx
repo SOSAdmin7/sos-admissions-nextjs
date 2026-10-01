@@ -4,7 +4,7 @@ import Link from 'next/link';
 const steps = [
   {
     number: '01',
-    title: 'Free Consultation',
+    title: 'Free Initial Consultation',
     description: 'We learn about your goals, background, and aspirations to understand your unique story.',
     icon: MessageSquare,
   },
@@ -30,7 +30,7 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-b from-cream via-white to-warm-gray">
+    <section className="relative py-10 md:py-14 lg:py-32 bg-gradient-to-b from-cream via-white to-warm-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 md:mb-20 animate-[fadeInUp_0.6s_ease-out_both]">

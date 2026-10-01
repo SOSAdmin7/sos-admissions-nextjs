@@ -1,13 +1,21 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield } from 'lucide-react';
-import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: 'Read our privacy policy to understand how SOS Admissions protects your personal information.',
-  robots: 'index, follow',
+  title: { absolute: 'Privacy Policy - SOS Admissions' },
+  description:
+    'Read SOS Admissions\' privacy policy to learn how we collect, use, and protect your personal information when you use our admissions consulting services.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/privacy-policy/',
+  },
+  openGraph: {
+    title: 'Privacy Policy - SOS Admissions',
+    description:
+      'Read SOS Admissions\' privacy policy to learn how we collect, use, and protect your personal information when you use our admissions consulting services.',
+    url: 'https://sosadmissions.com/privacy-policy/',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -109,7 +117,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-navy">
             Privacy Policy
@@ -117,19 +125,11 @@ export default function PrivacyPolicyPage() {
           <p className="text-xl text-slate-600">
             How SOS Admissions protects your personal information
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 
-      <LegacyImageGallery
-        title="Legacy Privacy Page Asset"
-        images={[LEGACY_IMAGES.privacyPromo]}
-      />
-
       {/* Content Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Last Updated */}
           <div className="bg-warm-gray rounded-lg p-6 mb-12 flex items-start gap-3">
@@ -180,10 +180,10 @@ export default function PrivacyPolicyPage() {
               <div>
                 <p className="font-semibold text-navy mb-2">Email</p>
                 <a
-                  href="mailto:info@sosadmissions.com"
+                  href="tel:+13109514008"
                   className="text-blue hover:underline font-semibold"
                 >
-                  info@sosadmissions.com
+                  310-951-4008
                 </a>
               </div>
               <div>

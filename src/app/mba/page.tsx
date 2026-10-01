@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'MBA Admissions Consulting',
+  title: { absolute: 'MBA Application Consulting Service - SOS Admissions' },
   description:
-    'Strategic positioning for top-tier MBA programs. GMAT preparation, essay coaching, and interview preparation.',
+    'Expert MBA admissions consulting for top business schools. Full-service help with essays, interviews, school selection, and GMAT prep for HBS, Stanford, Wharton.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/mba/',
+  },
   openGraph: {
-    title: 'MBA Admissions Consulting',
-    description: 'Strategic positioning for top-tier MBA programs including GMAT preparation.',
+    title: 'MBA Application Consulting Service - SOS Admissions',
+    description:
+      'Expert MBA admissions consulting for top business schools. Full-service help with essays, interviews, school selection, and GMAT prep for HBS, Stanford, Wharton.',
+    url: 'https://sosadmissions.com/mba/',
     type: 'website',
   },
 };

@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'CRNA Admissions Consulting',
+  title: { absolute: 'CRNA School Admissions Consulting Services | SOS Admissions' },
   description:
-    'Admissions support for nurse anesthesia applicants applying to competitive CRNA and DNP-CRNA programs.',
+    'Expert CRNA school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and shadowing hours for nurse anesthetist programs.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/crna-admissions/',
+  },
   openGraph: {
-    title: 'CRNA Admissions Consulting',
-    description: 'Admissions support for nurse anesthesia applicants applying to competitive CRNA and DNP-CRNA programs.',
+    title: 'CRNA School Admissions Consulting Services | SOS Admissions',
+    description:
+      'Expert CRNA school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and shadowing hours for nurse anesthetist programs.',
+    url: 'https://sosadmissions.com/crna-admissions/',
     type: 'website',
   },
 };

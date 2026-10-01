@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Medical Residency Interview Preparation',
+  title: { absolute: 'Medical Residency Interview Coaching - SOS Admissions' },
   description:
-    'Specialized interview coaching for medical residency programs. Program selection strategy and interview practice sessions.',
+    'Expert residency interview coaching from former program directors. 98.4% match rate. Prepare for ERAS interviews, rank lists, and specialty-specific questions.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/medical-residency-interview/',
+  },
   openGraph: {
-    title: 'Medical Residency Interview Preparation',
+    title: 'Medical Residency Interview Coaching - SOS Admissions',
     description:
-      'Specialized interview coaching for medical residency programs.',
+      'Expert residency interview coaching from former program directors. 98.4% match rate. Prepare for ERAS interviews, rank lists, and specialty-specific questions.',
+    url: 'https://sosadmissions.com/medical-residency-interview/',
     type: 'website',
   },
 };

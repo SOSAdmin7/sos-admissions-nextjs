@@ -140,18 +140,30 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
     clientStrip: LEGACY_IMAGES.sosClients,
     galleryTitle: 'Featured Resource',
     gallery: [LEGACY_IMAGES.newsGraphic],
+    extraVideos: [
+      { id: 'o7yVHuFjaLk', title: 'BS/MD Admissions Consulting' },
+    ],
   },
   'dental-school': {
     featuredStrip: LEGACY_IMAGES.sosFeaturedIn,
     clientStrip: LEGACY_IMAGES.dentalClients,
+    extraVideos: [
+      { id: 'ir67AJ1MfGQ', title: 'Dental School Admissions Consulting' },
+    ],
   },
   'pa-school': {
     featuredStrip: LEGACY_IMAGES.sosFeaturedIn,
     clientStrip: LEGACY_IMAGES.schoolClients,
+    extraVideos: [
+      { id: 'g0SnLbYUfvU', title: 'PA School Admissions Consulting' },
+    ],
   },
   'pa-school-admissions': {
     featuredStrip: LEGACY_IMAGES.sosFeaturedIn,
     clientStrip: LEGACY_IMAGES.schoolClients,
+    extraVideos: [
+      { id: 'g0SnLbYUfvU', title: 'PA School Admissions Consulting' },
+    ],
   },
   'crna-admissions': {
     featuredStrip: LEGACY_IMAGES.sosFeaturedIn,
@@ -177,16 +189,10 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
   'nursing-programs': {
     galleryTitle: 'Legacy Program Assets',
     gallery: [LEGACY_IMAGES.newsGraphic, LEGACY_IMAGES.startGraphic, LEGACY_IMAGES.untitledGraphic],
-    extraVideos: [
-      { id: 'v0K0udm4yZ0', title: 'Graduate School Admissions Consulting' },
-    ],
   },
   'phd-programs': {
     galleryTitle: 'Legacy Program Assets',
     gallery: [LEGACY_IMAGES.newsGraphic, LEGACY_IMAGES.startGraphic, LEGACY_IMAGES.untitledGraphic],
-    extraVideos: [
-      { id: 'v0K0udm4yZ0', title: 'Graduate School Admissions Consulting' },
-    ],
   },
   'letters-of-recommendation': {
     galleryTitle: 'Legacy Service Assets',
@@ -196,9 +202,6 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
       LEGACY_IMAGES.messageIcon,
       LEGACY_IMAGES.pastClients,
       LEGACY_IMAGES.startIcon,
-    ],
-    extraVideos: [
-      { id: 'bkQKXmCwOqs', title: 'Letters of Recommendation Service' },
     ],
   },
   'personal-statement-writing': {
@@ -211,6 +214,9 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
   'standardized-test-prep': {
     galleryTitle: 'Legacy Test Prep Assets',
     gallery: [LEGACY_IMAGES.newsGraphic, LEGACY_IMAGES.startGraphic, LEGACY_IMAGES.untitledGraphic],
+    extraVideos: [
+      { id: '5axgzPmFV94', title: 'SAT/ACT Test Preparation' },
+    ],
   },
   'international-students': {
     galleryTitle: 'Legacy International Student Assets',
@@ -221,9 +227,6 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
       LEGACY_IMAGES.intlAdmissionsIcon,
       LEGACY_IMAGES.intlGuidanceIcon,
       LEGACY_IMAGES.intlSupportIcon,
-    ],
-    extraVideos: [
-      { id: 'o0vsmq-Wue0', title: 'Admissions Consulting for International Students' },
     ],
   },
   'private-school-k12': {
@@ -258,6 +261,9 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
   'graduate-school-interview': {
     featuredStrip: LEGACY_IMAGES.featuredInNews,
     clientStrip: LEGACY_IMAGES.collegeClients,
+    extraVideos: [
+      { id: '95VVBkgEP0Q', title: 'Graduate School Interview Preparation' },
+    ],
     galleryTitle: 'Legacy Interview Coaching Assets',
     gallery: [
       LEGACY_IMAGES.sendUs,

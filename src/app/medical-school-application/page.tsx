@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Medical School Application Consulting',
+  title: { absolute: 'Medical School Admissions Consulting | AMCAS & Interviews - SOS Admissions' },
   description:
-    'Comprehensive guidance for pre-med students pursuing MD/DO admissions. MCAT strategy, personal statement, and interview preparation.',
+    'Expert medical school admissions consulting for AMCAS, AACOMAS, and interviews. 95.3% acceptance rate. Get into your dream MD or DO program.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/medical-school-application/',
+  },
   openGraph: {
-    title: 'Medical School Application Consulting',
+    title: 'Medical School Admissions Consulting | AMCAS & Interviews - SOS Admissions',
     description:
-      'Comprehensive guidance for pre-med students pursuing MD/DO admissions.',
+      'Expert medical school admissions consulting for AMCAS, AACOMAS, and interviews. 95.3% acceptance rate. Get into your dream MD or DO program.',
+    url: 'https://sosadmissions.com/medical-school-application/',
     type: 'website',
   },
 };

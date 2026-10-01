@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Medical School Interview Preparation',
+  title: { absolute: 'Medical School Interview Coaching | MMI & Traditional - SOS Admissions' },
   description:
-    'Specialized interview coaching for medical school admissions. MMI and traditional interview preparation with expert feedback.',
+    'Expert medical school interview coaching for MMI and traditional interviews. Mock interviews, question prep, and strategies to ace your med school interview.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/medical-school-interview/',
+  },
   openGraph: {
-    title: 'Medical School Interview Preparation',
+    title: 'Medical School Interview Coaching | MMI & Traditional - SOS Admissions',
     description:
-      'Specialized interview coaching for medical school admissions.',
+      'Expert medical school interview coaching for MMI and traditional interviews. Mock interviews, question prep, and strategies to ace your med school interview.',
+    url: 'https://sosadmissions.com/medical-school-interview/',
     type: 'website',
   },
 };

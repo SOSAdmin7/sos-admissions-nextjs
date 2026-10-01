@@ -7,28 +7,18 @@ const BelowFoldContent = dynamic(() => import('./CollegeAdmissionsContent'), {
 });
 
 export const metadata: Metadata = {
-  title: 'College Admissions Consulting | Expert Help Since 1998',
+  title: { absolute: 'College Admissions Consulting & Counseling - SOS Admissions' },
   description:
-    'Get into your dream college with guidance from former admissions officers. 27+ years, 98% acceptance rate to top colleges. Transparent pricing from $5,175. Free consultation.',
-  keywords: [
-    'college admissions consulting',
-    'college application help',
-    'college admissions counselor',
-    'college essay help',
-    'common app essay editing',
-    'college interview prep',
-    'private college counselor',
-    'admissions consulting Los Angeles',
-  ],
-  openGraph: {
-    title: 'College Admissions Consulting',
-    description:
-      '27+ years helping students get into top colleges. Former admissions officers. 98% acceptance rate. Transparent pricing. Free consultation.',
-    type: 'website',
-    url: 'https://sosadmissions.com/college-admissions',
-  },
+    'Expert college admissions consulting for Common App, UC applications, essays, and interviews. 98% acceptance rate to top colleges. Get into your dream school.',
   alternates: {
-    canonical: 'https://sosadmissions.com/college-admissions',
+    canonical: 'https://sosadmissions.com/college-admissions/',
+  },
+  openGraph: {
+    title: 'College Admissions Consulting & Counseling - SOS Admissions',
+    description:
+      'Expert college admissions consulting for Common App, UC applications, essays, and interviews. 98% acceptance rate to top colleges. Get into your dream school.',
+    url: 'https://sosadmissions.com/college-admissions/',
+    type: 'website',
   },
 };
 
@@ -62,7 +52,7 @@ const faqStructuredData = {
     },
     {
       '@type': 'Question',
-      name: 'What does the free consultation include?',
+      name: 'What does the free initial consultation include?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'A 15 to 20 minute call where we learn about your academic profile, goals, and timeline. No obligation and no pressure.',
@@ -99,7 +89,7 @@ const serviceStructuredData = {
   offers: {
     '@type': 'AggregateOffer',
     lowPrice: '465',
-    highPrice: '10600',
+    highPrice: '13300',
     priceCurrency: 'USD',
   },
 };

@@ -66,7 +66,7 @@ const faqItems = [
   {
     question: 'How can I get started?',
     answer:
-      'Getting started is easy! Simply fill out our contact form, call us at 310-951-4008, or email info@sosadmissions.com to schedule an initial consultation. During this conversation, we\'ll learn about your goals, answer any questions you have, and discuss how we can best support your admissions journey. There\'s no obligation. We just want to understand your needs.',
+      'Getting started is easy! Simply fill out our contact form, or call us at 310-951-4008 to schedule an initial consultation. During this conversation, we\'ll learn about your goals, answer any questions you have, and discuss how we can best support your admissions journey. There\'s no obligation. We just want to understand your needs.',
   },
 ];
 
@@ -80,7 +80,7 @@ export function FAQAccordion() {
   return (
     <>
       {/* FAQ Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4">
             {faqItems.map((item, index) => (
@@ -112,7 +112,7 @@ export function FAQAccordion() {
       </section>
 
       {/* Additional Resources */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-warm-gray">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-navy text-center">Still Have Questions?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -126,7 +126,7 @@ export function FAQAccordion() {
               </a>
             </div>
             <div className="bg-white rounded-lg p-8">
-              <h3 className="text-xl font-bold text-navy mb-4">Schedule a Consultation</h3>
+              <h3 className="text-xl font-bold text-navy mb-4">Schedule a Free Initial Consultation</h3>
               <p className="text-slate-600 mb-6">
                 Book a free initial consultation with one of our expert consultants.
               </p>
@@ -148,7 +148,7 @@ export function FAQAccordion() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy-light">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy-light">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-cream mb-8">

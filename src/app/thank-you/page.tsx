@@ -1,12 +1,19 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, Mail, Clock } from 'lucide-react';
-import { LegacyImageGallery, LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO, LEGACY_IMAGES } from '@/lib/legacyAssets';
-import { generateThankYouMetadata } from '@/lib/metadata';
 import { ThankYouConversion } from './ConversionScript';
 
-export const metadata: Metadata = generateThankYouMetadata();
+export const metadata: Metadata = {
+  title: { absolute: 'SOS Admissions Thankyou - SOS Admissions' },
+  alternates: {
+    canonical: 'https://sosadmissions.com/thank-you/',
+  },
+  openGraph: {
+    title: 'SOS Admissions Thankyou - SOS Admissions',
+    url: 'https://sosadmissions.com/thank-you/',
+    type: 'website',
+  },
+};
 
 export default function ThankYouPage() {
   return (
@@ -15,9 +22,6 @@ export default function ThankYouPage() {
 
       <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white py-20">
         <div className="max-w-2xl w-full">
-          <div className="mb-10">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
 
           {/* Success Message */}
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12 text-center">
@@ -120,19 +124,11 @@ export default function ThankYouPage() {
               <a href="tel:310-951-4008" className="text-blue hover:underline">
                 Call: 310-951-4008
               </a>
-              <span className="text-slate-300 hidden sm:inline">&bull;</span>
-              <a href="mailto:info@sosadmissions.com" className="text-blue hover:underline">
-                Email: info@sosadmissions.com
-              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <LegacyImageGallery
-        title="Legacy Thank You Page Asset"
-        images={[LEGACY_IMAGES.faqPromo]}
-      />
     </>
   );
 }

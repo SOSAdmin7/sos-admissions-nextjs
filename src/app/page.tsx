@@ -1,8 +1,25 @@
+import { Metadata } from "next";
 import { Hero } from "@/components/Hero";
-import { LegacyStripSection } from "@/components/LegacyMedia";
+import { TrustBar, SchoolLogos } from "@/components/TrustLogos";
 import { ServicesGrid } from "@/components/ServicesGrid";
-import { LEGACY_IMAGES } from "@/lib/legacyAssets";
 import dynamic from "next/dynamic";
+
+// Title/description mirror the old site exactly (sosadmissions.com is the SEO master)
+export const metadata: Metadata = {
+  title: { absolute: "College And Graduate School Application Consulting Service" },
+  description:
+    "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. 27+ years helping students get into top programs.",
+  alternates: {
+    canonical: "https://sosadmissions.com/",
+  },
+  openGraph: {
+    title: "College And Graduate School Application Consulting Service",
+    description:
+      "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. 27+ years helping students get into top programs.",
+    url: "https://sosadmissions.com/",
+    type: "website",
+  },
+};
 
 const WhyChooseUs = dynamic(
   () => import("@/components/WhyChooseUs").then((mod) => mod.WhyChooseUs),
@@ -28,10 +45,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <LegacyStripSection
-        featuredStrip={LEGACY_IMAGES.featuredInNews}
-        clientStrip={LEGACY_IMAGES.collegeClients}
-      />
+      <TrustBar />
+      <SchoolLogos variant="college" />
       <ServicesGrid />
       <WhyChooseUs />
       <ProcessSection />

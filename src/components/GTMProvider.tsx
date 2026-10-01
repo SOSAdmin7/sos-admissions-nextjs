@@ -22,6 +22,12 @@ export function GTMScript() {
       w.gtag('js', new Date());
       w.gtag('config', GOOGLE_ADS_ID);
 
+      // Google Ads dynamic phone number swapping (call conversion tracking)
+      // — same config as the old site
+      w.gtag('config', GOOGLE_ADS_ID + '/k2zvCLyEzpQBEMbCnYkD', {
+        phone_conversion_number: '310-951-4008',
+      });
+
       // Load GTM
       w.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
       const gtmScript = document.createElement('script');

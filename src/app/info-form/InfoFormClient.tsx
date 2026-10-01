@@ -88,7 +88,7 @@ export function InfoFormClient() {
 
   if (submitted) {
     return (
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12">
             <div className="mb-6 flex justify-center">

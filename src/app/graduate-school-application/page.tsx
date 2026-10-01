@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Graduate School Application Consulting',
+  title: { absolute: 'Graduate School Admissions Consulting | PhD & Masters - SOS Admissions' },
   description:
-    'Specialized guidance for Master\'s program applications. Statement of purpose, GRE/GMAT prep, and program selection strategy.',
+    'Expert graduate school admissions consulting for PhD, masters, and doctoral programs across all fields. Personal statements, interviews, and application strategy.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/graduate-school-application/',
+  },
   openGraph: {
-    title: 'Graduate School Application Consulting',
+    title: 'Graduate School Admissions Consulting | PhD & Masters - SOS Admissions',
     description:
-      'Specialized guidance for Master\'s program applications across all disciplines.',
+      'Expert graduate school admissions consulting for PhD, masters, and doctoral programs across all fields. Personal statements, interviews, and application strategy.',
+    url: 'https://sosadmissions.com/graduate-school-application/',
     type: 'website',
   },
 };

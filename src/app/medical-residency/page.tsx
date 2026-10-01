@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Medical Residency Matching Consulting',
+  title: { absolute: 'Medical Residency Application Consulting - SOS Admissions' },
   description:
-    'Specialized guidance for matching into competitive residency programs. Specialty selection, research optimization, and interview preparation.',
+    'Expert medical residency consulting for ERAS applications, personal statements, and the Match. 98.4% match rate. Full-service support from application to match day.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/medical-residency/',
+  },
   openGraph: {
-    title: 'Medical Residency Matching Consulting',
-    description: 'Specialized guidance for matching into competitive residency programs.',
+    title: 'Medical Residency Application Consulting - SOS Admissions',
+    description:
+      'Expert medical residency consulting for ERAS applications, personal statements, and the Match. 98.4% match rate. Full-service support from application to match day.',
+    url: 'https://sosadmissions.com/medical-residency/',
     type: 'website',
   },
 };

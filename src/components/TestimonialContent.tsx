@@ -24,7 +24,7 @@ export function TestimonialContent() {
   return (
     <>
       {/* Featured Testimonials */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-navy text-center">Featured Success Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -76,7 +76,7 @@ export function TestimonialContent() {
           <div className="flex flex-wrap gap-3">
             <button
               onClick={() => setSelectedService(null)}
-              className={`px-4 py-2 rounded-full font-semibold transition ${
+              className={`px-4 py-2 rounded-full font-semibold whitespace-nowrap transition ${
                 selectedService === null
                   ? 'bg-navy text-white'
                   : 'bg-white text-navy border-2 border-navy hover:bg-navy hover:text-white'
@@ -88,7 +88,7 @@ export function TestimonialContent() {
               <button
                 key={service}
                 onClick={() => setSelectedService(service)}
-                className={`px-4 py-2 rounded-full font-semibold transition ${
+                className={`px-4 py-2 rounded-full font-semibold whitespace-nowrap transition ${
                   selectedService === service
                     ? 'bg-navy text-white'
                     : 'bg-white text-navy border-2 border-navy hover:bg-navy hover:text-white'
@@ -105,7 +105,7 @@ export function TestimonialContent() {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredTestimonials.map((testimonial) => (
@@ -141,7 +141,7 @@ export function TestimonialContent() {
                       {testimonial.schoolsAdmitted.map((school, idx) => (
                         <span
                           key={idx}
-                          className="rounded-full bg-[#EAF2FF] px-3 py-1 text-xs font-medium text-[#1D4ED8]"
+                          className="rounded-full bg-[#EAF2FF] px-3 py-1 text-xs font-medium text-[#1D4ED8] whitespace-nowrap"
                         >
                           {school}
                         </span>
@@ -168,7 +168,7 @@ export function TestimonialContent() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-navy">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-navy">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -192,7 +192,7 @@ export function TestimonialContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-navy mb-6">Ready to Write Your Success Story?</h2>
           <p className="text-xl text-slate-600 mb-8">

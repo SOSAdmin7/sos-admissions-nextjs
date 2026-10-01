@@ -17,31 +17,38 @@ type PricingTier = {
 const pricingTiers: Record<string, PricingTier> = {
   standard: {
     label: 'Standard',
-    oneSchool: 5175,
-    fiveSchool: 7500,
-    tenSchool: 10600,
-    additionalSchool: 775,
+    oneSchool: 7175,
+    fiveSchool: 9800,
+    tenSchool: 13300,
+    additionalSchool: 875,
   },
   doctorate: {
     label: 'Doctorate / Medical / JD',
-    oneSchool: 5675,
-    fiveSchool: 8000,
-    tenSchool: 11100,
-    additionalSchool: 775,
+    oneSchool: 7675,
+    fiveSchool: 10300,
+    tenSchool: 13800,
+    additionalSchool: 875,
   },
   residency: {
     label: 'Residency',
-    oneSchool: 6450,
+    oneSchool: 8550,
     fiveSchool: 0,
     tenSchool: 0,
-    additionalSchool: 1885,
+    additionalSchool: 2625,
   },
   mbaPremium: {
     label: 'MBA Premium',
     oneSchool: 7775,
     fiveSchool: 10700,
     tenSchool: 14600,
-    additionalSchool: 775,
+    additionalSchool: 1175,
+  },
+  nursingPremium: {
+    label: 'General Nursing',
+    oneSchool: 7675,
+    fiveSchool: 10700,
+    tenSchool: 14600,
+    additionalSchool: 1175,
   },
 };
 
@@ -69,7 +76,8 @@ const programs: Program[] = [
   { id: 'bs-md', name: 'BS/MD Programs', tier: 'doctorate', category: 'Healthcare' },
   { id: 'pa', name: 'PA School', tier: 'standard', category: 'Healthcare' },
   { id: 'crna', name: 'CRNA', tier: 'standard', category: 'Healthcare' },
-  { id: 'nursing', name: 'Nursing Programs (NP / General)', tier: 'standard', category: 'Healthcare' },
+  { id: 'np', name: 'Nurse Practitioner (NP)', tier: 'doctorate', category: 'Healthcare' },
+  { id: 'general-nursing', name: 'General Nursing', tier: 'nursingPremium', category: 'Healthcare' },
 ];
 
 type ALaCarteItem = {
@@ -81,18 +89,18 @@ type ALaCarteItem = {
 
 const aLaCarteServices: ALaCarteItem[] = [
   { id: 'planning', name: 'Application Planning and Evaluation', price: 465 },
-  { id: 'school-selection', name: 'School Selection Service', price: 1375 },
-  { id: 'common-app-essay', name: 'Common App / Primary Essay', price: 985 },
-  { id: 'school-essay', name: 'School-Specific Essays (per school)', price: 1485 },
-  { id: 'uc-essays', name: 'UC Essays', price: 1485 },
-  { id: 'personal-statement', name: 'Personal Statement (under 900 words)', price: 985 },
-  { id: 'long-essay', name: 'Long Essay (900-1500 words)', price: 1485 },
-  { id: 'resume', name: 'Resume / CV', price: 975 },
-  { id: 'activities', name: 'Activity Descriptions', price: 1175 },
-  { id: 'interview', name: 'Interview Coaching (Traditional/Panel)', price: 1275 },
+  { id: 'school-selection', name: 'School Selection Service', price: 1575 },
+  { id: 'common-app-essay', name: 'Common App / Primary Essay', price: 1185 },
+  { id: 'school-essay', name: 'School-Specific Essays (per school)', price: 1685 },
+  { id: 'uc-essays', name: 'UC Essays', price: 1685 },
+  { id: 'personal-statement', name: 'Personal Statement (under 900 words)', price: 1185 },
+  { id: 'long-essay', name: 'Long Essay (900-1500 words)', price: 1685 },
+  { id: 'resume', name: 'Resume / CV', price: 1175 },
+  { id: 'activities', name: 'Activity Descriptions', price: 1375 },
+  { id: 'interview', name: 'Interview Coaching (Traditional/Panel)', price: 1475 },
   { id: 'mmi', name: 'MMI Interview Coaching', price: 1675 },
-  { id: 'rec-letter', name: 'Letter of Recommendation Guidance', price: 885 },
-  { id: 'waitlist', name: 'Waitlist Appeal Letter', price: 985 },
+  { id: 'rec-letter', name: 'Letter of Recommendation Guidance', price: 985 },
+  { id: 'waitlist', name: 'Waitlist Appeal Letter', price: 1185 },
   { id: 'rush', name: 'Rush Fee', price: 500 },
 ];
 
@@ -206,7 +214,7 @@ export function OrderForm() {
 
   if (submitted) {
     return (
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-2xl mx-auto text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-green-600" />
@@ -234,7 +242,7 @@ export function OrderForm() {
   return (
     <>
       {/* Step 1: Select Program */}
-      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 md:py-10 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="mb-10">
             <div className="flex items-center gap-3 mb-2">
@@ -269,7 +277,7 @@ export function OrderForm() {
 
       {/* Step 2: Select Package */}
       {program && tier && (
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
+        <section className="py-12 md:py-10 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
           <div className="max-w-4xl mx-auto">
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-2">
@@ -333,7 +341,7 @@ export function OrderForm() {
 
       {/* Step 3: A La Carte Add-Ons */}
       {program && (
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-12 md:py-10 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-2">
@@ -372,7 +380,7 @@ export function OrderForm() {
 
       {/* Step 4: Contact Information */}
       {program && (selectedPackage || selectedALaCarte.size > 0) && (
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
+        <section className="py-12 md:py-10 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
           <div className="max-w-4xl mx-auto">
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-2">
@@ -425,7 +433,7 @@ export function OrderForm() {
 
       {/* Order Summary */}
       {program && (selectedPackage || selectedALaCarte.size > 0) && (
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA] border-t border-gray-200">
+        <section className="py-12 md:py-10 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA] border-t border-gray-200">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
               <h3 className="text-xl font-bold text-[#1B2B4B] mb-6">Order Summary</h3>
@@ -487,7 +495,7 @@ export function OrderForm() {
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#0D1B2A]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-slate-300 mb-4">
-            Prefer to speak with someone? Call us for a free consultation.
+            Prefer to speak with someone? Call us for a free initial consultation.
           </p>
           <a
             href="tel:310-951-4008"

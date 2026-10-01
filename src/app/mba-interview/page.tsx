@@ -2,13 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'MBA Interview Preparation',
+  title: { absolute: 'MBA Interview Coaching | Business School Prep - SOS Admissions' },
   description:
-    'Expert interview coaching for MBA programs. Mock interviews, storytelling techniques, and behavioral interview preparation.',
+    'Expert MBA interview coaching for top business schools. Mock interviews, case prep, and proven strategies for HBS, Stanford GSB, Wharton, and more.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/mba-interview/',
+  },
   openGraph: {
-    title: 'MBA Interview Preparation',
+    title: 'MBA Interview Coaching | Business School Prep - SOS Admissions',
     description:
-      'Expert interview coaching for MBA programs.',
+      'Expert MBA interview coaching for top business schools. Mock interviews, case prep, and proven strategies for HBS, Stanford GSB, Wharton, and more.',
+    url: 'https://sosadmissions.com/mba-interview/',
     type: 'website',
   },
 };

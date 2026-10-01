@@ -2,12 +2,17 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'General Nursing Admissions Consulting',
+  title: { absolute: 'Nursing School Admissions Consulting Services | SOS Admissions' },
   description:
-    'Application help for BSN, ABSN, direct-entry MSN, and other general nursing pathways.',
+    'Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and application strategy for ASN, BSN, MSN, and Nurse Practitioner programs.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/general-nursing/',
+  },
   openGraph: {
-    title: 'General Nursing Admissions Consulting',
-    description: 'Application help for BSN, ABSN, direct-entry MSN, and other general nursing pathways.',
+    title: 'Nursing School Admissions Consulting Services | SOS Admissions',
+    description:
+      'Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and application strategy for ASN, BSN, MSN, and Nurse Practitioner programs.',
+    url: 'https://sosadmissions.com/general-nursing/',
     type: 'website',
   },
 };

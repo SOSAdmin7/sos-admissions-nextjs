@@ -52,12 +52,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://sosadmissions.com/blog/${post.slug}/`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: 'article',
       publishedTime: post.date,
-      images: [{ url: post.image }],
+      images: post.image ? [{ url: post.image }] : undefined,
     },
   };
 }
@@ -88,7 +91,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#0D1B2A] to-[#1B2B4B] text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-[#0D1B2A] to-[#1B2B4B] text-white py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/blog"
@@ -126,7 +129,7 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       {/* Content */}
-      <article className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      <article className="py-12 md:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Article Body */}
@@ -144,7 +147,7 @@ export default async function BlogPostPage({ params }: Props) {
                       href="/contact-us"
                       className="inline-block mt-4 bg-[#E8613C] text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-[#D4522E] transition text-sm"
                     >
-                      Schedule a Free Consultation
+                      Schedule a Free Initial Consultation
                     </Link>
                   </div>
                 </div>
@@ -163,7 +166,7 @@ export default async function BlogPostPage({ params }: Props) {
                   href="/contact-us"
                   className="block text-center bg-[#E8613C] text-white font-semibold py-2.5 rounded-lg hover:bg-[#D4522E] transition text-sm"
                 >
-                  Free Consultation
+                  Free Initial Consultation
                 </Link>
                 <a
                   href="tel:310-951-4008"

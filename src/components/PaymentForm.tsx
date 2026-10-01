@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { Lock, Check } from 'lucide-react';
 
 const services = [
@@ -13,14 +14,14 @@ const services = [
   {
     id: 'interview-coaching',
     name: 'Interview Coaching',
-    price: 1275,
+    price: 1475,
     description: 'Mock interviews with former admissions officers',
     features: ['Multiple mock interviews', 'Detailed feedback', 'School-specific preparation'],
   },
   {
     id: 'comprehensive',
     name: 'Comprehensive Package',
-    price: 5175,
+    price: 7175,
     description: 'Full-service support for your entire application cycle',
     popular: true,
     features: [
@@ -34,7 +35,7 @@ const services = [
   {
     id: 'five-school',
     name: '5-School Package',
-    price: 7500,
+    price: 9800,
     description: 'Complete support for up to 5 school applications',
     features: [
       'Everything in Comprehensive',
@@ -85,7 +86,7 @@ export function PaymentForm() {
   return (
     <>
       {/* Payment Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Service Selection */}
@@ -224,7 +225,7 @@ export function PaymentForm() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-warm-gray">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-navy text-center">Payment FAQ</h2>
 
@@ -265,7 +266,7 @@ export function PaymentForm() {
       </section>
 
       {/* Support Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-navy mb-6">Need Help?</h2>
           <p className="text-lg text-slate-600 mb-8">
@@ -278,12 +279,12 @@ export function PaymentForm() {
             >
               Call: 310-951-4008
             </a>
-            <a
-              href="mailto:info@sosadmissions.com"
+            <Link
+              href="/contact-us"
               className="inline-block bg-warm-gray text-navy px-8 py-3 rounded-lg font-bold border-2 border-navy hover:bg-navy hover:text-white transition"
             >
-              Email: info@sosadmissions.com
-            </a>
+              Contact Our Consultants
+            </Link>
           </div>
         </div>
       </section>

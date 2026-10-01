@@ -74,12 +74,6 @@ export function ContactForm() {
       href: 'tel:310-951-4008',
     },
     {
-      icon: Mail,
-      label: 'Email',
-      value: 'info@sosadmissions.com',
-      href: 'mailto:info@sosadmissions.com',
-    },
-    {
       icon: MapPin,
       label: 'Location',
       value: '10866 Wilshire Blvd., Los Angeles, CA 90024',
@@ -105,7 +99,7 @@ export function ContactForm() {
   return (
     <>
       {/* Main Content */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -264,13 +258,13 @@ export function ContactForm() {
                 <p className="text-slate-600 mb-6">
                   We're available through your preferred communication channel:
                 </p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-wrap gap-3">
                   {communicationMethods.map((method, index) => {
                     const Icon = method.icon;
                     return (
                       <div
                         key={index}
-                        className="flex items-center bg-white rounded-lg p-4 border-2 border-slate-200 hover:border-[#E8613C] transition"
+                        className="flex items-center bg-white rounded-lg px-4 py-3 border-2 border-slate-200 hover:border-[#E8613C] transition"
                       >
                         <Icon className="w-5 h-5 text-[#E8613C] mr-3" />
                         <span className="text-sm font-semibold text-slate-700">{method.name}</span>
@@ -294,7 +288,7 @@ export function ContactForm() {
       </section>
 
       {/* Map */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-slate-100">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-[#1B2B4B] text-center">Our Location</h2>
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
@@ -313,7 +307,7 @@ export function ContactForm() {
       </section>
 
       {/* FAQ Quick Link */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-[#1B2B4B]">Have Questions?</h2>
           <p className="text-lg text-slate-600 mb-8">

@@ -1,10 +1,21 @@
 import { Metadata } from 'next';
-import { LegacyYouTubeCard } from '@/components/LegacyMedia';
-import { DEFAULT_LEGACY_VIDEO } from '@/lib/legacyAssets';
-import { generateFAQMetadata } from '@/lib/metadata';
 import { FAQAccordion } from '@/components/FAQAccordion';
 
-export const metadata: Metadata = generateFAQMetadata();
+export const metadata: Metadata = {
+  title: { absolute: 'Frequently Asked Questions (FAQ) - SOS Admissions' },
+  description:
+    'Answers to common questions about the admissions services we provide for applicants to college, grad school, MBA & med school.',
+  alternates: {
+    canonical: 'https://sosadmissions.com/faq/',
+  },
+  openGraph: {
+    title: 'Frequently Asked Questions (FAQ) - SOS Admissions',
+    description:
+      'Answers to common questions about the admissions services we provide for applicants to college, grad school, MBA & med school.',
+    url: 'https://sosadmissions.com/faq/',
+    type: 'website',
+  },
+};
 
 const faqItems = [
   {
@@ -70,7 +81,7 @@ const faqItems = [
   {
     question: 'How can I get started?',
     answer:
-      'Getting started is easy! Simply fill out our contact form, call us at 310-951-4008, or email info@sosadmissions.com to schedule an initial consultation. During this conversation, we\'ll learn about your goals, answer any questions you have, and discuss how we can best support your admissions journey. There\'s no obligation. We just want to understand your needs.',
+      'Getting started is easy! Simply fill out our contact form, or call us at 310-951-4008 to schedule an initial consultation. During this conversation, we\'ll learn about your goals, answer any questions you have, and discuss how we can best support your admissions journey. There\'s no obligation. We just want to understand your needs.',
   },
 ];
 
@@ -78,7 +89,7 @@ export default function FAQPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-navy">
             Frequently Asked Questions
@@ -86,9 +97,6 @@ export default function FAQPage() {
           <p className="text-xl text-slate-600">
             Find answers to common questions about our services and the admissions process.
           </p>
-          <div className="mt-8">
-            <LegacyYouTubeCard video={DEFAULT_LEGACY_VIDEO} className="mx-auto" />
-          </div>
         </div>
       </section>
 

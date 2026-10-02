@@ -6,7 +6,8 @@
     "date": "2026-07-30",
     "modified": "2026-03-15T20:39:16",
     "image": "/images/wordpress/5cea1caf659556c9b08f293c.webp",
-    "category": "Admissions Guidance"
+    "category": "Admissions Guidance",
+    "revised": "2026-10-01"
   },
   {
     "slug": "caribbean-medical-schools-worth-it",
@@ -95,7 +96,8 @@
     "date": "2026-06-15",
     "modified": "2026-03-04T00:28:50",
     "image": "/images/wordpress/c4fbdb55a5463ad25c02de05.webp",
-    "category": "Admissions Guidance"
+    "category": "Admissions Guidance",
+    "revised": "2026-10-01"
   },
   {
     "slug": "post-bacc-program-medical-school",
@@ -119,12 +121,13 @@
   },
   {
     "slug": "medical-school-personal-statement",
-    "title": "How to Write a Medical School Personal Statement That Actually Works",
-    "excerpt": "Let’s be real for a second. Your medical school personal statement might be the single most important essay you’ll ever write. And that’s terrifying. But also kind of exciting if you’re weird like that. Every year […]",
+    "title": "Writing a Medical School Personal Statement",
+    "excerpt": "A medical school personal statement connects your motivation for medicine with experiences that helped you understand the profession. The strongest material is specific, accurate, and reflective.",
     "date": "2026-06-04",
     "modified": "2026-03-04T00:05:48",
     "image": "/images/wordpress/438e8f97fb547d8ae17f3900.webp",
-    "category": "Admissions Guidance"
+    "category": "Admissions Guidance",
+    "revised": "2026-10-01"
   },
   {
     "slug": "law-school-personal-statement",
@@ -148,48 +151,53 @@
   },
   {
     "slug": "dental-school-personal-statement",
-    "title": "How to Write a Dental School Personal Statement That Actually Gets Read",
-    "excerpt": "Look, you’re probably stressed about this. Everyone is. But the dental school personal statement? It’s honestly where you get to be a real human for a moment instead of just a GPA and a DAT score. […]",
+    "title": "Writing a Dental School Personal Statement",
+    "excerpt": "A dental school personal statement should explain your motivation for dentistry through accurate experiences and thoughtful reflection. It should give the reader perspective that a list of courses and activities cannot provide.",
     "date": "2026-05-25",
     "modified": "2026-03-03T23:41:55",
     "image": "/images/wordpress/27f596919f6a483857442076.webp",
-    "category": "Dental School"
+    "category": "Dental School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "college-application-essay",
-    "title": "How to Write a College Application Essay That Stands Out",
-    "excerpt": "Your college application essay is your chance to show admissions officers who you are as a person. And honestly, it’s the part of your application that can make the biggest difference. Your grades are locked in. […]",
+    "title": "Writing a College Application Essay",
+    "excerpt": "A college essay can help an admissions reader understand your perspective, interests, and development. It should answer the actual prompt and sound like an account you can honestly stand behind.",
     "date": "2026-05-19",
     "modified": "2026-03-03T23:29:56",
     "image": "/images/wordpress/ac839530632b011848a6aa13.webp",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-secondary-essays",
-    "title": "How to Write Medical School Secondary Essays Fast",
-    "excerpt": "So you submitted your AMCAS primary and you’re feeling pretty good about yourself. Maybe you even celebrated a little. Then about two weeks later your inbox starts blowing up with medical school secondary essays from every […]",
+    "title": "Planning Medical School Secondary Essays",
+    "excerpt": "Secondary applications ask for school-specific information beyond the primary application. Manage them with a clear record of requirements, careful writing, and realistic time for review.",
     "date": "2026-05-18",
     "modified": "2026-03-03T23:18:14",
     "image": "/images/wordpress/72f65ab5058a8ef3d2e81e9f.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "mmi-interview-preparation",
-    "title": "How to Prepare for an MMI Interview",
-    "excerpt": "If you’re applying to medical school or dentistry or some other health professions programs, there’s a good chance you’re going to encounter an MMI interview. And if you’re not familiar with them yet, the idea might […]",
+    "title": "Preparing for a Multiple Mini Interview",
+    "excerpt": "A Multiple Mini Interview uses several short encounters to learn about an applicant’s communication, reasoning, and other qualities. The station types and timing depend on the school.",
     "date": "2026-05-14",
     "modified": "2026-03-03T23:08:15",
     "image": "/images/wordpress/7d2b900b85e6294d45c589bb.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "application-rejection-what-to-do-next",
-    "title": "How to Handle Application Rejection and What to Do Next",
-    "excerpt": "Look, there’s no point in pretending rejection feels good. It doesn’t. You’ve been riding this thing for months. Maybe years. And then one day you’re checking your email and boom. “Unfortunately.” Or “We regret.” Some version […]",
+    "title": "Planning Your Next Steps After an Application Rejection",
+    "excerpt": "An unsuccessful application is a reason to reassess your plan, not a complete judgment of your ability. Your next step should reflect your goals, available options, and the information you can actually verify.",
     "date": "2026-05-12",
     "modified": "2026-03-03T23:01:08",
     "image": "/images/wordpress/9da31a0045381dac9715ff62.webp",
-    "category": "General"
+    "category": "General",
+    "revised": "2026-10-01"
   },
   {
     "slug": "how-to-get-patient-care-hours-pa-school",
@@ -293,12 +301,13 @@
   },
   {
     "slug": "how-to-choose-a-medical-school",
-    "title": "How to Choose a Medical School: The Complete Guide",
-    "excerpt": "Getting into one medical school is hard enough. But what happens when you actually get multiple acceptances and have to choose? Or even before that how do you decide where to apply in the first place? […]",
+    "title": "Building a Thoughtful Medical School List",
+    "excerpt": "A useful medical school list begins with eligibility, educational fit, practical needs, and cost. Reputation alone cannot tell you whether a school is appropriate for your application or your goals.",
     "date": "2026-03-25",
     "modified": "2026-03-02T23:21:55",
     "image": "/images/wordpress/504c4052f84857d283464411.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "computer-science-graduate-school-admissions",
@@ -312,12 +321,13 @@
   },
   {
     "slug": "college-transfer-applications",
-    "title": "College Transfer Applications: How to Successfully Switch Schools",
-    "excerpt": "So you’re at a college and its not working out the way you thought. Maybe you chose the wrong school. Maybe something changed. Maybe you realized mid-way through freshman year that you made a mistake. Or […]",
+    "title": "Planning a College Transfer Application",
+    "excerpt": "A transfer application should explain your academic direction and reasons for changing institutions. Requirements depend on the destination, program, prior study, and applicant category.",
     "date": "2026-03-18",
     "modified": "2026-03-02T23:24:35",
     "image": "/images/wordpress/55fa625376dd8c252c2af745.webp",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "letter-of-recommendation-medical-school",
@@ -331,8 +341,8 @@
   },
   {
     "slug": "best-extracurricular-activities-medical-school",
-    "title": "Best Extracurricular Activities for Medical School Applications",
-    "excerpt": "Here’s something that nobody tells you early enough. Your GPA and MCAT are what get you past the initial screening but your extracurricular activities are what actually get you accepted. Admissions committees want to see that […]",
+    "title": "Choosing Meaningful Activities Before Medical School",
+    "excerpt": "Activities can help you explore medicine, contribute to your community, and develop skills. Choose experiences you can sustain and describe honestly rather than trying to assemble a supposedly guaranteed combination.",
     "date": "2026-03-02",
     "modified": "2026-03-02T18:28:27",
     "image": "/images/wordpress/4bbe67f7bb662d14e9a0e460.webp",
@@ -341,12 +351,13 @@
   },
   {
     "slug": "no-medical-school-interview-invites",
-    "title": "No Medical School Interview Invites? What You Should Do Next (2025)",
-    "excerpt": "Waiting on medical school interview notifications can be nerve-racking, especially when they don’t show up in the expected timeframe, or at all. The truth is, plenty of applicants find themselves in this position every admissions cycle, asking […]",
+    "title": "What to Do When You Have No Medical School Interview Invitations",
+    "excerpt": "Waiting without an interview invitation is difficult, but silence alone does not establish the outcome. Focus on checking your application status and making useful, policy-compliant next steps.",
     "date": "2025-05-29",
     "modified": "2026-03-02T18:22:10",
     "image": "/images/wordpress/f0c3a1dd3058c8c9d30558ed.jpg",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-shadowing-hours",
@@ -370,39 +381,43 @@
   },
   {
     "slug": "questions-to-ask-residency-programs",
-    "title": "Best Residency Program Questions to Ask",
-    "excerpt": "Choosing the right residency program is a big decision, possibly one of the biggest in your medical career, and making sure you’re in the place that supports your goals starts with knowing the best things to ask. Asking […]",
+    "title": "Questions to Ask Residency Programs",
+    "excerpt": "Your questions should help you understand how a residency works and whether it supports your training goals. Read the program’s published information first, then ask about details that remain unclear.",
     "date": "2025-05-15",
     "modified": "2026-03-02T18:22:14",
     "image": "/images/wordpress/f70e3a9085339ff143ba0bf9.jpg",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "crafting-the-perfect-medical-school-letter-of-intent-a-guide",
-    "title": "Crafting the Perfect Medical School Letter of Intent: A Guide",
-    "excerpt": "Crafting the Perfect Medical School Letter of Intent: A Guide Alright, so you’ve jumped through all the hoops, aced your exams, and now you’re eyeing that top-choice med school. But how do you make sure they […]",
+    "title": "Writing a Medical School Letter of Intent",
+    "excerpt": "A letter of intent communicates a genuine commitment to one medical school when the school welcomes that communication. It should reflect a decision you have actually made.",
     "date": "2025-05-14",
     "modified": "2026-03-02T18:29:05",
     "image": "/images/wordpress/930eadc66fa76ae49687b34a.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-schools-without-mcat",
-    "title": "Want to Skip the MCAT? Here’s the Lowdown on Med Schools That Might Let You",
+    "title": "Researching Medical School Pathways Without the MCAT",
     "excerpt": "If you’d like to step around the MCAT, you’re not alone. Plenty of hopeful med students find that test’s length and intensity pretty intimidating. Fortunately, certain U.S. programs, or even some Canadian schools, can sometimes let you bypass […]",
     "date": "2025-05-09",
     "modified": "2026-03-02T18:23:31",
     "image": "/images/wordpress/f70e3a9085339ff143ba0bf9.jpg",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "when-do-medical-schools-send-interview-invites",
-    "title": "When Do You Hear Back From Medical Schools for Interviews?",
-    "excerpt": "Waiting to find out if you’ve landed a medical school interview can feel like the longest stretch of the admissions process. Typically, many U.S. schools start sending invitations around mid-August and continue well into March. Canadian […]",
+    "title": "When Medical Schools Send Interview Invitations",
+    "excerpt": "Medical school interview schedules vary by institution and application cycle. The school’s current admissions information is the best starting point for understanding when an invitation might arrive.",
     "date": "2025-05-08",
     "modified": "2026-03-02T18:23:32",
     "image": "/images/wordpress/f70e3a9085339ff143ba0bf9.jpg",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-adversity-essay",
@@ -416,12 +431,13 @@
   },
   {
     "slug": "residency-program-directors-criteria",
-    "title": "What Do Residency Program Directors Look For?",
-    "excerpt": "If you’re applying for residency, one question is probably on your mind: what do residency program directors really care about? Knowing exactly what qualities these directors value can make your residency application stand out in ERAS, […]",
+    "title": "What Residency Programs Look for in an Application",
+    "excerpt": "A residency application should give a program clear evidence of your preparation, professionalism, and reasons for pursuing the specialty. Programs assess candidates differently, so avoid treating one factor list as a universal formula.",
     "date": "2025-05-01",
     "modified": "2026-03-02T18:22:19",
     "image": "/images/wordpress/0df3682ce4bc51ea38bdc71b.jpg",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "anesthesiology-residency-guide",
@@ -435,12 +451,13 @@
   },
   {
     "slug": "common-app-activities-section-guide-examples",
-    "title": "How to Fill Out the Common App Activities Section (With Real Examples!)",
-    "excerpt": "If you’re filling out the Common App right now, you might be wondering how to tackle the Activities section. It’s basically a snapshot of your high school life beyond grades and test scores, your hobbies, jobs, and […]",
+    "title": "Writing Clear Common App Activity Descriptions",
+    "excerpt": "An activity description should help a reader understand what you did and why your contribution mattered. Use your own records to make each entry accurate, specific, and easy to follow.",
     "date": "2025-04-24",
     "modified": "2026-03-02T18:22:20",
     "image": "/images/wordpress/d62c79b973df2ae4a71d4c9a.jpg",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-requirements-2025",
@@ -464,12 +481,13 @@
   },
   {
     "slug": "tell-me-about-yourself-medical-school-interview",
-    "title": "Answering “Tell Me About Yourself” for Your Medical School Interview",
-    "excerpt": "“Tell me about yourself” might seem simple, but it’s the medical school interview question that leaves many applicants scratching their heads. It’s often the first thing you’ll be asked, and your answer sets the tone for […]",
+    "title": "Answering “Tell Me About Yourself” in a Medical School Interview",
+    "excerpt": "An introductory answer can give an interviewer a clear starting point for learning about you. Choose a few truthful details that connect your background, interests, and reasons for medicine.",
     "date": "2025-04-10",
     "modified": "2026-03-02T18:22:23",
     "image": "/images/wordpress/2dfe3ebc0d7b5d04a4316873.jpg",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "out-of-state-friendly-medical-schools",
@@ -493,30 +511,23 @@
   },
   {
     "slug": "medical-school-admissions-consulting-internships",
-    "title": "Medical School Admissions Consulting: Medical Internships for High School Students",
-    "excerpt": "Medical School Admissions Consulting: Medical Internships for High School Students When you’re in high school and dreaming about a future in medicine, maybe thinking you want to become a doctor, nurse, dentist, or vet, it can feel like […]",
+    "title": "Exploring Health Careers While in High School",
+    "excerpt": "High-school students can learn about health careers through age-appropriate education, volunteering, observation, or research opportunities. A named internship is not the only useful way to explore an interest.",
     "date": "2025-03-27",
     "modified": "2026-03-02T18:22:26",
     "image": "/images/wordpress/662df52c6cee1ed2ffc2b894.jpg",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "college-admissions-consulting-top-non-ivy-schools",
-    "title": "College Admissions Consulting: Exploring Top Non-Ivy League Schools",
-    "excerpt": "If you’re exploring colleges that aren’t in the Ivy League, you’re in good company. Sure, Ivies get lots of buzz for their traditions and selective admissions, but plenty of other excellent schools can pack just as […]",
+    "title": "Finding Strong College Options Beyond the Ivy League",
+    "excerpt": "A thoughtful college list extends beyond one athletic conference or ranking category. Focus on academic opportunities, learning environment, costs, and the places where you would thrive.",
     "date": "2025-03-24",
     "modified": "2026-03-02T18:22:27",
     "image": "/images/wordpress/45f193e20f78e3087cab9619.jpg",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "common-app-activities-college-admissions-consulting",
-    "title": "How to Fill Out the Common App Activities Section (SOS Admissions Guide)",
-    "excerpt": "Your transcript doesn’t show colleges the after-school clubs you’ve joined or hours spent tutoring your neighbors. Admissions officers genuinely want to see who they’d be welcoming onto campus. At SOS Admissions, our college admissions consulting experts […]",
-    "date": "2025-03-20",
-    "modified": "2026-03-02T18:29:08",
-    "image": "/images/wordpress/1c7fd45b3efe8ecb95bcc5bf.webp",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "ucas-application-timeline",
@@ -530,30 +541,23 @@
   },
   {
     "slug": "college-admissions-consulting",
-    "title": "College & Grad School Admissions Consulting with SOS Admission",
-    "excerpt": "Finding your way through college admissions consulting can feel overwhelming: essays, interviews, recommendation letters, test prep, and more. At SOS Admissions, our goal is to shoulder that burden, so you can focus on being the strongest […]",
+    "title": "What Admissions Consulting Can Help You Do",
+    "excerpt": "Admissions consulting can help organize an application, clarify how you present your experience, and prepare for interviews. The value of that help depends on the work you need and the scope you agree on.",
     "date": "2025-03-14",
     "modified": "2026-03-02T18:29:20",
     "image": "/images/wordpress/37ff70049af23cef959018c4.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "what-do-residency-program-directors-look-for",
-    "title": "What Do Residency Program Directors Look for?",
-    "excerpt": "Once medical students reach the point of applying for residency programs, a common question arises: “What exactly are residency program directors looking for?” If your residency application, be it ERAS or CaRMS, doesn’t focus on the right qualities, […]",
-    "date": "2025-03-11",
-    "modified": "2026-03-02T18:29:22",
-    "image": "/images/wordpress/2aaa77ee54d582477b6d3d45.webp",
-    "category": "Medical Residency"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "why-residency-will-choose-you",
-    "title": "Why Residency Will Choose You",
-    "excerpt": "One question that nearly always comes up in a residency interview is: “Why should we choose you?” Maybe they word it differently, but the essence remains: Why are you such a good fit for this specialty […]",
+    "title": "Explaining Your Fit in a Residency Interview",
+    "excerpt": "A question about why a program should choose you asks for a clear account of your preparation and potential contribution. Answer through evidence from your own work rather than broad claims of superiority.",
     "date": "2025-03-07",
     "modified": "2026-03-02T18:29:31",
     "image": "/images/wordpress/5e4c148c749034af413c33b9.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "why-a-gap-year-before-med-school-might-be-exactly-what-you-need",
@@ -577,75 +581,23 @@
   },
   {
     "slug": "rotations-whats-the-deal",
-    "title": "ROTATIONS, WHAT’S THE DEAL?",
-    "excerpt": "Alright so rotations let’s talk about that you’re in one place and then, suddenly you’re in surgery it’s like one second you’re handling pediatrics and then out of nowhere boom you’re dealing with something totally different it’s […]",
+    "title": "Making the Most of Medical School Clinical Rotations",
+    "excerpt": "Clinical rotations are supervised learning experiences. They help medical students develop clinical understanding, work with care teams, and explore specialties within the responsibilities their program permits.",
     "date": "2024-11-25",
     "modified": "2026-03-02T18:29:55",
     "image": "/images/wordpress/3849ad4afe4742d5003027f7.webp",
-    "category": "Admissions Tips"
-  },
-  {
-    "slug": "when-do-you-hear-back-from-medical-schools-for-interviews",
-    "title": "When Do You Hear Back from Medical Schools for Interviews?",
-    "excerpt": "Alright, so you’ve done all the hard work, sent in your primary application, tackled those secondary essays, and now you’re just… waiting. Waiting to hear back from medical schools for interviews. That’s the final hurdle before you […]",
-    "date": "2024-11-22",
-    "modified": "2026-03-02T18:29:57",
-    "image": "/images/wordpress/dc6020822f128b801f0bdcab.webp",
-    "category": "Medical School"
+    "category": "Admissions Tips",
+    "revised": "2026-10-01"
   },
   {
     "slug": "how-long-does-it-take-to-become-a-doctor",
-    "title": "How Long Does It Take to Become a Doctor?",
-    "excerpt": "Alright, so you’re wondering how long it actually takes to become a doctor. It’s a big question, and honestly, the answer isn’t as simple as you might hope. There’s no one-size-fits-all timeline here. But let’s break […]",
+    "title": "Understanding the Stages of Becoming a Physician",
+    "excerpt": "The time required to become a physician depends on the country, entry pathway, specialty, and additional training. Plan around the actual programs and licensing rules that apply to you.",
     "date": "2024-09-09",
     "modified": "2026-03-02T18:30:03",
     "image": "/images/wordpress/45958e3af6d5ced5d63f12f7.webp",
-    "category": "Admissions Tips"
-  },
-  {
-    "slug": "6805-2",
-    "title": "",
-    "excerpt": "Crafting the Perfect Medical School Letter of Intent: A Guide Alright, so you’ve jumped through all the hoops, aced your exams, and now you’re eyeing that top-choice med school. But how do you make sure they […]",
-    "date": "2024-09-06",
-    "modified": "2026-03-02T18:30:07",
-    "image": "/images/wordpress/9af3bbee71a5a1ef42349e0e.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "expert-help-for-college-applications-is-it-right-for-you",
-    "title": "Expert Help for College Applications: Is it Right for You?",
-    "excerpt": "Navigating the college application process can be a daunting task for many students and their families. From choosing the right colleges to apply to crafting compelling essays and meeting various application deadlines, the entire process can […]",
-    "date": "2024-04-23",
-    "modified": "2025-05-14T03:35:28",
-    "image": "/images/wordpress/c6fc0763c8377d3e88cd0559.jpg",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "crafting-powerful-application-essays-a-step-by-step-guide",
-    "title": "Crafting Powerful Application Essays: A Step-by-Step Guide",
-    "excerpt": "The college application essay is a pivotal component of the admissions process, offering a unique opportunity to showcase your personality, achievements, and aspirations. Unlike standardized test scores and GPAs, essays provide a canvas for students to express […]",
-    "date": "2024-04-22",
-    "modified": "2025-05-14T03:35:56",
-    "image": "/images/wordpress/3120863acfb06f0f60fb03a0.jpg",
-    "category": "Essays & Writing"
-  },
-  {
-    "slug": "stress-less-match-more-how-residency-consultants-can-help-you-shine",
-    "title": "Stress Less, Match More: How Residency Consultants Can Help You Shine",
-    "excerpt": "Graduating from medical school is a major accomplishment, but the real work is just beginning. The next step toward becoming a practicing physician is obtaining a residency. This process is notoriously competitive and stressful, often resulting […]",
-    "date": "2024-03-29",
-    "modified": "2025-05-14T03:36:38",
-    "image": "/images/wordpress/20f72a483cfd06e61f03a38a.jpg",
-    "category": "Medical Residency"
-  },
-  {
-    "slug": "beyond-grades-and-scores-making-your-personal-statement-stand-out",
-    "title": "Beyond Grades and Scores: Making Your Personal Statement Stand Out",
-    "excerpt": "When it comes to college admissions, grades and test scores are undoubtedly important. However, they are not the only factors that admissions committees consider. Your personal statement is a valuable opportunity to showcase your unique personality, interests, […]",
-    "date": "2024-03-28",
-    "modified": "2025-05-14T03:36:55",
-    "image": "/images/wordpress/5f4bb4b13d344cfdbb42b95b.jpg",
-    "category": "Essays & Writing"
+    "category": "Admissions Tips",
+    "revised": "2026-10-01"
   },
   {
     "slug": "the-comprehensive-guide-to-college-admissions-what-you-need-to-know",
@@ -659,120 +611,33 @@
   },
   {
     "slug": "interview-prep-101-mastering-techniques-for-academic-success",
-    "title": "Interview Prep 101: Mastering Techniques for Academic Success",
-    "excerpt": "If you’re looking to ace your academic interviews, proper interview prep is crucial. Interviews can be a nerve-wracking experience for students, especially when it comes to academic interviews. Whether you are applying for a college, scholarship, or internship, […]",
+    "title": "Preparing for an Admissions Interview",
+    "excerpt": "Interview preparation helps you discuss your experience clearly and learn about an institution. The appropriate approach depends on the program and the interview format.",
     "date": "2024-03-04",
     "modified": "2025-05-14T03:38:23",
     "image": "/images/wordpress/c295c9fe22575cd961465673.jpg",
-    "category": "Interview Prep"
-  },
-  {
-    "slug": "law-school-admissions-consulting-your-secret-weapon-for-getting-that-acceptance-letter",
-    "title": "Law School Admissions Consulting: Your Secret Weapon for Getting that Acceptance Letter",
-    "excerpt": "Alright, let’s level with each other. Law school applications are a rollercoaster. The competition? Intense. The LSAT? Sometimes feels like an alien language. And those acceptance rates at top schools? Enough to make you want to […]",
-    "date": "2024-02-17",
-    "modified": "2026-03-02T18:30:56",
-    "image": "/images/wordpress/4a58591aca884d2099bea1ff.webp",
-    "category": "Law School"
-  },
-  {
-    "slug": "heading-into-the-law-school-application-arena-why-you-might-want-a-admissions-consultant",
-    "title": "Heading into the Law School Application Arena: Why You Might Want a Admissions Consultant",
-    "excerpt": "Tackling the law school application? Yeah, it feels like stepping into a ring where everyone’s vying for the championship belt. But here’s a thought: snagging yourself a Law School Admissions Consultant might just be the winning […]",
-    "date": "2024-02-08",
-    "modified": "2026-03-02T18:30:58",
-    "image": "/images/wordpress/96e28c75780c7dbd7d3a86c3.webp",
-    "category": "Law School"
-  },
-  {
-    "slug": "diving-into-the-college-admissions-maze-why-you-might-want-a-guide",
-    "title": "Diving Into the College Admissions Maze: Why You Might Want a Guide",
-    "excerpt": "So, you’re staring down the college admissions path, wondering if you need a guide, aka a college admissions consultant, to help you navigate this jungle. Let’s chat about why bringing an expert on board might just […]",
-    "date": "2024-02-05",
-    "modified": "2026-03-02T18:31:07",
-    "image": "/images/wordpress/2175b3537c392072433adf78.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "navigating-medical-school-application-requirements-a-friendly-guide",
-    "title": "Navigating Medical School Application Requirements: A Friendly Guide",
-    "excerpt": "Hey there future doctors! Let’s chat about the Medical School Application Requirements. I know it might seem like a maze, but don’t worry, I’m here to walk you through it. Think of this as your personal […]",
-    "date": "2024-01-25",
-    "modified": "2026-03-02T18:31:09",
-    "image": "/images/wordpress/a71085665ed66aff9a31b9ae.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "competitive-medical-residency-your-guide-to-the-highs-and-lows",
-    "title": "Competitive Medical Residency: Your Guide to the Highs and Lows",
-    "excerpt": "Navigating the world of competitive medical residency programs can feel like a rollercoaster, right? It’s not just about picking a specialty; it’s about understanding which ones are super competitive and which ones might give you a […]",
-    "date": "2024-01-22",
-    "modified": "2026-03-02T18:31:11",
-    "image": "/images/wordpress/b5de11d1357b16cd1c1b5147.webp",
-    "category": "Medical Residency"
-  },
-  {
-    "slug": "mastering-grad-school-applications-insider-tips-from-expert-consultants",
-    "title": "Mastering Grad School Applications: Insider Tips from Expert Consultants",
-    "excerpt": "Hey there future grad student! Thinking about grad school? It’s a big leap, but don’t worry, we’ve got your back. Let’s dive into making your application pop and getting you one step closer to that […]",
-    "date": "2024-01-04",
-    "modified": "2026-03-01T19:47:16",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Graduate School"
+    "category": "Interview Prep",
+    "revised": "2026-10-01"
   },
   {
     "slug": "cracking-the-code-insider-tips-for-gaining-admission-to-harvard-law-school",
-    "title": "Cracking the Code: Insider Tips for Gaining Admission to Harvard Law School",
-    "excerpt": "Are you dreaming of adding ‘Harvard Law Graduate’ to your resume? Well, you’re not alone, and I’m here to give you the lowdown on what it takes to walk through those hallowed halls. It’s no secret […]",
+    "title": "Planning a Harvard Law School JD Application",
+    "excerpt": "A Harvard Law School application should respond to the school’s current requirements and explain your preparation and perspective. Generic advice about prestige is not a substitute for reading the actual instructions.",
     "date": "2023-12-15",
     "modified": "2026-03-02T18:31:19",
     "image": "/images/wordpress/89529195d46e5915abb5d409.webp",
-    "category": "Law School"
+    "category": "Law School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "master-your-grad-school-application-a-friendly-guide-to-timelines-and-success",
-    "title": "Master Your Grad School Application: A Friendly Guide to Timelines and Success",
-    "excerpt": "Hey there future grad students! Embarking on the path to grad school? Feeling a little overwhelmed? Don’t sweat it! I’m here to walk you through your grad school application adventure, step by step. Think of this […]",
+    "title": "Planning a Graduate School Application Timeline",
+    "excerpt": "Graduate application deadlines and requirements vary by field, degree, and institution. Build a schedule backward from the actual program and funding deadlines rather than a universal monthly template.",
     "date": "2023-12-14",
     "modified": "2026-03-02T18:31:21",
     "image": "/images/wordpress/667b0b701db4d7fc15ee18d2.webp",
-    "category": "Graduate School"
-  },
-  {
-    "slug": "college-majors-for-law-school",
-    "title": "Unlocking Law School Success: Choose a Major That Fits You, Not Just the Mold",
-    "excerpt": "Hey there future legal eagle! If you’re gearing up to make a splash in law school and wondering what major will give you a leg up, I’ve got some insider info for you. There’s this old-school […]",
-    "date": "2023-12-04",
-    "modified": "2026-03-01T19:47:09",
-    "image": "/images/wordpress/06d2261bb04c473fefe3a0b2.webp",
-    "category": "Law School"
-  },
-  {
-    "slug": "navigating-your-ivy-league-interview-in-2023-lets-make-it-less-daunting",
-    "title": "Navigating Your Ivy League Interview in 2023, Let’s Make It Less Daunting!",
-    "excerpt": "Hey Future Ivy Leaguers! Dreaming of walking through the hallowed halls of an Ivy League school? Whether you’re breezing through applications or helping your kiddo on their educational adventure, getting the lowdown on interviews is super […]",
-    "date": "2023-11-27",
-    "modified": "2026-03-02T18:31:29",
-    "image": "/images/wordpress/c631097c88d213e321622db2.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "how-to-nail-your-college-letter-of-intent-in-2023",
-    "title": "How to Nail Your College Letter of Intent in 2023",
-    "excerpt": "Hey there! Are you trying to figure out how to write a killer college letter of intent? Well, you’ve come to the right place. This isn’t just about ticking a box in your application; it’s about […]",
-    "date": "2023-11-20",
-    "modified": "2026-03-02T18:31:31",
-    "image": "/images/wordpress/0a11a3071031e8d715a99fb9.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "college-waitlists",
-    "title": "Getting Off a College Waitlist in 2023: Tips and Tricks",
-    "excerpt": "Stuck on a college waitlist? It’s a weird spot to be in, right? You’re not exactly in, but you’re not out either. But don’t stress too much. There’s still a good shot at getting that acceptance […]",
-    "date": "2023-11-13",
-    "modified": "2026-03-01T19:47:07",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
+    "category": "Graduate School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "law-school-application-your-comprehensive-guide-to-a-promising-legal-path",
@@ -786,12 +651,13 @@
   },
   {
     "slug": "so-youre-thinking-about-an-eras-fellowship-application-heres-the-scoop",
-    "title": "So, You’re Thinking About an ERAS Fellowship Application? Here’s the Scoop!",
-    "excerpt": "Hey there, future medical fellow! If you’re reading this, you’re probably thinking about the next big leap in your medical career. Yep, I’m talking about the ERAS Fellowship Application. It’s a big deal, but don’t sweat […]",
+    "title": "Planning an ERAS Fellowship Application for the 2027 Season",
+    "excerpt": "Fellowship application planning begins with the specialty, program, and recruitment cycle. ERAS delivers applications to participating programs; it does not register you for a match.",
     "date": "2023-10-13",
     "modified": "2026-03-02T18:31:42",
     "image": "/images/wordpress/cde905116707329c9b4e3f23.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "ecfmg-certification-your-go-to-guide-for-medical-residency-applications-as-an-img",
@@ -800,25 +666,28 @@
     "date": "2023-10-09",
     "modified": "2026-03-01T19:47:05",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "decoding-the-mba-hype-is-it-really-your-golden-ticket",
-    "title": "Decoding the MBA Hype: Is It Really Your Golden Ticket?",
-    "excerpt": "So, you’re thinking about diving into the world of MBA Applications, huh? Trust me, you’re not alone. The allure of those three letters, MBA, can be almost magnetic. But let’s pump the brakes for a second and ask […]",
+    "title": "Deciding Whether an MBA Fits Your Goals",
+    "excerpt": "An MBA can be useful for some career plans, but its value depends on the program, your starting point, cost, and what you intend to do with the education.",
     "date": "2023-09-25",
     "modified": "2026-03-02T18:31:51",
     "image": "/images/wordpress/9b8bda3277cd0c663c02527e.webp",
-    "category": "MBA"
+    "category": "MBA",
+    "revised": "2026-10-01"
   },
   {
     "slug": "a-simple-guide-to-mba-jd-applications",
-    "title": "A Simple Guide to MBA-JD Applications",
-    "excerpt": "Are you thinking about getting both a business and a law degree? MBA-JD Applications can help you do just that. This special program lets you earn a Master of Business Administration (MBA) and a law degree […]",
+    "title": "Planning a Joint JD/MBA Application",
+    "excerpt": "A joint JD/MBA combines legal and business education, but program length, admissions procedures, and testing requirements vary. Begin with the specific paired program you want to attend.",
     "date": "2023-09-08",
     "modified": "2026-03-01T19:46:21",
     "image": "/images/wordpress/06d2261bb04c473fefe3a0b2.webp",
-    "category": "MBA"
+    "category": "MBA",
+    "revised": "2026-10-01"
   },
   {
     "slug": "understanding-the-psychiatry-residency-landscape-in-canada",
@@ -831,49 +700,44 @@
     "revised": "2026-10-01"
   },
   {
-    "slug": "online-law-school-applications-navigating-the-digital-shift",
-    "title": "Online Law School Applications: Navigating the Digital Shift",
-    "excerpt": "The digital era has transformed various sectors, and legal education is no exception. With the rise of online law school applications, aspiring lawyers now have more flexible avenues to pursue their dreams. This shift, accelerated by […]",
-    "date": "2023-08-24",
-    "modified": "2026-03-01T19:44:27",
-    "image": "/images/wordpress/06d2261bb04c473fefe3a0b2.webp",
-    "category": "Law School"
-  },
-  {
     "slug": "pursuing-plastic-surgery-residency",
-    "title": "Pursuing Plastic Surgery Residency",
-    "excerpt": "Embarking on a plastic surgery residency equips you with the precision of a surgeon and the finesse of a sculptor. As future plastic surgeons, you are tasked to mold, repair, and restore various aspects of the […]",
+    "title": "Researching Plastic Surgery Residency Pathways",
+    "excerpt": "Plastic surgery training pathways differ by country and by the applicant’s prior training. Verify the specific route before preparing an application or assuming you meet its prerequisites.",
     "date": "2023-08-17",
     "modified": "2026-03-01T19:46:19",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "navigating-the-ophthalmology-residency-applications-your-path-to-eye-care-excellence",
-    "title": "Navigating the Ophthalmology Residency Applications: Your Path to Eye Care Excellence",
-    "excerpt": "Introduction Embarking on a career in ophthalmology is a journey that requires not only a passion for eye health and vision care but also a strategic approach to securing a coveted residency position. Ophthalmology residency applications […]",
+    "title": "Planning a U.S. Ophthalmology Residency Application",
+    "excerpt": "U.S. ophthalmology residency applicants should begin with the specialty’s own application and matching process. A general residency calendar is not sufficient for planning this pathway.",
     "date": "2023-08-12",
     "modified": "2026-03-01T19:46:19",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "master-your-radiology-residency-match-with-our-expert-guide",
-    "title": "Master Your Radiology Residency Match with Our Expert Guide",
-    "excerpt": "A radiology residency is not as popular a residency for med school graduates as a family medicine residency or internal medicine residency, even though radiology is instrumental in saving lives. If you’ve ever taken an x-ray, […]",
+    "title": "Planning a Radiology Residency Application",
+    "excerpt": "Radiology applicants need to distinguish country, training pathway, and individual program requirements. Program information and the current recruitment calendar are more useful than undated position counts.",
     "date": "2023-08-08",
     "modified": "2026-03-01T19:46:20",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "achieving-the-rank-of-chief-resident-a-guide-for-the-aspiring-medical-professional",
-    "title": "Achieving the Rank of Chief Resident: A Guide for the Aspiring Medical Professional",
-    "excerpt": "Embarking on the journey of becoming a physician involves many pivotal steps. One such step, often considered as the last one in medical residency training, is becoming a Chief Resident. The position, earned by hardworking residents […]",
+    "title": "Considering a Chief Resident Role",
+    "excerpt": "A chief resident role may involve teaching, leadership, administration, and clinical responsibilities. Its structure and selection process differ across specialties and institutions.",
     "date": "2023-08-01",
     "modified": "2026-03-01T19:46:18",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "img-friendly-psychiatry-residency-programs-in-2023-a-comprehensive-guide",
@@ -886,15 +750,6 @@
     "revised": "2026-10-01"
   },
   {
-    "slug": "pursuing-your-passion-in-dentistry-navigating-dental-school-admissions-in-2023",
-    "title": "Pursuing Your Passion in Dentistry: Navigating Dental School Admissions in 2023",
-    "excerpt": "Dental school acceptance rates are notoriously competitive, but with the right preparation and a well-informed approach, your dream of joining the oral healthcare professionals is achievable. After all, the journey towards becoming a dentist is not […]",
-    "date": "2023-07-19",
-    "modified": "2026-03-01T19:44:18",
-    "image": "/images/wordpress/982f2689795e83b91fe902da.webp",
-    "category": "Dental School"
-  },
-  {
     "slug": "easiest-mba-programs-to-get-into-in-2023",
     "title": "Building a Realistic MBA School List",
     "excerpt": "Choose MBA programs by eligibility, goals, training, and practical fit. An old acceptance-rate list cannot establish that a program is easy to enter or right for you.",
@@ -902,56 +757,6 @@
     "modified": "2026-03-01",
     "image": "/images/wordpress/7dc249f1a649aabf1e506d41.webp",
     "category": "MBA",
-    "revised": "2026-10-01"
-  },
-  {
-    "slug": "mit-how-to-get-admitted",
-    "title": "Planning a MIT Application",
-    "excerpt": "A MIT application should reflect your actual preparation and interests. Start with the institution’s current instructions and build a balanced college plan.",
-    "date": "2023-06-21",
-    "modified": "2026-03-01T19:46:16",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions",
-    "revised": "2026-10-01"
-  },
-  {
-    "slug": "cornell-how-to-get-admitted",
-    "title": "Planning a Cornell Application",
-    "excerpt": "A Cornell application should reflect your actual preparation and interests. Start with the institution’s current instructions and build a balanced college plan.",
-    "date": "2023-06-06",
-    "modified": "2026-03-01T19:46:16",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions",
-    "revised": "2026-10-01"
-  },
-  {
-    "slug": "harvard-applications",
-    "title": "Planning a Harvard Application",
-    "excerpt": "A Harvard application should reflect your actual preparation and interests. Start with the institution’s current instructions and build a balanced college plan.",
-    "date": "2023-05-30",
-    "modified": "2026-03-01T19:46:15",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions",
-    "revised": "2026-10-01"
-  },
-  {
-    "slug": "upenn-how-to-get-admitted",
-    "title": "Planning a Penn Application",
-    "excerpt": "A Penn application should reflect your actual preparation and interests. Start with the institution’s current instructions and build a balanced college plan.",
-    "date": "2023-05-23",
-    "modified": "2026-03-01T19:46:14",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions",
-    "revised": "2026-10-01"
-  },
-  {
-    "slug": "columbia-university-how-to-get-admitted",
-    "title": "Planning a Columbia Application",
-    "excerpt": "A Columbia application should reflect your actual preparation and interests. Start with the institution’s current instructions and build a balanced college plan.",
-    "date": "2023-05-16",
-    "modified": "2026-03-01T19:46:14",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions",
     "revised": "2026-10-01"
   },
   {
@@ -966,48 +771,43 @@
   },
   {
     "slug": "college-applications-get-admitted-with-low-gpa",
-    "title": "College Applications, Get Admitted with Low GPA",
-    "excerpt": "What if your GPA is low, but you’re a great student? There are plenty of ways to get accepted to college with low GPA. While some colleges may require a higher GPA, many will consider lower […]",
+    "title": "Planning College Applications with a Lower GPA",
+    "excerpt": "A lower GPA calls for a realistic school list and a careful presentation of your record. Other parts of an application can add context, but they do not erase grades or guarantee admission.",
     "date": "2023-05-02",
     "modified": "2026-03-01T19:46:05",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "amcas-personal-statement",
-    "title": "AMCAS Personal Statement",
-    "excerpt": "An AMCAS Personal Statement is fundamental in letting the admissions committee of all the medical schools you’re applying to get a more personal and in-depth look into who you are as a person. With a stellar […]",
-    "date": "2023-04-25",
-    "modified": "2026-03-01T19:46:05",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Medical School"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-fellowship-interview-questions-what-they-are-and-how-to-approach-them",
-    "title": "Medical Fellowship Interview Questions: What They are and How to Approach Them",
-    "excerpt": "A Medical Fellowship Interview is sometimes necessary to shave off a long list of applicants hoping to specialize in a certain field of medicine. Depending on the program, a virtual or walk-in interview might be in […]",
+    "title": "Preparing for Medical Fellowship Interview Questions",
+    "excerpt": "A fellowship interview is an opportunity to explain your preparation, understand a program, and discuss the next stage of your training. Specific, truthful answers are more useful than a memorized performance.",
     "date": "2023-04-17",
     "modified": "2026-03-01T19:46:04",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Interview Prep"
+    "category": "Interview Prep",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-residency-planning",
-    "title": "Medical Residency: Planning Your Future",
-    "excerpt": "A proper Medical Residency Planning strategy can help eliminate some of the uncertainties you might feel during medical school or residency. So to sketch out your future and help fill in the blanks, this short guide […]",
+    "title": "Planning Your Career After Residency",
+    "excerpt": "Preparing for the next stage after residency involves training, practice requirements, work opportunities, and personal priorities. Begin with the role you want and the conditions needed to enter it.",
     "date": "2023-04-10",
     "modified": "2026-03-01T19:44:16",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-residency-mspe-letter",
-    "title": "Medical Residency: MSPE Letter Noteworthy Characteristics",
-    "excerpt": "For a Medical Residency, an MSPE letter is a crucial aspect, and your chances of impressing the residency admissions committee (or directors) lie entirely within the contents of the MSPE letter. However, a Medical Residency: MSPE […]",
+    "title": "Understanding the MSPE and Noteworthy Characteristics",
+    "excerpt": "The Medical Student Performance Evaluation is prepared by the medical school to describe a student’s record. It is one part of a residency application, not a substitute for the complete record or a guarantee of selection.",
     "date": "2023-04-03",
     "modified": "2026-03-01T19:46:03",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-residency-salary",
@@ -1031,21 +831,23 @@
   },
   {
     "slug": "pa-vs-md-applications-which-should-you-choose",
-    "title": "PA vs MD Applications: Which Should You Choose?",
-    "excerpt": "Deciding on PA vs MD applications can feel daunting, especially since becoming a fully-fledged Doctor of Medicine (MD) is not for everybody. A Physician Assistant (PA) is not that much different from an MD. However, in […]",
+    "title": "Comparing PA and Physician Training Pathways",
+    "excerpt": "PA and physician careers have distinct education, licensing, and professional pathways. Choose based on the work you want to do and the requirements you are prepared to meet, rather than treating one profession as a fallback for the other.",
     "date": "2023-03-13",
     "modified": "2026-03-01T19:46:02",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Admissions Tips"
+    "category": "Admissions Tips",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-applications-are-graduate-degrees-necessary",
-    "title": "Medical School Applications: Are Graduate Degrees Necessary?",
-    "excerpt": "Medical School Applications are not easy to get into. Even with a unique resume filled with relevant extracurricular activities, satisfactory GPA, and MCAT scores some of you may find yourself lacking in your ability to impress […]",
+    "title": "Considering Graduate Study Before Medical School",
+    "excerpt": "A graduate degree is a substantial educational commitment. Consider it for a clear learning or career purpose, and check how it relates to your target medical schools’ requirements.",
     "date": "2023-03-10",
     "modified": "2026-03-01T19:46:00",
     "image": "/images/wordpress/fb2ce7c4de0dafd875e29722.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-interview-coaching",
@@ -1059,12 +861,13 @@
   },
   {
     "slug": "rolling-admissions-for-medical-school",
-    "title": "Rolling Admissions for Medical School",
-    "excerpt": "Rolling Admissions for Medical School might be a stellar opportunity for you to apply early and get a head start, especially with regard to your academic performance, extracurriculars, financials, and housing arrangements. However, if you don’t […]",
+    "title": "Understanding Rolling Medical School Admissions",
+    "excerpt": "In a rolling process, a medical school considers applications and may make decisions during the cycle. This does not mean admission is simply first come, first served or that every school follows the same schedule.",
     "date": "2023-03-06",
     "modified": "2026-03-01T19:46:02",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "how-to-get-into-an-mba-program-with-a-low-gpa",
@@ -1078,12 +881,13 @@
   },
   {
     "slug": "usmle-for-medical-residency",
-    "title": "USMLE Step 1 Study Plan for Medical Residency: How to Prepare Ahead",
-    "excerpt": "A USMLE Step 1 Study Plan requires weeks of careful planning and studying. A solid USLME Step 1 Study plan requires you to remain calm, composed, and knowledgeable during the arduous eight-hour exam, so let’s talk […]",
+    "title": "Planning Your USMLE Step 1 Preparation",
+    "excerpt": "Step 1 is part of the United States Medical Licensing Examination sequence. Plan your preparation around current exam guidance, your medical education, and the eligibility rules that apply to you.",
     "date": "2023-02-27",
     "modified": "2026-03-01T19:46:01",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-residency-personal-statement-common-mistakes",
@@ -1097,75 +901,83 @@
   },
   {
     "slug": "extracurriculars-for-college-applications",
-    "title": "Extracurriculars for College Applications",
-    "excerpt": "Extracurriculars for College Applications play an integral role in the college admissions process. Participating in extracurriculars can be a great way for students to explore different interests, develop leadership skills, and stand out on college applications. […]",
+    "title": "Choosing Activities Before Applying to College",
+    "excerpt": "Activities can help you explore interests, contribute to others, and develop skills. The most useful choices fit your circumstances and give you something meaningful to do and learn.",
     "date": "2023-02-14",
     "modified": "2026-03-01T19:45:57",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-interview-coaching-for-policy-type-questions",
-    "title": "Medical School Interview Coaching for Policy-Type Questions",
-    "excerpt": "Medical School Interview Prep, with the help of professionals and proper resources, can help you ace those MMIs. Within these multiple mini-interviews, one of the core aspects that the committee wishes to test you on is […]",
+    "title": "Discussing Health Policy in a Medical School Interview",
+    "excerpt": "A policy question can invite you to explain a problem, consider competing priorities, and reason through possible responses. Preparation should develop understanding rather than a memorized position.",
     "date": "2023-02-07",
     "modified": "2026-03-01T19:45:58",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "mba-interview-coaching",
-    "title": "MBA Interview Coaching, Why Get It?",
-    "excerpt": "For an MBA interview: your grades, essays, and SOPs are irrelevant. Instead, The Applications committee on an MBA program needs to ensure that your demeanor and communication skills are as well-rounded as your resume. So even […]",
+    "title": "Preparing for an MBA Interview",
+    "excerpt": "An MBA interview gives you another opportunity to explain your experience, goals, and reasons for choosing a program. Your answers should be consistent with the rest of your application.",
     "date": "2023-02-03",
     "modified": "2026-03-01T19:44:04",
     "image": "/images/wordpress/7dc249f1a649aabf1e506d41.webp",
-    "category": "MBA"
+    "category": "MBA",
+    "revised": "2026-10-01"
   },
   {
     "slug": "mba-diversity-essay-2",
-    "title": "MBA Diversity Essay",
-    "excerpt": "The MBA Diversity Essay is one of the most important components of an MBA application. It serves as a way for applicants to showcase their unique experiences, views, and perspectives that can contribute to the overall […]",
+    "title": "Writing an MBA Essay About Perspective and Contribution",
+    "excerpt": "Some MBA prompts ask about background, perspective, community, or contribution. Respond to the school’s current wording rather than assuming every application requires a separate diversity essay.",
     "date": "2023-01-31",
     "modified": "2026-03-01T19:44:05",
     "image": "/images/wordpress/7dc249f1a649aabf1e506d41.webp",
-    "category": "MBA"
+    "category": "MBA",
+    "revised": "2026-10-01"
   },
   {
     "slug": "law-school-interview",
-    "title": "Law School Interview: How to Ace It with Coaching",
-    "excerpt": "Applying to law school is a rigorous process, and the interview is an important part of it. It’s your chance to showcase your passion for the law, your unique qualifications, and your fit for the school. […]",
+    "title": "Preparing for a Law School Interview",
+    "excerpt": "An interview can help a program understand your preparation for law. Begin with the school’s current instructions and use accurate examples from your own experience.",
     "date": "2023-01-27",
     "modified": "2026-03-01T19:44:03",
     "image": "/images/wordpress/06d2261bb04c473fefe3a0b2.webp",
-    "category": "Law School"
+    "category": "Law School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "ph-d-topics-a-guide-to-choosing-an-appropriate-topic",
-    "title": "Ph.D. Topics: A Guide to Choosing an Appropriate Topic",
-    "excerpt": "Ph.D. topics, is this your concern? If yes, then don’t worry because you have landed on the right page. Here, you will find a piece of brief information about how to choose the right topic while […]",
+    "title": "Developing a Feasible PhD Research Interest",
+    "excerpt": "A research interest should connect a meaningful question with the preparation, supervision, and resources needed to investigate it. The level of detail expected at admission varies by discipline and program.",
     "date": "2023-01-24",
     "modified": "2026-03-01T19:44:02",
     "image": "/images/wordpress/fb2ce7c4de0dafd875e29722.webp",
-    "category": "Graduate School"
+    "category": "Graduate School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "vet-school-interview",
-    "title": "Vet School Interview, How to Ace It",
-    "excerpt": "The Vet School Interview is a daunting experience that can make or break your chances of acceptance. It’s essential to prepare adequately for the interview, understanding what questions may be asked and how you can best […]",
+    "title": "Preparing for a Veterinary School Interview",
+    "excerpt": "An interview can help a program understand your preparation for veterinary medicine. Begin with the school’s current instructions and use accurate examples from your own experience.",
     "date": "2023-01-20",
     "modified": "2026-03-01T19:44:01",
     "image": "/images/wordpress/851634bd0eb087973e46fb97.webp",
-    "category": "Interview Prep"
+    "category": "Interview Prep",
+    "revised": "2026-10-01"
   },
   {
     "slug": "college-waitlist",
-    "title": "How to Get Out of a College Waitlist",
-    "excerpt": "A college waitlist is a special kind of “limbo” since the college is on the fence about accepting you into the program. Although it’s an indication that your grades and extracurricular activities are not stellar, it […]",
+    "title": "Responding to a College Waitlist Decision",
+    "excerpt": "A waitlist is an uncertain possibility, not an offer of admission. Follow the institution’s instructions while preserving a realistic plan for where you will enroll.",
     "date": "2023-01-18",
     "modified": "2026-03-01T19:43:53",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   },
   {
     "slug": "caspa-letter-of-recommendation",
@@ -1179,12 +991,13 @@
   },
   {
     "slug": "physician-resume-writing",
-    "title": "Medical Residency: Physician Resume Writing Guide",
-    "excerpt": "Medical residency physician resume writing guides provide information that makes your CV impressive. Regardless of how impressive your qualifications as a medical professional are, an elegantly written CV could be only what grabs the hiring managers’ […]",
+    "title": "Preparing a Physician CV for an Application",
+    "excerpt": "A physician CV should present education, training, work, and scholarship accurately in a format appropriate to its purpose. Follow the receiving institution’s requirements when a template or application form is supplied.",
     "date": "2022-11-28",
     "modified": "2026-03-01T19:43:50",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Medical Residency"
+    "category": "Medical Residency",
+    "revised": "2026-10-01"
   },
   {
     "slug": "canadian-medical-schools-applications",
@@ -1208,21 +1021,23 @@
   },
   {
     "slug": "medical-fellowship-applications",
-    "title": "Medical Fellowship Applications",
-    "excerpt": "What is a Medical Fellowship? A medical fellowship is a training program for medical students who have completed their residency. After completing the residency, they can continue their practice in a specific field, such as dentists, […]",
+    "title": "Preparing a Medical Fellowship Application",
+    "excerpt": "A medical fellowship provides physicians with advanced training beyond a core residency. The appropriate pathway depends on the subspecialty, prior training, location, and individual program.",
     "date": "2022-04-29",
     "modified": "2026-03-01T19:43:38",
     "image": "/images/wordpress/04f0f35e876a25055e875c20.webp",
-    "category": "Admissions Tips"
+    "category": "Admissions Tips",
+    "revised": "2026-10-01"
   },
   {
     "slug": "preparing-for-an-osteopathic-medical-school-interview",
-    "title": "Osteopathic Medical School Interview: How to Prepare",
-    "excerpt": "Osteopathic Medicine might be viewed as pseudoscience by certain individuals, and you might have heard some kind of criticism when you decide to choose Osteopathic Medicine as your field. On the other hand, many individuals would […]",
+    "title": "Preparing for an Osteopathic Medical School Interview",
+    "excerpt": "An interview can help a program understand your preparation for osteopathic medicine. Begin with the school’s current instructions and use accurate examples from your own experience.",
     "date": "2022-04-25",
     "modified": "2026-03-01T19:43:37",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "medical-school-admissions-for-mature-applicants",
@@ -1235,49 +1050,24 @@
     "revised": "2026-10-01"
   },
   {
-    "slug": "college-applications-general-advice",
-    "title": "College Applications, General Advice",
-    "excerpt": "College applications to stand out, you must put in a lot of effort. Know the application process; it will climb to the top of the pile. Tests, essays, recommendation letters, and transcripts are just a few […]",
-    "date": "2022-04-15",
-    "modified": "2026-03-01T19:45:49",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
     "slug": "law-school-applications-with-low-gpa",
-    "title": "Law School Applications with Low GPA",
-    "excerpt": "Law school applications with a low GPA can be challenging for law school candidates who are concerned about applying for law school admission with higher criteria. The best approach is to prepare the most excellent law […]",
+    "title": "Addressing a Lower GPA in a Law School Application",
+    "excerpt": "A lower GPA should inform a realistic application strategy. Review how your target schools evaluate academic records and present any relevant context accurately.",
     "date": "2022-04-11",
     "modified": "2026-03-01T19:45:49",
     "image": "/images/wordpress/06d2261bb04c473fefe3a0b2.webp",
-    "category": "Law School"
+    "category": "Law School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "mcat-activities-descriptions",
-    "title": "Medical School Admissions: Activities Section and the MCAT",
-    "excerpt": "The Activities Section also holds significant importance when someone intends to get admission to Medical College. So, if you want to get admission, you need to stand out in the common activities section and prepare for […]",
+    "title": "Distinguishing the MCAT from Application Experience Entries",
+    "excerpt": "The MCAT and a medical school application’s experience section serve different purposes. Preparing for one does not replace completing the other accurately.",
     "date": "2022-03-28",
     "modified": "2026-03-01T19:45:48",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "dental-school-admissions-help",
-    "title": "Dental School Admissions: Become A Dentist- From High School To Dental School",
-    "excerpt": "From high school to dental school, it’s a long way to achieve your dream of becoming a dentist. If you’ve made up your mind in high school of becoming one, the proper guidance is required from […]",
-    "date": "2021-09-18",
-    "modified": "2026-03-01T19:43:36",
-    "image": "/images/wordpress/982f2689795e83b91fe902da.webp",
-    "category": "Dental School"
-  },
-  {
-    "slug": "dental-school-applications-become-a-dentist-from-high-school-to-dental-school",
-    "title": "Dental School Applications: Become A Dentist- From High School To Dental School",
-    "excerpt": "From high school to dental school, it’s a long way to achieve your dream of becoming a dentist. If you’ve made up your mind in high school of becoming one, the proper guidance is required from […]",
-    "date": "2021-09-14",
-    "modified": "2026-03-01T19:43:29",
-    "image": "/images/wordpress/982f2689795e83b91fe902da.webp",
-    "category": "Dental School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "everything-you-need-to-know-about-letter-of-intent-for-medical-residency",
@@ -1290,31 +1080,14 @@
     "revised": "2026-10-01"
   },
   {
-    "slug": "common-app-activities",
-    "title": "How To Make The Best Use Of Common App Activities Section?",
-    "excerpt": "Common App Activities is the section where you have to mention the extra co-curricular activities you were part of in your high school. It has some fields you need to fill up. You can list out […]",
-    "date": "2021-07-12",
-    "modified": "2026-03-01T19:43:16",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "what-is-in-the-common-app-activities-section",
-    "title": "What Is In The Common App Activities Section?",
-    "excerpt": "The Common App Activities section is the part where you can show your skills off outside of academics. While applying for colleges, you come across several categories: essays, GPA, SAT, and Common App Activities. Extracurricular activities […]",
-    "date": "2021-07-11",
-    "modified": "2026-03-01T19:43:15",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
     "slug": "casper-test",
-    "title": "HOW DOES THE PROCESS OF CASPER TEST WORKS?",
+    "title": "Planning for the Casper Assessment",
     "excerpt": "Understand current Casper requirements, plan your assessment, and prepare alongside the rest of your admissions application.",
     "date": "2021-06-17",
     "modified": "2026-03-01T19:43:13",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "best-physician-assistant-schools-with-their-modules",
@@ -1328,7 +1101,7 @@
   },
   {
     "slug": "what-are-the-basic-skills-prioritized-by-physician-assistant-schools-that-simplifies-your-admission-process",
-    "title": "WHAT ARE THE BASIC SKILLS PRIORITIZED BY PHYSICIAN ASSISTANT SCHOOLS THAT SIMPLIFIES YOUR ADMISSION PROCESS",
+    "title": "Preparing the Skills Needed for PA School",
     "excerpt": "Physician Assistant Schools are competitive to get in even if you possess all the requirements, the hidden skills prioritized by PA schools play a vital role. It’s crucial to know how to ace the skills asked […]",
     "date": "2021-05-28",
     "modified": "2026-03-01T19:43:00",
@@ -1358,30 +1131,23 @@
   },
   {
     "slug": "premedical-gap-year",
-    "title": "Medical Research as an Option for a Premedical Gap Year",
-    "excerpt": "Medical Research as an Option for a Premedical Gap Year: Advantage Technically, research is not a requirement for gaining admission into med school, but most competitive prospective students build their research experience when they were still […]",
+    "title": "Considering Research During a Premedical Gap Year",
+    "excerpt": "Research can help you explore a question and learn how evidence is developed. Choose it because it fits your interests and preparation needs rather than because you assume every applicant requires a publication.",
     "date": "2021-04-22",
     "modified": "2026-03-01T19:42:45",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "premedical-gap-year-pursue-medical-work-experience-or-clinical-shadowing",
-    "title": "Premedical Gap Year: Pursue Medical Work Experience Or Clinical Shadowing",
-    "excerpt": "Premedical Gap Years can be a good opportunity to obtain professional medical work experience (for instance, you can work as an EMT, a medical assistant, or a scribe) Advantage The Premedical gap year is a good […]",
+    "title": "Choosing Clinical Work or Shadowing During a Gap Year",
+    "excerpt": "Clinical work and shadowing can help you understand medicine in different ways. Choose an experience that fits your learning needs and the expectations of your target schools.",
     "date": "2021-04-20",
     "modified": "2026-03-01T19:45:45",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "medical-school-gap-year-2",
-    "title": "Medical School Gap Year Options: Carrying Out Research In The Medical Or Medical-Related Field",
-    "excerpt": "Medical Research as Medical School Gap Year Option Advantage As a Medical School Gap Year Option, Medical Research is not a requirement for gaining admission into med school, but most competitive prospective students build their research […]",
-    "date": "2021-04-18",
-    "modified": "2026-03-01T19:42:38",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "special-masters-program-smp-as-an-option-during-a-premedical-gap-year",
@@ -1395,111 +1161,23 @@
   },
   {
     "slug": "masters-in-public-health-mph",
-    "title": "Master’s in Public Health (MPH) as a Medical School Gap Year Option",
-    "excerpt": "Advantage Master’s in Public Health (MPH) is interesting for many prospective medical students. You have a lot of opportunities opened to you even if you do not work as a physician once you obtain the degree. […]",
+    "title": "Considering an MPH Before Medical School",
+    "excerpt": "An MPH may fit an interest in public health, but it should be evaluated as a degree with its own purpose. It is not a universal remedy for a medical school application.",
     "date": "2021-04-08",
     "modified": "2026-03-01T19:42:35",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "the-best-way-to-make-use-of-your-gap-year-before-venturing-into-medical-school-introduction",
-    "title": "The Best Way To Make Use of Your Gap Year Before Venturing Into Medical School, Introduction",
-    "excerpt": "We have gotten messages from students who want to take a gap year asking for our recommendations regarding what they can do during the gap year. We usually tell them that it all depends on what […]",
-    "date": "2021-04-05",
-    "modified": "2026-03-01T19:42:34",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "medical-school-gap-year",
-    "title": "The Best Way To Make Use of Your Gap Year Before Venturing Into Medical School, Section 2",
-    "excerpt": "Section Two: The Pros and Cons of gap year Let’s discuss if you should even take a gap year before we dive right into the option available to you. Sometimes taking this decision can be confusing. […]",
-    "date": "2021-04-02",
-    "modified": "2026-03-01T19:42:33",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "college-interview",
-    "title": "Don’t Do These Things After An Admissions Interview",
-    "excerpt": "Failing to follow up. It is very crucial that you send this thank-you mail. You can also save it in your calendar! You can even scribble some notes on the palm of your hand if you […]",
-    "date": "2021-04-01",
-    "modified": "2026-03-01T19:42:24",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "the-best-way-to-make-use-of-your-gap-year-before-venturing-into-medical-school",
-    "title": "The Best Way To Make Use of Your Gap Year Before Venturing Into Medical School",
-    "excerpt": "This guide will help you make the right choice and maximize your chances of getting admission. This blog is divided into three sections: the Introduction, the Pros and Cons of a gap year, and available gap […]",
-    "date": "2021-03-26",
-    "modified": "2026-03-01T19:42:23",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "ensure-that-you-send-the-email-to-schools-when-your-state-of-mind-is-clear",
-    "title": "Ensure That You Send The Email To Schools When Your State Of Mind Is Clear",
-    "excerpt": "Sending the email in a clear state of mind ensures that the quality of the earlier writing is preserved. This will also allow you to catch errors you missed before you send it. It doesn’t make […]",
-    "date": "2021-03-22",
-    "modified": "2026-03-01T19:42:22",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Admissions Tips"
-  },
-  {
-    "slug": "send-the-thank-you-email-to-the-college-interviewer-not-later-than-24-hours-after-your-interview",
-    "title": "Send The Thank-You Email To The College Interviewer Not Later Than 24 Hours After Your Interview.",
-    "excerpt": "Do not send the email just 1 or 2 hours after the college interview has ended. If you send it too quickly, it simply tells your interviewer that you lack social and professional etiquette. However, do […]",
-    "date": "2021-03-21",
-    "modified": "2026-03-01T19:42:21",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "your-post-interview-thank-you-email-should-be-written-very-early",
-    "title": "Your Post Interview Thank-You Email Should Be Written Very Early",
-    "excerpt": "Once you are done with the Interview, note down what you and the interviewer talked about. Note down all that you remember, as well as specific details about what you discussed. After that, start writing your […]",
-    "date": "2021-03-19",
-    "modified": "2026-03-01T19:42:10",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Interview Prep"
+    "category": "Medical School",
+    "revised": "2026-10-01"
   },
   {
     "slug": "how-to-compose-and-format-your-post-interview-thank-you-email-the-correct-way",
-    "title": "How To Compose And Format Your Post Interview Thank-You Email The Correct Way",
-    "excerpt": "In order to do this the right way, take into consideration this general guideline below as the beginning of your mail: Dear Mr./Ms./Mrs. ____[the interviewer’s last name**]____, I appreciate taking your time to meet with me on ____[date]____. […]",
+    "title": "Writing a Thoughtful Post-Interview Thank-You Note",
+    "excerpt": "A brief thank-you note can acknowledge an interviewer’s time when the school permits follow-up communication. It should be accurate, courteous, and proportionate.",
     "date": "2021-03-18",
     "modified": "2026-03-01T19:42:08",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "Interview Prep"
-  },
-  {
-    "slug": "at-end-of-a-college-interview-sample-thank-you-letters",
-    "title": "At End of a College Interview: Sample Thank You Letters",
-    "excerpt": "It is very easy to write a thank you letter after reading some sample letters. Make the letter very unique to your conversation with the interviewer. Ensure that you take your time to personalize the thank […]",
-    "date": "2021-03-17",
-    "modified": "2026-03-01T19:42:08",
-    "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "when-is-the-right-time-to-write-a-thank-you-email-after-a-college-interview",
-    "title": "When Is The Right Time to Write a Thank You Email After a College Interview?",
-    "excerpt": "Write your thank you email while you can still remember the details of the interview. It is very important to write the thank you email on the same day you took the interview. Also, ensure that […]",
-    "date": "2021-03-13",
-    "modified": "2026-03-01T19:42:06",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "College Admissions"
-  },
-  {
-    "slug": "what-are-the-prerequisite-courses-that-are-frequently-required-for-medical-school",
-    "title": "What Are The Prerequisite Courses That Are Frequently Required For Medical School?",
-    "excerpt": "Every school has its prerequisites courses, so ensure that you get detailed information about the coursework required. You can also look up the official website of your preferred medical school to make sure that you have […]",
-    "date": "2021-03-05",
-    "modified": "2026-03-01T19:42:05",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
+    "category": "Interview Prep",
+    "revised": "2026-10-01"
   },
   {
     "slug": "express-genuine-interest-in-a-school",
@@ -1512,30 +1190,13 @@
     "revised": "2026-10-01"
   },
   {
-    "slug": "apply-factors-affecting-medical-school-application",
-    "title": "Should You Apply? Factors Affecting Your Medical School Application",
-    "excerpt": "Medical schools are looking for applicants with strong records of academic achievement and ability, excellent interpersonal skills, evidence of compassion and concern for others, maturity, and a well-informed motivation for medicine. They try to determine who […]",
-    "date": "2017-11-28",
-    "modified": "2026-03-01T19:41:55",
-    "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
-    "category": "Medical School"
-  },
-  {
-    "slug": "mba-application-components",
-    "title": "MBA Application Components",
-    "excerpt": "Although there are some MBA programs that require little more than your name and a copy of your past transcripts, most programs are more selective. This is especially true of the programs offered at top-tier business […]",
-    "date": "2017-11-28",
-    "modified": "2026-03-01T19:41:54",
-    "image": "/images/wordpress/7dc249f1a649aabf1e506d41.webp",
-    "category": "MBA"
-  },
-  {
-    "slug": "college-planning-checklist-high-school-students",
-    "title": "College Planning Checklist for High School Students",
-    "excerpt": "The spring of junior (11th Grade) year can be one of the most exciting and productive periods in the college search and admissions process. Your counselor can play a key role in helping you navigate the […]",
-    "date": "2017-11-28",
-    "modified": "2026-03-01T19:41:53",
+    "slug": "researching-selective-university-applications",
+    "title": "Researching Selective University Applications",
+    "excerpt": "Selective universities have distinct application requirements and educational environments. Compare them through current official information while building a college plan that includes more than one possible outcome.",
+    "date": "2023-06-21",
+    "modified": "2026-03-01T19:46:16",
     "image": "/images/wordpress/33de03d175452dcb514dbd29.webp",
-    "category": "College Admissions"
+    "category": "College Admissions",
+    "revised": "2026-10-01"
   }
 ]

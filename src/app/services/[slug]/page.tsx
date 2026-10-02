@@ -1,7 +1,7 @@
-import { Metadata } from 'next';
-import { services, getServiceBySlug } from '@/data/services';
-import { notFound } from 'next/navigation';
-import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from "next";
+import { services, getServiceBySlug } from "@/data/services";
+import { notFound } from "next/navigation";
+import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 type Props = {
   params: Promise<{
@@ -13,32 +13,32 @@ type Props = {
 // site's URL structure. Canonicalize to the root-level URL so Google indexes
 // the same URL set as sosadmissions.com.
 const CANONICAL_PATHS: Record<string, string> = {
-  'college-admissions-freshman': '/college-admissions/',
-  'college-admissions-transfer': '/college-transfers/',
-  'masters-degree': '/graduate-school-application/',
-  'phd-programs': '/phd-application-consulting/',
-  'mba-programs': '/mba/',
-  'medical-school': '/medical-school-application/',
-  'medical-school-consulting': '/medical-school-admissions-consulting/',
-  'dental-school': '/dental-school-application/',
-  'law-school': '/law-school-application/',
-  'medical-residency': '/medical-residency/',
-  'nursing-programs': '/general-nursing/',
-  'general-nursing': '/general-nursing/',
-  'nurse-practitioner-admissions': '/np-admissions/',
-  'crna-admissions': '/crna-admissions/',
-  'pa-school': '/pa-school-admissions-consulting/',
-  'pa-school-admissions': '/pa-school-admissions-consulting/',
-  'computer-science-admissions': '/computer-science-admissions-consultant/',
-  'psychology-counseling-admissions': '/psychology-counseling-admissions/',
-  'bs-md-programs': '/bs-md-admissions-consulting/',
-  'veterinary-school-admissions': '/veterinary-school-admissions/',
-  'personal-statement-writing': '/personal-statement/',
-  'interview-coaching': '/college-interviews/',
-  'letters-of-recommendation': '/letters-of-recommendation/',
-  'standardized-test-prep': '/sat-act-preparation/',
-  'international-students': '/international-students/',
-  'private-school-k12': '/private-school-admissions/',
+  "college-admissions-freshman": "/college-admissions/",
+  "college-admissions-transfer": "/college-transfers/",
+  "masters-degree": "/graduate-school-application/",
+  "phd-programs": "/phd-application-consulting/",
+  "mba-programs": "/mba/",
+  "medical-school": "/medical-school-application/",
+  "medical-school-consulting": "/medical-school-admissions-consulting/",
+  "dental-school": "/dental-school-application/",
+  "law-school": "/law-school-application/",
+  "medical-residency": "/medical-residency/",
+  "nursing-programs": "/general-nursing/",
+  "general-nursing": "/general-nursing/",
+  "nurse-practitioner-admissions": "/np-admissions/",
+  "crna-admissions": "/crna-admissions/",
+  "pa-school": "/pa-school-admissions-consulting/",
+  "pa-school-admissions": "/pa-school-admissions-consulting/",
+  "computer-science-admissions": "/computer-science-admissions-consultant/",
+  "psychology-counseling-admissions": "/psychology-counseling-admissions/",
+  "bs-md-programs": "/bs-md-admissions-consulting/",
+  "veterinary-school-admissions": "/veterinary-school-admissions/",
+  "personal-statement-writing": "/personal-statement/",
+  "interview-coaching": "/college-interviews/",
+  "letters-of-recommendation": "/letters-of-recommendation/",
+  "standardized-test-prep": "/sat-act-preparation/",
+  "international-students": "/international-students/",
+  "private-school-k12": "/private-school-admissions/",
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!service) {
     return {
-      title: 'Service Not Found',
+      title: "Service Not Found",
     };
   }
 
@@ -62,12 +62,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: service.title,
       description: service.shortDescription,
-      type: 'website',
+      type: "website",
     },
     keywords: [
       service.title.toLowerCase(),
-      'admissions consulting',
-      'application coaching',
+      "admissions consulting",
+      "application coaching",
       ...service.features.slice(0, 3),
     ],
   };

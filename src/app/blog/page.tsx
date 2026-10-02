@@ -1,19 +1,21 @@
-import { Metadata } from 'next';
-import { BlogContent } from '@/components/BlogContent';
+import { Metadata } from "next";
+import { BlogContent } from "@/components/BlogContent";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Admissions Blog | Expert Tips & Strategies - SOS Admissions' },
+  title: {
+    absolute: "Admissions Blog | Expert Tips & Strategies - SOS Admissions",
+  },
   description:
-    'Read expert admissions insights and strategies for medical school, residency, law school, MBA, graduate programs, and college applications from SOS Admissions.',
+    "Read expert admissions insights and strategies for medical school, residency, law school, MBA, graduate programs, and college applications from SOS Admissions.",
   alternates: {
-    canonical: 'https://sosadmissions.com/blog/',
+    canonical: "https://sosadmissions.com/blog/",
   },
   openGraph: {
-    title: 'Admissions Blog | Expert Tips & Strategies - SOS Admissions',
+    title: "Admissions Blog | Expert Tips & Strategies - SOS Admissions",
     description:
-      'Read expert admissions insights and strategies for medical school, residency, law school, MBA, graduate programs, and college applications from SOS Admissions.',
-    url: 'https://sosadmissions.com/blog/',
-    type: 'website',
+      "Read expert admissions insights and strategies for medical school, residency, law school, MBA, graduate programs, and college applications from SOS Admissions.",
+    url: "https://sosadmissions.com/blog/",
+    type: "website",
   },
 };
 
@@ -27,7 +29,8 @@ export default function BlogPage() {
             Admissions Insights & Tips
           </h1>
           <p className="text-xl text-slate-600">
-            Expert guidance and actionable tips to help you succeed in the admissions process.
+            Expert guidance and actionable tips to help you succeed in the
+            admissions process.
           </p>
         </div>
       </section>
@@ -41,11 +44,12 @@ export default function BlogPage() {
             Looking for Personalized Guidance?
           </h2>
           <p className="text-xl text-slate-300 mb-8">
-            Our expert consultants can provide tailored advice for your specific situation.
+            Our expert consultants can provide tailored advice for your specific
+            situation.
           </p>
           <a
             href="/contact-us"
-            className="inline-block bg-[#E8613C] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#D4522E] transition"
+            className="inline-block bg-[#C94D2B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#B94224] transition"
           >
             Schedule a Free Initial Consultation
           </a>

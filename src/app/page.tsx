@@ -6,16 +6,18 @@ import dynamic from "next/dynamic";
 
 // Title/description mirror the old site exactly (sosadmissions.com is the SEO master)
 export const metadata: Metadata = {
-  title: { absolute: "College And Graduate School Application Consulting Service" },
+  title: {
+    absolute: "College And Graduate School Application Consulting Service",
+  },
   description:
-    "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. 27+ years helping students get into top programs.",
+    "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. Decades of experience helping students get into top programs.",
   alternates: {
     canonical: "https://sosadmissions.com/",
   },
   openGraph: {
     title: "College And Graduate School Application Consulting Service",
     description:
-      "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. 27+ years helping students get into top programs.",
+      "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. Decades of experience helping students get into top programs.",
     url: "https://sosadmissions.com/",
     type: "website",
   },
@@ -23,22 +25,25 @@ export const metadata: Metadata = {
 
 const WhyChooseUs = dynamic(
   () => import("@/components/WhyChooseUs").then((mod) => mod.WhyChooseUs),
-  { ssr: true }
+  { ssr: true },
 );
 
 const ProcessSection = dynamic(
   () => import("@/components/ProcessSection").then((mod) => mod.ProcessSection),
-  { ssr: true }
+  { ssr: true },
 );
 
 const TestimonialsSection = dynamic(
-  () => import("@/components/TestimonialsSection").then((mod) => mod.TestimonialsSection),
-  { ssr: true }
+  () =>
+    import("@/components/TestimonialsSection").then(
+      (mod) => mod.TestimonialsSection,
+    ),
+  { ssr: true },
 );
 
 const CTASection = dynamic(
   () => import("@/components/CTASection").then((mod) => mod.CTASection),
-  { ssr: true }
+  { ssr: true },
 );
 
 export default function HomePage() {

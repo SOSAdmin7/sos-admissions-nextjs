@@ -1,19 +1,19 @@
-import { Metadata } from 'next';
-import { InfoFormClient } from './InfoFormClient';
+import { Metadata } from "next";
+import { InfoFormClient } from "./InfoFormClient";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Preliminary Information Form - SOS Admissions' },
+  title: { absolute: "Preliminary Information Form - SOS Admissions" },
   description:
-    'Complete our preliminary information form to get started with SOS Admissions consulting for college, medical school, law school, MBA, or graduate programs.',
+    "Complete our preliminary information form to get started with SOS Admissions consulting for college, medical school, law school, MBA, or graduate programs.",
   alternates: {
-    canonical: 'https://sosadmissions.com/info-form/',
+    canonical: "https://sosadmissions.com/info-form/",
   },
   openGraph: {
-    title: 'Preliminary Information Form - SOS Admissions',
+    title: "Preliminary Information Form - SOS Admissions",
     description:
-      'Complete our preliminary information form to get started with SOS Admissions consulting for college, medical school, law school, MBA, or graduate programs.',
-    url: 'https://sosadmissions.com/info-form/',
-    type: 'website',
+      "Complete our preliminary information form to get started with SOS Admissions consulting for college, medical school, law school, MBA, or graduate programs.",
+    url: "https://sosadmissions.com/info-form/",
+    type: "website",
   },
 };
 
@@ -26,7 +26,8 @@ export default function InfoFormPage() {
             Request Information
           </h1>
           <p className="text-lg text-slate-600">
-            Fill out the form below and one of our admissions experts will reach out to discuss how we can help.
+            Fill out the form below and one of our admissions experts will reach
+            out to discuss how we can help.
           </p>
         </div>
       </section>

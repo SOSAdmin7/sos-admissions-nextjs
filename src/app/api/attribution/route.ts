@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 /**
  * Server-side attribution cookie setter.
@@ -10,34 +10,41 @@ export const dynamic = 'force-dynamic';
  */
 export async function POST(request: NextRequest) {
   try {
-    const { utm_source, utm_medium, utm_campaign, utm_content, utm_term, referrer, landing_page } =
-      await request.json();
+    const {
+      utm_source,
+      utm_medium,
+      utm_campaign,
+      utm_content,
+      utm_term,
+      referrer,
+      landing_page,
+    } = await request.json();
 
     const attribution = {
-      utm_source: utm_source || '',
-      utm_medium: utm_medium || '',
-      utm_campaign: utm_campaign || '',
-      utm_content: utm_content || '',
-      utm_term: utm_term || '',
-      referrer: referrer || '',
-      landing_page: landing_page || '',
+      utm_source: utm_source || "",
+      utm_medium: utm_medium || "",
+      utm_campaign: utm_campaign || "",
+      utm_content: utm_content || "",
+      utm_term: utm_term || "",
+      referrer: referrer || "",
+      landing_page: landing_page || "",
       timestamp: new Date().toISOString(),
     };
 
     const response = NextResponse.json({ success: true });
 
     // Server-set cookie with 90-day expiry - survives Safari ITP
-    response.cookies.set('sos_attribution', JSON.stringify(attribution), {
+    response.cookies.set("sos_attribution", JSON.stringify(attribution), {
       httpOnly: true,
       secure: true,
-      sameSite: 'lax',
+      sameSite: "lax",
       maxAge: 90 * 24 * 60 * 60, // 90 days in seconds
-      path: '/',
+      path: "/",
     });
 
     return response;
   } catch {
-    return NextResponse.json({ error: 'Invalid request' }, { status: 400 });
+    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 }
 
@@ -45,7 +52,7 @@ export async function POST(request: NextRequest) {
  * Read attribution data back (used when firing conversions).
  */
 export async function GET(request: NextRequest) {
-  const cookie = request.cookies.get('sos_attribution');
+  const cookie = request.cookies.get("sos_attribution");
 
   if (!cookie?.value) {
     return NextResponse.json({ attribution: null });

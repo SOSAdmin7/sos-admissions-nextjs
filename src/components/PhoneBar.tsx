@@ -1,4 +1,4 @@
-import { Phone } from 'lucide-react';
+import { Phone } from "lucide-react";
 
 export function PhoneBar() {
   return (

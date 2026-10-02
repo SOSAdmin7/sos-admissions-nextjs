@@ -1,15 +1,15 @@
-import { Metadata } from 'next';
-import { PaymentForm } from '@/components/PaymentForm';
+import { Metadata } from "next";
+import { PaymentForm } from "@/components/PaymentForm";
 
 export const metadata: Metadata = {
-  title: { absolute: 'SOS Admissions Payments - SOS Admissions' },
+  title: { absolute: "Payments - SOS Admissions" },
   alternates: {
-    canonical: 'https://sosadmissions.com/payment/',
+    canonical: "https://sosadmissions.com/payment/",
   },
   openGraph: {
-    title: 'SOS Admissions Payments - SOS Admissions',
-    url: 'https://sosadmissions.com/payment/',
-    type: 'website',
+    title: "Payments - SOS Admissions",
+    url: "https://sosadmissions.com/payment/",
+    type: "website",
   },
 };
 
@@ -23,7 +23,8 @@ export default function PaymentPage() {
             Secure Payment
           </h1>
           <p className="text-xl text-slate-600">
-            Choose your service and complete payment to get started with SOS Admissions.
+            Choose your service and complete payment to get started with SOS
+            Admissions.
           </p>
         </div>
       </section>

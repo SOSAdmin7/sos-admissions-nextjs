@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const stats = [
-  { label: 'Years of Experience', value: '27+' },
-  { label: 'Ivy League Acceptances', value: '1,000+' },
-  { label: 'Client Acceptance Rate', value: '98%' },
-  { label: 'Countries Served', value: '80+' },
+  { label: "Serving Applicants Since", value: "1998" },
+  { label: "Individual Guidance", value: "1:1" },
+  { label: "Phone and Video", value: "Worldwide" },
+  { label: "Initial Consultation", value: "Free" },
 ];
 
 export function Hero() {
@@ -16,7 +16,14 @@ export function Hero() {
     <section className="relative w-full overflow-hidden pt-10 pb-10 md:pt-16 md:pb-16">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066]" />
-      <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)', backgroundSize: '100px 100px' }} />
+      <div
+        className="absolute inset-0 opacity-[0.07]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)",
+          backgroundSize: "100px 100px",
+        }}
+      />
 
       {/* Content Container */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +36,11 @@ export function Hero() {
             Expert Admissions Consulting Since 1998
           </h1>
           <p className="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
-            We help students get into top colleges, medical schools, law schools, MBA programs, medical residency programs, nursing and healthcare programs, and a wide range of graduate programs. Our team of former admissions officers has guided thousands of clients to acceptance at the nation&apos;s most competitive programs.
+            We help students get into top colleges, medical schools, law
+            schools, MBA programs, medical residency programs, nursing and
+            healthcare programs, and a wide range of graduate programs. Our team
+            of former admissions officers has guided thousands of clients to
+            acceptance at the nation&apos;s most competitive programs.
           </p>
         </div>
 
@@ -37,7 +48,10 @@ export function Hero() {
         <div className="max-w-3xl mx-auto mb-8 md:mb-10">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <div className="aspect-video">
-              <YouTubeFacade videoId="Jqe-SDu1yoU" title="SOS Admissions, College and Graduate School Admissions Consulting" />
+              <YouTubeFacade
+                videoId="Jqe-SDu1yoU"
+                title="SOS Admissions, College and Graduate School Admissions Consulting"
+              />
             </div>
           </div>
         </div>
@@ -46,7 +60,7 @@ export function Hero() {
         <div className="flex justify-center mb-10 md:mb-14">
           <Link
             href="/contact-us"
-            className="px-8 py-3.5 bg-[#E8613C] text-white font-semibold rounded-lg hover:bg-[#D4522E] transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-[#E8613C]/25"
+            className="px-8 py-3.5 bg-[#C94D2B] text-white font-semibold rounded-lg hover:bg-[#B94224] transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-[#E8613C]/25"
           >
             Schedule a Free Initial Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -60,7 +74,9 @@ export function Hero() {
               <div className="text-3xl md:text-4xl font-bold text-[#E8613C] mb-1 whitespace-nowrap">
                 {stat.value}
               </div>
-              <p className="text-sm md:text-base text-slate-300 leading-snug">{stat.label}</p>
+              <p className="text-sm md:text-base text-slate-300 leading-snug">
+                {stat.label}
+              </p>
             </div>
           ))}
         </div>
@@ -99,9 +115,15 @@ function YouTubeFacade({ videoId, title }: { videoId: string; title: string }) {
         loading="eager"
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-        <svg className="w-16 h-16 md:w-20 md:h-20 text-white drop-shadow-lg" viewBox="0 0 68 48">
-          <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/>
-          <path d="M45 24L27 14v20" fill="white"/>
+        <svg
+          className="w-16 h-16 md:w-20 md:h-20 text-white drop-shadow-lg"
+          viewBox="0 0 68 48"
+        >
+          <path
+            d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+            fill="red"
+          />
+          <path d="M45 24L27 14v20" fill="white" />
         </svg>
       </div>
     </button>

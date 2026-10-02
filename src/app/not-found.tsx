@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -7,14 +7,16 @@ export default function NotFound() {
         <p className="text-[#E8613C] text-sm font-semibold uppercase tracking-[0.15em] mb-4">
           Page Not Found
         </p>
-        <h1 className="text-5xl sm:text-6xl font-bold text-[#1B2B4B] mb-6">404</h1>
+        <h1 className="text-5xl sm:text-6xl font-bold text-[#1B2B4B] mb-6">
+          404
+        </h1>
         <p className="text-lg text-gray-500 mb-10">
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="inline-flex items-center justify-center bg-[#E8613C] hover:bg-[#D4522E] text-white font-bold py-3 px-8 rounded-full transition-colors"
+            className="inline-flex items-center justify-center bg-[#E8613C] hover:bg-[#B94224] text-white font-bold py-3 px-8 rounded-full transition-colors"
           >
             Go Home
           </Link>

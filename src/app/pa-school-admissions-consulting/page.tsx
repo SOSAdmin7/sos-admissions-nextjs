@@ -1,19 +1,21 @@
-import { Metadata } from 'next';
-import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from "next";
+import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: { absolute: 'PA School Admissions Consulting Services | SOS Admissions' },
+  title: {
+    absolute: "PA School Admissions Consulting Services | SOS Admissions",
+  },
   description:
-    'Expert PA school admissions consulting. Get help with CASPA applications, personal statements, interviews, and patient care hours for physician assistant programs.',
+    "Expert PA school admissions consulting. Get help with CASPA applications, personal statements, interviews, and patient care hours for physician assistant programs.",
   alternates: {
-    canonical: 'https://sosadmissions.com/pa-school-admissions-consulting/',
+    canonical: "https://sosadmissions.com/pa-school-admissions-consulting/",
   },
   openGraph: {
-    title: 'PA School Admissions Consulting Services | SOS Admissions',
+    title: "PA School Admissions Consulting Services | SOS Admissions",
     description:
-      'Expert PA school admissions consulting. Get help with CASPA applications, personal statements, interviews, and patient care hours for physician assistant programs.',
-    url: 'https://sosadmissions.com/pa-school-admissions-consulting/',
-    type: 'website',
+      "Expert PA school admissions consulting. Get help with CASPA applications, personal statements, interviews, and patient care hours for physician assistant programs.",
+    url: "https://sosadmissions.com/pa-school-admissions-consulting/",
+    type: "website",
   },
 };
 

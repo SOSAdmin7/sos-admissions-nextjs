@@ -1,19 +1,20 @@
-import { Metadata } from 'next';
-import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from "next";
+import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Nursing School Admissions Consulting - SOS Admissions' },
+  title: { absolute: "Nursing School Admissions Consulting - SOS Admissions" },
   description:
-    'Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and school selection.',
+    "Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and school selection.",
   alternates: {
-    canonical: 'https://sosadmissions.com/nursing-school-admissions-consulting/',
+    canonical:
+      "https://sosadmissions.com/nursing-school-admissions-consulting/",
   },
   openGraph: {
-    title: 'Nursing School Admissions Consulting - SOS Admissions',
+    title: "Nursing School Admissions Consulting - SOS Admissions",
     description:
-      'Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and school selection.',
-    url: 'https://sosadmissions.com/nursing-school-admissions-consulting/',
-    type: 'website',
+      "Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and school selection.",
+    url: "https://sosadmissions.com/nursing-school-admissions-consulting/",
+    type: "website",
   },
 };
 

@@ -12,31 +12,34 @@ const inter = Inter({
 });
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 5,
 };
 
 export const metadata: Metadata = {
   title: {
-    default: "SOS Admissions | Expert College & Graduate School Admissions Consulting",
+    default:
+      "SOS Admissions | Expert College & Graduate School Admissions Consulting",
     template: "%s | SOS Admissions",
   },
   description:
-    "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. 27+ years helping students get into top programs.",
+    "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. Decades of experience helping students get into top programs.",
   metadataBase: new URL("https://sosadmissions.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://sosadmissions.com",
     siteName: "SOS Admissions",
-    title: "SOS Admissions | Expert College & Graduate School Admissions Consulting",
+    title:
+      "SOS Admissions | Expert College & Graduate School Admissions Consulting",
     description:
-      "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. 27+ years helping students get into top programs.",
+      "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications. Decades of experience helping students get into top programs.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SOS Admissions | Expert College & Graduate School Admissions Consulting",
+    title:
+      "SOS Admissions | Expert College & Graduate School Admissions Consulting",
     description:
       "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications.",
   },

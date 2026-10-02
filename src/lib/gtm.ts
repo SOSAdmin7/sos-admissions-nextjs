@@ -4,15 +4,15 @@
  * Google Ads ID: AW-824664390
  */
 
-const GTM_ID = 'GTM-K86JCR92';
-const GOOGLE_ADS_ID = 'AW-824664390';
+const GTM_ID = "GTM-K86JCR92";
+const GOOGLE_ADS_ID = "AW-824664390";
 
 /**
  * Initialize Google Tag Manager
  * Should be called once in the head or early in the application
  */
 export function initGTM(): void {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
 
   // Prevent duplicate initialization
   if ((window as any).dataLayer) return;
@@ -21,19 +21,19 @@ export function initGTM(): void {
   (window as any).dataLayer = (window as any).dataLayer || [];
 
   // GTM script injection
-  const script = document.createElement('script');
+  const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
   document.head.appendChild(script);
 
   // Add noscript fallback
-  const noscript = document.createElement('noscript');
-  const iframe = document.createElement('iframe');
+  const noscript = document.createElement("noscript");
+  const iframe = document.createElement("iframe");
   iframe.src = `https://www.googletagmanager.com/ns.html?id=${GTM_ID}`;
-  iframe.height = '0';
-  iframe.width = '0';
-  iframe.style.display = 'none';
-  iframe.style.visibility = 'hidden';
+  iframe.height = "0";
+  iframe.width = "0";
+  iframe.style.display = "none";
+  iframe.style.visibility = "hidden";
   noscript.appendChild(iframe);
   document.body.insertBefore(noscript, document.body.firstChild);
 }
@@ -43,13 +43,13 @@ export function initGTM(): void {
  */
 export function gtmEvent(
   eventName: string,
-  eventData?: Record<string, any>
+  eventData?: Record<string, any>,
 ): void {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
 
   const dataLayer = (window as any).dataLayer;
   if (!dataLayer) {
-    console.warn('GTM dataLayer not initialized');
+    console.warn("GTM dataLayer not initialized");
     return;
   }
 
@@ -65,9 +65,9 @@ export function gtmEvent(
 export function trackPageView(
   pagePath: string,
   pageTitle?: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
-  gtmEvent('page_view', {
+  gtmEvent("page_view", {
     page_path: pagePath,
     page_title: pageTitle || document.title,
     ...customData,
@@ -80,9 +80,9 @@ export function trackPageView(
 export function trackServiceView(
   serviceId: string,
   serviceName: string,
-  serviceSlug: string
+  serviceSlug: string,
 ): void {
-  gtmEvent('service_view', {
+  gtmEvent("service_view", {
     service_id: serviceId,
     service_name: serviceName,
     service_slug: serviceSlug,
@@ -94,11 +94,11 @@ export function trackServiceView(
  */
 export function trackConsultationStart(
   source?: string,
-  serviceType?: string
+  serviceType?: string,
 ): void {
-  gtmEvent('consultation_start', {
-    source: source || 'unknown',
-    service_type: serviceType || 'general',
+  gtmEvent("consultation_start", {
+    source: source || "unknown",
+    service_type: serviceType || "general",
   });
 }
 
@@ -108,11 +108,11 @@ export function trackConsultationStart(
 export function trackFormSubmission(
   formType: string,
   formName?: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
-  gtmEvent('form_submission', {
+  gtmEvent("form_submission", {
     form_type: formType,
-    form_name: formName || 'unknown',
+    form_name: formName || "unknown",
     ...customData,
   });
 }
@@ -121,10 +121,10 @@ export function trackFormSubmission(
  * Track a conversion on the thank you page
  */
 export function trackConversion(
-  conversionType: 'lead' | 'consultation_booked' | 'payment',
+  conversionType: "lead" | "consultation_booked" | "payment",
   conversionValue?: number,
   currency?: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
   const eventData: Record<string, any> = {
     conversion_type: conversionType,
@@ -138,7 +138,7 @@ export function trackConversion(
     eventData.currency = currency;
   }
 
-  gtmEvent('conversion', {
+  gtmEvent("conversion", {
     ...eventData,
     ...customData,
   });
@@ -153,9 +153,9 @@ export function trackConversion(
 export function trackCTAClick(
   buttonText: string,
   location: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
-  gtmEvent('cta_click', {
+  gtmEvent("cta_click", {
     button_text: buttonText,
     location: location,
     ...customData,
@@ -167,11 +167,11 @@ export function trackCTAClick(
  */
 export function trackTestimonialView(
   testimonialId: string,
-  serviceName?: string
+  serviceName?: string,
 ): void {
-  gtmEvent('testimonial_view', {
+  gtmEvent("testimonial_view", {
     testimonial_id: testimonialId,
-    service_name: serviceName || 'unknown',
+    service_name: serviceName || "unknown",
   });
 }
 
@@ -181,12 +181,12 @@ export function trackTestimonialView(
 export function trackSocialShare(
   platform: string,
   contentType: string,
-  contentTitle?: string
+  contentTitle?: string,
 ): void {
-  gtmEvent('social_share', {
+  gtmEvent("social_share", {
     platform: platform,
     content_type: contentType,
-    content_title: contentTitle || 'unknown',
+    content_title: contentTitle || "unknown",
   });
 }
 
@@ -195,9 +195,9 @@ export function trackSocialShare(
  */
 export function trackScrollDepth(
   percentScrolled: number,
-  pagePath?: string
+  pagePath?: string,
 ): void {
-  gtmEvent('scroll_depth', {
+  gtmEvent("scroll_depth", {
     percent_scrolled: percentScrolled,
     page_path: pagePath || window.location.pathname,
   });
@@ -208,10 +208,10 @@ export function trackScrollDepth(
  */
 export function trackVideoEngagement(
   videoTitle: string,
-  action: 'play' | 'pause' | 'complete',
-  currentTime?: number
+  action: "play" | "pause" | "complete",
+  currentTime?: number,
 ): void {
-  gtmEvent('video_engagement', {
+  gtmEvent("video_engagement", {
     video_title: videoTitle,
     action: action,
     current_time: currentTime,
@@ -224,12 +224,12 @@ export function trackVideoEngagement(
 export function trackBlogPostView(
   postId: string,
   postTitle: string,
-  category?: string
+  category?: string,
 ): void {
-  gtmEvent('blog_post_view', {
+  gtmEvent("blog_post_view", {
     post_id: postId,
     post_title: postTitle,
-    category: category || 'uncategorized',
+    category: category || "uncategorized",
   });
 }
 
@@ -239,12 +239,12 @@ export function trackBlogPostView(
 export function trackFAQClick(
   questionId: string,
   questionTitle: string,
-  category?: string
+  category?: string,
 ): void {
-  gtmEvent('faq_click', {
+  gtmEvent("faq_click", {
     question_id: questionId,
     question_title: questionTitle,
-    category: category || 'general',
+    category: category || "general",
   });
 }
 
@@ -253,9 +253,9 @@ export function trackFAQClick(
  */
 export function trackSignUp(
   signUpMethod: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
-  gtmEvent('sign_up', {
+  gtmEvent("sign_up", {
     sign_up_method: signUpMethod,
     ...customData,
   });
@@ -264,11 +264,8 @@ export function trackSignUp(
 /**
  * Track search action
  */
-export function trackSearch(
-  searchTerm: string,
-  resultCount?: number
-): void {
-  gtmEvent('search', {
+export function trackSearch(searchTerm: string, resultCount?: number): void {
+  gtmEvent("search", {
     search_term: searchTerm,
     result_count: resultCount,
   });
@@ -281,18 +278,18 @@ export function trackSearch(
 export function trackGoogleAdsConversion(
   conversionType: string,
   conversionValue?: number,
-  currency?: string
+  currency?: string,
 ): void {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
 
   // Use gtag if available
   if ((window as any).gtag) {
-    (window as any).gtag('event', 'conversion', {
+    (window as any).gtag("event", "conversion", {
       allow_custom_scripts: true,
       conversion_id: GOOGLE_ADS_ID,
       conversion_label: getGoogleAdsConversionLabel(conversionType),
       value: conversionValue || 0,
-      currency: currency || 'USD',
+      currency: currency || "USD",
     });
   }
 }
@@ -300,18 +297,16 @@ export function trackGoogleAdsConversion(
 /**
  * Get the appropriate Google Ads conversion label based on conversion type
  */
-function getGoogleAdsConversionLabel(
-  conversionType: string
-): string {
+function getGoogleAdsConversionLabel(conversionType: string): string {
   const labels: Record<string, string> = {
-    lead: 'rLuMCNrDuIQCEPG44scD', // Example label - replace with actual
-    consultation_booked: 'rLuMCNrDuIQCEPG44scD', // Example label - replace with actual
-    payment: 'rLuMCNrDuIQCEPG44scD', // Example label - replace with actual
-    thank_you_page_lead: 'rLuMCNrDuIQCEPG44scD', // Example label - replace with actual
-    thank_you_page_payment: 'rLuMCNrDuIQCEPG44scD', // Example label - replace with actual
+    lead: "rLuMCNrDuIQCEPG44scD", // Example label - replace with actual
+    consultation_booked: "rLuMCNrDuIQCEPG44scD", // Example label - replace with actual
+    payment: "rLuMCNrDuIQCEPG44scD", // Example label - replace with actual
+    thank_you_page_lead: "rLuMCNrDuIQCEPG44scD", // Example label - replace with actual
+    thank_you_page_payment: "rLuMCNrDuIQCEPG44scD", // Example label - replace with actual
   };
 
-  return labels[conversionType] || '';
+  return labels[conversionType] || "";
 }
 
 /**
@@ -321,19 +316,19 @@ function getGoogleAdsConversionLabel(
 export function trackThankYouPageLead(
   leadSource?: string,
   serviceType?: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
   // Fire GTM conversion event
-  trackConversion('lead', undefined, undefined, {
-    lead_source: leadSource || 'form_submission',
-    service_type: serviceType || 'general',
-    page_type: 'thank_you_lead',
+  trackConversion("lead", undefined, undefined, {
+    lead_source: leadSource || "form_submission",
+    service_type: serviceType || "general",
+    page_type: "thank_you_lead",
     ...customData,
   });
 
   // Track page view
-  trackPageView('/thank-you', 'Thank You - Consultation Request', {
-    page_type: 'thank_you_lead',
+  trackPageView("/thank-you", "Thank You - Consultation Request", {
+    page_type: "thank_you_lead",
   });
 }
 
@@ -345,20 +340,20 @@ export function trackThankYouPagePayment(
   paymentAmount?: number,
   currency?: string,
   serviceType?: string,
-  customData?: Record<string, any>
+  customData?: Record<string, any>,
 ): void {
   // Fire GTM conversion event
-  trackConversion('payment', paymentAmount, currency || 'USD', {
-    service_type: serviceType || 'general',
-    page_type: 'thank_you_payment',
+  trackConversion("payment", paymentAmount, currency || "USD", {
+    service_type: serviceType || "general",
+    page_type: "thank_you_payment",
     ...customData,
   });
 
   // Track page view
-  trackPageView('/thank-you-payment', 'Thank You - Payment Received', {
-    page_type: 'thank_you_payment',
+  trackPageView("/thank-you-payment", "Thank You - Payment Received", {
+    page_type: "thank_you_payment",
     payment_amount: paymentAmount,
-    currency: currency || 'USD',
+    currency: currency || "USD",
   });
 }
 
@@ -367,9 +362,9 @@ export function trackThankYouPagePayment(
  */
 export function setUserProperties(
   userId?: string,
-  customProperties?: Record<string, any>
+  customProperties?: Record<string, any>,
 ): void {
-  gtmEvent('user_properties', {
+  gtmEvent("user_properties", {
     user_id: userId,
     ...customProperties,
   });
@@ -378,11 +373,8 @@ export function setUserProperties(
 /**
  * Track an exception/error
  */
-export function trackException(
-  description: string,
-  fatal?: boolean
-): void {
-  gtmEvent('exception', {
+export function trackException(description: string, fatal?: boolean): void {
+  gtmEvent("exception", {
     description: description,
     fatal: fatal || false,
   });
@@ -393,7 +385,7 @@ export function trackException(
  */
 export function trackCustomEvent(
   eventName: string,
-  eventData?: Record<string, any>
+  eventData?: Record<string, any>,
 ): void {
   gtmEvent(eventName, eventData);
 }
@@ -416,6 +408,6 @@ export function getGoogleAdsId(): string {
  * Check if GTM is initialized
  */
 export function isGTMInitialized(): boolean {
-  if (typeof window === 'undefined') return false;
+  if (typeof window === "undefined") return false;
   return !!(window as any).dataLayer;
 }

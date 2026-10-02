@@ -1,42 +1,43 @@
-import { CheckCircle, Award, Users, Target } from 'lucide-react';
+import { CheckCircle, Award, Users, Target } from "lucide-react";
 
 const differentiators = [
   {
     icon: CheckCircle,
-    title: '27+ Years of Experience',
+    title: "Decades of Experience",
     description:
-      'Established in 1998, we are one of the longest-running independent admissions consulting firms in the country.',
+      "Established in 1998, we are one of the longest-running independent admissions consulting firms in the country.",
   },
   {
     icon: Users,
-    title: 'Former Admissions Committee Members',
+    title: "Former Admissions Committee Members",
     description:
-      'Our consultants have served on admissions committees at UCLA and UChicago, giving us insider knowledge of what universities seek.',
+      "Our team brings admissions and career counseling experience from institutions including UCLA and the University of Chicago.",
   },
   {
     icon: Award,
-    title: 'Top 30 University Graduates',
+    title: "Experienced Consultants",
     description:
-      'Every member of our team graduated from a top-30 university, ensuring deep understanding of selective admissions.',
+      "Our consultants bring experience in admissions offices, career counseling, writing, and interviewing.",
   },
   {
     icon: Target,
-    title: 'Personalized One-on-One Approach',
+    title: "Personalized One-on-One Approach",
     description:
-      'We reject cookie-cutter advice. Each student receives a tailored strategy based on their unique strengths and goals.',
+      "We reject cookie-cutter advice. Each student receives a tailored strategy based on their unique strengths and goals.",
   },
 ];
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-10 md:py-14 lg:py-32 bg-white">
+    <section className="relative py-10 md:py-14 lg:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 animate-[fadeInUp_0.6s_ease-out_both]">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1B2B4B] mb-4">
             Why Families Trust SOS Admissions
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            We combine decades of experience with genuine care for each student&apos;s success.
+            We combine decades of experience with genuine care for each
+            student&apos;s success.
           </p>
         </div>
 

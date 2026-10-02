@@ -1,9 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import type { LegacyAssetImage, LegacyVideo } from '@/lib/legacyAssets';
+import { useState } from "react";
+import type { LegacyAssetImage, LegacyVideo } from "@/lib/legacyAssets";
 
-function YouTubeFacade({ videoId, title, thumbnail = 'hqdefault' }: { videoId: string; title: string; thumbnail?: 'hqdefault' | 'maxresdefault' }) {
+function YouTubeFacade({
+  videoId,
+  title,
+  thumbnail = "hqdefault",
+}: {
+  videoId: string;
+  title: string;
+  thumbnail?: "hqdefault" | "maxresdefault";
+}) {
   const [loaded, setLoaded] = useState(false);
 
   if (loaded) {
@@ -32,8 +40,14 @@ function YouTubeFacade({ videoId, title, thumbnail = 'hqdefault' }: { videoId: s
         loading="eager"
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors hover:bg-black/30">
-        <svg className="h-16 w-16 text-white drop-shadow-lg md:h-20 md:w-20" viewBox="0 0 68 48">
-          <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red" />
+        <svg
+          className="h-16 w-16 text-white drop-shadow-lg md:h-20 md:w-20"
+          viewBox="0 0 68 48"
+        >
+          <path
+            d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+            fill="red"
+          />
           <path d="M45 24L27 14v20" fill="white" />
         </svg>
       </div>
@@ -45,15 +59,17 @@ export function LegacyYouTubeCard({
   video,
   title,
   thumbnail,
-  className = '',
+  className = "",
 }: {
   video: LegacyVideo;
   title?: string;
-  thumbnail?: 'hqdefault' | 'maxresdefault';
+  thumbnail?: "hqdefault" | "maxresdefault";
   className?: string;
 }) {
   return (
-    <div className={`max-w-3xl overflow-hidden rounded-2xl border border-white/10 shadow-2xl ${className}`.trim()}>
+    <div
+      className={`max-w-3xl overflow-hidden rounded-2xl border border-white/10 shadow-2xl ${className}`.trim()}
+    >
       <div className="aspect-video">
         <YouTubeFacade
           videoId={video.id}
@@ -68,8 +84,8 @@ export function LegacyYouTubeCard({
 export function LegacyStripSection({
   featuredStrip,
   clientStrip,
-  featuredLabel = 'As Featured In',
-  clientLabel = 'Past Clients Have Successfully Gotten Into',
+  featuredLabel = "As Featured In",
+  clientLabel = "Past Clients Have Successfully Gotten Into",
 }: {
   featuredStrip?: LegacyAssetImage;
   clientStrip?: LegacyAssetImage;
@@ -89,7 +105,12 @@ export function LegacyStripSection({
               {featuredLabel}
             </p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={featuredStrip.src} alt={featuredStrip.alt} className="mx-auto h-auto w-full max-w-5xl" loading="lazy" />
+            <img
+              src={featuredStrip.src}
+              alt={featuredStrip.alt}
+              className="mx-auto h-auto w-full max-w-5xl"
+              loading="lazy"
+            />
           </div>
         )}
         {clientStrip && (
@@ -98,7 +119,12 @@ export function LegacyStripSection({
               {clientLabel}
             </p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={clientStrip.src} alt={clientStrip.alt} className="mx-auto h-auto w-full max-w-5xl" loading="lazy" />
+            <img
+              src={clientStrip.src}
+              alt={clientStrip.alt}
+              className="mx-auto h-auto w-full max-w-5xl"
+              loading="lazy"
+            />
           </div>
         )}
       </div>
@@ -122,14 +148,16 @@ export function LegacyImageGallery({
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {title && (
           <div className="mb-8 text-center">
-            <h2 className="text-2xl font-bold text-[#1B2B4B] md:text-3xl">{title}</h2>
+            <h2 className="text-2xl font-bold text-[#1B2B4B] md:text-3xl">
+              {title}
+            </h2>
           </div>
         )}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {images.map((image) => (
             <div
               key={image.src}
-              className={`overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm ${image.fullWidth ? 'md:col-span-2' : ''}`.trim()}
+              className={`overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm ${image.fullWidth ? "md:col-span-2" : ""}`.trim()}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

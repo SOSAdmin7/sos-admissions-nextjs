@@ -1,18 +1,18 @@
-import { Metadata } from 'next';
-import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from "next";
+import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: { absolute: 'SAT Prep / ACT Prep - SOS Admissions' },
+  title: { absolute: "SAT Prep / ACT Prep - SOS Admissions" },
   description:
-    'SAT tutors and ACT tutors provide expert test preparation for high school students and college applicants.',
+    "SAT tutors and ACT tutors provide expert test preparation for high school students and college applicants.",
   alternates: {
-    canonical: 'https://sosadmissions.com/sat-act-preparation/',
+    canonical: "https://sosadmissions.com/sat-act-preparation/",
   },
   openGraph: {
-    title: 'SAT Prep / ACT Prep - SOS Admissions',
+    title: "SAT Prep / ACT Prep - SOS Admissions",
     description:
-      'SAT tutors and ACT tutors provide expert test preparation for high school students and college applicants.',
-    type: 'website',
+      "SAT tutors and ACT tutors provide expert test preparation for high school students and college applicants.",
+    type: "website",
   },
 };
 

@@ -1,15 +1,15 @@
-import { Metadata } from 'next';
-import { PurchaseForm } from './PurchaseForm';
+import { Metadata } from "next";
+import { PurchaseForm } from "./PurchaseForm";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Purchase Page - SOS Admissions' },
+  title: { absolute: "Purchase Page - SOS Admissions" },
   alternates: {
-    canonical: 'https://sosadmissions.com/purchase/',
+    canonical: "https://sosadmissions.com/purchase/",
   },
   openGraph: {
-    title: 'Purchase Page - SOS Admissions',
-    url: 'https://sosadmissions.com/purchase/',
-    type: 'website',
+    title: "Purchase Page - SOS Admissions",
+    url: "https://sosadmissions.com/purchase/",
+    type: "website",
   },
 };
 
@@ -22,7 +22,8 @@ export default function PurchasePage() {
             Get Started with SOS Admissions
           </h1>
           <p className="text-lg text-slate-600">
-            Fill out the form below and we will contact you to discuss your admissions goals and next steps.
+            Choose the order form for your program to review available services
+            and complete your order.
           </p>
         </div>
       </section>

@@ -1,15 +1,19 @@
-'use client';
+"use client";
 
-import { useState, useMemo } from 'react';
-import { Calendar, Search } from 'lucide-react';
-import Link from 'next/link';
-import { blogPosts, type BlogPost } from '@/data/blog-posts';
+import { useState, useMemo } from "react";
+import { Calendar, Search } from "lucide-react";
+import Link from "next/link";
+import { blogPosts, type BlogPost } from "@/data/blog-posts";
 
 const POSTS_PER_PAGE = 12;
 
 function formatDate(dateStr: string) {
-  const d = new Date(dateStr + 'T00:00:00');
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  const d = new Date(dateStr + "T00:00:00");
+  return d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 }
 
 // Get unique categories sorted by count
@@ -17,25 +21,27 @@ const categories = Array.from(
   blogPosts.reduce((map, p) => {
     map.set(p.category, (map.get(p.category) || 0) + 1);
     return map;
-  }, new Map<string, number>())
+  }, new Map<string, number>()),
 )
   .sort((a, b) => b[1] - a[1])
   .map(([cat]) => cat);
 
 export function BlogContent() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
   const filteredPosts = useMemo(() => {
     let posts = blogPosts;
-    if (selectedCategory !== 'All') {
+    if (selectedCategory !== "All") {
       posts = posts.filter((p) => p.category === selectedCategory);
     }
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       posts = posts.filter(
-        (p) => p.title.toLowerCase().includes(q) || p.excerpt.toLowerCase().includes(q)
+        (p) =>
+          p.title.toLowerCase().includes(q) ||
+          p.excerpt.toLowerCase().includes(q),
       );
     }
     return posts;
@@ -69,13 +75,13 @@ export function BlogContent() {
             <div className="flex flex-wrap gap-2 mb-8">
               <button
                 onClick={() => {
-                  setSelectedCategory('All');
+                  setSelectedCategory("All");
                   setVisibleCount(POSTS_PER_PAGE);
                 }}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-                  selectedCategory === 'All'
-                    ? 'bg-[#E8613C] text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  selectedCategory === "All"
+                    ? "bg-[#C94D2B] text-white"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
                 All ({blogPosts.length})
@@ -89,8 +95,8 @@ export function BlogContent() {
                   }}
                   className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition ${
                     selectedCategory === cat
-                      ? 'bg-[#E8613C] text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      ? "bg-[#C94D2B] text-white"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                   }`}
                 >
                   {cat}
@@ -106,7 +112,9 @@ export function BlogContent() {
             {/* Posts Grid */}
             {filteredPosts.length === 0 ? (
               <div className="text-center py-16">
-                <p className="text-gray-500 text-lg">No articles found matching your search.</p>
+                <p className="text-gray-500 text-lg">
+                  No articles found matching your search.
+                </p>
               </div>
             ) : (
               <>
@@ -147,7 +155,9 @@ export function BlogContent() {
                     <h4 className="text-sm font-medium text-[#1B2B4B] group-hover:text-[#E8613C] transition leading-snug">
                       {post.title}
                     </h4>
-                    <p className="text-xs text-gray-400 mt-1">{formatDate(post.date)}</p>
+                    <p className="text-xs text-gray-400 mt-1">
+                      {formatDate(post.date)}
+                    </p>
                   </Link>
                 ))}
               </div>
@@ -160,14 +170,16 @@ export function BlogContent() {
               </h3>
               <ul className="space-y-2">
                 {categories.map((cat) => {
-                  const count = blogPosts.filter((p) => p.category === cat).length;
+                  const count = blogPosts.filter(
+                    (p) => p.category === cat,
+                  ).length;
                   return (
                     <li key={cat}>
                       <button
                         onClick={() => {
                           setSelectedCategory(cat);
                           setVisibleCount(POSTS_PER_PAGE);
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                          window.scrollTo({ top: 0, behavior: "smooth" });
                         }}
                         className="flex justify-between gap-2 w-full text-sm text-gray-600 hover:text-[#E8613C] transition py-1"
                       >
@@ -184,11 +196,12 @@ export function BlogContent() {
             <div className="bg-[#0D1B2A] rounded-lg p-6 text-white">
               <h3 className="text-lg font-bold mb-3">Need Expert Help?</h3>
               <p className="text-sm text-gray-300 mb-4">
-                Get personalized admissions guidance from our experienced consultants.
+                Get personalized admissions guidance from our experienced
+                consultants.
               </p>
               <Link
                 href="/contact-us"
-                className="block text-center bg-[#E8613C] text-white font-semibold py-2.5 rounded-lg hover:bg-[#D4522E] transition text-sm"
+                className="block text-center bg-[#C94D2B] text-white font-semibold py-2.5 rounded-lg hover:bg-[#B94224] transition text-sm"
               >
                 Free Initial Consultation
               </Link>
@@ -225,7 +238,9 @@ function PostCard({ post }: { post: BlogPost }) {
         <h3 className="text-lg font-bold text-[#1B2B4B] group-hover:text-[#E8613C] transition leading-snug mb-2 line-clamp-2">
           {post.title}
         </h3>
-        <p className="text-sm text-gray-500 line-clamp-2 mb-3">{post.excerpt}</p>
+        <p className="text-sm text-gray-500 line-clamp-2 mb-3">
+          {post.excerpt}
+        </p>
         <div className="flex items-center gap-1.5 text-xs text-gray-400">
           <Calendar className="w-3.5 h-3.5" />
           {formatDate(post.date)}

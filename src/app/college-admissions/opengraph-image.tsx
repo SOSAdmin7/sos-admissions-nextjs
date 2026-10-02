@@ -1,11 +1,11 @@
-import { generateOGImage, size, contentType } from '@/lib/og-image';
+import { generateOGImage, size, contentType } from "@/lib/og-image";
 
 export { size, contentType };
-export const runtime = 'edge';
+export const runtime = "edge";
 
 export default function Image() {
   return generateOGImage(
-    'College Admissions Consulting',
-    '98% acceptance rate. Former admissions officers on your side.'
+    "College Admissions Consulting",
+    "Personalized guidance for college applications and interviews.",
   );
 }

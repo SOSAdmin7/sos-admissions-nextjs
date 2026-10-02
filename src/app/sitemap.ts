@@ -6,19 +6,68 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Core pages (same URL set as the old WordPress sitemap)
   const corePages = [
+    ...["china", "chinese-faq", "contactchinese"].map((path) => ({
+      url: `${baseUrl}/${path}/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     { url: `${baseUrl}/`, changeFrequency: "weekly" as const, priority: 1.0 },
-    { url: `${baseUrl}/services/`, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${baseUrl}/about-us/`, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${baseUrl}/contact-us/`, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${baseUrl}/client-testimonials/`, changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${baseUrl}/faq/`, changeFrequency: "monthly" as const, priority: 0.6 },
-    { url: `${baseUrl}/blog/`, changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: `${baseUrl}/admissions-options-page/`, changeFrequency: "monthly" as const, priority: 0.6 },
-    { url: `${baseUrl}/purchase/`, changeFrequency: "monthly" as const, priority: 0.5 },
-    { url: `${baseUrl}/payment/`, changeFrequency: "monthly" as const, priority: 0.5 },
-    { url: `${baseUrl}/info-form/`, changeFrequency: "monthly" as const, priority: 0.4 },
-    { url: `${baseUrl}/privacy-policy/`, changeFrequency: "yearly" as const, priority: 0.3 },
-  ].map((p) => ({ ...p, lastModified: new Date() }));
+    {
+      url: `${baseUrl}/services/`,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/about-us/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact-us/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/client-testimonials/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/faq/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/`,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/admissions-options-page/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/purchase/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/payment/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/info-form/`,
+      changeFrequency: "monthly" as const,
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/privacy-policy/`,
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+  ].map((p) => ({ ...p, lastModified: new Date("2026-10-01") }));
 
   // Service pages — old-site URLs preserved exactly
   const servicePages = [
@@ -52,9 +101,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "sat-act-preparation",
     "letters-of-recommendation",
     "academic-crisis-consulting",
+    "mba-recommender-questions",
+    "speech-language-pathology-slp-admissions-consultant",
   ].map((slug) => ({
     url: `${baseUrl}/${slug}/`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-10-01"),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -62,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts — root-level on old site, under /blog/ on new site
   const blogPages = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}/`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.revised ?? post.modified),
     changeFrequency: "yearly" as const,
     priority: 0.5,
   }));

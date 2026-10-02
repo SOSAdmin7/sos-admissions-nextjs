@@ -1,29 +1,39 @@
-import { MessageSquare, Lightbulb, FileText, CheckCircle, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import {
+  MessageSquare,
+  Lightbulb,
+  FileText,
+  CheckCircle,
+  ArrowRight,
+} from "lucide-react";
+import Link from "next/link";
 
 const steps = [
   {
-    number: '01',
-    title: 'Free Initial Consultation',
-    description: 'We learn about your goals, background, and aspirations to understand your unique story.',
+    number: "01",
+    title: "Free Initial Consultation",
+    description:
+      "We learn about your goals, background, and aspirations to understand your unique story.",
     icon: MessageSquare,
   },
   {
-    number: '02',
-    title: 'Custom Strategy',
-    description: 'We develop a personalized admissions plan tailored to your strengths and target schools.',
+    number: "02",
+    title: "Custom Strategy",
+    description:
+      "We develop a personalized admissions plan tailored to your strengths and target schools.",
     icon: Lightbulb,
   },
   {
-    number: '03',
-    title: 'Application Support',
-    description: 'Essays, interviews, recommendations: we guide every step of your application journey.',
+    number: "03",
+    title: "Application Support",
+    description:
+      "Essays, interviews, recommendations: we guide every step of your application journey.",
     icon: FileText,
   },
   {
-    number: '04',
-    title: 'Acceptance',
-    description: 'Celebrate your admission to your dream school. Your success is our greatest reward.',
+    number: "04",
+    title: "Decisions and Next Steps",
+    description:
+      "Discuss your admissions decisions and plan the next steps toward your educational goals.",
     icon: CheckCircle,
   },
 ];
@@ -106,8 +116,11 @@ export function ProcessSection() {
 
         {/* CTA at bottom */}
         <div className="text-center mt-16 md:mt-20 animate-[fadeInUp_0.6s_ease-out_0.8s_both]">
-          <Link href="/contact-us" className="px-8 py-4 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-all duration-300 inline-flex items-center gap-2 group shadow-lg hover:shadow-xl hover:-translate-y-1">
-            Start Your Journey
+          <Link
+            href="/contact-us"
+            className="px-8 py-4 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-all duration-300 inline-flex items-center gap-2 group shadow-lg hover:shadow-xl hover:-translate-y-1"
+          >
+            Schedule a Free Initial Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

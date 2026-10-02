@@ -1,19 +1,21 @@
-import { Metadata } from 'next';
-import { PurchaseForm } from '../purchase/PurchaseForm';
+import { Metadata } from "next";
+import { PurchaseForm } from "../purchase/PurchaseForm";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Admissions Consulting Services & Options - SOS Admissions' },
+  title: {
+    absolute: "Admissions Consulting Services & Options - SOS Admissions",
+  },
   description:
-    'Explore our admissions consulting services for college, graduate school, medical school, law school, MBA, and professional programs. Find the right package for you.',
+    "Explore our admissions consulting services for college, graduate school, medical school, law school, MBA, and professional programs. Find the right package for you.",
   alternates: {
-    canonical: 'https://sosadmissions.com/admissions-options-page/',
+    canonical: "https://sosadmissions.com/admissions-options-page/",
   },
   openGraph: {
-    title: 'Admissions Consulting Services & Options - SOS Admissions',
+    title: "Admissions Consulting Services & Options - SOS Admissions",
     description:
-      'Explore our admissions consulting services for college, graduate school, medical school, law school, MBA, and professional programs. Find the right package for you.',
-    url: 'https://sosadmissions.com/admissions-options-page/',
-    type: 'website',
+      "Explore our admissions consulting services for college, graduate school, medical school, law school, MBA, and professional programs. Find the right package for you.",
+    url: "https://sosadmissions.com/admissions-options-page/",
+    type: "website",
   },
 };
 
@@ -26,7 +28,8 @@ export default function AdmissionsOptionsPage() {
             Start Your Admissions Journey
           </h1>
           <p className="text-lg text-slate-600">
-            Fill out the form below to get started. We will match you with the right consultant for your needs.
+            Choose the order form for your program to review available services
+            and complete your order.
           </p>
         </div>
       </section>

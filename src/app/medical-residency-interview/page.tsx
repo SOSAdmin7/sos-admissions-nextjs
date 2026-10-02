@@ -1,22 +1,27 @@
-import { Metadata } from 'next';
-import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from "next";
+import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Medical Residency Interview Coaching - SOS Admissions' },
+  title: { absolute: "Medical Residency Interview Coaching - SOS Admissions" },
   description:
-    'Expert residency interview coaching from former program directors. 98.4% match rate. Prepare for ERAS interviews, rank lists, and specialty-specific questions.',
+    "Expert residency interview coaching from experienced admissions consultants. Prepare for ERAS interviews, rank lists, and specialty-specific questions.",
   alternates: {
-    canonical: 'https://sosadmissions.com/medical-residency-interview/',
+    canonical: "https://sosadmissions.com/medical-residency-interview/",
   },
   openGraph: {
-    title: 'Medical Residency Interview Coaching - SOS Admissions',
+    title: "Medical Residency Interview Coaching - SOS Admissions",
     description:
-      'Expert residency interview coaching from former program directors. 98.4% match rate. Prepare for ERAS interviews, rank lists, and specialty-specific questions.',
-    url: 'https://sosadmissions.com/medical-residency-interview/',
-    type: 'website',
+      "Expert residency interview coaching from experienced admissions consultants. Prepare for ERAS interviews, rank lists, and specialty-specific questions.",
+    url: "https://sosadmissions.com/medical-residency-interview/",
+    type: "website",
   },
 };
 
 export default function MedicalResidencyInterviewPage() {
-  return <ServicePageTemplate slug="interview-coaching" legacyVariant="medical-residency-interview" />;
+  return (
+    <ServicePageTemplate
+      slug="interview-coaching"
+      legacyVariant="medical-residency-interview"
+    />
+  );
 }

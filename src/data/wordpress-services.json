@@ -1,0 +1,1605 @@
+{
+  "np-admissions": {
+    "sourceUrl": "https://sosadmissions.com/np-admissions/",
+    "sourceId": 9341,
+    "modified": "2026-09-10T00:24:22",
+    "sourceHash": "dce6aec4402c4873a762e0657cb7926483da43be7129f7a165529d1039179670",
+    "intro": "SOS Admissions has successfully helped hundreds of nurses get into top Nurse Practitioner programs across the United States and Canada. We specialize in all NP specializations including Family NP (FNP), Psychiatric Mental Health NP (PMHNP), Acute Care NP, Adult-Gerontology NP, and DNP programs.",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "NP Application Strategy",
+      "School Selection",
+      "Resume and Activity Descriptions",
+      "Supplemental Application Essay Writing",
+      "NursingCAS Application Assistance",
+      "Letter of Recommendation Writing",
+      "NP Interview Prep (Traditional & MMI)"
+    ],
+    "pricingTables": [
+      {
+        "title": "NP School Application Consulting",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best NP Programs for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essay (Fewer than 900 Words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,485"],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["NursingCAS Activity Descriptions", "$1,975"],
+          ["NP School Interview Coaching (Conventional)", "$1,775"],
+          ["MMI Interview Coaching", "$1,975"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete NP School Application Package (UNLIMITED HOURS)",
+            "$9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete NP School Application Package for Five Schools (UNLIMITED HOURS)",
+            "$12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete NP School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content.",
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee."
+    ]
+  },
+  "medical-residency-interview": {
+    "sourceUrl": "https://sosadmissions.com/medical-residency-interview/",
+    "sourceId": 9088,
+    "modified": "2026-09-10T00:24:19",
+    "sourceHash": "b15174f934ec648bb019722dd835cad44884540d4e58d4e024ef40fed600da40",
+    "intro": "Former program directors and residency admissions committee members prepare you for all residency interview formats. 98.4% of our clients successfully match.",
+    "features": [
+      "Review of your application and target programs",
+      "Preparation for likely interview questions",
+      "Mock interview and individual feedback",
+      "Practice discussing your achievements and goals",
+      "Follow-up mock interview",
+      "Consultations by phone, video, or appointment"
+    ],
+    "pricingTables": [
+      {
+        "title": "Interview Coaching Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          ["Interview Coaching", "$1,775"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "pa-school-admissions-consulting": {
+    "sourceUrl": "https://sosadmissions.com/pa-school-admissions-consulting/",
+    "sourceId": 8416,
+    "modified": "2026-09-10T00:24:20",
+    "sourceHash": "12d947c9ff7c315d27e7f40413dac2d911f8d70f28b04f33780a67ef1b13d4eb",
+    "intro": "Our PA school admissions consultants have helped hundreds of applicants gain acceptance to top Physician Assistant programs across the United States and Canada. We guide applicants through the PA school application process, highlighting each candidate’s unique strengths and qualifications to build a strong, competitive application.",
+    "features": [
+      "Customized Application Strategy",
+      "School Selection Guidance",
+      "CASPA Application Support",
+      "Personal Statement Writing & Editing",
+      "Supplemental Essay Development",
+      "Letters of Recommendation Guidance",
+      "Clinical Experience & Activity Description Enhancement",
+      "Application Review & Competitiveness Assessment",
+      "Interview Coaching (Traditional & MMI)",
+      "Waitlist Support & Appeals"
+    ],
+    "pricingTables": [
+      {
+        "title": "PA School Application Service Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Essay, CASPA Guidance, CV Review)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          ["Personal Statement for PA School", "$1,485"],
+          [
+            "School-Specific Secondary Essays / Supplemental Essays",
+            "Pricing Based on Length, call for specifics"
+          ],
+          ["Traditional Interview Coaching + Mock Interview", "$1,775"],
+          ["MMI Interview Coaching + Mock Interview", "$1,975"],
+          ["Academic Resume/CV Creation", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["CASPA Activity Descriptions", "$1,975"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete PA School Application Package (Unlimited Guidance on All Services)",
+            "$8,775 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete PA School Application Package for 5 Schools (UNLIMITED HOURS)",
+            "$11,700 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete PA Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$15,600 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      },
+      {
+        "title": "Services and Pricing",
+        "rows": [
+          ["Traditional Interview Coaching + Mock Interview", "$1,775"],
+          ["MMI Interview Coaching + Mock Interview", "$1,975"]
+        ]
+      }
+    ],
+    "terms": [
+      "Individual service fees can later be credited toward the Complete PA School Application Package if clients decide to upgrade."
+    ]
+  },
+  "nursing-school-admissions-consulting": {
+    "sourceUrl": "https://sosadmissions.com/nursing-school-admissions-consulting/",
+    "sourceId": 5918,
+    "modified": "2025-02-11T01:46:24",
+    "sourceHash": "b11e9c32ff0410ec6923a1905b7cbe2718d830fb24159578917bd63e116a3571",
+    "intro": "SOS Admissions has successfully helped hundreds of graduate school applicants gain admission to top masters and doctoral programs in a wide range of fields:",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "Graduate School Application Strategy",
+      "School Selection",
+      "Resume and CV Assistance",
+      "Supplemental Application Essay Writing",
+      "Graduate School Admissions Interview Prep",
+      "Letter of Recommendation Writing",
+      "Test Prep Suggestions"
+    ],
+    "pricingTables": [],
+    "terms": []
+  },
+  "bs-md-admissions-consulting": {
+    "sourceUrl": "https://sosadmissions.com/bs-md-admissions-consulting/",
+    "sourceId": 9263,
+    "modified": "2026-09-10T00:24:24",
+    "sourceHash": "cf5859637b61da3246a7ce6d4fdff5fc459cbf59fe7b9180fbbf8034b9968667",
+    "intro": "SOS Admissions has successfully helped hundreds of high school applicants get into the most competitive combined BS/MD programs in the nation. These accelerated medical programs offer a direct pathway from high school to medical school, typically in 6, 7, or 8 years.",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "BS/MD Application Strategy",
+      "School Selection",
+      "Resume and Activity Descriptions",
+      "Supplemental Application Essay Writing",
+      "Common App & Coalition App Assistance",
+      "Letter of Recommendation Writing",
+      "BS/MD Interview Prep (Traditional & MMI)"
+    ],
+    "pricingTables": [
+      {
+        "title": "BS/MD Application Consulting",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best BS/MD Programs for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essay (Fewer than 900 Words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,485"],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["Common App or Coalition App Activity Descriptions", "$1,975"],
+          ["BS/MD Interview Coaching (Conventional)", "$1,775"],
+          ["MMI Interview Coaching", "$1,975"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete BS/MD Application Package (UNLIMITED HOURS)",
+            "$9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete BS/MD Application Package for Five Schools (UNLIMITED HOURS)",
+            "$12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete BS/MD Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content.",
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee."
+    ]
+  },
+  "college-transfers": {
+    "sourceUrl": "https://sosadmissions.com/college-transfers/",
+    "sourceId": 8054,
+    "modified": "2026-09-28T20:20:25",
+    "sourceHash": "c3522770cd13bbcfbf8ab7ecf8c28f443d82ce4df035e54a1300c03d95635cac",
+    "intro": "Transferring to a top university is a highly competitive process. Whether you are moving from a community college to a four-year university or upgrading to a more selective program, admissions committees evaluate transfer applicants differently than high school seniors. They look closely at your college-level academic performance and your specific reasons for transferring.",
+    "features": [
+      "Transfer Common Applications",
+      "Transfer Application Strategy",
+      "Target School Selections",
+      "Resumes and CVs",
+      "School-Specific Supplemental Essays",
+      "College Transfer Interview Coaching",
+      "Letters of Recommendation Guidance",
+      "Suggestions for Test Preparation"
+    ],
+    "pricingTables": [
+      {
+        "title": "College Transfer Application Package Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          ["Freshman Essays"],
+          [
+            "Primary Essay Only, Common App or Coalition (One primary essay. Reuse depends on each college’s requirements; school-specific essays are not included.)",
+            "$1,485"
+          ],
+          [
+            "First Non-UC School Essay Package (Includes the primary essay, when needed, plus all required admission essays and short responses for one school. The $1,485 primary essay is included in this total, not an additional charge. Includes schools with their own application, such as MIT; an MIT-only applicant does not need a separate Common App essay purchase.)",
+            "$1,985 total"
+          ],
+          [
+            "Each Additional Non-UC School Requiring Essay Work (All required admission essays and short responses for that school. No additional fee merely to reuse an unchanged primary essay.)",
+            "$992.50"
+          ],
+          [
+            "University of California Personal Insight Questions (One set of 4 responses, chosen from 8 questions, for all selected UC campuses. Maximum 350 words per response. Separate from non-UC school essay packages.)",
+            "$1,985 per application, not per campus"
+          ],
+          ["Transfer Essays"],
+          [
+            "First Non-UC School Essay Package (All required admission essays and short responses for one school, whether it uses Common App, Coalition through Scoir, or its own application.)",
+            "$1,985 total"
+          ],
+          [
+            "Each Additional Non-UC School Requiring Essay Work (All required admission essays and short responses for that school, adapting prior content where the prompts permit.)",
+            "$992.50"
+          ],
+          [
+            "University of California Personal Insight Questions (The required major-preparation response plus 3 of 7 other questions: 4 responses total, maximum 350 words each, for all selected UC campuses. Separate from non-UC school essay packages.)",
+            "$1,985 per application, not per campus"
+          ],
+          [
+            "How essay pricing works: For either freshman or transfer applicants, non-UC essay packages cost $1,985 for 1 school, $2,977.50 for 2 schools, $5,955 for 5 schools, or $10,917.50 for 10 schools. Count schools requiring essay work, not schools merely reusing an unchanged primary essay. UC PIQs are one separate $1,985 service regardless of the number of selected UC campuses. Already purchased the primary essay from SOS? Within the same application cycle, your $1,485 primary-essay purchase receives full credit toward the $1,985 first-school bundle, leaving a $500 balance. Contact us before ordering so we can apply your credit. Existing essay-package clients adding schools pay $992.50 per additional school; contact us for the balance instead of repurchasing the first-school package. These are essay-only services. Complete application packages below include broader consulting services; do not purchase overlapping essay services separately. For prior-payment credits, more than 10 schools, or complete-package extras, call 310-951-4008 . Purchase college or transfer services ."
+          ],
+          ["Academic Resume or CV / College Brag Sheet", "$1,475"],
+          [
+            "Common Application Activity Descriptions or University of California Activity Descriptions or Coalition Activity Descriptions",
+            "$1,975"
+          ],
+          ["College Transfer Interview Coaching", "$1,775"],
+          ["Letter of Recommendation", "$985"],
+          ["Waitlist Appeal Letter or Letter of Continued Interest", "$1,485"],
+          [
+            "Complete College Application or Transfer Application Package (UNLIMITED HOURS)",
+            "$8,775 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete College Application Package for Five Schools (UNLIMITED HOURS)",
+            "$11,700 for the 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete College Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$15,600 for the 10 Schools + $975 for Each Additional School"
+          ],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"]
+        ]
+      }
+    ],
+    "terms": [
+      "This applies to one application cycle for transfer applicants. For services not included in the package, our standard hourly rate applies."
+    ]
+  },
+  "crna-admissions": {
+    "sourceUrl": "https://sosadmissions.com/crna-admissions/",
+    "sourceId": 8405,
+    "modified": "2026-09-10T00:24:21",
+    "sourceHash": "9bac8e017676017caad4c05779cd8ba69b5280351d63ea2800a10d82ee59e77e",
+    "intro": "Our CRNA school admissions consultants have helped hundreds of nurses earn acceptance into leading Nurse Anesthesia programs across the United States and Canada. We guide you through every step of the doctoral-level application process, highlighting your clinical expertise, critical-care experience, and academic strengths to build strong, program-specific submissions.",
+    "features": [
+      "Customized Application Strategy",
+      "School Selection Guidance",
+      "NursingCAS Application Support",
+      "Personal Statement Writing & Editing",
+      "Supplemental Essay Development",
+      "Letters of Recommendation Guidance",
+      "Clinical Experience & Activity Description Enhancement",
+      "Application Review & Competitiveness Assessment",
+      "Interview Coaching (Traditional & MMI)",
+      "Waitlist Support & Appeals"
+    ],
+    "pricingTables": [
+      {
+        "title": "CRNA School Application Service Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Essay, NursingCAS Guidance, CV Review)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          ["Personal Statement for CRNA School", "$1,485"],
+          [
+            "School-Specific Secondary Essays / Supplemental Essays",
+            "Pricing Based on Length; Call for Details"
+          ],
+          ["Academic Resume/CV Creation", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["NursingCAS Activity Descriptions", "$1,975"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete CRNA School Application Package (Unlimited Guidance on All Services)",
+            "$8,775 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete CRNA School Application Package for 5 Schools (UNLIMITED HOURS)",
+            "$11,700 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete CRNA Application Package for 10 Schools (UNLIMITED HOURS)",
+            "$15,600 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      },
+      {
+        "title": "Services and Pricing",
+        "rows": [
+          ["Traditional Interview Coaching + Mock Interview", "$1,775"],
+          ["MMI Interview Coaching + Mock Interview", "$1,975"]
+        ]
+      }
+    ],
+    "terms": [
+      "Individual service fees can later be credited toward the Complete CRNA School Application Package if clients decide to upgrade."
+    ]
+  },
+  "private-school-admissions": {
+    "sourceUrl": "https://sosadmissions.com/private-school-admissions/",
+    "sourceId": 4779,
+    "modified": "2026-09-10T00:24:10",
+    "sourceHash": "28473c8d02c63825b8fd43e32022ca7bc54b3bc6672c019c47bc5aa7abeef707",
+    "intro": "Our private school application consultants have assisted hundreds of students and families get into the best private day schools and boarding schools in the United States and Canada. We help clients at all stages of the application process by offering admissions consulting services ranging from comprehensive application assistance to targeted support.",
+    "features": [
+      "Parents Essays",
+      "Application Essays",
+      "School Selections",
+      "Resumes and CVs",
+      "School-Specific Supplemental Essays",
+      "Private School Interviews",
+      "Letters of Recommendation",
+      "Suggestions for Test Preparation"
+    ],
+    "pricingTables": [
+      {
+        "title": "Private School Application Package Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essays (all essays for one school totaling fewer than 900 words)",
+            "First School $1,485 / Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 / Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,485"],
+          ["High School Resume or CV / Brag Sheet / Profile", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["Interview Coaching", "$1,775"],
+          [
+            "Complete Application Package (UNLIMITED HOURS)",
+            "$9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Application Package for Multiple Schools (UNLIMITED HOURS)",
+            "$12,200 for 5 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content.",
+      "This applies to one application cycle for private school. For other services not included in the package, we charge our standard hourly fee."
+    ]
+  },
+  "mba-interview": {
+    "sourceUrl": "https://sosadmissions.com/mba-interview/",
+    "sourceId": 8520,
+    "modified": "2026-09-10T00:24:13",
+    "sourceHash": "7a774c4688ea316b952270af925cbee793faa9bcdcf4b31841706db28ee9a2f1",
+    "intro": "When it comes to preparing MBA applicants for admissions interviews, we are the foremost experts. Our interview coaches have helped clients interview and gain admission to the most prestigious business schools in the country. Some people refer to us as “miracle workers” because of our ability to help our clients perform well on interviews. We turn shy, awkward, and nervous clients into confident and polished interviewees within a very short time.",
+    "features": [
+      "Review of your application and target programs",
+      "Preparation for likely interview questions",
+      "Mock interview and individual feedback",
+      "Practice discussing your achievements and goals",
+      "Follow-up mock interview",
+      "Consultations by phone, video, or appointment"
+    ],
+    "pricingTables": [
+      {
+        "title": "Interview Coaching Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          ["Interview Coaching", "$1,775"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "general-nursing": {
+    "sourceUrl": "https://sosadmissions.com/general-nursing/",
+    "sourceId": 9348,
+    "modified": "2026-09-10T00:24:22",
+    "sourceHash": "ad1707637b1f99c052ef6f2d7e5dead58b555f62b33e0424b675312ae8f3e769",
+    "intro": "Our nursing school admissions consultants have helped hundreds of students earn acceptances at leading nursing programs across the United States and Canada. We know what admissions committees look for, and we work directly with each applicant to build strong, program-specific submissions that highlight academic strengths, clinical experience, and personal motivation.",
+    "features": [
+      "Customized Application Strategy",
+      "School Selection Guidance",
+      "NursingCAS Application Support",
+      "Personal Statement Writing & Editing",
+      "Supplemental Essay Development",
+      "Letters of Recommendation Guidance",
+      "Experience & Activity Description Enhancement",
+      "Application Review & Competitiveness Assessment",
+      "Interview Coaching (Traditional & MMI)",
+      "Waitlist Support & Appeals"
+    ],
+    "pricingTables": [
+      {
+        "title": "Nursing School Application Service Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Essay, NursingCAS Guidance, CV Review)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,775"
+          ],
+          [
+            "Personal Statement for Nursing School",
+            "$1,485 for first school, plus $742.50 per additional school"
+          ],
+          [
+            "School-Specific Secondary Essays / Supplemental Essays",
+            "Pricing Based on Length, Call for Specifics"
+          ],
+          ["Traditional Interview Preparation + Mock Interview", "$1,775"],
+          ["MMI Interview Preparation + Mock Interview", "$1,975"],
+          ["Academic Resume/CV Creation", "$1,775"],
+          ["Letter of Recommendation", "$1,485"],
+          ["NursingCAS Activity Descriptions", "$1,975"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Nursing School Application Package (Unlimited Guidance on All Services)",
+            "$9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Nursing School Application Package for 5 Schools (UNLIMITED HOURS)",
+            "$11,700 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Nursing School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$15,600 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      },
+      {
+        "title": "Services and Pricing",
+        "rows": [
+          ["Traditional Interview Coaching + Mock Interview", "$1,775"],
+          ["MMI Interview Coaching + Mock Interview", "$1,975"]
+        ]
+      }
+    ],
+    "terms": [
+      "Individual service fees can later be credited toward the Complete Nursing School Application Package if you decide to upgrade."
+    ]
+  },
+  "veterinary-school-admissions": {
+    "sourceUrl": "https://sosadmissions.com/veterinary-school-admissions/",
+    "sourceId": 9276,
+    "modified": "2026-09-10T00:24:23",
+    "sourceHash": "d0c4eeabc8173efefab14b3dda68eb05859333155057a668c294da795a902aac",
+    "intro": "SOS Admissions has helped applicants gain admission to Doctor of Veterinary Medicine (DVM) programs at top schools across the United States and Canada. Veterinary school acceptance rates often fall below 15%, making this one of the most competitive graduate admissions processes in healthcare. Our consultants will guide you through the VMCAS application, helping you present the strongest possible case for admission.",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "Veterinary School Application Strategy",
+      "School Selection",
+      "Resume and Experience Descriptions",
+      "Supplemental Application Essay Writing",
+      "VMCAS Application Assistance",
+      "Letter of Recommendation Writing",
+      "Veterinary School Interview Prep (Traditional & MMI)"
+    ],
+    "pricingTables": [
+      {
+        "title": "Veterinary School Application Consulting",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best DVM Programs for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essay (Fewer than 900 Words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,485"],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["VMCAS Experience Descriptions", "$1,975"],
+          ["Veterinary School Interview Coaching (Conventional)", "$1,775"],
+          ["MMI Interview Coaching", "$1,975"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Veterinary School Application Package (UNLIMITED HOURS)",
+            "$9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Veterinary School Application Package for Five Schools (UNLIMITED HOURS)",
+            "$12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Veterinary School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content.",
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee."
+    ]
+  },
+  "medical-school-application": {
+    "sourceUrl": "https://sosadmissions.com/medical-school-application/",
+    "sourceId": 8251,
+    "modified": "2026-09-10T00:24:16",
+    "sourceHash": "9fd115078c12e3a34e5adb009febfde32d9bfcda8349b798f9d2394ca899c315",
+    "intro": "SOS Admissions has successfully helped hundreds of applicants get into the best medical schools, medical residency programs, and health care graduate programs in the nation. We have helped applicants get into",
+    "features": [],
+    "pricingTables": [
+      {
+        "title": "Medical School Application Package Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essay (Less than 900 Words) or Waitlist Appeal Letter / Letter of Continued Interest",
+            "$1,485"
+          ],
+          ["Long Essay (Less Than 1500 Words)", "$1,985"],
+          ["Conventional Interview Coaching", "$1,775"],
+          ["MMI Interview Coaching", "$1,975"],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          [
+            "AMCAS, AACOMAS, OMSAS, ERAS, CanMEDS or TMDSAS Activity Descriptions",
+            "$1,975"
+          ],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Application Package (UNLIMITED HOURS)",
+            "Masters (Nursing, PA, & CRNA): $8,775 for the First School + $975 for Each Additional School Doctorate (MD, DO & NP): $9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Application Package for Five Schools (UNLIMITED HOURS)",
+            "Masters (Nursing, PA, & CRNA): $11,700 for 5 Schools + $975 for Each Additional School Doctorate (MD, DO & NP): $12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Application Package for Ten Schools (UNLIMITED HOURS)",
+            "Masters (Nursing, PA, & CRNA): $15,600 for 10 Schools + $975 for Each Additional School Doctorate (MD, DO & NP): $16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard individual service fee. **The pricing of our Complete Application Package is based on the number of medical schools you apply to and includes a wide range of application services. We will guide you through all aspects of the application process with individual attention. For PA school, nursing school, dental school, MD/PhD programs, TMDSAS applicants, and medical residency application packages, please contact us directly for pricing."
+    ]
+  },
+  "medical-school-admissions-consulting": {
+    "sourceUrl": "https://sosadmissions.com/medical-school-admissions-consulting/",
+    "sourceId": 8228,
+    "modified": "2026-09-10T00:24:17",
+    "sourceHash": "d361eae29b51e1058498214d7cc296e60e206a679e3c4a9496659ed1e2984501",
+    "intro": "Our medical school admissions consultants have helped thousands of applicants gain acceptance to MD, DO, and MD/PhD programs at top schools in the United States and Canada. We also offer BS/MD Combined Program Admissions Consulting for high school students applying to accelerated 6, 7, and 8-year medical programs. Our consultants guide you through all parts of the application process for AMCAS (MD Programs), AACOMAS (DO Programs), TMDSAS (Texas MD Programs), and the Medical Scientist Training Program (MD/PhD Programs).",
+    "features": [
+      "Application Strategy",
+      "School Selection",
+      "Personal Statement",
+      "Primary Application",
+      "Supplemental Application Essays",
+      "Secondary Applications",
+      "Letter of Recommendation Consulting",
+      "Conventional Interview Coaching",
+      "Activity Descriptions",
+      "MMI Interview Coaching",
+      "Test Prep Suggestions",
+      "Waitlist Advice"
+    ],
+    "pricingTables": [
+      {
+        "title": "Medical School Application Service Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume/CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          ["Medical School Personal Statement", "$1,485"],
+          [
+            "School-Specific Secondary Essays",
+            "For secondary essays, our pricing is $1,485 per school. If a school has more than 3,000 words of secondary essays, such as the University of Miami or the University of California Riverside, the price is $1,985 for that school."
+          ],
+          ["Conventional Interview Coaching", "$1,775"],
+          ["MMI Interview Coaching", "$1,975"],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["AMCAS, AACOMAS, or TMDSAS Activity Descriptions", "$1,975"],
+          [
+            "Complete Medical School Application Package (UNLIMITED HOURS)",
+            "$9,275 for the First School (MD & DO) + $975 for Each Additional School"
+          ],
+          [
+            "Complete Medical School Application Package for Five Schools (UNLIMITED HOURS)",
+            "$12,200 for 5 Schools (MD & DO) + $975 for Each Additional School"
+          ],
+          [
+            "Complete Medical School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$16,100 for 10 Schools (MD & DO) + $975 for Each Additional School"
+          ]
+        ]
+      },
+      {
+        "title": "Services and Pricing",
+        "rows": [
+          [
+            "Conventional Admissions Interview Coaching + Mock Interview",
+            "$1,775"
+          ],
+          ["Open-File Interview Coaching + Mock Interview", "$1,775"],
+          ["Coaching for “Blind” Interviews + Mock Interview", "$1,775"],
+          [
+            "Multiple Mini Interviews (MMI) for Medical School + Mock Interview",
+            "$1,975"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Your admissions consultant will provide detailed guidance on which schools to apply to based on your academic and professional background. Our consultants use a proprietary statistical methodology to identify the best schools based on your grades, test scores, and experience. ** Almost all US medical schools have secondary application essays. Length can range from under 300 words to more than 4,000 words. Pricing depends on essay length. *** The pricing of the Complete Medical School Application Package is based on the number of schools you apply to. Clients who purchase individual services can later upgrade to the complete package. Money spent on any relevant individual service will be credited toward the package price."
+    ]
+  },
+  "academic-crisis-consulting": {
+    "sourceUrl": "https://sosadmissions.com/academic-crisis-consulting/",
+    "sourceId": 10199,
+    "modified": "2026-07-26T00:29:29",
+    "sourceHash": "f54a32ca34de521d084c48c38156f935ac09908fa3f41db804cfa10f8a964f1c",
+    "intro": "Academic accusations and dismissals can affect your degree, future applications, professional licensing, and career. SOS Admissions provides discreet, high-touch educational crisis consulting for students, residents, and professionals who need a clear strategy under pressure. Call 310-951-4008 for a free initial consultation. Every conversation is strictly confidential.",
+    "features": [],
+    "pricingTables": [
+      {
+        "title": "Services and Pricing",
+        "rows": [
+          [
+            "Crisis Evaluation & Strategy Session Up to 90 minutes, including advance review of key documents and a written action roadmap.",
+            "$1,575"
+          ],
+          [
+            "Written Response to Accusations Strategic development, drafting, and revision of a clear, factual, and diplomatic response.",
+            "$3,975"
+          ],
+          [
+            "Disciplinary Hearing Preparation Preparation for meetings with deans, conduct officers, faculty committees, or academic boards, including a mock hearing.",
+            "$3,475"
+          ],
+          [
+            "Academic Appeal or Reconsideration Statement A professionally structured request for reconsideration, readmission, or a modified outcome.",
+            "$3,975"
+          ],
+          [
+            "Disciplinary Explanation An explanation for a new school or program addressing the circumstances under which you left a prior institution.",
+            "$2,485"
+          ],
+          [
+            "Academic Performance Explanation An explanation of poor grades, interruptions, probation, or other academic difficulties for a future application.",
+            "$2,485"
+          ],
+          [
+            "Character & Fitness Statement Consulting Disclosure strategy and statement development for law school, bar admission, nursing, and other professional programs or licenses.",
+            "$4,975"
+          ],
+          [
+            "Academic Crisis Strategy Package Comprehensive support that may include document review, response strategy, written materials, hearing preparation, institutional communication planning, and transfer or reapplication strategy.",
+            "Starting at $12,500"
+          ],
+          [
+            "Priority Rush Service Subject to consultant availability for deadlines within 48 hours.",
+            "50% surcharge"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Every case is different. We begin with a paid evaluation so we can review the facts, identify immediate risks, and recommend the appropriate scope of work. All services require upfront payment.",
+      "Final fees depend on complexity, document volume, urgency, the number of meetings or written submissions, and whether transfer or reapplication support is required. Payment for an individual service may be credited only toward the comprehensive Academic Crisis Strategy Package if the client upgrades. It cannot be credited toward another individual service. Fees do not include attorney services, filing fees, expert witnesses, or work outside the agreed scope."
+    ]
+  },
+  "dental-school-application": {
+    "sourceUrl": "https://sosadmissions.com/dental-school-application/",
+    "sourceId": 8445,
+    "modified": "2026-09-10T00:24:20",
+    "sourceHash": "1fd7f5a4927ccb7a1f14bfdc87676ddfd8e53a165caab6f6db2c7c424798e5d3",
+    "intro": "Our dental school admissions consultants have successfully assisted hundreds of applicants in gaining acceptance to top dental programs across the United States and Canada. We specialize in guiding applicants through the complex dental school application process, highlighting each candidate’s unique strengths and qualifications to create compelling applications.",
+    "features": [
+      "Customized Application Strategy",
+      "School Selection Guidance",
+      "ADEA AADSAS Application Support",
+      "Personal Statement Writing & Editing",
+      "Supplemental Essay Development",
+      "Letters of Recommendation Guidance",
+      "Clinical Experience Enhancement",
+      "Comprehensive Application Review",
+      "Interview Coaching (Traditional, Panel, & MMI)",
+      "Waitlist Support & Appeals"
+    ],
+    "pricingTables": [
+      {
+        "title": "Dental School Application Service Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Essay, AADSAS / CAAPID Guidance, CV Review)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          ["Personal Statement for Dental School", "$1,485"],
+          [
+            "School-Specific Secondary Essays / Supplemental Essays",
+            "Varies to Call for Specifics"
+          ],
+          ["Traditional / Panel Interview Coaching + Mock Interview", "$1,775"],
+          ["MMI Interview Coaching + Mock Interview", "$1,975"],
+          ["Academic Resume/CV Creation", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["AADSAS / CAAPID Experience Descriptions", "$1,975"],
+          [
+            "Complete Dental School Application Package (Unlimited Guidance on All Services)",
+            "$9,275 for First School + $975/Additional"
+          ],
+          [
+            "Complete Package for 5 Schools (UNLIMITED HOURS)",
+            "$12,200 for 5 Schools + $975/Additional"
+          ],
+          [
+            "Complete Package for 10 Schools (UNLIMITED HOURS)",
+            "$16,100 for 10 Schools + $975/Additional"
+          ]
+        ]
+      },
+      {
+        "title": "Services and Pricing",
+        "rows": [
+          ["Traditional / Panel Interview Coaching + Mock Interview", "$1,775"],
+          ["MMI Interview Coaching + Mock Interview", "$1,975"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "international-students": {
+    "sourceUrl": "https://sosadmissions.com/international-students/",
+    "sourceId": 1776,
+    "modified": "2025-02-11T01:43:01",
+    "sourceHash": "05807ee2c9f6bc00ca26a824f24c318eec5ad5d607ec6801194f92c33bcdfa9c",
+    "intro": "For international students who want to study in the USA, the admissions process can be complex and sometimes overwhelming. With SOS Admissions, you can gain more confidence, reduce the stress involved, and get help with your graduate school or college application from an admissions consultant in the USA.",
+    "features": [
+      "Admissions consulting for international applicants",
+      "School selection",
+      "Application essays and personal statements",
+      "Interview preparation",
+      "Remote consultations"
+    ],
+    "pricingTables": [],
+    "terms": []
+  },
+  "law-school-application": {
+    "sourceUrl": "https://sosadmissions.com/law-school-application/",
+    "sourceId": 8119,
+    "modified": "2026-09-30T21:48:02",
+    "sourceHash": "5369a02c06cff95f1ae5fec81e5af065b5dad3d0491c9bf11874ce185ffebc7a",
+    "intro": "Our law school admissions consultants have a strong record of helping applicants gain entry to leading JD and LLM programs. Our team has been featured in US News and World Report and Business Insider for expertise in law school applications.",
+    "features": [
+      "Law School Personal Statement",
+      "Law School Admission Council / LSAC",
+      "Admissions Planning",
+      "LSAT Prep Suggestions",
+      "Law School Selection",
+      "Resume and CV Assistance",
+      "Supplemental Application Essays",
+      "Credential Assembly Service / CAS",
+      "Letter of Recommendation Consulting",
+      "Waitlist Consultations",
+      "Law School Transfers"
+    ],
+    "pricingTables": [
+      {
+        "title": "Law School Application Package Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essays (all essays for one school totaling fewer than 900 words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900 to 1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          [
+            "Character & Fitness Statement / Waitlist Appeal Letter / Letter of Continued Interest",
+            "$1,485"
+          ],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          [
+            "Law School Interview Coaching / Video Interview Coaching (Most top law schools interview competitive applicants)",
+            "$1,775"
+          ],
+          [
+            "Complete Application Package (UNLIMITED HOURS)",
+            "LLM: $8,775 for the First School + $975 for Each Additional School JD: $9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Application Package for Five Schools (UNLIMITED HOURS)",
+            "LLM: $11,700 for the 5 Schools + $975 for Each Additional School JD: $12,200 for the 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Application Package for Ten Schools (UNLIMITED HOURS)",
+            "LLM: $15,600 for 10 Schools + $975 for Each Additional School JD: $16,100 for 10 Schools + $975 for Each Additional School"
+          ],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing covers all essays for one school. Subsequent schools receive a 50% discount on essay services, as we can often reuse content. Approximately 50% of law schools have essays under 900 words and 50% have essays between 900 and 1500 words.",
+      "These prices apply to one application cycle. For any services not included in the package, our standard per-service fee applies."
+    ]
+  },
+  "medical-residency": {
+    "sourceUrl": "https://sosadmissions.com/medical-residency/",
+    "sourceId": 7877,
+    "modified": "2026-09-10T00:24:18",
+    "sourceHash": "23a9814947aabd81b8bc8e8ee63ef10dac9b67df99abac1a184bc8febb15662e",
+    "intro": "Our medical residency application consultants have helped thousands of domestic and international medical graduates (IMG) get into the best medical residency (and fellowship) programs in the United States.",
+    "features": [
+      "Application Strategy",
+      "Program Selection / Residency Program List",
+      "ERAS or ResidencyCAS Personal Statement",
+      "ERAS Activity Descriptions",
+      "Physician Resume or CV for ERAS / ResidencyCas",
+      "Residency Interview Coaching",
+      "Letter of Recommendation Consulting",
+      "USMLE Prep Suggestions",
+      "Extracurricular Activity Consulting",
+      "Scramble Advice",
+      "Clinical Experience Consulting",
+      "MSPE (Dean’s Letter) Guidance"
+    ],
+    "pricingTables": [
+      {
+        "title": "Medical Residency Application Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "Program Selection Service (Professional Guidance on the Best Residency Program List for You ) ",
+            "$1,875"
+          ],
+          [
+            "ERAS / ResidencyCAS Personal Statement / Application Essay",
+            "$1,485"
+          ],
+          ["ERAS / ResidencyCAS Activity Descriptions", "$1,975"],
+          ["Residency Interview Coaching", "$1,775"],
+          ["Letter of Interest / Letter of Intent", "$1,485"],
+          ["Physician Resume or CV for ERAS / ResidencyCAS", "$1,475"],
+          ["Physician Letter of Recommendation", "$985"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Residency Application Package (UNLIMITED HOURS) ",
+            "$10,250. If you decide to apply to more than one type of residency program (for example Family Medicine and Pediatrics), there will be a $2,925 additional fee per program type."
+          ],
+          [
+            "Scramble or SOAP Guidance (Help Getting A Residency Program if You Don’t Match)",
+            "$465"
+          ],
+          ["Reapplication Consulting", "$465"]
+        ]
+      }
+    ],
+    "terms": [
+      "Clients purchasing individual services have an upgrade option to purchase the complete package. Any money spent for a relevant individual service such as the application planning and evaluation service, resume, application essay, school selection, personal statement, or interview coaching will be credited toward the purchase price of the complete package if the client later decides to upgrade."
+    ]
+  },
+  "personal-statement": {
+    "sourceUrl": "https://sosadmissions.com/personal-statement/",
+    "sourceId": 8139,
+    "modified": "2026-09-10T00:24:14",
+    "sourceHash": "16770aaba6fc9076de47b5ea0501ef49827037d387302ebbb24083d44e1c3d29",
+    "intro": "Enhance your application with our top-tier personal statement service. Our skilled writers expertly craft your story, emphasizing your academic and professional achievements. Choose us for a compelling, concise narrative that boosts your admission prospects.",
+    "features": [
+      "Essay writing and editing support",
+      "Common App and supplemental essays",
+      "Graduate personal statements and statements of purpose",
+      "UC personal insight questions",
+      "Structure and clarity revisions",
+      "Proofreading",
+      "Background review and consultations",
+      "Essay revisions with no set limit"
+    ],
+    "pricingTables": [
+      {
+        "title": "Price for Editing Personal Statements and Application Essays",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Personal Statement / Application Essays (all essays for one school totaling fewer than 900 words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,485"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "computer-science-admissions-consultant": {
+    "sourceUrl": "https://sosadmissions.com/computer-science-admissions-consultant/",
+    "sourceId": 9207,
+    "modified": "2026-09-10T00:24:15",
+    "sourceHash": "0710e6af7547c2ef4cb831faca2694ba026ae373dbb13141d548af8fdfd4c5e1",
+    "intro": "Our Computer Science Admissions Consultants have helped hundreds of clients get into the best computer science, machine learning, and computer systems programs in the United States and Canada.",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "Computer Science Application Strategy",
+      "School Selection",
+      "Resume and CV Assistance",
+      "Supplemental Application Essay Writing",
+      "Technical Project Descriptions",
+      "Letter of Recommendation Writing",
+      "CS Interview Prep (Research & Technical)"
+    ],
+    "pricingTables": [
+      {
+        "title": "Computer Science Graduate School Application Consulting",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "Program Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Statement of Purpose (SOP) / Application Essay (Fewer than 900 Words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words) / Ph.D. or Masters Research Proposal or Thesis Proposal",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          [
+            "Character & Fitness Statement / Waitlist Appeal Letter / Letter of Continued Interest",
+            "$1,485"
+          ],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["Computer Science Graduate School Interview Coaching", "$1,775"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Computer Science Graduate School Application Package (UNLIMITED HOURS)",
+            "Masters: $8,775 for the First School + $975 for Each Additional School Doctorate: $9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Computer Science Graduate School Application Package for Five Schools (UNLIMITED HOURS)",
+            "Masters: $11,700 for 5 Schools + $975 for Each Additional School Doctorate: $12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Computer Science Graduate School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "Masters: $15,600 for 10 Schools + $975 for Each Additional School Doctorate: $16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content. (Note: Most CS graduate programs have statements of purpose between 500-1000 words, with some PhD programs requiring longer research statements of 1000-1500 words. This also includes supplemental essays and “hidden essays” that can be easily missed if you don’t carefully review every section of the application portal.)",
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee."
+    ]
+  },
+  "graduate-school-application": {
+    "sourceUrl": "https://sosadmissions.com/graduate-school-application/",
+    "sourceId": 8000,
+    "modified": "2026-09-10T00:24:10",
+    "sourceHash": "18811aeb0b9cf518859778a8d845fa90e5b823efa0b5698f87c6f4e44cd21245",
+    "intro": "Our graduate school admissions consultants have helped thousands of clients get into the best master’s and doctoral programs in the United States and Canada.",
+    "features": [
+      "Computer Science (MS & PhD)",
+      "Law (JD)",
+      "Dentistry (DDS & DMD)",
+      "Medicine (MD & DO)",
+      "Education (EdD, PhD, & MEd)",
+      "Nursing (MSN, NP, CRNA, & DNP)",
+      "Engineering (MS & PhD)",
+      "Pharmacy (PharmD. & PhD)",
+      "Finance (MS, MBA & PhD)",
+      "Physical Therapy (DPT)",
+      "Psychology (MS, PhD, & PsyD)",
+      "Social Work (MSW & PhD)",
+      "Public Administration (MPA & DPA)",
+      "Veterinary Medicine (DVM)",
+      "Public Health (MPH & PhD)",
+      "Masters of Fine Arts (MFA)",
+      "Data Science (MS & PhD)",
+      "And More!"
+    ],
+    "pricingTables": [
+      {
+        "title": "Graduate School Application Package Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Statement of Purpose (SOP) / Application Essay (Fewer than 900 Words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words) / Ph.D. or Masters Research Proposal or Thesis Proposal",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          [
+            "Character & Fitness Statement / Waitlist Appeal Letter / Letter of Continued Interest",
+            "$1,485"
+          ],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          ["Graduate School Interview Coaching", "$1,775"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Graduate School Application Package (UNLIMITED HOURS)",
+            "Masters: $8,775 for the First School + $975 for Each Additional School Doctorate: $9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Graduate School Application Package for Five Schools (UNLIMITED HOURS)",
+            "Masters: $11,700 for 5 Schools + $975 for Each Additional School Doctorate: $12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Graduate School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "Masters: $15,600 for 10 Schools + $975 for Each Additional School Doctorate: $16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content.",
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee."
+    ]
+  },
+  "college-interviews": {
+    "sourceUrl": "https://sosadmissions.com/college-interviews/",
+    "sourceId": 8508,
+    "modified": "2026-09-10T00:24:09",
+    "sourceHash": "50777c1147da288b9d475d132d45a10f054dc7131a0f8014d655e61d237e4fbe",
+    "intro": "We have helped hundreds of clients prepare for their important college admissions interviews, enabling them to get into the college of their choice. We also have experience helping clients applying for a wide range of degrees and programs including:",
+    "features": [
+      "Review of your application and target programs",
+      "Preparation for likely interview questions",
+      "Mock interview and individual feedback",
+      "Practice discussing your achievements and goals",
+      "Follow-up mock interview",
+      "Consultations by phone, video, or appointment"
+    ],
+    "pricingTables": [
+      {
+        "title": "Interview Coaching Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          ["Interview Coaching", "$1,775"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "letters-of-recommendation": {
+    "sourceUrl": "https://sosadmissions.com/letters-of-recommendation/",
+    "sourceId": 2269,
+    "modified": "2025-02-11T01:43:58",
+    "sourceHash": "5d5044951b1b246501f2c324d8d36a1ba07ee09dead531497869f24d992195e0",
+    "intro": "The fastest way to get yourself admitted to a highly competitive college or graduate school is an impressive and powerful letter of recommendation. A great letter of reference distinguishes you from the pack. The question is how do you differentiate between the okay recommendation letters and the excellent ones?",
+    "features": [
+      "Letter of recommendation consulting",
+      "Discuss the appropriate format and content for your application",
+      "Confirm the scope and price with our consultants"
+    ],
+    "pricingTables": [],
+    "terms": []
+  },
+  "college-admissions": {
+    "sourceUrl": "https://sosadmissions.com/college-admissions/",
+    "sourceId": 7939,
+    "modified": "2026-09-28T20:25:41",
+    "sourceHash": "1d50c7fc89bc80df684c3c40e85ef000eb57b6cbe83b6aeb7c1807d263b6abb1",
+    "intro": "With over 1,000 Ivy League and top-tier acceptances, SOS Admissions delivers proven strategies to secure your spot at America’s most prestigious universities. Our consultants bring firsthand admissions committee experience from institutions like UCLA and the University of Chicago, giving you an insider advantage that generic counseling simply cannot match.",
+    "features": [
+      "Common Applications",
+      "Transfer Application",
+      "School Selections",
+      "Resumes and CVs",
+      "School-Specific Supplemental Essays",
+      "College Interviews",
+      "Letters of Recommendation",
+      "Suggestions for Test Preparation"
+    ],
+    "pricingTables": [
+      {
+        "title": "College Application and Transfer Application Package Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You)",
+            "$1,875"
+          ],
+          ["Freshman Essays"],
+          [
+            "Primary Essay Only, Common App or Coalition (One primary essay. Reuse depends on each college’s requirements; school-specific essays are not included.)",
+            "$1,485"
+          ],
+          [
+            "First Non-UC School Essay Package (Includes the primary essay, when needed, plus all required admission essays and short responses for one school. The $1,485 primary essay is included in this total, not an additional charge. Includes schools with their own application, such as MIT; an MIT-only applicant does not need a separate Common App essay purchase.)",
+            "$1,985 total"
+          ],
+          [
+            "Each Additional Non-UC School Requiring Essay Work (All required admission essays and short responses for that school. No additional fee merely to reuse an unchanged primary essay.)",
+            "$992.50"
+          ],
+          [
+            "University of California Personal Insight Questions (One set of 4 responses, chosen from 8 questions, for all selected UC campuses. Maximum 350 words per response. Separate from non-UC school essay packages.)",
+            "$1,985 per application, not per campus"
+          ],
+          ["Transfer Essays"],
+          [
+            "First Non-UC School Essay Package (All required admission essays and short responses for one school, whether it uses Common App, Coalition through Scoir, or its own application.)",
+            "$1,985 total"
+          ],
+          [
+            "Each Additional Non-UC School Requiring Essay Work (All required admission essays and short responses for that school, adapting prior content where the prompts permit.)",
+            "$992.50"
+          ],
+          [
+            "University of California Personal Insight Questions (The required major-preparation response plus 3 of 7 other questions: 4 responses total, maximum 350 words each, for all selected UC campuses. Separate from non-UC school essay packages.)",
+            "$1,985 per application, not per campus"
+          ],
+          [
+            "How essay pricing works: For either freshman or transfer applicants, non-UC essay packages cost $1,985 for 1 school, $2,977.50 for 2 schools, $5,955 for 5 schools, or $10,917.50 for 10 schools. Count schools requiring essay work, not schools merely reusing an unchanged primary essay. UC PIQs are one separate $1,985 service regardless of the number of selected UC campuses. Already purchased the primary essay from SOS? Within the same application cycle, your $1,485 primary-essay purchase receives full credit toward the $1,985 first-school bundle, leaving a $500 balance. Contact us before ordering so we can apply your credit. Existing essay-package clients adding schools pay $992.50 per additional school; contact us for the balance instead of repurchasing the first-school package. These are essay-only services. Complete application packages below include broader consulting services; do not purchase overlapping essay services separately. For prior-payment credits, more than 10 schools, or complete-package extras, call 310-951-4008 . Purchase college or transfer services ."
+          ],
+          ["Academic Resume or CV / College Brag Sheet", "$1,475"],
+          [
+            "Common Application Activity Descriptions or University of California Activity Descriptions or Coalition Activity Descriptions",
+            "$1,975"
+          ],
+          [
+            "College Interview Coaching / Transfer Interview Coaching",
+            "$1,775"
+          ],
+          ["Letter of Recommendation", "$985"],
+          ["Waitlist Appeal Letter or Letter of Continued Interest", "$1,485"],
+          [
+            "Complete College Application or Transfer Application Package (UNLIMITED HOURS)",
+            "$8,775 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete College Application Package for Five Schools (UNLIMITED HOURS)",
+            "$11,700 for the 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete College Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$15,600 for the 10 Schools + $975 for Each Additional School"
+          ],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"]
+        ]
+      }
+    ],
+    "terms": [
+      "This applies to one application cycle for first-year or transfer applicants. For services not included in the package, our standard hourly rate applies. We highly recommend applying to at least ten schools,  divided strategically between safety, mid-range, and reach schools,  to maximize your chances of gaining admission to a competitive university. Your consultant will advise on how to correctly categorize each school for your specific applicant profile."
+    ]
+  },
+  "phd-application-consulting": {
+    "sourceUrl": "https://sosadmissions.com/phd-application-consulting/",
+    "sourceId": 6115,
+    "modified": "2025-02-11T01:42:09",
+    "sourceHash": "97e49c4a20a47884b66c33544c33e2709cb8dac65f0b393096f59f98f7a186eb",
+    "intro": "SOS Admissions has successfully helped hundreds of graduate school applicants gain admission to top masters and doctoral programs in a wide range of fields:",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "Graduate School Application Strategy",
+      "School Selection",
+      "Resume and CV Assistance",
+      "Supplemental Application Essay Writing",
+      "Graduate School Admissions Interview Prep",
+      "Letter of Recommendation Writing",
+      "Test Prep Suggestions"
+    ],
+    "pricingTables": [],
+    "terms": []
+  },
+  "mba": {
+    "sourceUrl": "https://sosadmissions.com/mba/",
+    "sourceId": 8272,
+    "modified": "2026-09-10T00:24:12",
+    "sourceHash": "ccf0e72f80b1b3743187189212b758ba75cc067047bc9d6ab1b58f24121b5998",
+    "intro": "SOS Admissions has helped hundreds of MBA and EMBA applicants gain admission to top programs. Our consultants are regularly cited in outlets such as U.S. News & World Report for their expertise in business school applications. We work with applicants from the United States and internationally. Services are available as a package or individually, so you can get help with one specific part of your application or the full process from start to finish.",
+    "features": [
+      "MBA Personal Statement & Essay Writing",
+      "MBA Application Strategy",
+      "MBA Admissions Planning",
+      "Test Prep (GMAT / GRE) Suggestions",
+      "MBA School Selection",
+      "Resume and CV Assistance",
+      "Supplemental Application Essays",
+      "MBA Admissions Interview Coaching",
+      "Letter of Recommendation Consulting",
+      "Waitlist Consultations"
+    ],
+    "pricingTables": [
+      {
+        "title": "MBA Application Package Pricing, Standard",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essays / Statement of Purpose (all essays for one school totaling fewer than 900 words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,485"],
+          ["Academic Resume or CV", "$1,475"],
+          [
+            "Letter of Recommendation ( GMAC Common Letter of Recommendation)",
+            "$985"
+          ],
+          ["MBA Interview Coaching", "$1,775"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete MBA Application Package (UNLIMITED HOURS)",
+            "$8,775 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete MBA Application Package for Five Schools (UNLIMITED HOURS)",
+            "$11,700 for the 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete MBA Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$15,600 for the 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      },
+      {
+        "title": "MBA Application Package Pricing, Premium",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "School Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Application Essays / Statement of Purpose (all essays for one school totaling fewer than 900 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words)",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          ["Waitlist Appeal Letter / Letter of Continued Interest", "$1,985"],
+          ["Academic Resume or CV", "$1,775"],
+          ["Letter of Recommendation", "$1,485"],
+          ["MBA Interview Coaching", "$1,775"],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete MBA Application Package (UNLIMITED HOURS)",
+            "$8,775 for the First School + $1,475 for Each Additional School"
+          ],
+          [
+            "Complete MBA Application Package for Five Schools (UNLIMITED HOURS)",
+            "$11,700 for the 5 Schools + $1,475 for Each Additional School"
+          ],
+          [
+            "Complete MBA Application Package for Ten Schools (UNLIMITED HOURS)",
+            "$15,600 for the 10 Schools + $1,475 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "These prices apply to one application cycle. MBA financial aid essays are not included. For any services not covered by the package, our standard per-service fee applies."
+    ]
+  },
+  "medical-school-interview": {
+    "sourceUrl": "https://sosadmissions.com/medical-school-interview/",
+    "sourceId": 8550,
+    "modified": "2026-09-10T00:24:17",
+    "sourceHash": "6403929d71578066e37f503720e642e15b4b0834a2ee656da08665bdb9bf4ab2",
+    "intro": "Former medical school admissions committee members prepare you for traditional and MMI interviews with our proven methodology. 95.3% of our clients get accepted to medical school.",
+    "features": [
+      "Review of your application and target programs",
+      "Preparation for likely interview questions",
+      "Mock interview and individual feedback",
+      "Practice discussing your achievements and goals",
+      "Follow-up mock interview",
+      "Consultations by phone, video, or appointment"
+    ],
+    "pricingTables": [
+      {
+        "title": "Interview Coaching Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          ["Interview Coaching", "$1,775"],
+          ["MMI Interview Coaching", "$1,975"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "speech-language-pathology-slp-admissions-consultant": {
+    "sourceUrl": "https://sosadmissions.com/speech-language-pathology-slp-admissions-consultant/",
+    "sourceId": 9258,
+    "modified": "2026-01-03T23:20:26",
+    "sourceHash": "e74c708171e75fbbc9c023882a61a3856e2a24d306fb5673d8ef00cf0b27e825",
+    "intro": "Discuss your speech-language pathology application with our admissions consultants. Call to confirm the services and scope appropriate for your target programs.",
+    "features": [
+      "Discuss your target programs",
+      "Review your application needs",
+      "Confirm the scope and price before ordering"
+    ],
+    "pricingTables": [],
+    "terms": [],
+    "sourceNote": "WordPress SLP page contains psychology copy and old prices; do not reproduce those figures. Confirm SLP scope and rates with Joseph."
+  },
+  "graduate-school-interview": {
+    "sourceUrl": "https://sosadmissions.com/graduate-school-interview/",
+    "sourceId": 8458,
+    "modified": "2026-09-10T00:24:11",
+    "sourceHash": "539794ac19cbf002492591f760e929453ba36ad3918cbcce2703451aa6e77fe6",
+    "intro": "We have helped thousands of graduate school applicants get into their dream school with our professional interview coaching. Past clients have gained admission to top universities in the following programs:",
+    "features": [
+      "Review of your application and target programs",
+      "Preparation for likely interview questions",
+      "Mock interview and individual feedback",
+      "Practice discussing your achievements and goals",
+      "Follow-up mock interview",
+      "Consultations by phone, video, or appointment"
+    ],
+    "pricingTables": [
+      {
+        "title": "Interview Coaching Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          ["Interview Coaching", "$1,775"]
+        ]
+      }
+    ],
+    "terms": []
+  },
+  "psychology-counseling-admissions": {
+    "sourceUrl": "https://sosadmissions.com/psychology-counseling-admissions/",
+    "sourceId": 9070,
+    "modified": "2026-09-10T00:24:15",
+    "sourceHash": "0a64bd6feed945f9a413dba63c15862084ef8e378afc5e4c21e38e22724234ff",
+    "intro": "Our Psychology & Counseling Admissions Consultants have helped hundreds of clients get into the best clinical psychology, counseling psychology, marriage and family therapy, and mental health counseling programs in the United States and Canada.",
+    "features": [
+      "Personal Statement and Essay Writing",
+      "Psychology & Counseling Application Strategy",
+      "School Selection",
+      "Resume and CV Assistance",
+      "Supplemental Application Essay Writing",
+      "PSYCAS Application Assistance",
+      "Letter of Recommendation Writing",
+      "Psychology Interview Prep (Research & Clinical)"
+    ],
+    "pricingTables": [
+      {
+        "title": "Psychology & Counseling Graduate School Application Consulting",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          [
+            "Application Planning and Evaluation Service (Introductory Service With Expert Advice on Essays, Letters of Rec, School Selection, Resume / CV, etc.)",
+            "$465"
+          ],
+          [
+            "Program Selection Service (Professional Guidance on the Best Schools for You )",
+            "$1,875"
+          ],
+          [
+            "Personal Statement / Statement of Purpose (SOP) / Application Essay (Fewer than 900 Words)",
+            "First School $1,485 Subsequent Schools $742.50"
+          ],
+          [
+            "Long Essay (all essays for one school totaling 900-1500 words) / Ph.D. or Masters Research Proposal or Thesis Proposal",
+            "First School $1,985 Subsequent Schools $992.50"
+          ],
+          [
+            "Character & Fitness Statement / Waitlist Appeal Letter / Letter of Continued Interest",
+            "$1,485"
+          ],
+          ["Academic Resume or CV", "$1,475"],
+          ["Letter of Recommendation", "$985"],
+          [
+            "Psychology & Counseling Graduate School Interview Coaching",
+            "$1,775"
+          ],
+          ["Rush Fee (per incident)", "$500 (Call for Details)"],
+          [
+            "Complete Psychology & Counseling Graduate School Application Package (UNLIMITED HOURS)",
+            "Masters: $8,775 for the First School + $975 for Each Additional School Doctorate: $9,275 for the First School + $975 for Each Additional School"
+          ],
+          [
+            "Complete Psychology & Counseling Graduate School Application Package for Five Schools (UNLIMITED HOURS)",
+            "Masters: $11,700 for 5 Schools + $975 for Each Additional School Doctorate: $12,200 for 5 Schools + $975 for Each Additional School"
+          ],
+          [
+            "Complete Psychology & Counseling Graduate School Application Package for Ten Schools (UNLIMITED HOURS)",
+            "Masters: $15,600 for 10 Schools + $975 for Each Additional School Doctorate: $16,100 for 10 Schools + $975 for Each Additional School"
+          ]
+        ]
+      }
+    ],
+    "terms": [
+      "Pricing includes all essays for one school. Get a 50% discount on essay services for subsequent schools, as we can often reuse content.",
+      "These prices apply to one application cycle. Financial aid and essays associated with financial aid are not included. For any other services not included in the package, we charge our standard a-la-carte fee."
+    ]
+  },
+  "sat-act-preparation": {
+    "sourceUrl": "https://sosadmissions.com/sat-act-preparation/",
+    "sourceId": 4833,
+    "modified": "2025-02-11T01:51:03",
+    "sourceHash": "fb56ccae579befa382290aa67db3c785b93cd355035dd852652f1fbdeedd97ba",
+    "intro": "SAT or ACT scores are a crucial factor in the college admissions process. These days, a “good” score just doesn’t cut it anymore. You need a better, higher score if you want to be accepted to the college of your dreams.",
+    "features": [
+      "Personalized one-on-one tutoring",
+      "Customized lesson plans",
+      "Week-by-week study planning",
+      "Test preparation books",
+      "Admissions advice"
+    ],
+    "pricingTables": [
+      {
+        "title": "SAT Preparation / ACT Preparation Pricing",
+        "rows": [
+          ["Initial Phone Consultation (15 minutes)", "Free"],
+          ["10 Hours of SAT Tutoring / ACT Tutoring", "$1750"],
+          ["SAT Prep / ACT Prep Package (30 Hours)", "$3050"],
+          [
+            "Application Planning and Evaluation Service (Expert Advice on Essays, Letters of Rec, Resume / CV, etc.)",
+            "$465"
+          ]
+        ]
+      }
+    ],
+    "terms": []
+  }
+}

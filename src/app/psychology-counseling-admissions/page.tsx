@@ -1,19 +1,21 @@
-import { Metadata } from 'next';
-import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from "next";
+import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: { absolute: 'Psychology & Counseling Admissions Consulting - SOS Admissions' },
+  title: {
+    absolute: "Psychology & Counseling Admissions Consulting - SOS Admissions",
+  },
   description:
-    'Expert psychology and counseling admissions consulting for clinical psychology PhD, PsyD, counseling psychology, MFT, and mental health counseling programs.',
+    "Expert psychology and counseling admissions consulting for clinical psychology PhD, PsyD, counseling psychology, MFT, and mental health counseling programs.",
   alternates: {
-    canonical: 'https://sosadmissions.com/psychology-counseling-admissions/',
+    canonical: "https://sosadmissions.com/psychology-counseling-admissions/",
   },
   openGraph: {
-    title: 'Psychology & Counseling Admissions Consulting - SOS Admissions',
+    title: "Psychology & Counseling Admissions Consulting - SOS Admissions",
     description:
-      'Expert psychology and counseling admissions consulting for clinical psychology PhD, PsyD, counseling psychology, MFT, and mental health counseling programs.',
-    url: 'https://sosadmissions.com/psychology-counseling-admissions/',
-    type: 'website',
+      "Expert psychology and counseling admissions consulting for clinical psychology PhD, PsyD, counseling psychology, MFT, and mental health counseling programs.",
+    url: "https://sosadmissions.com/psychology-counseling-admissions/",
+    type: "website",
   },
 };
 

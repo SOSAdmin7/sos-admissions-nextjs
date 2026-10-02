@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export function BlogPostBody({ html }: { html: string }) {
   return (

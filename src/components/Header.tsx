@@ -1,44 +1,45 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Menu, ChevronDown, Phone } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
+import { useState, useEffect, useRef } from "react";
+import { Menu, ChevronDown, Phone } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 
-const MobileMenu = dynamic(() => import('./MobileMenu'), { ssr: false });
+const MobileMenu = dynamic(() => import("./MobileMenu"), { ssr: false });
 
 const navItems = [
   {
-    label: 'Programs',
+    label: "Programs",
     children: [
-      { label: 'College Admissions', href: '/college-admissions' },
-      { label: 'College Transfers', href: '/college-transfers' },
-      { label: 'Graduate School', href: '/graduate-school-application' },
-      { label: 'MBA', href: '/mba' },
-      { label: 'Medical School', href: '/medical-school-application' },
-      { label: 'Medical Residency', href: '/medical-residency' },
-      { label: 'Law School', href: '/law-school-application' },
-      { label: 'Dental School', href: '/dental-school-application' },
-      { label: 'Private School', href: '/private-school-admissions' },
+      { label: "College Admissions", href: "/college-admissions" },
+      { label: "College Transfers", href: "/college-transfers" },
+      { label: "Graduate School", href: "/graduate-school-application" },
+      { label: "MBA", href: "/mba" },
+      { label: "Medical School", href: "/medical-school-application" },
+      { label: "Medical Residency", href: "/medical-residency" },
+      { label: "Law School", href: "/law-school-application" },
+      { label: "Dental School", href: "/dental-school-application" },
+      { label: "Private School", href: "/private-school-admissions" },
     ],
   },
   {
-    label: 'Services',
+    label: "Services",
     children: [
-      { label: 'Personal Statements', href: '/personal-statement' },
-      { label: 'Interview Prep', href: '/college-interviews' },
-      { label: 'International Students', href: '/international-students' },
-      { label: 'All Services', href: '/services' },
+      { label: "Personal Statements", href: "/personal-statement" },
+      { label: "Interview Prep", href: "/college-interviews" },
+      { label: "International Students", href: "/international-students" },
+      { label: "All Services", href: "/services" },
     ],
   },
-  { label: 'About Us', href: '/about-us' },
-  { label: 'Reviews', href: '/client-testimonials' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact-us' },
+  { label: "About Us", href: "/about-us" },
+  { label: "Reviews", href: "/client-testimonials" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact-us" },
 ];
 
 export default function Header() {
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -54,19 +55,19 @@ export default function Header() {
         ticking = true;
       }
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+          isScrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-[72px] lg:h-[76px]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+          <div className="flex items-center justify-between h-[72px] xl:h-[76px]">
             {/* Logo + Tagline — shrinks on narrow screens so the phone pill never wraps */}
             <Link href="/" className="flex-shrink min-w-0 mr-2">
               <Image
@@ -75,34 +76,56 @@ export default function Header() {
                 width={473}
                 height={85}
                 priority
-                className="h-7 min-[420px]:h-8 sm:h-11 w-auto"
+                className="h-7 min-[420px]:h-8 sm:h-11 w-auto object-contain object-left"
               />
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-5">
+            <nav className="hidden xl:flex items-center gap-5">
               {navItems.map((item) =>
                 item.children ? (
                   <div
                     key={item.label}
                     className="relative"
-                    onMouseEnter={() => setOpenDropdown(item.label)}
-                    onMouseLeave={() => setOpenDropdown(null)}
+                    onBlur={(event) => {
+                      if (!event.currentTarget.contains(event.relatedTarget))
+                        setOpenDropdown(null);
+                    }}
+                    onKeyDown={(event) => {
+                      if (event.key === "Escape") {
+                        setOpenDropdown(null);
+                        event.currentTarget.querySelector("button")?.focus();
+                      }
+                    }}
                   >
-                    <button className="text-[#495057] hover:text-[#1B2B4B] transition-colors font-medium flex items-center gap-1 py-2 text-sm">
+                    <button
+                      type="button"
+                      aria-expanded={openDropdown === item.label}
+                      aria-controls={`nav-${item.label}`}
+                      onClick={() =>
+                        setOpenDropdown(
+                          openDropdown === item.label ? null : item.label,
+                        )
+                      }
+                      className="text-[#495057] hover:text-[#1B2B4B] transition-colors font-medium flex items-center gap-1 py-2 text-sm"
+                    >
                       {item.label}
                       <ChevronDown
                         size={14}
                         className={`transition-transform duration-200 ${
-                          openDropdown === item.label ? 'rotate-180' : ''
+                          openDropdown === item.label ? "rotate-180" : ""
                         }`}
                       />
                     </button>
                     {openDropdown === item.label && (
-                      <div className="absolute left-0 mt-0 w-60 bg-white shadow-xl rounded-lg py-3 border border-gray-100 animate-fade-in">
+                      <div
+                        id={`nav-${item.label}`}
+                        className="absolute left-0 mt-0 w-60 bg-white shadow-xl rounded-lg py-3 border border-gray-100 animate-fade-in"
+                      >
                         {item.children.map((child) => (
                           <Link
                             key={child.href}
+                            onClick={() => setOpenDropdown(null)}
                             href={child.href}
                             className="block px-5 py-2.5 text-sm text-[#495057] hover:text-[#1B2B4B] hover:bg-[#F8F9FA] transition-colors"
                           >
@@ -120,12 +143,12 @@ export default function Header() {
                   >
                     {item.label}
                   </Link>
-                )
+                ),
               )}
             </nav>
 
             {/* Desktop CTA + Phone */}
-            <div className="hidden lg:flex items-center gap-5">
+            <div className="hidden xl:flex items-center gap-5">
               <a
                 href="tel:+13109514008"
                 className="flex items-center gap-1.5 text-sm text-[#1B2B4B] font-medium hover:text-[#E8613C] transition-colors"
@@ -135,14 +158,14 @@ export default function Header() {
               </a>
               <Link
                 href="/get-started"
-                className="px-6 py-2.5 bg-[#E8613C] text-white font-semibold rounded-full hover:bg-[#D4522E] transition-colors shadow-sm text-sm"
+                className="px-6 py-2.5 bg-[#C94D2B] text-white font-semibold rounded-full hover:bg-[#B94224] transition-colors shadow-sm text-sm"
               >
                 Get Started
               </Link>
             </div>
 
             {/* Mobile Phone + Menu */}
-            <div className="lg:hidden flex items-center gap-1 flex-shrink-0">
+            <div className="xl:hidden flex items-center gap-1 flex-shrink-0">
               <a
                 href="tel:+13109514008"
                 className="flex items-center gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-[#1B2B4B] hover:text-[#E8613C] transition-colors px-3 py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
@@ -151,6 +174,7 @@ export default function Header() {
                 (310) 951-4008
               </a>
               <button
+                ref={menuButtonRef}
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="p-2 text-[#495057] hover:text-[#1B2B4B] transition-colors"
                 aria-label="Open menu"
@@ -164,7 +188,10 @@ export default function Header() {
 
       <MobileMenu
         isOpen={isMobileMenuOpen}
-        onClose={() => setIsMobileMenuOpen(false)}
+        onClose={() => {
+          setIsMobileMenuOpen(false);
+          requestAnimationFrame(() => menuButtonRef.current?.focus());
+        }}
       />
     </>
   );

@@ -7,14 +7,14 @@ export const metadata: Metadata = {
       "Admissions Consulting for International Students - SOS Admissions",
   },
   description:
-    "We have helped thousands of international students to successfully gain admissions to top colleges and graduate schools including MBA and medical school in the USA.",
+    "Admissions consulting for international students applying to U.S. colleges and graduate schools, including school selection, essays, and interview preparation.",
   alternates: {
     canonical: "https://sosadmissions.com/international-students/",
   },
   openGraph: {
     title: "Admissions Consulting for International Students - SOS Admissions",
     description:
-      "We have helped thousands of international students to successfully gain admissions to top colleges and graduate schools including MBA and medical school in the USA.",
+      "Admissions consulting for international students applying to U.S. colleges and graduate schools, including school selection, essays, and interview preparation.",
     url: "https://sosadmissions.com/international-students/",
     type: "website",
   },

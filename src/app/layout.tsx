@@ -11,6 +11,27 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const siteSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sosadmissions.com/#organization",
+      name: "SOS Admissions",
+      url: "https://sosadmissions.com/",
+      telephone: "+1-310-951-4008",
+      logo: "https://sosadmissions.com/images/legacy/sosheader.webp",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sosadmissions.com/#website",
+      name: "SOS Admissions",
+      url: "https://sosadmissions.com/",
+      publisher: { "@id": "https://sosadmissions.com/#organization" },
+    },
+  ],
+};
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -72,6 +93,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="min-h-full flex flex-col antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, "\\u003c") }} />
         <GTMNoScript />
         <GTMScript />
         <Header />

@@ -1,11 +1,6 @@
 import Link from "next/link";
 
 const serviceLinks = [
-  { label: "Academic Crisis Consulting", href: "/academic-crisis-consulting/" },
-  {
-    label: "Speech-Language Pathology",
-    href: "/speech-language-pathology-slp-admissions-consultant/",
-  },
   { label: "College Admissions", href: "/college-admissions" },
   { label: "College Transfers", href: "/college-transfers" },
   { label: "College Interviews", href: "/college-interviews" },
@@ -48,11 +43,16 @@ const serviceLinks = [
     href: "/veterinary-school-admissions",
   },
   { label: "BS-MD Programs", href: "/bs-md-admissions-consulting" },
+  { label: "Academic Crisis Consulting", href: "/academic-crisis-consulting/" },
+  {
+    label: "Speech-Language Pathology",
+    href: "/speech-language-pathology-slp-admissions-consultant/",
+  },
 ];
 
 export function ServicesGrid() {
   return (
-    <section className="relative py-10 md:py-16 lg:py-20 bg-[#F8F9FA]">
+    <section className="relative py-10 md:py-14 lg:py-16 bg-[#F8F9FA]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 md:mb-10 animate-[fadeInUp_0.6s_ease-out_both]">

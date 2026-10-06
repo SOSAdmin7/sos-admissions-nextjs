@@ -1,1 +1,1 @@
-export { PaymentForm as OrderForm } from "@/components/PaymentForm";
+export { OrderingForm as OrderForm } from "@/components/OrderingForm";

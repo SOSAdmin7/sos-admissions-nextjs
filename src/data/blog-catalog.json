@@ -2,12 +2,12 @@
   {
     "slug": "crna-school-admissions",
     "title": "CRNA School Admissions: What You Need to Know",
-    "excerpt": "CRNA stands for Certified Registered Nurse Anesthetist. It’s an advanced practice nursing role that requires serious education and experience, but it’s also one of the most well compensated nursing positions out there. If you’re interested in […]",
+    "excerpt": "Becoming a Certified Registered Nurse Anesthetist starts with registered nursing practice and preparation for an accredited doctoral program. Build your school list around current requirements rather than older descriptions of master’s-level programs.",
     "date": "2026-07-30",
     "modified": "2026-03-15T20:39:16",
     "image": "/images/wordpress/5cea1caf659556c9b08f293c.webp",
     "category": "Admissions Guidance",
-    "revised": "2026-10-01"
+    "revised": "2026-10-05"
   },
   {
     "slug": "caribbean-medical-schools-worth-it",
@@ -92,12 +92,12 @@
   {
     "slug": "lsat-study-guide",
     "title": "LSAT Study Guide: How to Prepare and What Score You Need",
-    "excerpt": "The LSAT is probably the most important test you’ll ever take, even more important than the SAT or ACT. Your LSAT study guide strategy literally determines which law schools will accept you, how much scholarship money […]",
+    "excerpt": "A useful LSAT study plan starts with the current test format, an honest diagnostic, and a schedule you can sustain. Your score is one part of a law school application, alongside your academic record and the rest of your materials.",
     "date": "2026-06-15",
     "modified": "2026-03-04T00:28:50",
     "image": "/images/wordpress/c4fbdb55a5463ad25c02de05.webp",
     "category": "Admissions Guidance",
-    "revised": "2026-10-01"
+    "revised": "2026-10-05"
   },
   {
     "slug": "post-bacc-program-medical-school",
@@ -221,7 +221,7 @@
   },
   {
     "slug": "how-to-get-into-a-phd-program",
-    "title": "How to Get Into a PhD Program: The Complete Guide",
+    "title": "How to Get Into a PhD Program: An Application Planning Guide",
     "excerpt": "A PhD application should show readiness for research and a thoughtful match between your interests and the program. Expectations differ substantially across fields and institutions.",
     "date": "2026-04-28",
     "modified": "2026-03-02T23:23:21",
@@ -231,7 +231,7 @@
   },
   {
     "slug": "how-to-get-into-veterinary-school",
-    "title": "How to Get Into Veterinary School: A Complete Guide",
+    "title": "How to Get Into Veterinary School: An Application Planning Guide",
     "excerpt": "Veterinary school preparation should connect your academic work with an informed understanding of animal health and veterinary practice. Requirements differ by school, so build your plan around verified program information.",
     "date": "2026-04-23",
     "modified": "2026-03-03T16:21:54",
@@ -241,7 +241,7 @@
   },
   {
     "slug": "how-to-get-into-dental-school",
-    "title": "How to Get Into Dental School: A Complete Guide",
+    "title": "How to Get Into Dental School: An Application Planning Guide",
     "excerpt": "A strong dental school application begins with the requirements of the schools you want to attend. Build your preparation around those requirements, your academic record, and meaningful exposure to dentistry.",
     "date": "2026-04-20",
     "modified": "2026-03-02T23:22:52",
@@ -251,7 +251,7 @@
   },
   {
     "slug": "how-to-get-into-pa-school",
-    "title": "How to Get Into PA School: A Complete Guide",
+    "title": "How to Get Into PA School: An Application Planning Guide",
     "excerpt": "A strong PA application combines academic preparation, relevant experience, and a clear reason for pursuing the profession. Start with the requirements of the programs that fit your goals.",
     "date": "2026-04-15",
     "modified": "2026-03-02T23:24:54",
@@ -261,7 +261,7 @@
   },
   {
     "slug": "how-to-get-into-nursing-school",
-    "title": "How to Get Into Nursing School: A Complete Guide",
+    "title": "How to Get Into Nursing School: An Application Planning Guide",
     "excerpt": "Nursing schools offer different educational pathways and use different selection criteria. Start by identifying the qualification you need and the programs that fit your existing education and goals.",
     "date": "2026-04-13",
     "modified": "2026-03-02T23:24:54",
@@ -402,12 +402,12 @@
   {
     "slug": "medical-schools-without-mcat",
     "title": "Researching Medical School Pathways Without the MCAT",
-    "excerpt": "If you’d like to step around the MCAT, you’re not alone. Plenty of hopeful med students find that test’s length and intensity pretty intimidating. Fortunately, certain U.S. programs, or even some Canadian schools, can sometimes let you bypass […]",
+    "excerpt": "Some medical-school pathways do not require the MCAT, but their eligibility and continuation conditions differ. Check the exact pathway and current institutional policy rather than treating an exception as a waiver for every applicant.",
     "date": "2025-05-09",
     "modified": "2026-03-02T18:23:31",
     "image": "/images/wordpress/f70e3a9085339ff143ba0bf9.jpg",
     "category": "Medical School",
-    "revised": "2026-10-01"
+    "revised": "2026-10-05"
   },
   {
     "slug": "when-do-medical-schools-send-interview-invites",
@@ -652,12 +652,12 @@
   {
     "slug": "ecfmg-certification-your-go-to-guide-for-medical-residency-applications-as-an-img",
     "title": "ECFMG Certification: Your Go-To Guide for Medical Residency Applications as an IMG",
-    "excerpt": "Hey future docs! If you’re an International Medical Graduate (IMG) and you’ve got your eyes set on practicing in the good ol’ U.S. of A, then you’ve probably heard the term “ECFMG Certification” tossed around. It […]",
+    "excerpt": "International medical graduates planning U.S. residency should check their individual eligibility for ECFMG Certification early. Certification is one requirement in the training pathway, not a medical license or a guarantee of a residency position.",
     "date": "2023-10-09",
     "modified": "2026-03-01T19:47:05",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
     "category": "Medical Residency",
-    "revised": "2026-10-01"
+    "revised": "2026-10-05"
   },
   {
     "slug": "decoding-the-mba-hype-is-it-really-your-golden-ticket",
@@ -1051,7 +1051,7 @@
   },
   {
     "slug": "everything-you-need-to-know-about-letter-of-intent-for-medical-residency",
-    "title": "Everything You Need To Know About Letter Of Intent For Medical Residency",
+    "title": "Medical Residency Letters of Intent: What to Include",
     "excerpt": "A residency letter of intent should communicate a genuine preference clearly and professionally. It should follow the program’s communication rules and the current Match policies.",
     "date": "2021-07-23",
     "modified": "2026-03-01T19:43:25",
@@ -1067,7 +1067,7 @@
     "modified": "2026-03-01T19:43:13",
     "image": "/images/wordpress/e5c39ab07df7cefaac8bdf1d.webp",
     "category": "Medical School",
-    "revised": "2026-10-01"
+    "revised": "2026-10-05"
   },
   {
     "slug": "best-physician-assistant-schools-with-their-modules",

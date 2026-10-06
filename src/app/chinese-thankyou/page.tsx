@@ -1,6 +1,6 @@
 import Link from "next/link";
 export const metadata = {
-  title: { absolute: "咨询信息 | SOS留学" },
+  title: { absolute: "感谢联系SOS留学" },
   robots: { index: false, follow: false },
 };
 export default function Page() {
@@ -9,9 +9,10 @@ export default function Page() {
       lang="zh-Hans"
       className="max-w-3xl mx-auto px-4 py-10 text-center"
     >
-      <h1 className="text-3xl font-bold text-navy mb-5">咨询信息</h1>
+      <h1 className="text-3xl font-bold text-navy mb-5">感谢联系SOS留学</h1>
       <p className="leading-relaxed">
-        提交联系表格后，请查看表格显示的确认信息。仅访问本页面不会提交咨询请求。如需帮助，请致电310-951-4008。
+        如果您刚刚提交了联系信息，我们的团队会查看您的咨询请求并与您联系。请保留表格提供的确认信息。如果您不确定是否提交成功，或需要帮助，请致电
+        <a href="tel:+13109514008" className="underline">310-951-4008</a>。
       </p>
       <Link
         href="/contactchinese/"

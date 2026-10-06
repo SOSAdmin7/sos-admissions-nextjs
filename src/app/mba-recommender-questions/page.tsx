@@ -263,10 +263,10 @@ export default function MbaRecommenderQuestionsPage() {
                   point to concrete supporting detail.
                 </p>
                 <p>
-                  One of the finest people I have worked with states a feeling.
-                  Among the roughly forty analysts I have supervised in eleven
+                  &ldquo;One of the finest people I have worked with&rdquo; states a feeling.
+                  &ldquo;Among the roughly forty analysts I have supervised in eleven
                   years, I would place her in the top two, and here is the
-                  project that shows why states a position and then supports it.
+                  project that shows why&rdquo; states a position and then supports it.
                 </p>
               </div>
             </div>

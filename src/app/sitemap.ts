@@ -62,11 +62,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.4,
     },
-    {
-      url: `${baseUrl}/privacy-policy/`,
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
   ].map((p) => ({ ...p, lastModified: new Date("2026-10-01") }));
 
   // Service pages — old-site URLs preserved exactly

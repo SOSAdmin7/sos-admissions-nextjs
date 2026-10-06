@@ -1,6 +1,10 @@
-export const metadata = {
+import type { Metadata } from "next";
+export const metadata: Metadata = {
   title: { absolute: "联系SOS留学 | 免费初次咨询" },
   alternates: { canonical: "https://sosadmissions.com/contactchinese/" },
+  description: "联系SOS留学顾问，预约15分钟免费初次电话咨询。联系电话310-951-4008，微信SOSAdmissions，也可通过中文联系表格提交申请目标。",
+  openGraph: { title: "联系SOS留学 | 免费初次咨询", description: "联系SOS留学顾问，预约15分钟免费初次电话咨询。联系电话310-951-4008，微信SOSAdmissions，也可通过中文联系表格提交申请目标。", locale: "zh_CN", url: "https://sosadmissions.com/contactchinese/" },
+  twitter: { card: "summary", title: "联系SOS留学 | 免费初次咨询", description: "联系SOS留学顾问，预约15分钟免费初次电话咨询。联系电话310-951-4008，微信SOSAdmissions，也可通过中文联系表格提交申请目标。" },
 };
 export default function Page() {
   return (

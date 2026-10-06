@@ -1,7 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata = {
+export const metadata: Metadata = {
   title: { absolute: "常见问题 | SOS留学" },
   alternates: { canonical: "https://sosadmissions.com/chinese-faq/" },
+  description: "了解SOS留学的申请咨询、选校、文书及面试服务，以及免费初次咨询、收费确认和远程咨询安排。",
+  openGraph: { title: "常见问题 | SOS留学", description: "了解SOS留学的申请咨询、选校、文书及面试服务，以及免费初次咨询、收费确认和远程咨询安排。", locale: "zh_CN", url: "https://sosadmissions.com/chinese-faq/" },
+  twitter: { card: "summary", title: "常见问题 | SOS留学", description: "了解SOS留学的申请咨询、选校、文书及面试服务，以及免费初次咨询、收费确认和远程咨询安排。" },
 };
 const questions = [
   {

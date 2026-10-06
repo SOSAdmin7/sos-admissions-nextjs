@@ -85,7 +85,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-blue py-10 md:py-14 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-blue py-10 md:py-14 lg:py-16">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue rounded-full blur-3xl"></div>
@@ -114,7 +114,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {Object.entries(servicesByCategory).map(
             ([categoryKey, categoryServices]) => (
-              <div key={categoryKey} className="mb-20 last:mb-0">
+              <div key={categoryKey} className="mb-10 last:mb-0">
                 {/* Category Header */}
                 <div className="mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-3">

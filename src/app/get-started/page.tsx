@@ -4,9 +4,9 @@ import { OrderForm } from "./OrderForm";
 // New-design-only page (not on the old site) — keep out of the index so the
 // indexable URL set mirrors sosadmissions.com exactly
 export const metadata: Metadata = {
-  title: { absolute: "Get Started - SOS Admissions Order Forms" },
+  title: { absolute: "Get Started - SOS Admissions Ordering Form" },
   description:
-    "Select your admissions consulting package. A la carte services and complete packages available for college, graduate, medical, law, MBA, and more.",
+    "Start your SOS Admissions order by sharing your name and contact details, then review the available purchase options in our ordering form.",
   robots: { index: false, follow: true },
 };
 
@@ -19,11 +19,11 @@ export default function GetStartedPage() {
             Get Started
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            SOS Admissions Order Forms
+            SOS Admissions Ordering Form
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Choose the order form for your program. Call us before ordering if
-            you need help selecting a service.
+            Start by sharing your contact details in our ordering form. Call us
+            before ordering if you need help selecting a service.
           </p>
         </div>
       </section>

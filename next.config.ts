@@ -25,6 +25,11 @@ const nextConfig: NextConfig = {
   // Force www and HTTPS (matching old .htaccess behavior)
   async redirects() {
     return [
+      {
+        source: "/wp-content/uploads/2026/05/The-Definitive-Guide-to-Ace-Your-Interview-and-Get-the-Job-3-15-13.pdf",
+        destination: "/documents/interview-guide.pdf",
+        permanent: true,
+      },
       ...mediaRedirects,
       ...Object.entries(blogAliases).map(([oldSlug, newSlug]) => ({ source: `/blog/${oldSlug}`, destination: `/blog/${newSlug}/`, permanent: true })),
       // Old WordPress backup/duplicate pages → homepage

@@ -1,7 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata = {
+export const metadata: Metadata = {
   title: { absolute: "SOS留学 | 美国大学及研究生申请咨询" },
   alternates: { canonical: "https://sosadmissions.com/china/" },
+  description: "SOS Admissions提供美国及加拿大院校申请咨询，包括选校、申请文书、简历、推荐信材料及面试准备。初次电话咨询免费，联系电话310-951-4008。",
+  openGraph: { title: "SOS留学 | 美国大学及研究生申请咨询", description: "SOS Admissions提供美国及加拿大院校申请咨询，包括选校、申请文书、简历、推荐信材料及面试准备。初次电话咨询免费，联系电话310-951-4008。", locale: "zh_CN", url: "https://sosadmissions.com/china/" },
+  twitter: { card: "summary", title: "SOS留学 | 美国大学及研究生申请咨询", description: "SOS Admissions提供美国及加拿大院校申请咨询，包括选校、申请文书、简历、推荐信材料及面试准备。初次电话咨询免费，联系电话310-951-4008。" },
 };
 export default function Page() {
   return (

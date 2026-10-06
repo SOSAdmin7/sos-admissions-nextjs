@@ -22,13 +22,13 @@ export default function PurchasePage() {
             Get Started with SOS Admissions
           </h1>
           <p className="text-lg text-slate-600">
-            Choose the order form for your program to review available services
-            and complete your order.
+            Start with the SOS Admissions Ordering Form to share your contact
+            details and review the available purchase options.
           </p>
         </div>
       </section>
 
-      <PurchaseForm source="email" />
+      <PurchaseForm />
     </>
   );
 }

@@ -40,10 +40,10 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="relative py-10 md:py-14 lg:py-32 bg-gradient-to-b from-cream via-white to-warm-gray">
+    <section className="relative py-10 md:py-14 lg:py-16 bg-gradient-to-b from-cream via-white to-warm-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 md:mb-20 animate-[fadeInUp_0.6s_ease-out_both]">
+        <div className="text-center mb-8 md:mb-10 animate-[fadeInUp_0.6s_ease-out_both]">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal mb-4">
             How It Works
           </h2>
@@ -115,7 +115,7 @@ export function ProcessSection() {
         </div>
 
         {/* CTA at bottom */}
-        <div className="text-center mt-16 md:mt-20 animate-[fadeInUp_0.6s_ease-out_0.8s_both]">
+        <div className="text-center mt-8 md:mt-10 animate-[fadeInUp_0.6s_ease-out_0.8s_both]">
           <Link
             href="/contact-us"
             className="px-8 py-4 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-all duration-300 inline-flex items-center gap-2 group shadow-lg hover:shadow-xl hover:-translate-y-1"

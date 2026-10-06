@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function CTASection() {
   return (
-    <section className="relative py-10 md:py-14 lg:py-32 overflow-hidden">
+    <section className="relative py-10 md:py-14 lg:py-16 overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy-light to-blue opacity-95" />
       <div

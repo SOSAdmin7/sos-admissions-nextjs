@@ -23,11 +23,11 @@ export default function InfoFormPage() {
       <section className="relative py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-[#1B2B4B]">
-            Request Information
+            Preliminary Information Form
           </h1>
           <p className="text-lg text-slate-600">
-            Fill out the form below and one of our admissions experts will reach
-            out to discuss how we can help.
+            Open our Preliminary Information Form to share your background
+            and admissions goals with our team.
           </p>
         </div>
       </section>

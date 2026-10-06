@@ -32,8 +32,17 @@ export default function ServicePageTemplate({
   const videos =
     getLegacyServiceAssets(legacyVariant ?? slug).extraVideos ?? [];
   const features = source?.features.length ? source.features : service.features;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title,
+    description: source?.intro || service.longDescription,
+    url: `https://sosadmissions.com/${sourceSlug}/`,
+    provider: { "@id": "https://sosadmissions.com/#organization" },
+  };
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
       <section className="bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066] px-4 py-9 md:py-12 text-center text-white">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-5 [text-wrap:balance]">

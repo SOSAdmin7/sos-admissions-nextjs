@@ -1,5 +1,6 @@
 import sourcePages from "@/data/wordpress-services.json";
 import Link from "next/link";
+import { COLLEGE_PAYMENT_FORM } from "@/data/forms";
 export interface SourcePage {
   sourceUrl: string;
   sourceId: number;
@@ -11,6 +12,17 @@ export interface SourcePage {
   terms: string[];
 }
 export const sourceData = sourcePages as Record<string, SourcePage>;
+function PricingNote({ text }: { text: string }) {
+  return text.split(/(310-951-4008|Purchase college or transfer services)/g).map((part, index) => {
+    if (part === "310-951-4008") {
+      return <a key={index} href="tel:+13109514008" className="underline">{part}</a>;
+    }
+    if (part === "Purchase college or transfer services") {
+      return <a key={index} href={COLLEGE_PAYMENT_FORM} className="underline">{part}</a>;
+    }
+    return part;
+  });
+}
 export function SourcePricing({ slug }: { slug: string }) {
   const page = sourceData[slug];
   if (!page?.pricingTables.length)
@@ -64,7 +76,7 @@ export function SourcePricing({ slug }: { slug: string }) {
                         colSpan={2}
                         className="px-4 py-4 text-sm leading-relaxed bg-blue-50 text-navy"
                       >
-                        {row[0]}
+                        <PricingNote text={row[0]} />
                       </td>
                     </tr>
                   ) : (
@@ -75,7 +87,7 @@ export function SourcePricing({ slug }: { slug: string }) {
                       >
                         {row[0]}
                       </th>
-                      <td className="px-4 py-4 text-sm sm:text-base font-semibold text-navy align-top break-words">
+                      <td className="px-4 py-4 text-sm sm:text-base font-semibold text-navy align-top break-words whitespace-pre-line">
                         {row.slice(1).join(" ")}
                       </td>
                     </tr>

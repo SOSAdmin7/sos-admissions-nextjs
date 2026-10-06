@@ -67,6 +67,18 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const content = await fetchPostContent(slug);
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.revised ?? post.modified,
+    image: post.image ? new URL(post.image, "https://sosadmissions.com").href : undefined,
+    mainEntityOfPage: `https://sosadmissions.com/blog/${post.slug}/`,
+    author: { "@id": "https://sosadmissions.com/#organization" },
+    publisher: { "@id": "https://sosadmissions.com/#organization" },
+  };
 
   // Get prev/next posts
   const prevPost = postIndex > 0 ? blogPosts[postIndex - 1] : null;
@@ -80,6 +92,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#0D1B2A] to-[#1B2B4B] text-white py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -180,11 +193,11 @@ export default async function BlogPostPage({ params }: Props) {
           {prevPost ? (
             <Link
               href={`/blog/${prevPost.slug}`}
-              className="flex items-center gap-2 text-sm text-gray-500 hover:text-[#E8613C] transition"
+              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#E8613C] transition"
             >
               <ArrowLeft className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {prevPost.title.substring(0, 50)}...
+                {prevPost.title}
               </span>
               <span className="sm:hidden">Previous</span>
             </Link>
@@ -194,10 +207,10 @@ export default async function BlogPostPage({ params }: Props) {
           {nextPost ? (
             <Link
               href={`/blog/${nextPost.slug}`}
-              className="flex items-center gap-2 text-sm text-gray-500 hover:text-[#E8613C] transition text-right"
+              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#E8613C] transition text-right"
             >
               <span className="hidden sm:inline">
-                {nextPost.title.substring(0, 50)}...
+                {nextPost.title}
               </span>
               <span className="sm:hidden">Next</span>
               <ArrowRight className="w-4 h-4" />

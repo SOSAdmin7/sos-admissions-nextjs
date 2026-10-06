@@ -1,6 +1,5 @@
 import sourcePages from "@/data/wordpress-services.json";
 import Link from "next/link";
-import { COLLEGE_PAYMENT_FORM } from "@/data/forms";
 export interface SourcePage {
   sourceUrl: string;
   sourceId: number;
@@ -18,7 +17,7 @@ function PricingNote({ text }: { text: string }) {
       return <a key={index} href="tel:+13109514008" className="underline">{part}</a>;
     }
     if (part === "Purchase college or transfer services") {
-      return <a key={index} href={COLLEGE_PAYMENT_FORM} className="underline">{part}</a>;
+      return <Link key={index} href="/payment/#payment-form" className="underline">{part}</Link>;
     }
     return part;
   });

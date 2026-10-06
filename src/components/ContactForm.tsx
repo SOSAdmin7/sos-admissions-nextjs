@@ -1,8 +1,9 @@
+import { EmbeddedForm } from "./EmbeddedForm";
 import { CONTACT_FORM } from "@/data/forms";
 export function ContactForm() {
   return (
     <section className="py-8 px-4">
-      <div className="max-w-3xl mx-auto rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+      <div className="max-w-3xl mx-auto rounded-xl border border-slate-200 bg-slate-50 p-3 sm:p-6">
         <h2 className="text-2xl font-bold text-navy mb-4">
           Schedule a Free Initial Consultation
         </h2>
@@ -11,23 +12,11 @@ export function ContactForm() {
           initial phone consultation is 15 minutes. Consulting appointments are
           available by phone, video, or in person by appointment.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <a
-            href={CONTACT_FORM}
-            className="inline-flex justify-center rounded-full bg-[#C94D2B] text-white font-semibold px-6 py-3 hover:bg-[#B94224]"
-          >
-            Open the Contact Form
-          </a>
-          <a
-            href="tel:+13109514008"
-            className="inline-flex justify-center rounded-full border border-navy text-navy font-semibold px-6 py-3"
-          >
-            Call 310-951-4008
-          </a>
+        <div className="mt-5 rounded-lg bg-white p-2 sm:p-4">
+          <EmbeddedForm url={CONTACT_FORM} title="SOS Admissions Contact Form" hideHeader initialHeight={800} />
         </div>
-        <p className="text-sm text-slate-600 mt-5">
-          The contact form opens on our secure Wufoo form page. Submit your
-          details there to request a consultation.
+        <p className="mt-4 text-slate-600">
+          Prefer to speak with us? <a href="tel:+13109514008" className="underline">Call 310-951-4008</a>.
         </p>
         <div className="mt-8 border-t border-slate-200 pt-6">
           <h3 className="text-xl font-bold text-navy mb-3">

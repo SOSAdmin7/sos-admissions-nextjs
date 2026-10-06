@@ -26,7 +26,7 @@ export default function InfoFormPage() {
             Preliminary Information Form
           </h1>
           <p className="text-lg text-slate-600">
-            Open our Preliminary Information Form to share your background
+            Complete the form below to share your background
             and admissions goals with our team.
           </p>
         </div>

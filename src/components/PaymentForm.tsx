@@ -1,55 +1,44 @@
+"use client";
+
+import { useState } from "react";
 import { COLLEGE_PAYMENT_FORM, PROFESSIONAL_PAYMENT_FORM } from "@/data/forms";
+import { EmbeddedForm } from "./EmbeddedForm";
+
 export function PaymentForm() {
+  const [program, setProgram] = useState("college");
+  const [graduateOpened, setGraduateOpened] = useState(false);
   return (
-    <section className="px-4 py-9">
+    <section id="payment-form" className="scroll-mt-24 px-4 py-9">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold text-navy mb-4">
-          Choose the Appropriate Order Form
-        </h2>
-        <p className="text-slate-600 mb-6">
-          Review the services and total in the order form before paying. Call
-          310-951-4008 first if you have a previous purchase to credit, need
-          additional schools, or want help choosing the right service.
+        <fieldset className="mb-6">
+          <legend className="text-2xl font-bold text-navy mb-4">Choose Your Program</legend>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[
+              ["college", "College, Transfer, and SAT/ACT"],
+              ["graduate", "Graduate and Professional Programs"],
+            ].map(([value, label]) => (
+              <label key={value} className={`flex cursor-pointer items-center gap-3 rounded-xl border p-4 font-semibold text-navy ${program === value ? "border-[#C94D2B] bg-orange-50" : "border-slate-200 bg-white"}`}>
+                <input type="radio" name="payment-program" value={value} checked={program === value} onChange={() => { setProgram(value); if (value === "graduate") setGraduateOpened(true); }} className="h-4 w-4 shrink-0 accent-[#C94D2B]" />
+                {label}
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <p className="text-slate-600 mb-5">
+          Review the services and total before paying. Call 310-951-4008 first if
+          you have a previous purchase to credit, need additional schools, or
+          want help choosing the right service.
         </p>
-        <div className="grid md:grid-cols-2 gap-5">
-          <a
-            href={COLLEGE_PAYMENT_FORM}
-            className="block rounded-xl border border-slate-200 p-6 hover:border-[#E8613C] focus-visible:outline-2"
-          >
-            <h3 className="font-bold text-xl text-navy">
-              College, Transfer, and SAT/ACT
-            </h3>
-            <p className="mt-3 text-slate-600">
-              College and transfer essay services, complete applications, and
-              test preparation.
-            </p>
-            <span className="inline-block mt-5 rounded-full bg-[#C94D2B] text-white px-5 py-3 font-semibold">
-              Open College and Transfer Order Form
-            </span>
-          </a>
-          <a
-            href={PROFESSIONAL_PAYMENT_FORM}
-            className="block rounded-xl border border-slate-200 p-6 hover:border-[#E8613C] focus-visible:outline-2"
-          >
-            <h3 className="font-bold text-xl text-navy">
-              Graduate and Professional Programs
-            </h3>
-            <p className="mt-3 text-slate-600">
-              Graduate school, MBA, law, medical school, healthcare, and
-              residency services.
-            </p>
-            <span className="inline-block mt-5 rounded-full bg-[#C94D2B] text-white px-5 py-3 font-semibold">
-              Open Graduate and Professional Order Form
-            </span>
-          </a>
+        {/* Load each form when first shown, then keep it mounted to preserve entered details. */}
+        <div hidden={program !== "college"} className="rounded-xl border border-slate-200 bg-white p-3 sm:p-6">
+          <EmbeddedForm url={COLLEGE_PAYMENT_FORM} title="SOS Admissions College and Transfer Payment" />
         </div>
+        {graduateOpened && <div hidden={program !== "graduate"} className="rounded-xl border border-slate-200 bg-white p-3 sm:p-6">
+          <EmbeddedForm url={PROFESSIONAL_PAYMENT_FORM} title="SOS Admissions Graduate and Professional Payment" />
+        </div>}
         <p className="mt-6 text-sm text-slate-600">
-          For academic crisis consulting, private school admissions, or a
-          service not listed in the form, call{" "}
-          <a className="underline" href="tel:+13109514008">
-            310-951-4008
-          </a>{" "}
-          to confirm your order.
+          For academic crisis consulting, private school admissions, or a service
+          not listed in the form, call <a className="underline" href="tel:+13109514008">310-951-4008</a> to confirm your order.
         </p>
       </div>
     </section>

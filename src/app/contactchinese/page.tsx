@@ -1,3 +1,5 @@
+import { EmbeddedForm } from "@/components/EmbeddedForm";
+import { CHINESE_CONTACT_FORM } from "@/data/forms";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "联系SOS留学 | 免费初次咨询" },
@@ -17,15 +19,9 @@ export default function Page() {
         Initial
         Consultation）。也可以致电310-951-4008，或通过微信SOSAdmissions联系我们。
       </p>
-      <a
-        href="https://lasernailtherapy.wufoo.com/forms/z4rbav20iiyel5/"
-        className="inline-flex rounded-full bg-[#C94D2B] text-white px-6 py-3 font-semibold"
-      >
-        打开中文联系表格
-      </a>
-      <p className="text-sm text-slate-600 mt-5">
-        表格将在我们的Wufoo页面打开。请在那里提交您的信息。
-      </p>
+      <div className="rounded-xl border border-slate-200 bg-white p-3 sm:p-6">
+        <EmbeddedForm url={CHINESE_CONTACT_FORM} title="SOS留学中文联系表格" hideHeader chinese initialHeight={800} />
+      </div>
     </section>
   );
 }

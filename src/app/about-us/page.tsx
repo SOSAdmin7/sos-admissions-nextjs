@@ -136,6 +136,28 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* CNN Appearance */}
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-navy">
+            Our Latest Appearance on CNN
+          </h2>
+          <p className="text-slate-600 mb-8">
+            Our head admissions consultant discussing college admissions on
+            CNN&apos;s Smerconish.
+          </p>
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+            <Image
+              src="/images/legacy/sos-latest-appearance-on-cnn.webp"
+              alt="SOS Admissions head consultant Vijay Jojo Chokal-Ingam appearing on CNN"
+              width={763}
+              height={420}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
         <div className="max-w-4xl mx-auto">
@@ -209,28 +231,6 @@ export default function AboutPage() {
                 </div>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CNN Appearance */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-navy">
-            Our Latest Appearance on CNN
-          </h2>
-          <p className="text-slate-600 mb-8">
-            Our head admissions consultant discussing college admissions on
-            CNN&apos;s Smerconish.
-          </p>
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-            <Image
-              src="/images/legacy/sos-latest-appearance-on-cnn.webp"
-              alt="SOS Admissions head consultant Vijay Jojo Chokal-Ingam appearing on CNN"
-              width={763}
-              height={420}
-              className="w-full h-auto"
-            />
           </div>
         </div>
       </section>

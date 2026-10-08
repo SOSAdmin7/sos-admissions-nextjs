@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "MBA Application Consulting Service - SOS Admissions" },
   description:
     "Expert MBA admissions consulting for top business schools. Full-service help with essays, interviews, school selection, and GMAT prep for HBS, Stanford, Wharton.",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/mba/",
     type: "website",
   },
-};
+});
 
 export default function MBAPage() {
   return <ServicePageTemplate slug="mba-programs" />;

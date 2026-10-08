@@ -101,7 +101,7 @@ export function LegacyStripSection({
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
         {featuredStrip && (
           <div className="text-center">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gray-600">
               {featuredLabel}
             </p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -115,7 +115,7 @@ export function LegacyStripSection({
         )}
         {clientStrip && (
           <div className="text-center">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gray-600">
               {clientLabel}
             </p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -148,7 +148,7 @@ export function LegacyImageGallery({
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {title && (
           <div className="mb-8 text-center">
-            <h2 className="text-2xl font-bold text-[#1B2B4B] md:text-3xl">
+            <h2 className="text-2xl font-bold text-navy md:text-3xl">
               {title}
             </h2>
           </div>

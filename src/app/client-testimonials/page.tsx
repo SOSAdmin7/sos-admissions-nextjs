@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { Star } from "lucide-react";
 import { TestimonialContent } from "@/components/TestimonialContent";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Client Testimonials & Success Stories | SOS Admissions" },
   description:
     "Read testimonials from students who got into college, medical school, residency, and graduate programs with SOS Admissions.",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/client-testimonials/",
     type: "website",
   },
-};
+});
 
 export default function TestimonialsPage() {
   return (

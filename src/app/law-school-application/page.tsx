@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute: "Law School Application Consulting | LSAC & Personal Statements",
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/law-school-application/",
     type: "website",
   },
-};
+});
 
 export default function LawSchoolApplicationPage() {
   return <ServicePageTemplate slug="law-school" />;

@@ -1,18 +1,19 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 import body from "@/data/academic-crisis-consulting-content.json";
 import { SourcePricing } from "@/components/SourcePricing";
-export const metadata = {
-  title: { absolute: "Academic Crisis Consulting | SOS Admissions" },
+export const metadata = pageMetadata({
+  title: { absolute: "Academic Crisis Consulting for Students | SOS Admissions" },
   description:
-    "Educational consulting for academic accusations, dismissals, hearings, appeals, and transfer planning.",
+    "Academic crisis consulting for misconduct accusations, hearings, dismissal, appeals, character and fitness, transfer, and reapplication strategy.",
   alternates: {
     canonical: "https://sosadmissions.com/academic-crisis-consulting/",
   },
-};
+});
 export default function Page() {
   return (
     <>
-      <section className="bg-[#0D1B2A] text-white py-10 px-4 text-center">
+      <section className="bg-navy-deep text-white py-10 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold max-w-4xl mx-auto mb-5">
           Academic Crisis Consulting
         </h1>

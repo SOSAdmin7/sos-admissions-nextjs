@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       title: service.title,
+      url: `https://sosadmissions.com${canonicalPath}`,
       description: service.shortDescription,
       type: "website",
     },

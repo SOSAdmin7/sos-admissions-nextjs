@@ -1,12 +1,13 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "SOS留学 | 美国大学及研究生申请咨询" },
   alternates: { canonical: "https://sosadmissions.com/china/" },
   description: "SOS Admissions提供美国及加拿大院校申请咨询，包括选校、申请文书、简历、推荐信材料及面试准备。初次电话咨询免费，联系电话310-951-4008。",
   openGraph: { title: "SOS留学 | 美国大学及研究生申请咨询", description: "SOS Admissions提供美国及加拿大院校申请咨询，包括选校、申请文书、简历、推荐信材料及面试准备。初次电话咨询免费，联系电话310-951-4008。", locale: "zh_CN", url: "https://sosadmissions.com/china/" },
   twitter: { card: "summary", title: "SOS留学 | 美国大学及研究生申请咨询", description: "SOS Admissions提供美国及加拿大院校申请咨询，包括选校、申请文书、简历、推荐信材料及面试准备。初次电话咨询免费，联系电话310-951-4008。" },
-};
+});
 export default function Page() {
   return (
     <div lang="zh-Hans">
@@ -19,7 +20,7 @@ export default function Page() {
       <div className="max-w-4xl mx-auto px-4 py-9 space-y-7">
         <nav
           aria-label="中文服务"
-          className="flex flex-wrap gap-5 text-blue-800 underline"
+          className="flex flex-wrap gap-5 text-navy underline"
         >
           <Link href="/chinese-faq/">常见问题</Link>
           <Link href="/contactchinese/">联系顾问</Link>
@@ -41,7 +42,7 @@ export default function Page() {
         <p className="leading-relaxed">
           初次电话咨询为15分钟，免费。具体服务与套餐收费请查看对应项目的现行价格，或先致电310-951-4008确认。请在付款前告知我们您此前已购买的服务，以便确认适用的抵扣。
         </p>
-        <Link href="/services/" className="block text-blue-800 underline">
+        <Link href="/services/" className="block text-navy underline">
           查看各项服务及价格（英文）
         </Link>
         <p>微信：SOSAdmissions</p>

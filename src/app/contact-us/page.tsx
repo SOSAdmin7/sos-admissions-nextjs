@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute: "Contact SOS Admissions | College & Graduate School Consulting",
   },
@@ -17,18 +18,18 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/contact-us/",
     type: "website",
   },
-};
+});
 
 export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative pt-7 pb-3 sm:pt-9 sm:pb-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-navy">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-navy">
             Get In Touch
           </h1>
-          <p className="text-xl text-slate-600">
+          <p className="text-base sm:text-lg text-slate-600">
             Schedule a Free Initial Consultation with our expert admissions
             consultants.
           </p>

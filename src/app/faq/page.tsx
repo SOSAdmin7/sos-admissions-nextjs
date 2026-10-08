@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { FAQAccordion } from "@/components/FAQAccordion";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Frequently Asked Questions (FAQ) - SOS Admissions" },
   description:
     "Answers to common questions about the admissions services we provide for applicants to college, grad school, MBA & med school.",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/faq/",
     type: "website",
   },
-};
+});
 
 export default function FAQPage() {
   return (

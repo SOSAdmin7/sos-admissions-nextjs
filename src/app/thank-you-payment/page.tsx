@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
-export const metadata = {
+export const metadata = pageMetadata({
   title: { absolute: "Order Next Steps | SOS Admissions" },
   robots: { index: false, follow: false },
-};
+});
 export default function Page() {
   return (
     <section className="py-12 px-4 bg-slate-50">
@@ -21,12 +22,12 @@ export default function Page() {
         <p className="text-slate-600">
           The Definitive Guide to Ace Your Interview and Get the Job by Vijay Ingam, CFA.
         </p>
-        <a href="/documents/interview-guide.pdf" className="inline-block mt-4 text-blue-800 underline">
+        <a href="/documents/interview-guide.pdf" className="inline-block mt-4 text-navy underline">
           Download Interview Guide (PDF)
         </a>
         <Link
           href="/payment/"
-          className="inline-block mt-6 text-blue-800 underline"
+          className="inline-block mt-6 text-navy underline"
         >
           Return to Order Forms
         </Link>

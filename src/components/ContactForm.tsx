@@ -2,9 +2,9 @@ import { EmbeddedForm } from "./EmbeddedForm";
 import { CONTACT_FORM } from "@/data/forms";
 export function ContactForm() {
   return (
-    <section className="py-8 px-4">
-      <div className="max-w-3xl mx-auto rounded-xl border border-slate-200 bg-slate-50 p-3 sm:p-6">
-        <h2 className="text-2xl font-bold text-navy mb-4">
+    <section className="pt-4 pb-8 px-4">
+      <div className="max-w-3xl mx-auto rounded-xl border border-slate-200 bg-slate-50 p-2 sm:p-5">
+        <h2 className="text-xl sm:text-2xl font-bold text-navy mb-3">
           Schedule a Free Initial Consultation
         </h2>
         <p className="text-slate-600 leading-relaxed">
@@ -12,7 +12,7 @@ export function ContactForm() {
           initial phone consultation is 15 minutes. Consulting appointments are
           available by phone, video, or in person by appointment.
         </p>
-        <div className="mt-5 rounded-lg bg-white p-2 sm:p-4">
+        <div className="mt-4 rounded-lg bg-white sm:p-2">
           <EmbeddedForm url={CONTACT_FORM} title="SOS Admissions Contact Form" hideHeader initialHeight={800} />
         </div>
         <p className="mt-4 text-slate-600">

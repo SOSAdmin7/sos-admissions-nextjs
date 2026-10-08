@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
-export const metadata = {
+export const metadata = pageMetadata({
   title: { absolute: "Thank You | SOS Admissions" },
   robots: { index: false, follow: false },
-};
+});
 export default function Page() {
   return (
     <section className="py-12 px-4 bg-slate-50">
@@ -18,7 +19,7 @@ export default function Page() {
         </p>
         <Link
           href="/contact-us/"
-          className="inline-block mt-6 text-blue-800 underline"
+          className="inline-block mt-6 text-navy underline"
         >
           Schedule a Free Initial Consultation
         </Link>

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Nursing School Admissions Consulting - SOS Admissions" },
   description:
     "Expert nursing school admissions consulting. Get help with NursingCAS applications, personal statements, interviews, and school selection.",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/nursing-school-admissions-consulting/",
     type: "website",
   },
-};
+});
 
 export default function NursingSchoolAdmissionsPage() {
   return <ServicePageTemplate slug="nursing-programs" />;

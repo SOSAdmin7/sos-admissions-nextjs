@@ -6,6 +6,6 @@ export const runtime = "edge";
 export default function Image() {
   return generateOGImage(
     "About SOS Admissions",
-    "decades of experience of experience guiding students into top universities",
+    "Decades of experience guiding students into top universities",
   );
 }

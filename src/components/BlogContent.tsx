@@ -1,5 +1,7 @@
 "use client";
 
+import { blogPath } from "@/lib/blog-path";
+
 import { useState, useMemo } from "react";
 import { Calendar, Search } from "lucide-react";
 import Link from "next/link";
@@ -58,7 +60,7 @@ export function BlogContent() {
           <div className="lg:col-span-3">
             {/* Search */}
             <div className="relative mb-8">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-600" />
               <input
                 type="text"
                 placeholder="Search articles..."
@@ -67,7 +69,7 @@ export function BlogContent() {
                   setSearchQuery(e.target.value);
                   setVisibleCount(POSTS_PER_PAGE);
                 }}
-                className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#E8613C] transition text-[#1B2B4B]"
+                className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#E8613C] transition text-navy"
               />
             </div>
 
@@ -128,7 +130,7 @@ export function BlogContent() {
                   <div className="text-center mt-10">
                     <button
                       onClick={() => setVisibleCount((c) => c + POSTS_PER_PAGE)}
-                      className="px-8 py-3 bg-[#1B2B4B] text-white font-semibold rounded-lg hover:bg-[#0D1B2A] transition"
+                      className="px-8 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-deep transition"
                     >
                       Load More Articles
                     </button>
@@ -142,20 +144,20 @@ export function BlogContent() {
           <div className="lg:col-span-1">
             {/* Popular Posts */}
             <div className="mb-10">
-              <h3 className="text-lg font-bold text-[#1B2B4B] mb-4 pb-2 border-b-2 border-[#E8613C]">
+              <h3 className="text-lg font-bold text-navy mb-4 pb-2 border-b-2 border-[#E8613C]">
                 Recent Articles
               </h3>
               <div className="space-y-4">
                 {blogPosts.slice(0, 5).map((post) => (
                   <Link
                     key={post.slug}
-                    href={`/blog/${post.slug}`}
+                    href={blogPath(post.slug)}
                     className="block group"
                   >
-                    <h4 className="text-sm font-medium text-[#1B2B4B] group-hover:text-[#E8613C] transition leading-snug">
+                    <h4 className="text-sm font-medium text-navy group-hover:text-[#B94224] transition leading-snug">
                       {post.title}
                     </h4>
-                    <p className="text-xs text-gray-400 mt-1">
+                    <p className="text-xs text-gray-600 mt-1">
                       {formatDate(post.date)}
                     </p>
                   </Link>
@@ -165,7 +167,7 @@ export function BlogContent() {
 
             {/* Categories */}
             <div className="mb-10">
-              <h3 className="text-lg font-bold text-[#1B2B4B] mb-4 pb-2 border-b-2 border-[#E8613C]">
+              <h3 className="text-lg font-bold text-navy mb-4 pb-2 border-b-2 border-[#E8613C]">
                 Categories
               </h3>
               <ul className="space-y-2">
@@ -181,10 +183,10 @@ export function BlogContent() {
                           setVisibleCount(POSTS_PER_PAGE);
                           window.scrollTo({ top: 0, behavior: "smooth" });
                         }}
-                        className="flex justify-between gap-2 w-full text-sm text-gray-600 hover:text-[#E8613C] transition py-1"
+                        className="flex justify-between gap-2 w-full text-sm text-gray-600 hover:text-[#B94224] transition py-1"
                       >
                         <span className="whitespace-nowrap">{cat}</span>
-                        <span className="text-gray-400">({count})</span>
+                        <span className="text-gray-600">({count})</span>
                       </button>
                     </li>
                   );
@@ -193,7 +195,7 @@ export function BlogContent() {
             </div>
 
             {/* CTA */}
-            <div className="bg-[#0D1B2A] rounded-lg p-6 text-white">
+            <div className="bg-navy-deep rounded-lg p-6 text-white">
               <h3 className="text-lg font-bold mb-3">Need Expert Help?</h3>
               <p className="text-sm text-gray-300 mb-4">
                 Get personalized admissions guidance from our experienced
@@ -216,7 +218,7 @@ export function BlogContent() {
 function PostCard({ post }: { post: BlogPost }) {
   return (
     <Link
-      href={`/blog/${post.slug}`}
+      href={blogPath(post.slug)}
       className="group block bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
     >
       {/* Image */}
@@ -232,16 +234,16 @@ function PostCard({ post }: { post: BlogPost }) {
 
       {/* Content */}
       <div className="p-5">
-        <span className="inline-block text-xs font-semibold text-[#E8613C] bg-[#FFF0EC] px-2.5 py-1 rounded-full mb-3">
+        <span className="inline-block text-xs font-semibold text-[#B94224] bg-[#FFF0EC] px-2.5 py-1 rounded-full mb-3">
           {post.category}
         </span>
-        <h3 className="text-lg font-bold text-[#1B2B4B] group-hover:text-[#E8613C] transition leading-snug mb-2 line-clamp-2">
+        <h3 className="text-lg font-bold text-navy group-hover:text-[#B94224] transition leading-snug mb-2 line-clamp-2">
           {post.title}
         </h3>
         <p className="text-sm text-gray-500 line-clamp-2 mb-3">
           {post.excerpt}
         </p>
-        <div className="flex items-center gap-1.5 text-xs text-gray-400">
+        <div className="flex items-center gap-1.5 text-xs text-gray-600">
           <Calendar className="w-3.5 h-3.5" />
           {formatDate(post.date)}
         </div>

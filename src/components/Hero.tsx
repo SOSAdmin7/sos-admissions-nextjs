@@ -13,9 +13,9 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative w-full overflow-hidden pt-10 pb-10 md:pt-16 md:pb-16">
+    <section className="relative w-full overflow-hidden py-8 md:py-10">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-deep via-navy to-navy-light" />
       <div
         className="absolute inset-0 opacity-[0.07]"
         style={{
@@ -28,11 +28,11 @@ export function Hero() {
       {/* Content Container */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center mb-8 md:mb-10">
-          <span className="inline-block text-[#E8613C] text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3 md:mb-4">
+        <div className="text-center mb-5 md:mb-6">
+          <span className="inline-block text-gold-light text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3 md:mb-4">
             College and Graduate School Admissions Consulting
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 md:mb-5">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4 [text-wrap:balance]">
             Expert Admissions Consulting Since 1998
           </h1>
           <p className="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
@@ -44,8 +44,19 @@ export function Hero() {
           </p>
         </div>
 
+        {/* CTA Button */}
+        <div className="flex justify-center mb-6 md:mb-8">
+          <Link
+            href="/contact-us"
+            className="px-5 sm:px-8 py-3.5 text-center bg-[#C94D2B] text-white font-semibold rounded-lg hover:bg-[#B94224] transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-[#E8613C]/25"
+          >
+            Schedule a Free Initial Consultation
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
         {/* Video */}
-        <div className="max-w-3xl mx-auto mb-8 md:mb-10">
+        <div className="max-w-3xl mx-auto mb-6 md:mb-8">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <div className="aspect-video">
               <YouTubeFacade
@@ -56,25 +67,14 @@ export function Hero() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="flex justify-center mb-10 md:mb-14">
-          <Link
-            href="/contact-us"
-            className="px-8 py-3.5 bg-[#C94D2B] text-white font-semibold rounded-lg hover:bg-[#B94224] transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-[#E8613C]/25"
-          >
-            Schedule a Free Initial Consultation
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-
         {/* Stats Row */}
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-8 pt-8 md:pt-10 border-t border-white/20">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-8 pt-6 md:pt-8 border-t border-white/20">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col min-w-0 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[#E8613C] mb-1 whitespace-nowrap">
+              <div className="text-3xl md:text-4xl font-bold text-gold-light mb-1 whitespace-nowrap">
                 {stat.value}
               </div>
-              <p className="text-sm md:text-base text-slate-300 leading-snug">
+              <p className="text-sm md:text-base text-slate-200 leading-snug">
                 {stat.label}
               </p>
             </div>

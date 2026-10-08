@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Medical Residency Interview Coaching - SOS Admissions" },
   description:
     "Expert residency interview coaching from experienced admissions consultants. Prepare for ERAS interviews, rank lists, and specialty-specific questions.",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/medical-residency-interview/",
     type: "website",
   },
-};
+});
 
 export default function MedicalResidencyInterviewPage() {
   return (

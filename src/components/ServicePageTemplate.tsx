@@ -43,17 +43,12 @@ export default function ServicePageTemplate({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
-      <section className="bg-gradient-to-br from-[#0D1B2A] via-[#1B2B4B] to-[#2A4066] px-4 py-9 md:py-12 text-center text-white">
+      <section className="bg-gradient-to-br from-navy-deep via-navy to-navy-light px-4 py-9 md:py-12 text-center text-white">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-5 [text-wrap:balance]">
+          <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold leading-tight mb-4 [text-wrap:balance]">
             {title}
           </h1>
-          <div className="space-y-4 mb-5">
-            {videos.map((v) => (
-              <LegacyYouTubeCard key={v.id} video={v} className="mx-auto" />
-            ))}
-          </div>
-          <p className="text-base md:text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-base md:text-lg text-slate-100 max-w-3xl mx-auto leading-relaxed mb-6">
             {source?.intro || service.longDescription}
           </p>
           <Link
@@ -68,6 +63,11 @@ export default function ServicePageTemplate({
               310-951-4008
             </a>
           </p>
+          <div className="space-y-4 mt-6">
+            {videos.map((v) => (
+              <LegacyYouTubeCard key={v.id} video={v} className="mx-auto" />
+            ))}
+          </div>
         </div>
       </section>
       <TrustBar />
@@ -103,7 +103,7 @@ export default function ServicePageTemplate({
             <p className="mt-5">
               <Link
                 href="/mba-recommender-questions/"
-                className="text-blue-800 underline"
+                className="text-navy underline"
               >
                 See the MBA recommender question guide
               </Link>
@@ -131,14 +131,14 @@ export default function ServicePageTemplate({
           ))}
         </div>
       </section>
-      <section className="bg-[#0D1B2A] text-white text-center px-4 py-10">
+      <section className="bg-navy-deep text-white text-center px-4 py-10">
         <h2 className="text-3xl font-bold mb-4">Plan Your Next Step</h2>
         <p className="mb-5">
           Discuss your goals with an admissions consultant.
         </p>
         <Link
           href="/contact-us/"
-          className="inline-flex bg-[#E8613C] rounded-full px-6 py-3 font-semibold"
+          className="inline-flex bg-[#C94D2B] hover:bg-[#B94224] rounded-full px-6 py-3 font-semibold"
         >
           Schedule a Free Initial Consultation
         </Link>

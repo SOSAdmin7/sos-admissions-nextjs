@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
-export const metadata = {
+export const metadata = pageMetadata({
   title: { absolute: "感谢联系SOS留学" },
   robots: { index: false, follow: false },
-};
+});
 export default function Page() {
   return (
     <section
@@ -16,7 +17,7 @@ export default function Page() {
       </p>
       <Link
         href="/contactchinese/"
-        className="inline-block mt-6 text-blue-800 underline"
+        className="inline-block mt-6 text-navy underline"
       >
         返回中文联系页面
       </Link>

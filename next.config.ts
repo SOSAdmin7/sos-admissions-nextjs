@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { blogPath } from "./src/lib/blog-path";
 import blogAliases from "./src/data/blog-aliases.json";
 import mediaRedirects from "./src/data/wordpress-media-redirects.json";
 
@@ -31,7 +32,10 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       ...mediaRedirects,
-      ...Object.entries(blogAliases).map(([oldSlug, newSlug]) => ({ source: `/blog/${oldSlug}`, destination: `/blog/${newSlug}/`, permanent: true })),
+      // Keep retained /blog/ URLs as 200 aliases with root canonical tags.
+      // Reversing their earlier root -> /blog/ permanent redirects could loop
+      // for returning browsers that cached those old redirects.
+      ...Object.entries(blogAliases).map(([oldSlug, newSlug]) => ({ source: `/blog/${oldSlug}`, destination: blogPath(newSlug), permanent: true })),
       // Old WordPress backup/duplicate pages → homepage
       { source: "/:path*-old", destination: "/", permanent: true },
       {
@@ -84,7 +88,7 @@ const nextConfig: NextConfig = {
       // /info-form is now a live page (email info funnel) - redirect removed
       {
         source: "/preliminary-information-form2",
-        destination: "/contact-us",
+        destination: "/info-form",
         permanent: true,
       },
 

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute:
       "BS/MD Admissions Consulting | Combined Programs | SOS Admissions",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/bs-md-admissions-consulting/",
     type: "website",
   },
-};
+});
 
 export default function BSMDAdmissionsPage() {
   return <ServicePageTemplate slug="bs-md-programs" />;

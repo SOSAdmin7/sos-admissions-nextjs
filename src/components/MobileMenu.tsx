@@ -72,10 +72,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between">
         <div className="flex flex-col">
           <div className="flex items-center gap-1.5">
-            <span className="text-xl font-extrabold text-[#E8613C] tracking-tight">
+            <span className="text-xl font-extrabold text-[#B94224] tracking-tight">
               SOS
             </span>
-            <span className="text-xl font-medium text-[#1B2B4B]">
+            <span className="text-xl font-medium text-navy">
               Admissions
             </span>
           </div>
@@ -103,12 +103,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 onClick={() =>
                   setExpanded(expanded === item.label ? null : item.label)
                 }
-                className="w-full flex items-center justify-between py-3 text-base font-medium text-[#1B2B4B] hover:text-[#E8613C] transition-colors"
+                className="w-full flex items-center justify-between py-3 text-base font-medium text-navy hover:text-[#B94224] transition-colors"
               >
                 {item.label}
                 <ChevronDown
                   size={18}
-                  className={`transition-transform duration-200 text-gray-400 ${
+                  className={`transition-transform duration-200 text-gray-500 ${
                     expanded === item.label ? "rotate-180" : ""
                   }`}
                 />
@@ -121,7 +121,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         key={child.href}
                         href={child.href}
                         onClick={onClose}
-                        className="block py-2 text-sm text-[#495057] hover:text-[#E8613C] transition-colors"
+                        className="block py-2 text-sm text-[#495057] hover:text-[#B94224] transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -135,7 +135,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               key={item.label}
               href={item.href!}
               onClick={onClose}
-              className="block py-3 text-base font-medium text-[#1B2B4B] hover:text-[#E8613C] transition-colors"
+              className="block py-3 text-base font-medium text-navy hover:text-[#B94224] transition-colors"
             >
               {item.label}
             </Link>
@@ -147,7 +147,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div className="border-t border-gray-100 px-6 py-6 space-y-4">
         <a
           href="tel:+13109514008"
-          className="flex items-center justify-center gap-2 py-3 text-[#1B2B4B] font-semibold"
+          className="flex items-center justify-center gap-2 py-3 text-navy font-semibold"
         >
           <Phone size={16} />
           (310) 951-4008

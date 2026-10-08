@@ -69,7 +69,7 @@ export function ProcessSection() {
                   <div className="relative h-full p-6 md:p-8 bg-white rounded-xl border border-warm-gray shadow-md hover:shadow-lg transition-all duration-300 hover:border-gold">
                     {/* Number Badge + Icon side by side */}
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="inline-flex items-center justify-center w-12 h-12 bg-gold text-white font-bold text-lg rounded-full flex-shrink-0 relative z-10">
+                      <div className="inline-flex items-center justify-center w-12 h-12 bg-gold text-navy-deep font-bold text-lg rounded-full flex-shrink-0 relative z-10">
                         {step.number}
                       </div>
                       <div className="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center text-navy flex-shrink-0">

@@ -59,10 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "SOS Admissions | Expert College & Graduate School Admissions Consulting",
-    description:
-      "Expert admissions consulting for college, graduate school, MBA, law school, medical school, and residency applications.",
+    site: "@SOSAdmissions",
   },
   verification: {
     google: "iCDvsYI-dc9o0s2Xky2Wd2QQ47UoIqpRDEGPFBxKHdk",

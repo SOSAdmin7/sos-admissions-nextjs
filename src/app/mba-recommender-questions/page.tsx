@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -22,7 +23,7 @@ const TITLE =
 const DESC =
   "What Harvard, Stanford, Wharton, Booth, Kellogg, Columbia, Haas, Tuck, Yale, Stern, Fuqua, and Darden each publish about their recommendation requirements, with word limits, letters required, and what they do not publish. Free initial consultation: 310-951-4008.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: TITLE },
   description: DESC,
   alternates: {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/mba-recommender-questions/",
     type: "article",
   },
-};
+});
 
 const HELP = [
   "Choose recommenders strategically, weighing who has genuinely observed your work closely enough to answer these questions from firsthand knowledge.",
@@ -136,7 +137,7 @@ export default function MbaRecommenderQuestionsPage() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/contact-us/"
-              className="inline-flex items-center justify-center rounded-md bg-sky-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-400"
+              className="inline-flex items-center justify-center rounded-md bg-navy-light px-5 py-3 text-sm font-semibold text-white transition hover:bg-navy-deep"
             >
               Schedule a Free Initial Consultation
               <ChevronRight className="ml-1 h-4 w-4" />
@@ -527,7 +528,7 @@ export default function MbaRecommenderQuestionsPage() {
             </p>
             <a
               href="tel:3109514008"
-              className="mt-5 flex items-center justify-center rounded-md bg-sky-500 px-4 py-3 text-base font-bold text-white transition hover:bg-sky-400"
+              className="mt-5 flex items-center justify-center rounded-md bg-navy-light px-4 py-3 text-base font-bold text-white transition hover:bg-navy-deep"
             >
               <Phone className="mr-2 h-5 w-5" />
               310-951-4008

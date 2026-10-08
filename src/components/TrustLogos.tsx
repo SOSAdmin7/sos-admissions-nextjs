@@ -10,7 +10,7 @@ export function TrustBar() {
     <section className="bg-[#F8F9FA] py-6 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5">
-          <span className="text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] text-gray-400 font-semibold text-center [text-wrap:balance] px-4">
+          <span className="text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] text-gray-600 font-semibold text-center [text-wrap:balance] px-4">
             As Featured In
           </span>
           <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 sm:gap-x-10 md:gap-x-12">
@@ -242,7 +242,7 @@ export function SchoolLogos({
     <section className="bg-[#F8F9FA] py-6 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5">
-          <span className="text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] text-gray-400 font-semibold text-center [text-wrap:balance] px-4">
+          <span className="text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] text-gray-600 font-semibold text-center [text-wrap:balance] px-4">
             Past Clients Have Successfully Gotten Into
           </span>
           <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 sm:gap-x-10">

@@ -107,7 +107,7 @@ export default function Header() {
                           openDropdown === item.label ? null : item.label,
                         )
                       }
-                      className="text-[#495057] hover:text-[#1B2B4B] transition-colors font-medium flex items-center gap-1 py-2 text-sm"
+                      className="text-[#495057] hover:text-navy transition-colors font-medium flex items-center gap-1 py-2 text-sm"
                     >
                       {item.label}
                       <ChevronDown
@@ -127,7 +127,7 @@ export default function Header() {
                             key={child.href}
                             onClick={() => setOpenDropdown(null)}
                             href={child.href}
-                            className="block px-5 py-2.5 text-sm text-[#495057] hover:text-[#1B2B4B] hover:bg-[#F8F9FA] transition-colors"
+                            className="block px-5 py-2.5 text-sm text-[#495057] hover:text-navy hover:bg-[#F8F9FA] transition-colors"
                           >
                             {child.label}
                           </Link>
@@ -139,7 +139,7 @@ export default function Header() {
                   <Link
                     key={item.label}
                     href={item.href!}
-                    className="text-[#495057] hover:text-[#1B2B4B] transition-colors font-medium py-2 text-sm"
+                    className="text-[#495057] hover:text-navy transition-colors font-medium py-2 text-sm"
                   >
                     {item.label}
                   </Link>
@@ -151,7 +151,7 @@ export default function Header() {
             <div className="hidden xl:flex items-center gap-5">
               <a
                 href="tel:+13109514008"
-                className="flex items-center gap-1.5 text-sm text-[#1B2B4B] font-medium hover:text-[#E8613C] transition-colors"
+                className="flex items-center gap-1.5 text-sm text-navy font-medium hover:text-[#B94224] transition-colors"
               >
                 <Phone size={14} />
                 (310) 951-4008
@@ -168,7 +168,7 @@ export default function Header() {
             <div className="xl:hidden flex items-center gap-1 flex-shrink-0">
               <a
                 href="tel:+13109514008"
-                className="flex items-center gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-[#1B2B4B] hover:text-[#E8613C] transition-colors px-3 py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
+                className="flex items-center gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-navy hover:text-[#B94224] transition-colors px-3 py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
               >
                 <Phone size={15} className="flex-shrink-0" />
                 (310) 951-4008
@@ -176,7 +176,7 @@ export default function Header() {
               <button
                 ref={menuButtonRef}
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="p-2 text-[#495057] hover:text-[#1B2B4B] transition-colors"
+                className="p-2 text-[#495057] hover:text-navy transition-colors"
                 aria-label="Open menu"
               >
                 <Menu size={26} />

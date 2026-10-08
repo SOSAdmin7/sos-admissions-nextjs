@@ -32,7 +32,7 @@ export function WhyChooseUs() {
     <section className="relative py-10 md:py-14 lg:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 animate-[fadeInUp_0.6s_ease-out_both]">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1B2B4B] mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
             Why Families Trust SOS Admissions
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
@@ -51,12 +51,12 @@ export function WhyChooseUs() {
                 style={{ animationDelay: `${0.1 + i * 0.1}s` }}
               >
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#FFF0EC] text-[#E8613C]">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#FFF0EC] text-[#B94224]">
                     <Icon className="w-6 h-6" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#1B2B4B] mb-2">
+                  <h3 className="text-xl font-bold text-navy mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-500 leading-relaxed">

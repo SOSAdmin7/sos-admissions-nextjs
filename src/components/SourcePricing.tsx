@@ -73,7 +73,7 @@ export function SourcePricing({ slug }: { slug: string }) {
                     <tr key={j}>
                       <td
                         colSpan={2}
-                        className="px-4 py-4 text-sm leading-relaxed bg-blue-50 text-navy"
+                        className="px-4 py-4 text-sm leading-relaxed bg-steel-mist text-navy"
                       >
                         <PricingNote text={row[0]} />
                       </td>

@@ -1,3 +1,4 @@
+import { blogPath } from "@/lib/blog-path";
 import blogContent from "@/data/blog-content.json";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -37,12 +38,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     description: post.excerpt,
     alternates: {
-      canonical: `https://sosadmissions.com/blog/${post.slug}/`,
+      canonical: `https://sosadmissions.com${blogPath(post.slug)}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
+      url: `https://sosadmissions.com${blogPath(post.slug)}`,
       publishedTime: post.date,
       modifiedTime: post.revised ?? post.modified,
       images: post.image ? [{ url: post.image }] : undefined,
@@ -75,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: post.revised ?? post.modified,
     image: post.image ? new URL(post.image, "https://sosadmissions.com").href : undefined,
-    mainEntityOfPage: `https://sosadmissions.com/blog/${post.slug}/`,
+    mainEntityOfPage: `https://sosadmissions.com${blogPath(post.slug)}`,
     author: { "@id": "https://sosadmissions.com/#organization" },
     publisher: { "@id": "https://sosadmissions.com/#organization" },
   };
@@ -94,7 +96,7 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#0D1B2A] to-[#1B2B4B] text-white py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-navy-deep to-navy text-white py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/blog"
@@ -103,7 +105,7 @@ export default async function BlogPostPage({ params }: Props) {
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
           </Link>
-          <span className="inline-block text-xs font-semibold text-[#E8613C] bg-[#E8613C]/10 px-3 py-1 rounded-full mb-4">
+          <span className="inline-block text-xs font-semibold text-gold-light bg-white/10 px-3 py-1 rounded-full mb-4">
             {post.category}
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
@@ -145,7 +147,7 @@ export default async function BlogPostPage({ params }: Props) {
                     {post.excerpt}
                   </p>
                   <div className="bg-[#FFF0EC] rounded-lg p-6 mt-8">
-                    <p className="text-[#1B2B4B] font-medium">
+                    <p className="text-navy font-medium">
                       Want to learn more about this topic? Contact our
                       admissions experts for personalized guidance.
                     </p>
@@ -163,7 +165,7 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               {/* CTA */}
-              <div className="bg-[#0D1B2A] rounded-lg p-6 text-white mb-8 sticky top-24">
+              <div className="bg-navy-deep rounded-lg p-6 text-white mb-8 sticky top-24">
                 <h3 className="text-lg font-bold mb-3">Need Expert Help?</h3>
                 <p className="text-sm text-gray-300 mb-4">
                   Get personalized admissions guidance from our experienced
@@ -192,8 +194,8 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="max-w-4xl mx-auto flex justify-between gap-4">
           {prevPost ? (
             <Link
-              href={`/blog/${prevPost.slug}`}
-              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#E8613C] transition"
+              href={blogPath(prevPost.slug)}
+              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#B94224] transition"
             >
               <ArrowLeft className="w-4 h-4" />
               <span className="hidden sm:inline">
@@ -206,8 +208,8 @@ export default async function BlogPostPage({ params }: Props) {
           )}
           {nextPost ? (
             <Link
-              href={`/blog/${nextPost.slug}`}
-              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#E8613C] transition text-right"
+              href={blogPath(nextPost.slug)}
+              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#B94224] transition text-right"
             >
               <span className="hidden sm:inline">
                 {nextPost.title}
@@ -225,14 +227,14 @@ export default async function BlogPostPage({ params }: Props) {
       {relatedPosts.length > 0 && (
         <section className="bg-[#F8F9FA] py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#1B2B4B] mb-8">
+            <h2 className="text-2xl font-bold text-navy mb-8">
               Related Articles
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((rp) => (
                 <Link
                   key={rp.slug}
-                  href={`/blog/${rp.slug}`}
+                  href={blogPath(rp.slug)}
                   className="group bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-md transition"
                 >
                   <div className="aspect-[16/9] overflow-hidden bg-gray-100">
@@ -245,10 +247,10 @@ export default async function BlogPostPage({ params }: Props) {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-sm font-bold text-[#1B2B4B] group-hover:text-[#E8613C] transition leading-snug line-clamp-2">
+                    <h3 className="text-sm font-bold text-navy group-hover:text-[#B94224] transition leading-snug line-clamp-2">
                       {rp.title}
                     </h3>
-                    <p className="text-xs text-gray-400 mt-2">
+                    <p className="text-xs text-gray-600 mt-2">
                       {formatDate(rp.date)}
                     </p>
                   </div>

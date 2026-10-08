@@ -1,3 +1,4 @@
+import { blogPath } from "@/lib/blog-path";
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog-posts";
 
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    { url: `${baseUrl}/privacy-policy/`, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${baseUrl}/`, changeFrequency: "weekly" as const, priority: 1.0 },
     {
       url: `${baseUrl}/services/`,
@@ -105,9 +107,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Blog posts — root-level on old site, under /blog/ on new site
+  // Preserve original WordPress article URLs, except page/post collisions.
   const blogPages = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}/`,
+    url: `${baseUrl}${blogPath(post.slug)}`,
     lastModified: new Date(post.revised ?? post.modified),
     changeFrequency: "yearly" as const,
     priority: 0.5,

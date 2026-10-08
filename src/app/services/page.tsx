@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { services, getServicesByCategories } from "@/data/services";
 import Link from "next/link";
@@ -22,7 +23,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Our Services",
   description:
     "Explore our comprehensive range of admission consulting services for undergraduate, graduate, healthcare, and professional programs.",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/services/",
     type: "website",
   },
-};
+});
 
 const iconMap: { [key: string]: React.ReactNode } = {
   GraduationCap: <GraduationCap className="w-8 h-8" />,
@@ -95,13 +96,13 @@ export default function ServicesPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Our Services
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-100 mb-8 max-w-3xl leading-relaxed">
             Comprehensive consulting programs designed to help you succeed at
             every stage of your admissions journey.
           </p>
           <Link
             href="/contact-us"
-            className="inline-flex items-center gap-2 bg-gold hover:bg-yellow-500 text-navy font-bold py-3 px-8 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-gold hover:bg-yellow-500 text-navy-deep font-bold py-3 px-8 rounded-lg transition-colors"
           >
             Schedule a Free Initial Consultation
             <ChevronRight className="w-5 h-5" />
@@ -183,7 +184,7 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-yellow-500 text-navy font-bold py-4 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-yellow-500 text-navy-deep font-bold py-4 px-8 rounded-lg transition-colors"
             >
               Schedule a Free Initial Consultation
               <ChevronRight className="w-5 h-5" />

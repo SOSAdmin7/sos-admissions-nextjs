@@ -1,17 +1,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import blogAliases from "./data/blog-aliases.json";
-import { blogPosts } from "./data/blog-posts";
+import { blogPath } from "./lib/blog-path";
 
-/*  Blog posts on the old WordPress site live at root-level URLs
-    (e.g. /college-interview/) but the new site serves them under /blog/.
-    This middleware 301-redirects old root-level blog URLs to /blog/[slug]
-    so inbound links and search-engine rankings are preserved.
-
-    Execution order: next.config.ts redirects → middleware → file-system routing.
-    Paths already handled by next.config.ts redirects never reach here.          */
-
-const blogSlugs = new Set([...blogPosts.map((p) => p.slug), ...Object.keys(blogAliases)]);
+// Retained articles render at their original root URLs. Only consolidated
+// legacy articles redirect; published service pages always take precedence.
 
 // Pages that have their own file-system route and must NOT be hijacked.
 // Generated from: find src/app -maxdepth 2 -name "page.tsx" | ...
@@ -80,10 +73,11 @@ export function middleware(request: NextRequest) {
   // Skip if this path belongs to an existing page
   if (PAGE_PATHS.has(segment)) return response;
 
-  // Redirect old root-level blog URLs → /blog/[slug]
-  if (blogSlugs.has(segment)) {
+  // Redirect consolidated articles to their corrected guide.
+  const destination = (blogAliases as Record<string, string>)[segment];
+  if (destination) {
     const url = request.nextUrl.clone();
-    url.pathname = `/blog/${(blogAliases as Record<string, string>)[segment] ?? segment}/`;
+    url.pathname = blogPath(destination);
     return NextResponse.redirect(url, 301);
   }
   return response;

@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { TrustBar, SchoolLogos } from "@/components/TrustLogos";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import dynamic from "next/dynamic";
 
-// Title/description mirror the old site exactly (sosadmissions.com is the SEO master)
-export const metadata: Metadata = {
+// Preserve the WordPress title and canonical; keep the reviewed, date-independent description.
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute: "College And Graduate School Application Consulting Service",
   },
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/",
     type: "website",
   },
-};
+});
 
 const WhyChooseUs = dynamic(
   () => import("@/components/WhyChooseUs").then((mod) => mod.WhyChooseUs),

@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Award, Users, Zap, Target, CheckCircle2 } from "lucide-react";
 
 // Export metadata for SEO
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute:
       "About SOS Admissions | College & Medical School Admissions Consultants",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/about-us/",
     type: "website",
   },
-};
+});
 
 export default function AboutPage() {
   const teamMembers = [
@@ -221,7 +222,7 @@ export default function AboutPage() {
                     <h3 className="text-xl font-bold text-navy">
                       {member.name}
                     </h3>
-                    <p className="mt-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#E8613C]">
+                    <p className="mt-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#B94224]">
                       {member.title}
                     </p>
                     <p className="mt-3 text-base text-slate-600 leading-relaxed">
@@ -325,7 +326,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact-us"
-              className="inline-block bg-gold text-navy px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition"
+              className="inline-block bg-gold text-navy-deep px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition"
             >
               Schedule a Free Initial Consultation
             </Link>

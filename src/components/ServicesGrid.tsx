@@ -56,7 +56,7 @@ export function ServicesGrid() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 md:mb-10 animate-[fadeInUp_0.6s_ease-out_both]">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B2B4B]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
             Explore Our Admissions Services
           </h2>
         </div>
@@ -70,7 +70,7 @@ export function ServicesGrid() {
               className="animate-[fadeInUp_0.45s_ease-out_both]"
               style={{ animationDelay: `${0.08 + index * 0.03}s` }}
             >
-              <span className="flex h-full min-h-[72px] items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-[#1B2B4B] shadow-sm transition-all duration-300 hover:border-[#E8613C]/40 hover:bg-[#FFF7F3] hover:text-[#E8613C]">
+              <span className="flex h-full min-h-[72px] items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-navy shadow-sm transition-all duration-300 hover:border-[#E8613C]/40 hover:bg-[#FFF7F3] hover:text-[#B94224]">
                 {service.label}
               </span>
             </Link>

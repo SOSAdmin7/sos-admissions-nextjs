@@ -8,7 +8,7 @@ export function generateOGImage(title: string, subtitle?: string) {
     <div
       style={{
         background:
-          "linear-gradient(135deg, #0D1B2A 0%, #1B2B4B 50%, #2A4066 100%)",
+          "linear-gradient(135deg, #19374A 0%, #2F536E 50%, #3D657F 100%)",
         width: "100%",
         height: "100%",
         display: "flex",
@@ -31,7 +31,7 @@ export function generateOGImage(title: string, subtitle?: string) {
           style={{
             fontSize: "42px",
             fontWeight: 800,
-            color: "#E8613C",
+            color: "#E8C97A",
             letterSpacing: "-0.02em",
           }}
         >
@@ -62,7 +62,7 @@ export function generateOGImage(title: string, subtitle?: string) {
         <div
           style={{
             fontSize: "24px",
-            color: "#94A3B8",
+            color: "#E2E8F0",
             textAlign: "center",
             maxWidth: "700px",
             lineHeight: 1.4,
@@ -89,7 +89,7 @@ export function generateOGImage(title: string, subtitle?: string) {
           position: "absolute",
           bottom: "40px",
           fontSize: "18px",
-          color: "#64748B",
+          color: "#E2E8F0",
         }}
       >
         sosadmissions.com

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { BlogContent } from "@/components/BlogContent";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute: "Admissions Blog | Expert Tips & Strategies - SOS Admissions",
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/blog/",
     type: "website",
   },
-};
+});
 
 export default function BlogPage() {
   return (
@@ -25,7 +26,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-[#1B2B4B]">
+          <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-navy">
             Admissions Insights & Tips
           </h1>
           <p className="text-xl text-slate-600">
@@ -38,7 +39,7 @@ export default function BlogPage() {
       <BlogContent />
 
       {/* CTA Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0D1B2A] to-[#1B2B4B]">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy-deep to-navy">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Looking for Personalized Guidance?

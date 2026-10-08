@@ -8,10 +8,10 @@ export function PaymentForm() {
   const [program, setProgram] = useState("college");
   const [graduateOpened, setGraduateOpened] = useState(false);
   return (
-    <section id="payment-form" className="scroll-mt-24 px-4 py-9">
+    <section id="payment-form" className="scroll-mt-24 px-4 pt-4 pb-8">
       <div className="max-w-4xl mx-auto">
-        <fieldset className="mb-6">
-          <legend className="text-2xl font-bold text-navy mb-4">Choose Your Program</legend>
+        <fieldset className="mb-4">
+          <legend className="text-2xl font-bold text-navy mb-3">Choose Your Program</legend>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
               ["college", "College, Transfer, and SAT/ACT"],
@@ -30,10 +30,10 @@ export function PaymentForm() {
           want help choosing the right service.
         </p>
         {/* Load each form when first shown, then keep it mounted to preserve entered details. */}
-        <div hidden={program !== "college"} className="rounded-xl border border-slate-200 bg-white p-3 sm:p-6">
+        <div hidden={program !== "college"} className="rounded-xl border border-slate-200 bg-white p-1 sm:p-4">
           <EmbeddedForm url={COLLEGE_PAYMENT_FORM} title="SOS Admissions College and Transfer Payment" />
         </div>
-        {graduateOpened && <div hidden={program !== "graduate"} className="rounded-xl border border-slate-200 bg-white p-3 sm:p-6">
+        {graduateOpened && <div hidden={program !== "graduate"} className="rounded-xl border border-slate-200 bg-white p-1 sm:p-4">
           <EmbeddedForm url={PROFESSIONAL_PAYMENT_FORM} title="SOS Admissions Graduate and Professional Payment" />
         </div>}
         <p className="mt-6 text-sm text-slate-600">

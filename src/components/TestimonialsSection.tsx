@@ -48,7 +48,7 @@ export function TestimonialsSection({ program }: { program?: string }) {
         <p className="text-center mt-5">
           <Link
             href="/client-testimonials/"
-            className="text-blue-800 underline"
+            className="text-navy underline"
           >
             Read More Client Testimonials
           </Link>

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: {
     absolute:
       "Medical School Interview Coaching | MMI & Traditional - SOS Admissions",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://sosadmissions.com/medical-school-interview/",
     type: "website",
   },
-};
+});
 
 export default function MedicalSchoolInterviewPage() {
   return (

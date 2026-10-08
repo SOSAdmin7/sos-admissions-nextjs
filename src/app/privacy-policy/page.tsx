@@ -1,8 +1,10 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import body from "@/data/privacy-policy-content.json";
-export const metadata = {
+export const metadata = pageMetadata({
   title: { absolute: "Privacy Policy and Terms | SOS Admissions" },
+  description: "Read SOS Admissions' privacy policy to learn how we collect, use, and protect your personal information when you use our admissions consulting services.",
   alternates: { canonical: "https://sosadmissions.com/privacy-policy/" },
-};
+});
 export default function Page() {
   return (
     <>

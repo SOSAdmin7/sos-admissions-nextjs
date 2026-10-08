@@ -2,10 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --color-navy: #0F2B4C;
-  --color-navy-light: #1A4E8A;
-  --color-blue: #2563EB;
-  --color-blue-light: #3B82F6;
+  --color-navy: #2F536E;
+  --color-navy-deep: #19374A;
+  --color-navy-light: #3D657F;
+  --color-blue: #2F536E;
+  --color-blue-light: #3D657F;
+  --color-steel-mist: #EDF3F6;
   --color-gold: #D4A843;
   --color-gold-light: #E8C97A;
   --color-cream: #FAF8F4;

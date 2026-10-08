@@ -57,6 +57,16 @@ const PAGE_PATHS = new Set([
   "veterinary-school-admissions",
 ]);
 
+// These public images also serve social cards and structured data. They must
+// remain indexable when referenced by main-domain pages after launch.
+const SOCIAL_IMAGE_PATHS = new Set([
+  "/opengraph-image",
+  "/about-us/opengraph-image",
+  "/client-testimonials/opengraph-image",
+  "/college-admissions/opengraph-image",
+  "/contact-us/opengraph-image",
+]);
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -65,7 +75,9 @@ export function middleware(request: NextRequest) {
 
   // Only handle single-segment root-level paths (no nested paths)
   const response = NextResponse.next();
-  if (!["sosadmissions.com", "www.sosadmissions.com"].includes(request.nextUrl.hostname)) {
+  const isPublicImage = SOCIAL_IMAGE_PATHS.has(pathname.replace(/\/$/, ""))
+    || (pathname.startsWith("/images/") && /\.(avif|gif|ico|jpe?g|png|svg|webp)$/i.test(pathname));
+  if (!isPublicImage && !["sosadmissions.com", "www.sosadmissions.com"].includes(request.nextUrl.hostname)) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
   }
   if (segment.includes("/")) return response;

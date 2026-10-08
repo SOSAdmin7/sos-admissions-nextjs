@@ -4,6 +4,7 @@ import { PurchaseForm } from "./PurchaseForm";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Purchase Page - SOS Admissions" },
+  description: "Get started with SOS Admissions. Use our ordering form to share your contact details and review the available admissions consulting purchase options.",
   alternates: {
     canonical: "https://sosadmissions.com/purchase/",
   },

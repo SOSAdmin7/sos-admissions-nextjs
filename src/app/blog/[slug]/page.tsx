@@ -1,4 +1,6 @@
 import { blogPath } from "@/lib/blog-path";
+import { pageMetadata } from "@/lib/page-metadata";
+import { socialAssetUrl } from "@/lib/social-images";
 import blogContent from "@/data/blog-content.json";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -30,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return { title: "Post Not Found" };
 
-  return {
+  return pageMetadata({
     title: {
       absolute: post.title.includes("SOS Admissions")
         ? post.title
@@ -47,9 +49,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://sosadmissions.com${blogPath(post.slug)}`,
       publishedTime: post.date,
       modifiedTime: post.revised ?? post.modified,
-      images: post.image ? [{ url: post.image }] : undefined,
+      images: post.image ? [{ url: socialAssetUrl(post.image), alt: post.title }] : undefined,
     },
-  };
+    twitter: { title: post.title, description: post.excerpt },
+  });
 }
 
 function formatDate(dateStr: string) {
@@ -76,7 +79,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.revised ?? post.modified,
-    image: post.image ? new URL(post.image, "https://sosadmissions.com").href : undefined,
+    image: post.image ? socialAssetUrl(post.image) : undefined,
     mainEntityOfPage: `https://sosadmissions.com${blogPath(post.slug)}`,
     author: { "@id": "https://sosadmissions.com/#organization" },
     publisher: { "@id": "https://sosadmissions.com/#organization" },

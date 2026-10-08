@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/lib/page-metadata";
 import { services, getServiceBySlug } from "@/data/services";
 import { notFound } from "next/navigation";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonicalPath = `/${service.sourceSlug}/`;
 
-  return {
+  return pageMetadata({
     title: service.title,
     description: service.shortDescription,
     alternates: {
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "application coaching",
       ...service.features.slice(0, 3),
     ],
-  };
+  });
 }
 
 export async function generateStaticParams() {

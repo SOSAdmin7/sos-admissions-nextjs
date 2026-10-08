@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { GTMScript, GTMNoScript } from "@/components/GTMProvider";
+import { defaultSocialImage, socialAssetUrl } from "@/lib/social-images";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ const siteSchema = {
       name: "SOS Admissions",
       url: "https://sosadmissions.com/",
       telephone: "+1-310-951-4008",
-      logo: "https://sosadmissions.com/images/legacy/sosheader.webp",
+      logo: socialAssetUrl("/images/brand/sos-logo.png"),
     },
     {
       "@type": "WebSite",
@@ -52,6 +53,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sosadmissions.com",
     siteName: "SOS Admissions",
+    images: defaultSocialImage(),
     title:
       "SOS Admissions | Expert College & Graduate School Admissions Consulting",
     description:
@@ -60,6 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@SOSAdmissions",
+    images: defaultSocialImage(),
   },
   verification: {
     google: "iCDvsYI-dc9o0s2Xky2Wd2QQ47UoIqpRDEGPFBxKHdk",

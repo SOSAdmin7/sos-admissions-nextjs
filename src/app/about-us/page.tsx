@@ -202,13 +202,13 @@ export default function AboutPage() {
 
       <section className="pb-12 md:pb-18 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm"
+                className="w-full min-w-0 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
               >
-                <div className="flex flex-col sm:flex-row gap-5">
+                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="relative w-24 h-24 sm:w-28 sm:h-28 overflow-hidden rounded-2xl bg-white border border-slate-200 flex-shrink-0">
                     <Image
                       src={member.image}
@@ -225,11 +225,11 @@ export default function AboutPage() {
                     <p className="mt-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#B94224]">
                       {member.title}
                     </p>
-                    <p className="mt-3 text-base text-slate-600 leading-relaxed">
-                      {member.bio}
-                    </p>
                   </div>
                 </div>
+                <p className="mt-4 text-base text-slate-600 leading-relaxed">
+                  {member.bio}
+                </p>
               </article>
             ))}
           </div>

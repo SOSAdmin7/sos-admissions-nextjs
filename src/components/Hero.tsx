@@ -58,7 +58,7 @@ export function Hero() {
         {/* Video */}
         <div className="max-w-3xl mx-auto mb-6 md:mb-8">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-            <div className="aspect-video">
+            <div className="w-full">
               <YouTubeFacade
                 videoId="Jqe-SDu1yoU"
                 title="SOS Admissions, College and Graduate School Admissions Consulting"
@@ -92,11 +92,12 @@ function YouTubeFacade({ videoId, title }: { videoId: string; title: string }) {
   if (loaded) {
     return (
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`}
+        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1&playsinline=1`}
         title={title}
+        referrerPolicy="strict-origin-when-cross-origin"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="w-full h-full"
+        className="block aspect-video w-full min-h-[200px]"
       />
     );
   }
@@ -104,7 +105,7 @@ function YouTubeFacade({ videoId, title }: { videoId: string; title: string }) {
   return (
     <button
       onClick={() => setLoaded(true)}
-      className="relative w-full h-full group cursor-pointer bg-black"
+      className="relative block aspect-video w-full group cursor-pointer bg-black"
       aria-label={`Play video: ${title}`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -21,7 +21,8 @@ export function EmbeddedForm({
   const instance = useId();
   const [height, setHeight] = useState(initialHeight);
   const source = new URL(url.replace("/forms/", "/embed/"));
-  source.searchParams.set("embedKey", instance);
+  // Lets the shared Wufoo theme target this site's embeds without restyling WordPress.
+  source.searchParams.set("embedKey", `sos-next-${instance}`);
   if (hideHeader) source.searchParams.set("header", "hide");
 
   useEffect(() => {

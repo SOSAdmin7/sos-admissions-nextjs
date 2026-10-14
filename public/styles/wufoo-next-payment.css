@@ -1,0 +1,44 @@
+/* Loaded by the Wufoo theme. Only the new site's payment embeds opt in.
+   Do not change field labels, prices, validation, or merchant behavior here. */
+@media (max-width: 600px) {
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] > ul > li {
+    box-sizing: border-box;
+    width: auto !important;
+    max-width: 100%;
+  }
+
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] > ul > li.total {
+    height: auto;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] #lola {
+    position: static;
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 !important;
+    transition: none;
+  }
+
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] #lola tbody b,
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] #lola tbody span {
+    width: auto;
+  }
+
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] #lola th {
+    overflow-wrap: anywhere;
+    padding-right: 8px;
+  }
+
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] #lola td,
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] #lola tbody span {
+    white-space: nowrap;
+  }
+
+  form:is(#form133, #form105)[action*="embedKey=sos-next-"] select {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}

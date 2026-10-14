@@ -17,11 +17,12 @@ function YouTubeFacade({
   if (loaded) {
     return (
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`}
+        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1&playsinline=1`}
         title={title}
+        referrerPolicy="strict-origin-when-cross-origin"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="w-full h-full"
+        className="block aspect-video w-full min-h-[200px]"
       />
     );
   }
@@ -29,7 +30,7 @@ function YouTubeFacade({
   return (
     <button
       onClick={() => setLoaded(true)}
-      className="relative h-full w-full cursor-pointer bg-black"
+      className="relative block aspect-video w-full cursor-pointer bg-black"
       aria-label={`Play video: ${title}`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -70,7 +71,7 @@ export function LegacyYouTubeCard({
     <div
       className={`max-w-3xl overflow-hidden rounded-2xl border border-white/10 shadow-2xl ${className}`.trim()}
     >
-      <div className="aspect-video">
+      <div className="w-full">
         <YouTubeFacade
           videoId={video.id}
           title={title ?? video.title}

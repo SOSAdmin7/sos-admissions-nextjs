@@ -6,7 +6,7 @@ export function TestimonialContent() {
         {testimonials.map((t) => (
           <figure
             key={t.id}
-            className="p-5 rounded-xl bg-slate-50 border border-slate-200"
+            className="p-5 rounded-xl bg-white border border-slate-200"
           >
             <blockquote className="whitespace-pre-line text-slate-700 leading-relaxed">
               {t.content}

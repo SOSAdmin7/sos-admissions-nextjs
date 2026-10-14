@@ -52,7 +52,7 @@ const serviceLinks = [
 
 export function ServicesGrid() {
   return (
-    <section className="relative py-10 md:py-14 lg:py-16 bg-[#F8F9FA]">
+    <section className="relative py-10 md:py-14 lg:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 md:mb-10 animate-[fadeInUp_0.6s_ease-out_both]">

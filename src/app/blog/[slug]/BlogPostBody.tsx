@@ -13,7 +13,7 @@ export function BlogPostBody({ html }: { html: string }) {
         prose-ul:text-gray-600 prose-ol:text-gray-600
         prose-li:mb-1
         prose-img:rounded-lg prose-img:shadow-md
-        prose-blockquote:border-l-[#E8613C] prose-blockquote:bg-[#FFF0EC] prose-blockquote:rounded-r-lg prose-blockquote:py-2 prose-blockquote:px-4
+        prose-blockquote:border-l-[#E8613C] prose-blockquote:bg-white prose-blockquote:rounded-r-lg prose-blockquote:py-2 prose-blockquote:px-4
       "
       dangerouslySetInnerHTML={{ __html: html }}
     />

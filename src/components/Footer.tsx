@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Programs */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-5">
               Programs
             </h3>
             <ul className="space-y-3">
@@ -31,7 +31,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                    className="text-white hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-5">
               Services
             </h3>
             <ul className="space-y-3">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                    className="text-white hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-5">
               Company
             </h3>
             <ul className="space-y-3">
@@ -85,7 +85,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                    className="text-white hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -96,18 +96,18 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-5">
               Get In Touch
             </h3>
             <div className="space-y-4">
               <a
                 href="tel:+13109514008"
-                className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
+                className="flex items-center gap-3 text-white hover:text-white transition-colors"
               >
                 <Phone size={16} className="text-[#E8613C] flex-shrink-0" />
                 <span className="text-sm">(310) 951-4008</span>
               </a>
-              <div className="flex items-center gap-3 text-gray-300">
+              <div className="flex items-center gap-3 text-white">
                 <MapPin size={16} className="text-[#E8613C] flex-shrink-0" />
                 <span className="text-sm">
                   Beverly Hills &amp; Los Angeles, CA
@@ -120,7 +120,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/company/sos-admissions/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white hover:text-white transition-colors"
                   aria-label="LinkedIn"
                 >
                   <svg
@@ -135,7 +135,7 @@ export default function Footer() {
                   href="https://www.facebook.com/SOS-Admissions-270199346720032/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white hover:text-white transition-colors"
                   aria-label="Facebook"
                 >
                   <svg
@@ -150,7 +150,7 @@ export default function Footer() {
                   href="https://www.youtube.com/channel/UCTSIQyJw3qq56Icoh_1pP1g"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white hover:text-white transition-colors"
                   aria-label="YouTube"
                 >
                   <svg
@@ -168,7 +168,7 @@ export default function Footer() {
 
         {/* Service Locations */}
         <div className="border-t border-gray-700 pt-8 mb-8">
-          <p className="text-gray-400 text-sm text-center">
+          <p className="text-white text-sm text-center">
             Serving students in Los Angeles, San Francisco, Las Vegas,
             Vancouver, Chicago, Seattle, Denver, New Orleans, Philadelphia, San
             Diego, Montreal, Houston, Toronto, Miami, Pittsburgh, Washington
@@ -179,13 +179,13 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-400 text-sm">
+          <p className="text-white text-sm">
             &copy; 1998 to 2026 SOS Admissions. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <Link
               href="/privacy-policy"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-white hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>

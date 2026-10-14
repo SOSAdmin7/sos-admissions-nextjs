@@ -84,19 +84,14 @@ export default function ServicesPage() {
   const servicesByCategory = getServicesByCategories();
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-blue py-10 md:py-14 lg:py-16">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue rounded-full blur-3xl"></div>
-        </div>
-
+      <section className="relative overflow-hidden bg-white border-b border-slate-200 py-10 md:py-14 lg:py-16">
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6 leading-tight">
             Our Services
           </h1>
-          <p className="text-xl md:text-2xl text-slate-100 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-700 mb-8 max-w-3xl leading-relaxed">
             Comprehensive consulting programs designed to help you succeed at
             every stage of your admissions journey.
           </p>
@@ -172,7 +167,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 md:py-14 bg-cream">
+      <section className="py-10 md:py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Ready to Get Started?

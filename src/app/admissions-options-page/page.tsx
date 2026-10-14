@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
 export default function AdmissionsOptionsPage() {
   return (
     <>
-      <section className="relative py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-navy">
             Start Your Admissions Journey

@@ -99,22 +99,22 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
       {/* Hero */}
-      <section className="bg-gradient-to-b from-navy-deep to-navy text-white py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white border-b border-slate-200 text-navy py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-white transition mb-6"
+            className="inline-flex items-center gap-2 text-sm text-slate-700 hover:text-navy transition mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
           </Link>
-          <span className="inline-block text-xs font-semibold text-gold-light bg-white/10 px-3 py-1 rounded-full mb-4">
+          <span className="inline-block text-xs font-semibold text-navy border border-slate-200 bg-white px-3 py-1 rounded-full mb-4">
             {post.category}
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
             {post.title}
           </h1>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-300">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-slate-700">
             <div className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" />
               {post.revised ? `Updated ${formatDate(post.revised)}` : formatDate(post.date)}
@@ -149,7 +149,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <p className="text-lg text-gray-600 leading-relaxed">
                     {post.excerpt}
                   </p>
-                  <div className="bg-[#FFF0EC] rounded-lg p-6 mt-8">
+                  <div className="bg-white border border-slate-200 rounded-lg p-6 mt-8">
                     <p className="text-navy font-medium">
                       Want to learn more about this topic? Contact our
                       admissions experts for personalized guidance.
@@ -168,9 +168,9 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               {/* CTA */}
-              <div className="bg-navy-deep rounded-lg p-6 text-white mb-8 sticky top-24">
+              <div className="bg-white border border-slate-200 rounded-lg p-6 text-charcoal mb-8 sticky top-24">
                 <h3 className="text-lg font-bold mb-3">Need Expert Help?</h3>
-                <p className="text-sm text-gray-300 mb-4">
+                <p className="text-sm text-slate-700 mb-4">
                   Get personalized admissions guidance from our experienced
                   consultants.
                 </p>
@@ -182,7 +182,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </Link>
                 <a
                   href="tel:310-951-4008"
-                  className="block text-center text-sm text-gray-300 hover:text-white transition mt-3"
+                  className="block text-center text-sm text-slate-700 hover:text-navy transition mt-3"
                 >
                   Or call: 310-951-4008
                 </a>
@@ -198,7 +198,7 @@ export default async function BlogPostPage({ params }: Props) {
           {prevPost ? (
             <Link
               href={blogPath(prevPost.slug)}
-              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#B94224] transition"
+              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-slate-700 hover:text-[#B94224] transition"
             >
               <ArrowLeft className="w-4 h-4" />
               <span className="hidden sm:inline">
@@ -212,7 +212,7 @@ export default async function BlogPostPage({ params }: Props) {
           {nextPost ? (
             <Link
               href={blogPath(nextPost.slug)}
-              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-gray-500 hover:text-[#B94224] transition text-right"
+              className="flex min-w-0 max-w-[48%] items-center gap-2 text-sm text-slate-700 hover:text-[#B94224] transition text-right"
             >
               <span className="hidden sm:inline">
                 {nextPost.title}
@@ -228,7 +228,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
-        <section className="bg-[#F8F9FA] py-12 px-4 sm:px-6 lg:px-8">
+        <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-navy mb-8">
               Related Articles

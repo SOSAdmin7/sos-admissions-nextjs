@@ -35,7 +35,7 @@ export function WhyChooseUs() {
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
             Why Families Trust SOS Admissions
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
             We combine decades of experience with genuine care for each
             student&apos;s success.
           </p>
@@ -47,7 +47,7 @@ export function WhyChooseUs() {
             return (
               <div
                 key={i}
-                className="flex gap-5 p-6 md:p-8 bg-[#F8F9FA] rounded-xl border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 animate-[fadeInUp_0.5s_ease-out_both]"
+                className="flex gap-5 p-6 md:p-8 bg-white rounded-xl border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 animate-[fadeInUp_0.5s_ease-out_both]"
                 style={{ animationDelay: `${0.1 + i * 0.1}s` }}
               >
                 <div className="flex-shrink-0">
@@ -59,7 +59,7 @@ export function WhyChooseUs() {
                   <h3 className="text-xl font-bold text-navy mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-500 leading-relaxed">
+                  <p className="text-slate-700 leading-relaxed">
                     {item.description}
                   </p>
                 </div>

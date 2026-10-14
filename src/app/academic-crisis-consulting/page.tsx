@@ -13,7 +13,7 @@ export const metadata = pageMetadata({
 export default function Page() {
   return (
     <>
-      <section className="bg-navy-deep text-white py-10 px-4 text-center">
+      <section className="bg-white border-b border-slate-200 text-navy py-10 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold max-w-4xl mx-auto mb-5">
           Academic Crisis Consulting
         </h1>
@@ -22,7 +22,7 @@ export default function Page() {
         </p>
         <Link
           href="/contact-us/"
-          className="inline-block bg-[#C94D2B] px-6 py-3 rounded-full font-semibold"
+          className="inline-block bg-[#C94D2B] text-white px-6 py-3 rounded-full font-semibold"
         >
           Schedule a Free Initial Consultation
         </Link>

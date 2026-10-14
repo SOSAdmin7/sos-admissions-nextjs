@@ -43,17 +43,17 @@ export default function ServicePageTemplate({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
-      <section className="bg-gradient-to-br from-navy-deep via-navy to-navy-light px-4 py-9 md:py-12 text-center text-white">
+      <section className="bg-white border-b border-slate-200 px-4 py-9 md:py-12 text-center text-navy">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold leading-tight mb-4 [text-wrap:balance]">
             {title}
           </h1>
-          <p className="text-base md:text-lg text-slate-100 max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-base md:text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed mb-6">
             {source?.intro || service.longDescription}
           </p>
           <Link
             href="/contact-us/"
-            className="inline-flex rounded-full bg-[#C94D2B] px-6 py-3 font-semibold"
+            className="inline-flex rounded-full bg-[#C94D2B] text-white px-6 py-3 font-semibold"
           >
             Schedule a Free Initial Consultation
           </Link>
@@ -80,14 +80,14 @@ export default function ServicePageTemplate({
             {features.map((f, i) => (
               <li
                 key={i}
-                className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-navy"
+                className="rounded-xl border border-slate-200 bg-white p-4 text-charcoal"
               >
                 {f}
               </li>
             ))}
           </ul>
           {sourceSlug === "law-school-application" && (
-            <div className="mt-6 rounded-xl bg-slate-50 p-5">
+            <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
               <h2 className="text-xl font-bold mb-3">Law School Transfers</h2>
               <p>
                 We also help current law students transfer to a new law school.
@@ -131,14 +131,14 @@ export default function ServicePageTemplate({
           ))}
         </div>
       </section>
-      <section className="bg-navy-deep text-white text-center px-4 py-10">
+      <section className="bg-white border-t border-slate-200 text-navy text-center px-4 py-10">
         <h2 className="text-3xl font-bold mb-4">Plan Your Next Step</h2>
         <p className="mb-5">
           Discuss your goals with an admissions consultant.
         </p>
         <Link
           href="/contact-us/"
-          className="inline-flex bg-[#C94D2B] hover:bg-[#B94224] rounded-full px-6 py-3 font-semibold"
+          className="inline-flex bg-[#C94D2B] hover:bg-[#B94224] text-white rounded-full px-6 py-3 font-semibold"
         >
           Schedule a Free Initial Consultation
         </Link>

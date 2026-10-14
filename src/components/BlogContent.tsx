@@ -107,14 +107,14 @@ export function BlogContent() {
             </div>
 
             {/* Results count */}
-            <p className="text-sm text-gray-500 mb-6">
+            <p className="text-sm text-slate-700 mb-6">
               Showing {visiblePosts.length} of {filteredPosts.length} articles
             </p>
 
             {/* Posts Grid */}
             {filteredPosts.length === 0 ? (
               <div className="text-center py-16">
-                <p className="text-gray-500 text-lg">
+                <p className="text-slate-700 text-lg">
                   No articles found matching your search.
                 </p>
               </div>
@@ -195,9 +195,9 @@ export function BlogContent() {
             </div>
 
             {/* CTA */}
-            <div className="bg-navy-deep rounded-lg p-6 text-white">
+            <div className="bg-white border border-slate-200 rounded-lg p-6 text-charcoal">
               <h3 className="text-lg font-bold mb-3">Need Expert Help?</h3>
-              <p className="text-sm text-gray-300 mb-4">
+              <p className="text-sm text-slate-700 mb-4">
                 Get personalized admissions guidance from our experienced
                 consultants.
               </p>
@@ -240,7 +240,7 @@ function PostCard({ post }: { post: BlogPost }) {
         <h3 className="text-lg font-bold text-navy group-hover:text-[#B94224] transition leading-snug mb-2 line-clamp-2">
           {post.title}
         </h3>
-        <p className="text-sm text-gray-500 line-clamp-2 mb-3">
+        <p className="text-sm text-slate-700 line-clamp-2 mb-3">
           {post.excerpt}
         </p>
         <div className="flex items-center gap-1.5 text-xs text-gray-600">

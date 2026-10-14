@@ -23,7 +23,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-navy">
             Student Success Stories

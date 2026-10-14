@@ -108,15 +108,15 @@ export default function MbaRecommenderQuestionsPage() {
       />
 
       {/* Hero */}
-      <section className="bg-slate-900 text-white">
+      <section className="bg-white border-b border-slate-200 text-navy">
         <div className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy">
             MBA Admissions Consulting
           </p>
           <h1 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
             What Top MBA Programs Ask Your Recommenders
           </h1>
-          <p className="mt-4 max-w-3xl text-base text-slate-200 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base text-slate-700 sm:text-lg">
             What each of twelve leading business schools publishes about its
             recommendation requirements, and what it does not. Compiled from the
             schools&apos; own admissions pages, retrieved {RETRIEVED}.
@@ -127,7 +127,7 @@ export default function MbaRecommenderQuestionsPage() {
               <a
                 key={s.short}
                 href={`#${slug(s.name)}`}
-                className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs font-medium text-slate-100 transition hover:border-sky-400 hover:text-sky-200"
+                className="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-navy transition hover:border-navy hover:text-navy-deep"
               >
                 {s.short}
               </a>
@@ -144,7 +144,7 @@ export default function MbaRecommenderQuestionsPage() {
             </Link>
             <a
               href="tel:3109514008"
-              className="inline-flex items-center justify-center rounded-md border border-white/25 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-md border border-navy px-5 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
             >
               <Phone className="mr-2 h-4 w-4" />
               310-951-4008
@@ -193,7 +193,7 @@ export default function MbaRecommenderQuestionsPage() {
             </div>
           </div>
 
-          <aside className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+          <aside className="rounded-lg border border-slate-200 bg-white p-5">
             <h3 className="text-sm font-bold uppercase tracking-wide text-slate-900">
               Across these twelve programs
             </h3>
@@ -234,7 +234,7 @@ export default function MbaRecommenderQuestionsPage() {
       </section>
 
       {/* Two questions */}
-      <section className="border-y border-slate-200 bg-slate-50">
+      <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
           <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             Two recurring questions to prepare for
@@ -319,7 +319,7 @@ export default function MbaRecommenderQuestionsPage() {
         <div className="mt-6 overflow-x-auto">
           <table className="w-full min-w-[36rem] border-collapse text-left">
             <thead>
-              <tr className="bg-slate-900 text-white">
+              <tr className="bg-white border-b border-slate-200 text-navy">
                 <th className="px-3 py-2 text-xs font-bold uppercase tracking-wide">
                   School
                 </th>
@@ -335,7 +335,7 @@ export default function MbaRecommenderQuestionsPage() {
               {SCHOOLS.map((s, i) => (
                 <tr
                   key={s.short}
-                  className={i % 2 ? "bg-slate-50" : "bg-white"}
+                  className={i % 2 ? "bg-white" : "bg-white"}
                 >
                   <td className="border-b border-slate-200 px-3 py-2 text-sm font-semibold text-slate-900">
                     <a href={`#${slug(s.name)}`} className="hover:text-sky-700">
@@ -361,7 +361,7 @@ export default function MbaRecommenderQuestionsPage() {
       </section>
 
       {/* School by school */}
-      <section className="border-y border-slate-200 bg-slate-50">
+      <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
           <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             School by school
@@ -398,7 +398,7 @@ export default function MbaRecommenderQuestionsPage() {
 
                 {s.questions.length > 0 && (
                   <>
-                    <p className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-500">
+                    <p className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-700">
                       Published questions
                     </p>
                     <ul className="mt-2 space-y-2.5">
@@ -410,7 +410,7 @@ export default function MbaRecommenderQuestionsPage() {
                               {q.text}
                             </p>
                             {q.limit && (
-                              <p className="mt-0.5 text-xs italic text-slate-500">
+                              <p className="mt-0.5 text-xs italic text-slate-700">
                                 {q.limit}
                               </p>
                             )}
@@ -443,14 +443,14 @@ export default function MbaRecommenderQuestionsPage() {
                 {s.gaps.map((g, i) => (
                   <p
                     key={i}
-                    className="mt-2 rounded border-l-2 border-amber-400 bg-amber-50 px-3 py-2 text-[14px] leading-relaxed text-amber-900"
+                    className="mt-2 rounded border-l-2 border-amber-400 bg-white px-3 py-2 text-[14px] leading-relaxed text-amber-900"
                   >
                     <span className="font-bold">Not published. </span>
                     {g}
                   </p>
                 ))}
 
-                <p className="mt-3 border-t border-slate-100 pt-2 text-[11px] italic text-slate-500">
+                <p className="mt-3 border-t border-slate-100 pt-2 text-[11px] italic text-slate-700">
                   Source: {s.source} ({s.url}). Cycle: {s.cycle}. Retrieved{" "}
                   {RETRIEVED}.
                 </p>
@@ -499,7 +499,7 @@ export default function MbaRecommenderQuestionsPage() {
               ))}
             </ul>
 
-            <div className="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-5">
+            <div className="mt-6 rounded-lg border border-slate-200 bg-white p-5">
               <h4 className="text-sm font-bold text-slate-900">
                 Where the line sits
               </h4>
@@ -520,9 +520,9 @@ export default function MbaRecommenderQuestionsPage() {
             </div>
           </div>
 
-          <aside className="h-fit rounded-lg border border-slate-200 bg-slate-900 p-6 text-white">
+          <aside className="h-fit rounded-lg border border-slate-200 bg-white p-6 text-charcoal">
             <h3 className="text-xl font-bold">Speak with a consultant</h3>
-            <p className="mt-3 text-sm leading-relaxed text-slate-200">
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">
               Talk through your MBA candidacy, your recommenders, and your
               school list.
             </p>
@@ -535,17 +535,17 @@ export default function MbaRecommenderQuestionsPage() {
             </a>
             <Link
               href="/contact-us/"
-              className="mt-3 flex items-center justify-center rounded-md border border-white/25 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="mt-3 flex items-center justify-center rounded-md border border-navy px-4 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
             >
               Schedule a Free Initial Consultation
             </Link>
             <Link
               href="/mba/"
-              className="mt-3 flex items-center justify-center text-sm font-medium text-sky-300 underline-offset-2 hover:underline"
+              className="mt-3 flex items-center justify-center text-sm font-medium text-navy underline-offset-2 hover:underline"
             >
               See all MBA admissions services
             </Link>
-            <p className="mt-5 border-t border-white/15 pt-4 text-xs text-slate-300">
+            <p className="mt-5 border-t border-slate-200 pt-4 text-xs text-slate-700">
               Serving applicants since 1998. Featured on CNN, Fox News, and in
               the Wall Street Journal, with consultants cited in outlets such as
               U.S. News &amp; World Report.
@@ -555,7 +555,7 @@ export default function MbaRecommenderQuestionsPage() {
       </section>
 
       {/* Appendix: competency grid */}
-      <section className="border-t border-slate-200 bg-slate-50">
+      <section className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
           <div className="flex items-center gap-2 text-sky-700">
             <Layers className="h-5 w-5" />

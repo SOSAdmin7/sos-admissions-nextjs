@@ -13,29 +13,18 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative w-full overflow-hidden py-8 md:py-10">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-deep via-navy to-navy-light" />
-      <div
-        className="absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)",
-          backgroundSize: "100px 100px",
-        }}
-      />
-
+    <section className="relative w-full overflow-hidden bg-white border-b border-slate-200 py-8 md:py-10">
       {/* Content Container */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-5 md:mb-6">
-          <span className="inline-block text-gold-light text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3 md:mb-4">
+          <span className="inline-block text-navy text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3 md:mb-4">
             College and Graduate School Admissions Consulting
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4 [text-wrap:balance]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight mb-4 [text-wrap:balance]">
             Expert Admissions Consulting Since 1998
           </h1>
-          <p className="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
             We help students get into top colleges, medical schools, law
             schools, MBA programs, medical residency programs, nursing and
             healthcare programs, and a wide range of graduate programs. Our team
@@ -57,7 +46,7 @@ export function Hero() {
 
         {/* Video */}
         <div className="max-w-3xl mx-auto mb-6 md:mb-8">
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
             <div className="w-full">
               <YouTubeFacade
                 videoId="Jqe-SDu1yoU"
@@ -68,13 +57,13 @@ export function Hero() {
         </div>
 
         {/* Stats Row */}
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-8 pt-6 md:pt-8 border-t border-white/20">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-8 pt-6 md:pt-8 border-t border-slate-200">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col min-w-0 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gold-light mb-1 whitespace-nowrap">
+              <div className="text-3xl md:text-4xl font-bold text-navy mb-1 whitespace-nowrap">
                 {stat.value}
               </div>
-              <p className="text-sm md:text-base text-slate-200 leading-snug">
+              <p className="text-sm md:text-base text-slate-700 leading-snug">
                 {stat.label}
               </p>
             </div>

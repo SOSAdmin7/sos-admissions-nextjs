@@ -98,7 +98,7 @@ export function LegacyStripSection({
   }
 
   return (
-    <section className="border-b border-gray-200 bg-[#F8F9FA] py-8">
+    <section className="border-b border-gray-200 bg-white py-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
         {featuredStrip && (
           <div className="text-center">

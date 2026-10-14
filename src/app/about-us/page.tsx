@@ -95,7 +95,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-navy">
             About SOS Admissions
@@ -160,7 +160,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12">
             <h2 className="text-3xl font-bold mb-6 text-navy">Our Mission</h2>
@@ -191,7 +191,7 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="rounded-xl bg-navy p-6 text-white">
+          <div className="rounded-xl border border-slate-200 bg-white p-6 text-charcoal">
             <p className="text-base md:text-lg leading-relaxed">
               Meet the consultants whose backgrounds span admissions offices,
               career counseling, essay writing, and professional interviewing.
@@ -206,7 +206,7 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className="w-full min-w-0 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
+                className="w-full min-w-0 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
               >
                 <div className="flex flex-col items-center gap-4 text-center">
                   <div className="relative w-24 h-24 sm:w-28 sm:h-28 overflow-hidden rounded-2xl bg-white border border-slate-200 flex-shrink-0">
@@ -237,7 +237,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-warm-gray">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-navy">
             Our Core Values
@@ -267,7 +267,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-navy">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-y border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
@@ -275,10 +275,10 @@ export default function AboutPage() {
                 key={index}
                 className={`text-center ${stat.highlight ? "md:col-span-1 md:transform md:-translate-y-4" : ""}`}
               >
-                <div className="text-5xl font-bold text-gold mb-3">
+                <div className="text-5xl font-bold text-navy mb-3">
                   {stat.number}
                 </div>
-                <p className="text-lg text-cream">{stat.label}</p>
+                <p className="text-lg text-slate-700">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -315,12 +315,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy-light">
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-lg text-cream mb-8">
+          <p className="text-lg text-slate-700 mb-8">
             Let's transform your admissions journey together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -332,7 +332,7 @@ export default function AboutPage() {
             </Link>
             <Link
               href="/services"
-              className="inline-block bg-white text-navy px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition"
+              className="inline-block border border-navy bg-white text-navy px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition"
             >
               View Services
             </Link>

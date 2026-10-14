@@ -14,15 +14,15 @@ export const metadata: Metadata = pageMetadata({
 export default function GetStartedPage() {
   return (
     <>
-      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-navy-deep to-navy">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gold-light text-sm font-semibold uppercase tracking-[0.15em] mb-4">
+          <p className="text-navy text-sm font-semibold uppercase tracking-[0.15em] mb-4">
             Get Started
           </p>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold text-navy mb-4">
             SOS Admissions Ordering Form
           </h1>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
             Start by sharing your contact details in our ordering form. Call us
             before ordering if you need help selecting a service.
           </p>

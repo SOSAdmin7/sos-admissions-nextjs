@@ -23,7 +23,7 @@ export function TestimonialsSection({ program }: { program?: string }) {
   const selected = (short.length ? short : matches).slice(0, 3);
   if (!selected.length) return null;
   return (
-    <section className="py-9 px-4 bg-slate-50">
+    <section className="py-9 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-navy text-center mb-6">
           What Our Clients Say

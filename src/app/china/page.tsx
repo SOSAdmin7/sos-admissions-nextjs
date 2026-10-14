@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
 export default function Page() {
   return (
     <div lang="zh-Hans">
-      <section className="bg-navy text-white px-4 py-10 text-center">
+      <section className="bg-white border-b border-slate-200 text-navy px-4 py-10 text-center">
         <h1 className="text-3xl sm:text-5xl font-bold mb-5">SOS留学申请咨询</h1>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
           这个页面是SOS Admissions公司网站的中文介绍，以方便我们讲中文的客户。

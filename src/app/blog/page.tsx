@@ -24,7 +24,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6 text-navy">
             Admissions Insights & Tips
@@ -39,12 +39,12 @@ export default function BlogPage() {
       <BlogContent />
 
       {/* CTA Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy-deep to-navy">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-navy mb-6">
             Looking for Personalized Guidance?
           </h2>
-          <p className="text-xl text-slate-300 mb-8">
+          <p className="text-xl text-slate-700 mb-8">
             Our expert consultants can provide tailored advice for your specific
             situation.
           </p>

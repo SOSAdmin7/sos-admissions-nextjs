@@ -6,7 +6,7 @@ export const metadata = pageMetadata({
 });
 export default function Page() {
   return (
-    <section className="py-12 px-4 bg-slate-50">
+    <section className="py-12 px-4 bg-white">
       <div className="max-w-2xl mx-auto rounded-xl bg-white border border-slate-200 p-6 text-center">
         <h1 className="text-3xl font-bold text-navy mb-4">
           Your Next Steps with SOS Admissions

@@ -3,7 +3,7 @@ import { CONTACT_FORM } from "@/data/forms";
 export function ContactForm() {
   return (
     <section className="pt-4 pb-8 px-4">
-      <div className="max-w-3xl mx-auto rounded-xl border border-slate-200 bg-slate-50 p-2 sm:p-5">
+      <div className="max-w-3xl mx-auto rounded-xl border border-slate-200 bg-white p-2 sm:p-5">
         <h2 className="text-xl sm:text-2xl font-bold text-navy mb-3">
           Schedule a Free Initial Consultation
         </h2>

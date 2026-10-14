@@ -7,7 +7,7 @@
 
 export function TrustBar() {
   return (
-    <section className="bg-[#F8F9FA] py-6 border-b border-gray-200">
+    <section className="bg-white py-6 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5">
           <span className="text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] text-gray-600 font-semibold text-center [text-wrap:balance] px-4">
@@ -239,7 +239,7 @@ export function SchoolLogos({
 }) {
   const schools = SCHOOL_SETS[variant] ?? SCHOOL_SETS.college;
   return (
-    <section className="bg-[#F8F9FA] py-6 border-b border-gray-200">
+    <section className="bg-white py-6 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5">
           <span className="text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] text-gray-600 font-semibold text-center [text-wrap:balance] px-4">

@@ -26,7 +26,7 @@ export function SourcePricing({ slug }: { slug: string }) {
   const page = sourceData[slug];
   if (!page?.pricingTables.length)
     return (
-      <section id="pricing" className="py-10 px-4 bg-slate-50 text-center">
+      <section id="pricing" className="py-10 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold text-navy mb-3">
           Discuss Your Services
         </h2>
@@ -40,7 +40,7 @@ export function SourcePricing({ slug }: { slug: string }) {
       </section>
     );
   return (
-    <section id="pricing" className="py-10 px-4 sm:px-6 bg-slate-50">
+    <section id="pricing" className="py-10 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-navy mb-6 text-center">
           Services and Pricing
@@ -51,7 +51,7 @@ export function SourcePricing({ slug }: { slug: string }) {
             className="mb-6 overflow-hidden rounded-xl border border-slate-200 bg-white"
           >
             {table.title !== "Services and Pricing" && (
-              <h3 className="font-bold text-xl text-navy px-5 py-4 bg-slate-100">
+              <h3 className="font-bold text-xl text-navy px-5 py-4 bg-white border-b border-slate-200">
                 {table.title}
               </h3>
             )}
@@ -73,7 +73,7 @@ export function SourcePricing({ slug }: { slug: string }) {
                     <tr key={j}>
                       <td
                         colSpan={2}
-                        className="px-4 py-4 text-sm leading-relaxed bg-steel-mist text-navy"
+                        className="px-4 py-4 text-sm leading-relaxed bg-white text-charcoal border-t border-slate-200"
                       >
                         <PricingNote text={row[0]} />
                       </td>

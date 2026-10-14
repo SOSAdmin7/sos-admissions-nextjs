@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
 export default function Page() {
   return (
     <>
-      <section className="bg-slate-50 py-10 px-4 text-center">
+      <section className="bg-white py-10 px-4 text-center">
         <h1 className="text-4xl font-bold text-navy">
           Privacy Policy and Terms
         </h1>

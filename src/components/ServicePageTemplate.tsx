@@ -76,11 +76,15 @@ export default function ServicePageTemplate({
           <h2 className="text-3xl font-bold text-navy text-center mb-6">
             How We Can Help
           </h2>
-          <ul className="grid sm:grid-cols-2 gap-3">
+          <ul className="grid sm:grid-cols-4 gap-3">
             {features.map((f, i) => (
               <li
                 key={i}
-                className="rounded-xl border border-slate-200 bg-white p-4 text-charcoal"
+                className={`rounded-xl border border-slate-200 bg-white p-4 text-charcoal sm:col-span-2 ${
+                  features.length % 2 === 1 && i === features.length - 1
+                    ? "sm:col-start-2"
+                    : ""
+                }`}
               >
                 {f}
               </li>

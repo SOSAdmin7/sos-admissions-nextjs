@@ -42,13 +42,13 @@ export function SourcePricing({ slug }: { slug: string }) {
   return (
     <section id="pricing" className="py-10 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-navy mb-6 text-center">
+        <h2 className="sos-heading text-3xl font-bold text-navy mb-6 text-center">
           Services and Pricing
         </h2>
         {page.pricingTables.map((table, i) => (
           <div
             key={i}
-            className="mb-6 overflow-hidden rounded-xl border border-slate-200 bg-white"
+            className="sos-pricing mb-6 overflow-hidden rounded-xl border border-slate-200 bg-white"
           >
             {table.title !== "Services and Pricing" && (
               <h3 className="font-bold text-xl text-navy px-5 py-4 bg-white border-b border-slate-200">

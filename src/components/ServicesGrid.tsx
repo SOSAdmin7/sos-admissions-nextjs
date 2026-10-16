@@ -70,7 +70,7 @@ export function ServicesGrid() {
               className="animate-[fadeInUp_0.45s_ease-out_both]"
               style={{ animationDelay: `${0.08 + index * 0.03}s` }}
             >
-              <span className="flex h-full min-h-[72px] items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-navy shadow-sm transition-all duration-300 hover:border-[#E8613C]/40 hover:bg-[#FFF7F3] hover:text-[#B94224]">
+              <span className="sos-card flex h-full min-h-[72px] items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-semibold text-navy shadow-sm transition-all duration-300 hover:border-[#E8613C]/40 hover:bg-[#FFF7F3] hover:text-[#B94224]">
                 {service.label}
               </span>
             </Link>

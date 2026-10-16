@@ -106,7 +106,7 @@ export const LEGACY_IMAGES = {
   ),
   privateSchoolPromo: img(
     "/images/legacy/private-school-application-small.png",
-    "Private school admissions consulting",
+    "Private school destinations including Phillips Exeter, Groton, Harvard-Westlake, Punahou, Brentwood, Buckingham Browne & Nichols, Lakeside, Westminster, and Hotchkiss",
   ),
   intlHomeIcon: img(
     "/images/legacy/homeicon3-4-300x300.png",
@@ -275,7 +275,7 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
   },
   "nurse-practitioner-admissions": {
     featuredStrip: LEGACY_IMAGES.sosFeaturedIn,
-    clientStrip: LEGACY_IMAGES.schoolClients,
+    clientStrip: LEGACY_IMAGES.sosClients,
     extraVideos: [
       { id: "hIow44Vl5d0", title: "Nurse Practitioner Admissions Consulting" },
     ],
@@ -341,6 +341,7 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
     ],
   },
   "private-school-k12": {
+    clientStrip: LEGACY_IMAGES.privateSchoolPromo,
     galleryTitle: "Legacy Private School Assets",
     gallery: [
       LEGACY_IMAGES.newsGraphic,
@@ -352,6 +353,7 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
     ],
   },
   "veterinary-school-admissions": {
+    clientStrip: LEGACY_IMAGES.veterinaryClients,
     galleryTitle: "Legacy Veterinary School Assets",
     gallery: [LEGACY_IMAGES.newsGraphic, LEGACY_IMAGES.veterinaryClients],
     extraVideos: [

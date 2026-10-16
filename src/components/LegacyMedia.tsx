@@ -6,13 +6,14 @@ import type { LegacyAssetImage, LegacyVideo } from "@/lib/legacyAssets";
 function YouTubeFacade({
   videoId,
   title,
-  thumbnail = "hqdefault",
+  thumbnail = "maxresdefault",
 }: {
   videoId: string;
   title: string;
   thumbnail?: "hqdefault" | "maxresdefault";
 }) {
   const [loaded, setLoaded] = useState(false);
+  const [thumbnailQuality, setThumbnailQuality] = useState(thumbnail);
 
   if (loaded) {
     return (
@@ -22,7 +23,7 @@ function YouTubeFacade({
         referrerPolicy="strict-origin-when-cross-origin"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="block aspect-video w-full min-h-[200px]"
+        className="block aspect-video w-full"
       />
     );
   }
@@ -35,7 +36,13 @@ function YouTubeFacade({
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`https://i.ytimg.com/vi/${videoId}/${thumbnail}.jpg`}
+        src={`https://i.ytimg.com/vi/${videoId}/${thumbnailQuality}.jpg`}
+        onLoad={(event) => {
+          if (event.currentTarget.naturalWidth <= 120 && thumbnailQuality === "maxresdefault") setThumbnailQuality("hqdefault");
+        }}
+        onError={() => {
+          if (thumbnailQuality === "maxresdefault") setThumbnailQuality("hqdefault");
+        }}
         alt={title}
         className="h-full w-full object-cover"
         loading="eager"
@@ -85,7 +92,7 @@ export function LegacyYouTubeCard({
 export function LegacyStripSection({
   featuredStrip,
   clientStrip,
-  featuredLabel = "As Featured In",
+  featuredLabel = "Our Experts Have Been Featured In",
   clientLabel = "Past Clients Have Successfully Gotten Into",
 }: {
   featuredStrip?: LegacyAssetImage;
@@ -109,7 +116,7 @@ export function LegacyStripSection({
             <img
               src={featuredStrip.src}
               alt={featuredStrip.alt}
-              className="mx-auto h-auto w-full max-w-5xl"
+              className="mx-auto h-auto w-auto max-w-full"
               loading="lazy"
             />
           </div>
@@ -123,7 +130,7 @@ export function LegacyStripSection({
             <img
               src={clientStrip.src}
               alt={clientStrip.alt}
-              className="mx-auto h-auto w-full max-w-5xl"
+              className="mx-auto h-auto w-auto max-w-full"
               loading="lazy"
             />
           </div>

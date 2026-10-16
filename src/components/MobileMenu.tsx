@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, ChevronDown, Phone } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const mobileNavItems = [
   { label: "Home", href: "/" },
@@ -70,19 +71,9 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     >
       {/* Header */}
       <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between">
-        <div className="flex flex-col">
-          <div className="flex items-center gap-1.5">
-            <span className="text-xl font-extrabold text-[#B94224] tracking-tight">
-              SOS
-            </span>
-            <span className="text-xl font-medium text-navy">
-              Admissions
-            </span>
-          </div>
-          <span className="text-[10px] text-[#6C757D] tracking-wide mt-[-1px]">
-            Get Into Your Dream School
-          </span>
-        </div>
+        <Link href="/" onClick={onClose} aria-label="SOS Admissions home" className="min-w-0 mr-4">
+          <Image src="/images/legacy/sosheader.webp" alt="SOS Admissions" width={473} height={85} className="h-auto w-52 max-w-full object-contain" />
+        </Link>
         <button
           onClick={onClose}
           className="p-2 hover:bg-gray-100 rounded-lg transition-colors text-[#495057]"

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getServiceBySlug } from "@/data/services";
 import { faqItems } from "@/data/faqs";
 import { LegacyYouTubeCard } from "./LegacyMedia";
+import { ClientSchools } from "./ClientSchools";
 import { TrustBar } from "./TrustLogos";
 import { getLegacyServiceAssets } from "@/lib/legacyAssets";
 import { SourcePricing, sourceData } from "./SourcePricing";
@@ -29,8 +30,8 @@ export default function ServicePageTemplate({
       : service.sourceSlug;
   const source = sourceData[sourceSlug];
   const title = interviewTitles[sourceSlug] || service.heroStatement;
-  const videos =
-    getLegacyServiceAssets(legacyVariant ?? slug).extraVideos ?? [];
+  const assets = getLegacyServiceAssets(legacyVariant ?? slug);
+  const videos = assets.extraVideos ?? [];
   const features = source?.features.length ? source.features : service.features;
   const schema = {
     "@context": "https://schema.org",
@@ -43,14 +44,18 @@ export default function ServicePageTemplate({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
-      <section className="bg-white border-b border-slate-200 px-4 py-9 md:py-12 text-center text-navy">
+      <section className="sos-hero bg-white border-b border-slate-200 px-4 py-9 md:py-12 text-center text-navy">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold leading-tight mb-4 [text-wrap:balance]">
             {title}
           </h1>
-          <p className="text-base md:text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed mb-6">
-            {source?.intro || service.longDescription}
-          </p>
+          {videos.length > 0 && (
+            <div className="space-y-4 mb-5" data-service-videos>
+              {videos.map((v) => (
+                <LegacyYouTubeCard key={v.id} video={v} className="mx-auto" />
+              ))}
+            </div>
+          )}
           <Link
             href="/contact-us/"
             className="inline-flex rounded-full bg-[#C94D2B] text-white px-6 py-3 font-semibold"
@@ -63,24 +68,25 @@ export default function ServicePageTemplate({
               310-951-4008
             </a>
           </p>
-          <div className="space-y-4 mt-6">
-            {videos.map((v) => (
-              <LegacyYouTubeCard key={v.id} video={v} className="mx-auto" />
-            ))}
-          </div>
+          <p className="text-base md:text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed mt-5">
+            {source?.intro || service.longDescription}
+          </p>
         </div>
       </section>
       <TrustBar />
+      {assets.clientStrip && (
+        <ClientSchools image={assets.clientStrip} label={assets.clientLabel || `${title} Clients Have Gone To:`} />
+      )}
       <section className="py-9 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-navy text-center mb-6">
+          <h2 className="sos-heading text-3xl font-bold text-navy text-center mb-6">
             How We Can Help
           </h2>
           <ul className="grid sm:grid-cols-4 gap-3">
             {features.map((f, i) => (
               <li
                 key={i}
-                className={`rounded-xl border border-slate-200 bg-white p-4 text-charcoal sm:col-span-2 ${
+                className={`sos-card rounded-xl border border-slate-200 bg-white p-5 text-charcoal sm:col-span-2 ${
                   features.length % 2 === 1 && i === features.length - 1
                     ? "sm:col-start-2"
                     : ""
@@ -91,7 +97,7 @@ export default function ServicePageTemplate({
             ))}
           </ul>
           {sourceSlug === "law-school-application" && (
-            <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
+            <div className="sos-panel mt-6 rounded-xl border border-slate-200 bg-white p-5">
               <h2 className="text-xl font-bold mb-3">Law School Transfers</h2>
               <p>
                 We also help current law students transfer to a new law school.
@@ -119,7 +125,7 @@ export default function ServicePageTemplate({
       <TestimonialsSection program={sourceSlug} />
       <section className="py-9 px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl text-navy font-bold text-center mb-6">
+          <h2 className="sos-heading text-3xl text-navy font-bold text-center mb-6">
             Frequently Asked Questions
           </h2>
           {faqItems.map((f) => (

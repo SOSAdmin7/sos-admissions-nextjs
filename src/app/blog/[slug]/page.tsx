@@ -126,12 +126,12 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Featured Image */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
-        <div className="aspect-[2/1] rounded-xl overflow-hidden shadow-lg">
+        <div className="rounded-xl overflow-hidden bg-steel-mist shadow-lg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={post.image}
             alt={post.title}
-            className="w-full h-full object-cover"
+            className="mx-auto h-auto w-auto max-w-full max-h-[420px] object-contain"
           />
         </div>
       </div>

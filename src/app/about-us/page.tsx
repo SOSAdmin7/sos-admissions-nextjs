@@ -95,7 +95,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
+      <section className="sos-hero relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-navy">
             About SOS Admissions
@@ -147,12 +147,13 @@ export default function AboutPage() {
             Our head admissions consultant discussing college admissions on
             CNN&apos;s Smerconish.
           </p>
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+          <div className="mx-auto max-w-[763px] rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image
               src="/images/legacy/sos-latest-appearance-on-cnn.webp"
               alt="SOS Admissions head consultant Vijay Jojo Chokal-Ingam appearing on CNN"
               width={763}
               height={420}
+              unoptimized
               className="w-full h-auto"
             />
           </div>
@@ -162,7 +163,7 @@ export default function AboutPage() {
       {/* Mission Section */}
       <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12">
+          <div className="sos-panel bg-white rounded-lg shadow-lg p-8 sm:p-12">
             <h2 className="text-3xl font-bold mb-6 text-navy">Our Mission</h2>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed border-l-4 border-gold pl-6">
               To provide personalized, expert guidance that transforms
@@ -180,14 +181,14 @@ export default function AboutPage() {
           </h2>
 
           {/* Team Photo */}
-          <div className="mb-10 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+          <div className="mx-auto max-w-[785px] mb-10 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image
-              src="/images/team/team-photo.jpg"
+              src="/images/legacy/sosresumeservice.webp"
               alt="The SOS Admissions team of expert admissions consultants"
               width={785}
-              height={497}
+              height={492}
               className="w-full h-auto"
-              priority
+              unoptimized
             />
           </div>
 
@@ -206,16 +207,16 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className="w-full min-w-0 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
+                className="sos-card w-full min-w-0 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
               >
                 <div className="flex flex-col items-center gap-4 text-center">
-                  <div className="relative w-24 h-24 sm:w-28 sm:h-28 overflow-hidden rounded-2xl bg-white border border-slate-200 flex-shrink-0">
+                  <div className="relative w-24 h-28 sm:w-28 sm:h-[130px] overflow-hidden rounded-2xl bg-white border border-slate-200 flex-shrink-0">
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
                       sizes="112px"
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
                   <div>
@@ -248,7 +249,7 @@ export default function AboutPage() {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
+                  className="sos-card bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="flex items-start">
                     <Icon className="w-8 h-8 text-gold mr-4 flex-shrink-0 mt-1" />

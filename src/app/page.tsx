@@ -1,9 +1,11 @@
 import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { Hero } from "@/components/Hero";
-import { TrustBar, SchoolLogos } from "@/components/TrustLogos";
+import { TrustBar } from "@/components/TrustLogos";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import dynamic from "next/dynamic";
+import { ClientSchools } from "@/components/ClientSchools";
+import { LEGACY_IMAGES } from "@/lib/legacyAssets";
 
 // Preserve the WordPress title and canonical; keep the reviewed, date-independent description.
 export const metadata: Metadata = pageMetadata({
@@ -52,7 +54,7 @@ export default function HomePage() {
     <>
       <Hero />
       <TrustBar />
-      <SchoolLogos variant="college" />
+      <ClientSchools image={LEGACY_IMAGES.collegeClients} label="College and Graduate School Application Clients Have Gone To:" />
       <ServicesGrid />
       <WhyChooseUs />
       <ProcessSection />

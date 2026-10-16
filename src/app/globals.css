@@ -31,6 +31,42 @@ html {
   overflow-x: hidden;
 }
 
+/* Shared accents keep reading surfaces light while giving sections definition. */
+.sos-hero {
+  background-image: radial-gradient(ellipse at 0% 0%, #edf3f6 0, transparent 48%),
+    radial-gradient(ellipse at 100% 0%, #faf8f4 0, transparent 42%);
+  border-top: 3px solid #2f536e;
+}
+
+.sos-heading::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin: .8rem auto 0;
+  border-radius: 999px;
+  background: #d4a843;
+}
+
+.sos-card {
+  border-top: 3px solid #3d657f;
+  background-image: linear-gradient(140deg, #f3f7f9, #fff 65%);
+  box-shadow: 0 4px 18px rgb(25 55 74 / 5%);
+}
+
+.sos-panel {
+  border-left: 4px solid #3d657f;
+  background: #f3f7f9;
+}
+
+.sos-pricing {
+  border-top: 3px solid #3d657f;
+  box-shadow: 0 4px 18px rgb(25 55 74 / 5%);
+}
+
+.sos-pricing h3 { background: #edf3f6; }
+.sos-pricing tbody tr:nth-child(even) { background: #f6f9fb; }
+
 /* Animation keyframes */
 @keyframes fadeInUp {
   from {

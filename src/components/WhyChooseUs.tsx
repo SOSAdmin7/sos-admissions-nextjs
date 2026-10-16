@@ -47,7 +47,7 @@ export function WhyChooseUs() {
             return (
               <div
                 key={i}
-                className="flex gap-5 p-6 md:p-8 bg-white rounded-xl border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 animate-[fadeInUp_0.5s_ease-out_both]"
+                className="sos-card flex gap-5 p-6 md:p-8 bg-white rounded-xl border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 animate-[fadeInUp_0.5s_ease-out_both]"
                 style={{ animationDelay: `${0.1 + i * 0.1}s` }}
               >
                 <div className="flex-shrink-0">

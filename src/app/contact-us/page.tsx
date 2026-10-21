@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
+import { OfficeLocation } from "@/components/OfficeLocation";
 
 export const metadata: Metadata = pageMetadata({
   title: {
@@ -37,6 +38,7 @@ export default function ContactPage() {
       </section>
 
       <ContactForm />
+      <OfficeLocation />
     </>
   );
 }

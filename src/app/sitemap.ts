@@ -5,6 +5,10 @@ import { blogPosts } from "@/data/blog-posts";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://sosadmissions.com";
 
+  const updatedPages = new Set(["", "about-us", "academic-crisis-consulting", "bs-md-admissions-consulting", "college-admissions", "college-interviews", "college-transfers", "computer-science-admissions-consultant", "contact-us", "crna-admissions", "dental-school-application", "general-nursing", "graduate-school-application", "graduate-school-interview", "international-students", "law-school-application", "letters-of-recommendation", "mba", "mba-interview", "medical-residency", "medical-residency-interview", "medical-school-admissions-consulting", "medical-school-application", "medical-school-interview", "np-admissions", "pa-school-admissions-consulting", "personal-statement", "phd-application-consulting", "private-school-admissions", "psychology-counseling-admissions", "sat-act-preparation", "veterinary-school-admissions"]);
+  const pageModified = (url: string) =>
+    new Date(updatedPages.has(new URL(url).pathname.replace(/^\/+|\/+$/g, "")) ? "2026-10-20" : "2026-10-01");
+
   // Core pages (same URL set as the old WordPress sitemap)
   const corePages = [
     ...["china", "chinese-faq", "contactchinese"].map((path) => ({
@@ -64,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.4,
     },
-  ].map((p) => ({ ...p, lastModified: new Date("2026-10-01") }));
+  ].map((p) => ({ ...p, lastModified: pageModified(p.url) }));
 
   // Service pages — old-site URLs preserved exactly
   const servicePages = [
@@ -102,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "speech-language-pathology-slp-admissions-consultant",
   ].map((slug) => ({
     url: `${baseUrl}/${slug}/`,
-    lastModified: new Date("2026-10-01"),
+    lastModified: pageModified(`${baseUrl}/${slug}/`),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));

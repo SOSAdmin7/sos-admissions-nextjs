@@ -8,6 +8,7 @@ import { TrustBar } from "./TrustLogos";
 import { getLegacyServiceAssets } from "@/lib/legacyAssets";
 import { SourcePricing, sourceData } from "./SourcePricing";
 import { TestimonialsSection } from "./TestimonialsSection";
+import { PageDetails } from "./PageDetails";
 const interviewTitles: Record<string, string> = {
   "college-interviews": "College Interview Coaching",
   "graduate-school-interview": "Graduate School Interview Coaching",
@@ -123,6 +124,7 @@ export default function ServicePageTemplate({
       </section>
       <SourcePricing slug={sourceSlug} />
       <TestimonialsSection program={sourceSlug} />
+      <PageDetails slug={sourceSlug} />
       <section className="py-9 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="sos-heading text-3xl text-navy font-bold text-center mb-6">

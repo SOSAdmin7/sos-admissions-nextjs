@@ -2,6 +2,7 @@ import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { OfficeLocation } from "@/components/OfficeLocation";
 import { Award, Users, Zap, Target, CheckCircle2 } from "lucide-react";
 
 // Export metadata for SEO
@@ -55,7 +56,7 @@ export default function AboutPage() {
       name: "Peter Glasser",
       title: "Senior Manager of MBA Admissions Consultants",
       image: "/images/team/peter-glasser.png",
-      bio: "Peter specializes in MBA and business school admissions consulting. He previously served as an alumni interviewer for Harvard admissions and later worked as an executive recruiter, giving him a strong perspective on both academic selection and professional positioning.",
+      bio: "Peter specializes in MBA and business school admissions consulting. He previously served as an alumni interviewer for Harvard admissions and later worked as an executive recruiter. Peter earned his college degree from Harvard and his MBA from UCLA Anderson School of Management.",
     },
   ];
 
@@ -95,7 +96,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="sos-hero relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
+      <section className="sos-hero relative py-6 md:py-8 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-navy">
             About SOS Admissions
@@ -108,7 +109,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-navy">
             Our Story
@@ -138,7 +139,7 @@ export default function AboutPage() {
       </section>
 
       {/* CNN Appearance */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-navy">
             Our Latest Appearance on CNN
@@ -161,9 +162,9 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="sos-panel bg-white rounded-lg shadow-lg p-8 sm:p-12">
+          <div className="sos-panel bg-white rounded-lg shadow-lg p-5 sm:p-6">
             <h2 className="text-3xl font-bold mb-6 text-navy">Our Mission</h2>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed border-l-4 border-gold pl-6">
               To provide personalized, expert guidance that transforms
@@ -174,14 +175,14 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-navy">
             Our Expert Team
           </h2>
 
           {/* Team Photo */}
-          <div className="mx-auto max-w-[785px] mb-10 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+          <div className="mx-auto max-w-[785px] mb-6 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image
               src="/images/legacy/sosresumeservice.webp"
               alt="The SOS Admissions team of expert admissions consultants"
@@ -201,7 +202,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="pb-12 md:pb-18 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="pb-6 md:pb-9 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {teamMembers.map((member) => (
@@ -238,9 +239,9 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-navy">
+          <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-6 text-center text-navy">
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -268,7 +269,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-y border-slate-200">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white border-y border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
@@ -287,9 +288,9 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us - Highlights */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-navy">
+          <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-6 text-navy">
             Why Choose SOS Admissions?
           </h2>
           <div className="space-y-4">
@@ -315,8 +316,10 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <OfficeLocation />
+
       {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-200">
+      <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
             Ready to Get Started?

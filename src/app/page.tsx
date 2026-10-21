@@ -6,6 +6,7 @@ import { ServicesGrid } from "@/components/ServicesGrid";
 import dynamic from "next/dynamic";
 import { ClientSchools } from "@/components/ClientSchools";
 import { LEGACY_IMAGES } from "@/lib/legacyAssets";
+import { PageDetails } from "@/components/PageDetails";
 
 // Preserve the WordPress title and canonical; keep the reviewed, date-independent description.
 export const metadata: Metadata = pageMetadata({
@@ -59,6 +60,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <ProcessSection />
       <TestimonialsSection />
+      <PageDetails slug="home" />
       <CTASection />
     </>
   );

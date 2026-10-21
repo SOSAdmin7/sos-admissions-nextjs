@@ -35,7 +35,7 @@ export function SourcePricing({ slug }: { slug: string }) {
           <a className="underline" href="tel:+13109514008">
             310-951-4008
           </a>{" "}
-          to confirm the scope and price for your needs before ordering.
+          for help choosing a service or questions about your payment.
         </p>
       </section>
     );
@@ -123,8 +123,8 @@ export function SourcePricing({ slug }: { slug: string }) {
               : "SOS Admissions Order Form"}
           </Link>
           <p className="text-sm text-slate-600 mt-3">
-            For prior-payment credits or help choosing a service, call
-            310-951-4008 before ordering.
+            For help choosing a service, call{" "}
+            <a href="tel:+13109514008" className="underline">310-951-4008</a>.
           </p>
         </div>
       </div>

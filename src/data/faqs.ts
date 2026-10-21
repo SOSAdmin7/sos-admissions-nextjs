@@ -23,7 +23,7 @@ export const faqItems = [
   {
     question: "How much do your services cost?",
     answer:
-      "Prices depend on the program and service. See the pricing section on the relevant program page. Before ordering, call 310-951-4008 if you need help selecting a service or applying credit for a previous purchase.",
+      "Prices depend on the program and service. See the pricing section on the relevant program page. For help choosing a service or questions about your payment, call 310-951-4008.",
   },
   {
     question: "How do I get started?",

@@ -180,12 +180,6 @@ export default async function BlogPostPage({ params }: Props) {
                 >
                   Free Initial Consultation
                 </Link>
-                <a
-                  href="tel:310-951-4008"
-                  className="block text-center text-sm text-slate-700 hover:text-navy transition mt-3"
-                >
-                  Or call: 310-951-4008
-                </a>
               </div>
             </div>
           </div>

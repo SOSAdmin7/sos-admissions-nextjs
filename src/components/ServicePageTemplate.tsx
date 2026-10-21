@@ -9,6 +9,7 @@ import { getLegacyServiceAssets } from "@/lib/legacyAssets";
 import { SourcePricing, sourceData } from "./SourcePricing";
 import { TestimonialsSection } from "./TestimonialsSection";
 import { PageDetails } from "./PageDetails";
+import { RelatedServices } from "./RelatedServices";
 const interviewTitles: Record<string, string> = {
   "college-interviews": "College Interview Coaching",
   "graduate-school-interview": "Graduate School Interview Coaching",
@@ -63,12 +64,6 @@ export default function ServicePageTemplate({
           >
             Schedule a Free Initial Consultation
           </Link>
-          <p className="mt-4 text-sm">
-            or call{" "}
-            <a href="tel:+13109514008" className="underline">
-              310-951-4008
-            </a>
-          </p>
           <p className="text-base md:text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed mt-5">
             {source?.intro || service.longDescription}
           </p>
@@ -78,6 +73,7 @@ export default function ServicePageTemplate({
       {assets.clientStrip && (
         <ClientSchools image={assets.clientStrip} label={assets.clientLabel || `${title} Clients Have Gone To:`} />
       )}
+      <RelatedServices slug={sourceSlug} />
       <section className="py-9 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="sos-heading text-3xl font-bold text-navy text-center mb-6">
@@ -144,10 +140,9 @@ export default function ServicePageTemplate({
         </div>
       </section>
       <section className="bg-white border-t border-slate-200 text-navy text-center px-4 py-10">
-        <h2 className="text-3xl font-bold mb-4">Plan Your Next Step</h2>
-        <p className="mb-5">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-5 max-w-3xl mx-auto [text-wrap:balance]">
           Discuss your goals with an admissions consultant.
-        </p>
+        </h2>
         <Link
           href="/contact-us/"
           className="inline-flex bg-[#C94D2B] hover:bg-[#B94224] text-white rounded-full px-6 py-3 font-semibold"

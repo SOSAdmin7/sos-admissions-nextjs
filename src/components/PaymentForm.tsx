@@ -25,9 +25,9 @@ export function PaymentForm() {
           </div>
         </fieldset>
         <p className="text-slate-600 mb-5">
-          Review the services and total before paying. Call 310-951-4008 first if
-          you have a previous purchase to credit, need additional schools, or
-          want help choosing the right service.
+          Review your selected services and total. Call{" "}
+          <a className="underline" href="tel:+13109514008">310-951-4008</a>{" "}
+          if you have any questions about your payment or need help choosing a service.
         </p>
         {/* Load each form when first shown, then keep it mounted to preserve entered details. */}
         <div hidden={program !== "college"} className="rounded-xl border border-slate-200 bg-white p-1 sm:p-4">

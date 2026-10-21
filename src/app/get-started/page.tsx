@@ -23,8 +23,8 @@ export default function GetStartedPage() {
             SOS Admissions Ordering Form
           </h1>
           <p className="text-lg text-slate-700 max-w-2xl mx-auto">
-            Start by sharing your contact details in our ordering form. Call us
-            before ordering if you need help selecting a service.
+            Start by sharing your contact details in our ordering form. For help
+            choosing a service, call <a className="underline" href="tel:+13109514008">310-951-4008</a>.
           </p>
         </div>
       </section>

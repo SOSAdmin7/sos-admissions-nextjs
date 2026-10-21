@@ -302,7 +302,7 @@ export default function AboutPage() {
               "Support across college and graduate admissions",
               "Personalized, one-on-one attention for every student",
               "Comprehensive services across college, graduate, and professional programs",
-              "Review service scope and pricing before ordering",
+              "Explore service options and pricing",
               "Available via video, phone, email, and in-person in Beverly Hills",
             ].map((item, index) => (
               <div key={index} className="flex items-start">

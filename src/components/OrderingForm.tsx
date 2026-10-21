@@ -9,8 +9,7 @@ export function OrderingForm() {
         <p className="text-slate-600 leading-relaxed">
           Begin with your name and contact details in the SOS Admissions Ordering
           Form, then follow its steps to review the available purchase options.
-          Please call before ordering if you need help selecting a service or
-          applying credit from a previous purchase.
+          Call us if you have any questions about your payment.
         </p>
         <div className="mt-4 rounded-lg bg-white sm:p-2">
           <EmbeddedForm url={ORDERING_FORM} title="SOS Admissions Ordering Form" hideHeader />

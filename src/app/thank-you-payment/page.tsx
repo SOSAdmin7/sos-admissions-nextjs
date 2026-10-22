@@ -2,6 +2,8 @@ import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: { absolute: "Order Next Steps | SOS Admissions" },
+  description: "Review the next steps after placing an SOS Admissions order, keep your confirmation and payment receipt, and access your free interview guide.",
+  alternates: { canonical: "https://sosadmissions.com/thank-you-payment/" },
   robots: { index: false, follow: false },
 });
 export default function Page() {

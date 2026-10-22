@@ -8,6 +8,7 @@ export const metadata: Metadata = pageMetadata({
   title: { absolute: "Get Started - SOS Admissions Ordering Form" },
   description:
     "Start your SOS Admissions order by sharing your name and contact details, then review the available purchase options in our ordering form.",
+  alternates: { canonical: "https://sosadmissions.com/get-started/" },
   robots: { index: false, follow: true },
 });
 

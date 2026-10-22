@@ -22,6 +22,13 @@ const siteSchema = {
       url: "https://sosadmissions.com/",
       telephone: "+1-310-951-4008",
       logo: socialAssetUrl("/images/brand/sos-logo.png"),
+      sameAs: [
+        "https://www.facebook.com/sosadmissions/",
+        "https://x.com/SOSAdmissions",
+        "https://www.linkedin.com/company-beta/18161539/",
+        "https://www.pinterest.com/sosinternationaladmissions/",
+        "https://www.youtube.com/channel/UCK2J4TknPx-nQL8Ne2VuTJQ",
+      ],
     },
     {
       "@type": "WebSite",
@@ -91,6 +98,7 @@ export default function RootLayout({
     <html lang="en" className={`h-full ${inter.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta property="article:publisher" content="https://www.facebook.com/sosadmissions/" />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, "\\u003c") }} />

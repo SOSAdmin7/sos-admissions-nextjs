@@ -18,6 +18,7 @@ export function pageMetadata(metadata: Metadata): Metadata {
     ...metadata,
     openGraph: {
       type: "website",
+      locale: "en_US",
       siteName: "SOS Admissions",
       title,
       description,

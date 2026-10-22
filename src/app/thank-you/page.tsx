@@ -2,6 +2,8 @@ import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: { absolute: "Thank You | SOS Admissions" },
+  description: "Next steps after contacting SOS Admissions. Keep your form confirmation and call 310-951-4008 if you need help confirming your consultation request.",
+  alternates: { canonical: "https://sosadmissions.com/thank-you/" },
   robots: { index: false, follow: false },
 });
 export default function Page() {

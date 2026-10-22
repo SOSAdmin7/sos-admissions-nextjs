@@ -36,6 +36,10 @@ const nextConfig: NextConfig = {
       // Reversing their earlier root -> /blog/ permanent redirects could loop
       // for returning browsers that cached those old redirects.
       ...Object.entries(blogAliases).map(([oldSlug, newSlug]) => ({ source: `/blog/${oldSlug}`, destination: blogPath(newSlug), permanent: true })),
+      // The new blog index replaces WordPress pagination. WordPress already
+      // redirects disabled author archives to the homepage.
+      { source: "/blog/page/:page(\\d+)", destination: "/blog/", permanent: true },
+      { source: "/author/:author", destination: "/", permanent: true },
       // Old WordPress backup/duplicate pages → homepage
       { source: "/:path*-old", destination: "/", permanent: true },
       {

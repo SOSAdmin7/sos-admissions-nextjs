@@ -2,6 +2,9 @@ import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: { absolute: "感谢联系SOS留学" },
+  description: "感谢联系SOS留学。提交咨询后请保留表格确认信息。如需确认提交情况或获得帮助，请致电310-951-4008。",
+  alternates: { canonical: "https://sosadmissions.com/chinese-thankyou/" },
+  openGraph: { locale: "zh_CN" },
   robots: { index: false, follow: false },
 });
 export default function Page() {

@@ -23,9 +23,15 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react"],
   },
 
-  // Force www and HTTPS (matching old .htaccess behavior)
+  // Preserve legacy WordPress entry points. Vercel redirects www to the apex.
   async redirects() {
     return [
+      // Retain URLs that may already be submitted in Search Console.
+      ...["/sitemap_index.xml", "/wp-sitemap.xml", "/post-sitemap.xml", "/page-sitemap.xml"].map((source) => ({
+        source,
+        destination: "/sitemap.xml",
+        permanent: true,
+      })),
       {
         source: "/wp-content/uploads/2026/05/The-Definitive-Guide-to-Ace-Your-Interview-and-Get-the-Job-3-15-13.pdf",
         destination: "/documents/interview-guide.pdf",

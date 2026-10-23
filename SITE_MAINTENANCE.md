@@ -72,3 +72,9 @@ The October 5 reviewer fixes complete truncated service introductions, repair te
 - The content comparison covered 95 current WordPress pages and 197 posts. Useful material was restored to 28 page destinations and five existing guides. Existing article consolidation, corrected requirements, source-specific pricing warnings and removal of unsupported outcomes/rates remain in place. Copied psychology text from the WordPress SLP page was not imported.
 - Contact and About share `OfficeLocation`: the original 580×310 reception photo, department mailing addresses/suites, original Google map destination, office hours, and appointment-only wording. The map identifies the mailing address; visitors are told to confirm their meeting location.
 - This release remains on the existing Vercel preview address. It does not alter WordPress, DNS, Wufoo merchant settings, or resolve previously documented Wufoo/theme/receipt and physical-device launch checks.
+
+## Main-domain launch preparation, October 22, 2026
+
+The owner authorized the switch to Vercel. `CONTACT_FORM` now omits the earlier preview-only `field18=sos-next-preview` marker from both embeds and fallback links. Contact submissions therefore use Wufoo's existing default production confirmation destination. The historical preview rule in Wufoo is unchanged and is no longer selected by this site. A page visit or an unsubmitted form check does not verify receipt, notification delivery, or a conversion.
+
+The old WordPress sitemap entry points (`/sitemap_index.xml`, `/wp-sitemap.xml`, `/post-sitemap.xml`, and `/page-sitemap.xml`) permanently redirect to `/sitemap.xml`, preserving existing search-engine submissions. Main-domain DNS and TLS verification are separate deployment checks; this source change alone does not establish that the domain has switched.

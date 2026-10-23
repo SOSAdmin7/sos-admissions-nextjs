@@ -1,9 +1,8 @@
 // Existing SOS forms used by the production WordPress site. No credentials.
-// Wufoo Field18 is the optional hidden Website Source field on form89.
-// Its preview-only rule keeps new-site confirmations on the Vercel review site.
-// Revisit the rule and this marker when moving the new site to the main domain.
+// Use Wufoo's existing production confirmation destination on the main domain.
+// Do not send the old preview-only Field18 marker after the domain cutover.
 export const CONTACT_FORM =
-  "https://lasernailtherapy.wufoo.com/forms/xtn0e7d05hti4y/?field18=sos-next-preview";
+  "https://lasernailtherapy.wufoo.com/forms/xtn0e7d05hti4y/";
 export const COLLEGE_PAYMENT_FORM =
   "https://lasernailtherapy.wufoo.com/forms/sos-admissions-college-and-transfer-payment/";
 export const PROFESSIONAL_PAYMENT_FORM =

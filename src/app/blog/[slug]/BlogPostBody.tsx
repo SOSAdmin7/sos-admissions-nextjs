@@ -1,8 +1,10 @@
 "use client";
 
+import { PhoneHtml } from "@/components/PhoneHtml";
+
 export function BlogPostBody({ html }: { html: string }) {
   return (
-    <div
+    <PhoneHtml
       className="prose prose-lg max-w-none
         prose-headings:text-navy prose-headings:font-bold
         prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
@@ -15,7 +17,7 @@ export function BlogPostBody({ html }: { html: string }) {
         prose-img:rounded-lg prose-img:shadow-md
         prose-blockquote:border-l-[#E8613C] prose-blockquote:bg-white prose-blockquote:rounded-r-lg prose-blockquote:py-2 prose-blockquote:px-4
       "
-      dangerouslySetInnerHTML={{ __html: html }}
+      html={html}
     />
   );
 }

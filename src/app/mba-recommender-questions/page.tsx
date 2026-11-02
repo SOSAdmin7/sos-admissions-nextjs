@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -142,13 +143,13 @@ export default function MbaRecommenderQuestionsPage() {
               Schedule a Free Initial Consultation
               <ChevronRight className="ml-1 h-4 w-4" />
             </Link>
-            <a
+            <PhoneLink
               href="tel:3109514008"
               className="inline-flex items-center justify-center rounded-md border border-navy px-5 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
             >
               <Phone className="mr-2 h-4 w-4" />
               310-951-4008
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>
@@ -526,13 +527,13 @@ export default function MbaRecommenderQuestionsPage() {
               Talk through your MBA candidacy, your recommenders, and your
               school list.
             </p>
-            <a
+            <PhoneLink
               href="tel:3109514008"
               className="mt-5 flex items-center justify-center rounded-md bg-navy-light px-4 py-3 text-base font-bold text-white transition hover:bg-navy-deep"
             >
               <Phone className="mr-2 h-5 w-5" />
               310-951-4008
-            </a>
+            </PhoneLink>
             <Link
               href="/contact-us/"
               className="mt-3 flex items-center justify-center rounded-md border border-navy px-4 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"

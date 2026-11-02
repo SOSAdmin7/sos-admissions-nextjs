@@ -1,3 +1,4 @@
+import { PhoneText } from "@/components/PhoneLink";
 import restoredContent from "@/data/restored-page-content.json";
 
 type DetailSection = {
@@ -20,11 +21,11 @@ export function PageDetails({ slug }: { slug: string }) {
             </h2>
             <div className="space-y-3 text-slate-700 leading-relaxed">
               {section.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+                <p key={paragraph}><PhoneText>{paragraph}</PhoneText></p>
               ))}
               {section.items && (
                 <ol className="list-decimal pl-6 space-y-2">
-                  {section.items.map((item) => <li key={item}>{item}</li>)}
+                  {section.items.map((item) => <li key={item}><PhoneText>{item}</PhoneText></li>)}
                 </ol>
               )}
             </div>

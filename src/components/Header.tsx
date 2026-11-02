@@ -1,5 +1,7 @@
 "use client";
 
+import { PhoneLink } from "@/components/PhoneLink";
+
 import { useState, useEffect, useRef } from "react";
 import { Menu, ChevronDown, Phone } from "lucide-react";
 import Link from "next/link";
@@ -149,13 +151,13 @@ export default function Header() {
 
             {/* Desktop CTA + Phone */}
             <div className="hidden xl:flex items-center gap-5">
-              <a
+              <PhoneLink
                 href="tel:+13109514008"
                 className="flex items-center gap-1.5 text-sm text-navy font-medium hover:text-[#B94224] transition-colors"
               >
                 <Phone size={14} />
                 (310) 951-4008
-              </a>
+              </PhoneLink>
               <Link
                 href="/get-started"
                 className="px-6 py-2.5 bg-[#C94D2B] text-white font-semibold rounded-full hover:bg-[#B94224] transition-colors shadow-sm text-sm"
@@ -166,13 +168,13 @@ export default function Header() {
 
             {/* Mobile Phone + Menu */}
             <div className="xl:hidden flex items-center gap-1 flex-shrink-0">
-              <a
+              <PhoneLink
                 href="tel:+13109514008"
                 className="flex items-center gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-navy hover:text-[#B94224] transition-colors px-3 py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
               >
                 <Phone size={15} className="flex-shrink-0" />
                 (310) 951-4008
-              </a>
+              </PhoneLink>
               <button
                 ref={menuButtonRef}
                 onClick={() => setIsMobileMenuOpen(true)}

@@ -1,29 +1,37 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { setForwardingNumber } from "@/lib/phone-forwarding";
 
 const GTM_ID = "GTM-K86JCR92";
 const GOOGLE_ADS_ID = "AW-824664390";
 
+type TrackingWindow = Window & {
+  dataLayer: unknown[];
+  gtag: (...args: unknown[]) => void;
+  sosTrackingInitialized?: boolean;
+  sosLastTrackedPath?: string;
+};
+
+function isProductionHost() {
+  return ["sosadmissions.com", "www.sosadmissions.com"].includes(window.location.hostname);
+}
+
 export function GTMScript() {
+  const pathname = usePathname();
+
   useEffect(() => {
-    if (
-      !["sosadmissions.com", "www.sosadmissions.com"].includes(
-        window.location.hostname,
-      )
-    )
-      return;
-    let loaded = false;
-    const load = () => {
-      if (loaded) return;
-      loaded = true;
+    if (!isProductionHost()) return;
+    const w = window as unknown as TrackingWindow;
+    if (!w.sosTrackingInitialized) {
+      w.sosTrackingInitialized = true;
 
       // Initialize dataLayer
-      const w = window as any;
       w.dataLayer = w.dataLayer || [];
 
       // Define gtag function (needed for Google Ads conversion tracking)
-      w.gtag = function () {
+      w.gtag = w.gtag || function () {
         // Google's command queue expects the arguments object.
         // eslint-disable-next-line prefer-rest-params
         w.dataLayer.push(arguments);
@@ -31,10 +39,11 @@ export function GTMScript() {
       w.gtag("js", new Date());
       w.gtag("config", GOOGLE_ADS_ID);
 
-      // Google Ads dynamic phone number swapping (call conversion tracking)
-      // — same config as the old site
+      // One phone setup owns both the displayed number and the dial target.
+      // Google calls this only when it can supply a forwarding number.
       w.gtag("config", GOOGLE_ADS_ID + "/k2zvCLyEzpQBEMbCnYkD", {
-        phone_conversion_number: "310-951-4008",
+        phone_conversion_number: "(310) 951-4008",
+        phone_conversion_callback: setForwardingNumber,
       });
 
       // Load GTM
@@ -49,27 +58,28 @@ export function GTMScript() {
       gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`;
       gtagScript.async = true;
       document.head.appendChild(gtagScript);
-    };
+    }
 
-    // Load after user interaction or 5s timeout (performance optimization)
-    const events = ["scroll", "click", "touchstart", "keydown"];
-    const handler = () => {
-      load();
-      events.forEach((e) => window.removeEventListener(e, handler));
-    };
-    events.forEach((e) =>
-      window.addEventListener(e, handler, { once: true, passive: true }),
-    );
-    const timer = setTimeout(load, 5000);
-
-    // Set server-side attribution cookie on first visit (survives Safari ITP)
+    // Initialize immediately after hydration so an early navigation/call does
+    // not have to wait for the former interaction/five-second delay.
     setAttributionCookie();
-
-    return () => {
-      clearTimeout(timer);
-      events.forEach((e) => window.removeEventListener(e, handler));
-    };
   }, []);
+
+  useEffect(() => {
+    if (!isProductionHost() || !pathname) return;
+    const w = window as unknown as TrackingWindow;
+    const path = pathname.replace(/\/$/, "") + "/";
+    // Pathname changes cover committed client navigation and back/forward.
+    // Hash/query changes and Strict Mode effect replays do not create entries.
+    if (w.sosLastTrackedPath === path) return;
+    w.sosLastTrackedPath = path;
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({
+      event: "sos_route_view",
+      sos_route_path: path,
+      sos_route_url: window.location.href,
+    });
+  }, [pathname]);
 
   return null;
 }

@@ -1,3 +1,4 @@
+import { PhoneText } from "@/components/PhoneLink";
 import { pageMetadata } from "@/lib/page-metadata";
 import { EmbeddedForm } from "@/components/EmbeddedForm";
 import { CHINESE_CONTACT_FORM } from "@/data/forms";
@@ -18,7 +19,7 @@ export default function Page() {
       <p className="text-lg leading-relaxed mb-6">
         请填写中文联系表格，告诉我们您的申请目标。免费初次电话咨询为15分钟（Free
         Initial
-        Consultation）。也可以致电310-951-4008，或通过微信SOSAdmissions联系我们。
+        Consultation）。也可以致电<PhoneText>310-951-4008</PhoneText>，或通过微信SOSAdmissions联系我们。
       </p>
       <div className="rounded-xl border border-slate-200 bg-white p-3 sm:p-6">
         <EmbeddedForm url={CHINESE_CONTACT_FORM} title="SOS留学中文联系表格" hideHeader chinese initialHeight={800} />

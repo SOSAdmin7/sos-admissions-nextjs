@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 
@@ -100,13 +101,13 @@ export default function Footer() {
               Get In Touch
             </h3>
             <div className="space-y-4">
-              <a
+              <PhoneLink
                 href="tel:+13109514008"
                 className="flex items-center gap-3 text-white hover:text-white transition-colors"
               >
                 <Phone size={16} className="text-[#E8613C] flex-shrink-0" />
                 <span className="text-sm">(310) 951-4008</span>
-              </a>
+              </PhoneLink>
               <div className="flex items-center gap-3 text-white">
                 <MapPin size={16} className="text-[#E8613C] flex-shrink-0" />
                 <span className="text-sm">

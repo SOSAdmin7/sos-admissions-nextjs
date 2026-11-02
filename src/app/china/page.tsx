@@ -1,3 +1,4 @@
+import { PhoneLink, PhoneText } from "@/components/PhoneLink";
 import { pageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -37,7 +38,7 @@ export default function Page() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-5">SOS留学申请咨询</h1>
           <ChineseVideo />
           <Link href="/contactchinese/" className="mt-5 inline-flex rounded-full bg-[#C94D2B] text-white px-6 py-3 font-semibold">预约免费初次咨询（Free Initial Consultation）</Link>
-          <p className="mt-4"><a href="tel:+13109514008" className="underline">致电310-951-4008</a> · 微信：SOSAdmissions</p>
+          <p className="mt-4"><PhoneLink href="tel:+13109514008" className="underline">致电310-951-4008</PhoneLink> · 微信：SOSAdmissions</p>
           <p className="max-w-3xl mx-auto mt-5 text-lg text-slate-700 leading-relaxed">这个页面是SOS Admissions公司网站的中文介绍，以方便我们讲中文的客户。</p>
         </div>
       </section>
@@ -71,11 +72,11 @@ export default function Page() {
         </section>
         <section className="sos-panel rounded-xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-navy mb-4">服务与收费</h2>
-          <p className="leading-relaxed">初次电话咨询为15分钟，免费。具体服务与套餐收费请查看对应项目的现行价格，或先致电310-951-4008确认。请在付款前告知我们您此前已购买的服务，以便确认适用的抵扣。</p>
+          <p className="leading-relaxed"><PhoneText>初次电话咨询为15分钟，免费。具体服务与套餐收费请查看对应项目的现行价格，或先致电310-951-4008确认。请在付款前告知我们您此前已购买的服务，以便确认适用的抵扣。</PhoneText></p>
           <Link href="/services/" className="mt-4 inline-block text-navy underline">查看各项服务及价格（英文）</Link>
         </section>
         <div className="text-center">
-          <p className="mb-5 text-lg">来电310-951-4008，或加我们的微信SOSAdmissions，与申请顾问沟通。</p>
+          <p className="mb-5 text-lg"><PhoneText>来电310-951-4008，或加我们的微信SOSAdmissions，与申请顾问沟通。</PhoneText></p>
           <Link href="/contactchinese/" className="inline-flex rounded-full bg-[#C94D2B] text-white px-6 py-3 font-semibold">预约免费初次咨询（Free Initial Consultation）</Link>
         </div>
       </div>

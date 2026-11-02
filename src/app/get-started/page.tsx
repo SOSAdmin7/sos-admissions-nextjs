@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { pageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import { OrderForm } from "./OrderForm";
@@ -25,7 +26,7 @@ export default function GetStartedPage() {
           </h1>
           <p className="text-lg text-slate-700 max-w-2xl mx-auto">
             Start by sharing your contact details in our ordering form. For help
-            choosing a service, call <a className="underline" href="tel:+13109514008">310-951-4008</a>.
+            choosing a service, call <PhoneLink className="underline" href="tel:+13109514008">310-951-4008</PhoneLink>.
           </p>
         </div>
       </section>

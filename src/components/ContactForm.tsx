@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { EmbeddedForm } from "./EmbeddedForm";
 import { CONTACT_FORM } from "@/data/forms";
 export function ContactForm() {
@@ -16,7 +17,7 @@ export function ContactForm() {
           <EmbeddedForm url={CONTACT_FORM} title="SOS Admissions Contact Form" hideHeader initialHeight={800} />
         </div>
         <p className="mt-4 text-slate-600">
-          Prefer to speak with us? <a href="tel:+13109514008" className="underline">Call 310-951-4008</a>.
+          Prefer to speak with us? <PhoneLink href="tel:+13109514008" className="underline">Call 310-951-4008</PhoneLink>.
         </p>
 
       </div>

@@ -1,3 +1,4 @@
+import { PhoneText } from "@/components/PhoneLink";
 import Link from "next/link";
 import faqItems from "@/data/full-faqs.json";
 export function FAQAccordion() {
@@ -9,7 +10,7 @@ export function FAQAccordion() {
             <summary className="font-semibold text-navy cursor-pointer">
               {f.question}
             </summary>
-            <p className="text-slate-600 leading-relaxed mt-3">{f.answer}</p>
+            <p className="text-slate-600 leading-relaxed mt-3"><PhoneText>{f.answer}</PhoneText></p>
             {f.link && (
               <Link
                 href={f.link}

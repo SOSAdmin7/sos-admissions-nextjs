@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { Phone } from "lucide-react";
 
 export function PhoneBar() {
@@ -7,13 +8,13 @@ export function PhoneBar() {
         <span className="text-xs text-slate-400 hidden sm:inline">
           College &amp; Graduate School Admissions Consulting Since 1998
         </span>
-        <a
+        <PhoneLink
           href="tel:+13109514008"
           className="flex items-center gap-1.5 text-sm font-semibold text-white hover:text-gold-light transition-colors mx-auto sm:mx-0"
         >
           <Phone size={13} className="text-[#E8613C]" />
           Call: 310-951-4008
-        </a>
+        </PhoneLink>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { EmbeddedForm } from "./EmbeddedForm";
 import { ORDERING_FORM } from "@/data/forms";
 
@@ -16,7 +17,7 @@ export function OrderingForm() {
         </div>
         <p className="text-sm text-slate-600 mt-5">
           For assistance, call{" "}
-          <a className="underline" href="tel:+13109514008">310-951-4008</a>.
+          <PhoneLink className="underline" href="tel:+13109514008">310-951-4008</PhoneLink>.
         </p>
       </div>
     </section>

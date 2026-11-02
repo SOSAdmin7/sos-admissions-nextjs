@@ -1,5 +1,7 @@
 "use client";
 
+import { PhoneLink } from "@/components/PhoneLink";
+
 import { useState } from "react";
 import { COLLEGE_PAYMENT_FORM, PROFESSIONAL_PAYMENT_FORM } from "@/data/forms";
 import { EmbeddedForm } from "./EmbeddedForm";
@@ -26,7 +28,7 @@ export function PaymentForm() {
         </fieldset>
         <p className="text-slate-600 mb-5">
           Review your selected services and total. Call{" "}
-          <a className="underline" href="tel:+13109514008">310-951-4008</a>{" "}
+          <PhoneLink className="underline" href="tel:+13109514008">310-951-4008</PhoneLink>{" "}
           if you have any questions about your payment or need help choosing a service.
         </p>
         {/* Load each form when first shown, then keep it mounted to preserve entered details. */}
@@ -38,7 +40,7 @@ export function PaymentForm() {
         </div>}
         <p className="mt-6 text-sm text-slate-600">
           For academic crisis consulting, private school admissions, or a service
-          not listed in the form, call <a className="underline" href="tel:+13109514008">310-951-4008</a> to confirm your order.
+          not listed in the form, call <PhoneLink className="underline" href="tel:+13109514008">310-951-4008</PhoneLink> to confirm your order.
         </p>
       </div>
     </section>

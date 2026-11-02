@@ -1,3 +1,4 @@
+import { PhoneText } from "@/components/PhoneLink";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServiceBySlug } from "@/data/services";
@@ -134,7 +135,7 @@ export default function ServicePageTemplate({
               <summary className="font-semibold cursor-pointer text-navy">
                 {f.question}
               </summary>
-              <p className="pt-3 text-slate-600 leading-relaxed">{f.answer}</p>
+              <p className="pt-3 text-slate-600 leading-relaxed"><PhoneText>{f.answer}</PhoneText></p>
             </details>
           ))}
         </div>

@@ -2,6 +2,7 @@ import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 import body from "@/data/academic-crisis-consulting-content.json";
 import { SourcePricing } from "@/components/SourcePricing";
+import { PhoneHtml } from "@/components/PhoneHtml";
 export const metadata = pageMetadata({
   title: { absolute: "Academic Crisis Consulting for Students | SOS Admissions" },
   description:
@@ -27,9 +28,9 @@ export default function Page() {
           Schedule a Free Initial Consultation
         </Link>
       </section>
-      <article
+      <PhoneHtml as="article"
         className="prose prose-slate max-w-4xl px-4 py-8 mx-auto prose-headings:text-navy"
-        dangerouslySetInnerHTML={{ __html: body }}
+        html={body}
       />
       <SourcePricing slug="academic-crisis-consulting" />
     </>

@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 export const metadata = pageMetadata({
@@ -18,7 +19,7 @@ export default function Page() {
           and payment receipt from the order form. Our team will contact you
           about your services. For help confirming your order or arranging the
           next step, call{" "}
-          <a href="tel:+13109514008" className="underline">310-951-4008</a>.
+          <PhoneLink href="tel:+13109514008" className="underline">310-951-4008</PhoneLink>.
         </p>
         <h2 className="text-2xl font-bold text-navy mt-7 mb-3">Your Free Interview Guide</h2>
         <p className="text-slate-600">

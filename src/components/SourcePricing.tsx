@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import sourcePages from "@/data/wordpress-services.json";
 import Link from "next/link";
 export interface SourcePage {
@@ -14,7 +15,7 @@ export const sourceData = sourcePages as Record<string, SourcePage>;
 function PricingNote({ text }: { text: string }) {
   return text.split(/(310-951-4008|Purchase college or transfer services)/g).map((part, index) => {
     if (part === "310-951-4008") {
-      return <a key={index} href="tel:+13109514008" className="underline">{part}</a>;
+      return <PhoneLink key={index} href="tel:+13109514008" className="underline">{part}</PhoneLink>;
     }
     if (part === "Purchase college or transfer services") {
       return <Link key={index} href="/payment/#payment-form" className="underline">{part}</Link>;
@@ -32,9 +33,9 @@ export function SourcePricing({ slug }: { slug: string }) {
         </h2>
         <p className="max-w-2xl mx-auto">
           Call{" "}
-          <a className="underline" href="tel:+13109514008">
+          <PhoneLink className="underline" href="tel:+13109514008">
             310-951-4008
-          </a>{" "}
+          </PhoneLink>{" "}
           for help choosing a service or questions about your payment.
         </p>
       </section>
@@ -124,7 +125,7 @@ export function SourcePricing({ slug }: { slug: string }) {
           </Link>
           <p className="text-sm text-slate-600 mt-3">
             For help choosing a service, call{" "}
-            <a href="tel:+13109514008" className="underline">310-951-4008</a>.
+            <PhoneLink href="tel:+13109514008" className="underline">310-951-4008</PhoneLink>.
           </p>
         </div>
       </div>

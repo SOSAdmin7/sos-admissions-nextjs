@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import { Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -27,13 +28,13 @@ export function CTASection() {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
 
-            <a
+            <PhoneLink
               href="tel:310-951-4008"
               className="px-10 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               <Phone className="w-5 h-5" />
               Call 310-951-4008
-            </a>
+            </PhoneLink>
           </div>
 
           {/* Trust indicator */}

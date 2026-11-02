@@ -1,3 +1,4 @@
+import { PhoneLink } from "@/components/PhoneLink";
 import Image from "next/image";
 
 // Address, suites, photo and map come from the WordPress Contact page.
@@ -25,7 +26,7 @@ export function OfficeLocation() {
             </p>
             <p className="mt-2 text-sm text-slate-700 leading-relaxed">
               All meetings are by appointment only. Call{" "}
-              <a href="tel:+13109514008" className="underline">310-951-4008</a>{" "}
+              <PhoneLink href="tel:+13109514008" className="underline">310-951-4008</PhoneLink>{" "}
               to confirm your meeting location.
             </p>
           </div>

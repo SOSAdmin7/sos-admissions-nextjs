@@ -1,5 +1,7 @@
 "use client";
 
+import { PhoneLink } from "@/components/PhoneLink";
+
 import { useState, useEffect, useRef } from "react";
 import { X, ChevronDown, Phone } from "lucide-react";
 import Link from "next/link";
@@ -136,13 +138,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
       {/* CTA */}
       <div className="border-t border-gray-100 px-6 py-6 space-y-4">
-        <a
+        <PhoneLink
           href="tel:+13109514008"
           className="flex items-center justify-center gap-2 py-3 text-navy font-semibold"
         >
           <Phone size={16} />
           (310) 951-4008
-        </a>
+        </PhoneLink>
         <Link
           href="/get-started"
           onClick={onClose}

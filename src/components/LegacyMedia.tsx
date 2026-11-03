@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { LegacyAssetImage, LegacyVideo } from "@/lib/legacyAssets";
+import { trackSiteEvent } from "@/lib/site-analytics";
 
 function YouTubeFacade({
   videoId,
@@ -18,7 +19,7 @@ function YouTubeFacade({
   if (loaded) {
     return (
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1&playsinline=1`}
+        src={`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1&playsinline=1&enablejsapi=1&origin=${encodeURIComponent(window.location.origin)}`}
         title={title}
         referrerPolicy="strict-origin-when-cross-origin"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -30,7 +31,7 @@ function YouTubeFacade({
 
   return (
     <button
-      onClick={() => setLoaded(true)}
+      onClick={() => { trackSiteEvent("sos_video_play_click", { video_id: videoId }); setLoaded(true); }}
       className="relative block aspect-video w-full cursor-pointer bg-black"
       aria-label={`Play video: ${title}`}
     >

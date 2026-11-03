@@ -5,6 +5,7 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { useState } from "react";
 import { COLLEGE_PAYMENT_FORM, PROFESSIONAL_PAYMENT_FORM } from "@/data/forms";
 import { EmbeddedForm } from "./EmbeddedForm";
+import { trackSiteEvent } from "@/lib/site-analytics";
 
 export function PaymentForm() {
   const [program, setProgram] = useState("college");
@@ -20,7 +21,7 @@ export function PaymentForm() {
               ["graduate", "Graduate and Professional Programs"],
             ].map(([value, label]) => (
               <label key={value} className={`flex cursor-pointer items-center gap-3 rounded-xl border p-4 font-semibold text-navy ${program === value ? "border-[#C94D2B] bg-orange-50" : "border-slate-200 bg-white"}`}>
-                <input type="radio" name="payment-program" value={value} checked={program === value} onChange={() => { setProgram(value); if (value === "graduate") setGraduateOpened(true); }} className="h-4 w-4 shrink-0 accent-[#C94D2B]" />
+                <input type="radio" name="payment-program" value={value} checked={program === value} onChange={() => { setProgram(value); if (value === "graduate") setGraduateOpened(true); trackSiteEvent("sos_payment_program", { program: value === "graduate" ? "graduate" : "college" }); }} className="h-4 w-4 shrink-0 accent-[#C94D2B]" />
                 {label}
               </label>
             ))}

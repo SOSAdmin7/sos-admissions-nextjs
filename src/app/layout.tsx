@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { GTMScript, GTMNoScript } from "@/components/GTMProvider";
+import { SiteInteractions } from "@/components/SiteInteractions";
 import { defaultSocialImage, socialAssetUrl } from "@/lib/social-images";
 
 const inter = Inter({
@@ -104,6 +105,7 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, "\\u003c") }} />
         <GTMNoScript />
         <GTMScript />
+        <SiteInteractions />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

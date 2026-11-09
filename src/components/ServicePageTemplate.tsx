@@ -94,6 +94,42 @@ export default function ServicePageTemplate({
               </li>
             ))}
           </ul>
+          {sourceSlug === "veterinary-school-admissions" && (
+            <section aria-labelledby="veterinary-pathways" className="sos-panel mt-6 rounded-xl border border-slate-200 bg-white p-5">
+              <h2 id="veterinary-pathways" className="text-xl font-bold mb-3">
+                BS/DVM and Seven-Year Veterinary Pathways
+              </h2>
+              <div className="space-y-3 leading-relaxed">
+                <p>
+                  Planning a veterinary career while still in high school? We also
+                  help students explore pathways that combine undergraduate study
+                  with veterinary education, alongside our support for applicants
+                  to traditional DVM programs.
+                </p>
+                <p>
+                  For example, St. George&apos;s University offers a seven-year
+                  preveterinary entry route with a BSc/DVM dual-degree option.
+                  Eligibility for the degrees depends on meeting the university&apos;s
+                  academic progress and degree requirements. Check the school&apos;s{" "}
+                  <a href="https://www.sgu.edu/school-of-veterinary-medicine/bsc-dvm-dual-degree/" className="text-navy underline">
+                    current BSc/DVM program details
+                  </a>{" "}
+                  when comparing routes.
+                </p>
+                <p>
+                  Our consultants can help you compare entry requirements and
+                  progression conditions, plan relevant coursework and experience,
+                  and prepare application essays and interviews. We consider your
+                  academic preparation and career goals when helping you choose
+                  which programs to pursue. Discuss the schools you are considering
+                  during a{" "}
+                  <Link href="/contact-us/" className="text-navy underline">
+                    Free Initial Consultation
+                  </Link>.
+                </p>
+              </div>
+            </section>
+          )}
           {sourceSlug === "law-school-application" && (
             <div className="sos-panel mt-6 rounded-xl border border-slate-200 bg-white p-5">
               <h2 className="text-xl font-bold mb-3">Law School Transfers</h2>

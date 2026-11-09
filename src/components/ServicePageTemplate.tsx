@@ -18,6 +18,17 @@ const interviewTitles: Record<string, string> = {
   "medical-school-interview": "Medical School Interview Coaching",
   "medical-residency-interview": "Medical Residency Interview Coaching",
 };
+const graduateProgramLinks: Record<string, string> = {
+  "Computer Science (MS & PhD)": "/computer-science-admissions-consultant/",
+  "Law (JD)": "/law-school-application/",
+  "Dentistry (DDS & DMD)": "/dental-school-application/",
+  "Medicine (MD & DO)": "/medical-school-admissions-consulting/",
+  "Nursing (MSN, NP, CRNA, & DNP)": "/general-nursing/",
+  "Psychology (MS, PhD, & PsyD)": "/psychology-counseling-admissions/",
+  "Veterinary Medicine (DVM)": "/veterinary-school-admissions/",
+  "Speech-Language Pathology (SLP)": "/speech-language-pathology-slp-admissions-consultant/",
+};
+const programLinkClass = "text-navy underline underline-offset-4 hover:text-[#B94224] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy";
 export default function ServicePageTemplate({
   slug,
   legacyVariant,
@@ -90,7 +101,17 @@ export default function ServicePageTemplate({
                     : ""
                 }`}
               >
-                {f}
+                {sourceSlug === "graduate-school-application" && graduateProgramLinks[f] ? (
+                  <>
+                    <Link href={graduateProgramLinks[f]} className={programLinkClass}>{f}</Link>
+                    {f === "Nursing (MSN, NP, CRNA, & DNP)" && (
+                      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                        <Link href="/np-admissions/" className={programLinkClass}>NP programs</Link>
+                        <Link href="/crna-admissions/" className={programLinkClass}>CRNA programs</Link>
+                      </div>
+                    )}
+                  </>
+                ) : f}
               </li>
             ))}
           </ul>

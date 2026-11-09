@@ -3,16 +3,16 @@ import { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "Medical Residency Interview Coaching - SOS Admissions" },
+  title: { absolute: "Medical Residency and Fellowship Interview Coaching - SOS Admissions" },
   description:
-    "Expert residency interview coaching from experienced admissions consultants. Prepare for ERAS interviews, rank lists, and specialty-specific questions.",
+    "Residency and fellowship interview coaching from experienced admissions consultants. Prepare for specialty-specific questions and discuss your goals.",
   alternates: {
     canonical: "https://sosadmissions.com/medical-residency-interview/",
   },
   openGraph: {
-    title: "Medical Residency Interview Coaching - SOS Admissions",
+    title: "Medical Residency and Fellowship Interview Coaching - SOS Admissions",
     description:
-      "Expert residency interview coaching from experienced admissions consultants. Prepare for ERAS interviews, rank lists, and specialty-specific questions.",
+      "Residency and fellowship interview coaching from experienced admissions consultants. Prepare for specialty-specific questions and discuss your goals.",
     url: "https://sosadmissions.com/medical-residency-interview/",
     type: "website",
   },

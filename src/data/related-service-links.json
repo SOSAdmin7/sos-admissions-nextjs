@@ -215,6 +215,10 @@
   ],
   "medical-school-application": [
     {
+      "label": "Nurse Anesthetist (CRNA) Admissions",
+      "href": "/crna-admissions/"
+    },
+    {
       "label": "Psychology and Counseling Admissions",
       "href": "/psychology-counseling-admissions/"
     },

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const updatedPages = new Set(["", "about-us", "academic-crisis-consulting", "bs-md-admissions-consulting", "college-admissions", "college-interviews", "college-transfers", "computer-science-admissions-consultant", "contact-us", "crna-admissions", "dental-school-application", "general-nursing", "graduate-school-application", "graduate-school-interview", "international-students", "law-school-application", "letters-of-recommendation", "mba", "mba-interview", "medical-residency", "medical-residency-interview", "medical-school-admissions-consulting", "medical-school-application", "medical-school-interview", "np-admissions", "pa-school-admissions-consulting", "personal-statement", "phd-application-consulting", "private-school-admissions", "psychology-counseling-admissions", "sat-act-preparation", "veterinary-school-admissions"]);
   const pageModified = (url: string) => {
     const slug = new URL(url).pathname.replace(/^\/+|\/+$/g, "");
+    if (slug === "public-health-admissions") return new Date("2026-11-09");
     if (slug === "client-testimonials") return new Date("2026-10-28");
     return new Date(updatedPages.has(slug) ? "2026-10-20" : "2026-10-01");
   };
@@ -75,6 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Service pages — old-site URLs preserved exactly
   const servicePages = [
+    "public-health-admissions",
     "college-admissions",
     "college-transfers",
     "graduate-school-application",

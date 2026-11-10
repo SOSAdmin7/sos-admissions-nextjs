@@ -101,7 +101,9 @@ export default function ServicePageTemplate({
                     : ""
                 }`}
               >
-                {sourceSlug === "graduate-school-application" && graduateProgramLinks[f] ? (
+                {sourceSlug === "graduate-school-application" && f === "Public Health (MPH & PhD)" ? (
+                  <>Public Health (<Link href="/public-health-admissions/" className={programLinkClass}>MPH &amp; DrPH</Link>, PhD)</>
+                ) : sourceSlug === "graduate-school-application" && graduateProgramLinks[f] ? (
                   <>
                     <Link href={graduateProgramLinks[f]} className={programLinkClass}>{f}</Link>
                     {f === "Nursing (MSN, NP, CRNA, & DNP)" && (

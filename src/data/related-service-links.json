@@ -215,6 +215,10 @@
   ],
   "medical-school-application": [
     {
+      "label": "Public Health (MPH & DrPH) Admissions",
+      "href": "/public-health-admissions/"
+    },
+    {
       "label": "Nurse Anesthetist (CRNA) Admissions",
       "href": "/crna-admissions/"
     },

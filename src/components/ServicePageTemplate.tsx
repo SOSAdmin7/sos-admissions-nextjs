@@ -16,7 +16,7 @@ const interviewTitles: Record<string, string> = {
   "graduate-school-interview": "Graduate School Interview Coaching",
   "mba-interview": "MBA Interview Coaching",
   "medical-school-interview": "Medical School Interview Coaching",
-  "medical-residency-interview": "Medical Residency Interview Coaching",
+  "medical-residency-interview": "Medical Residency and Fellowship Interview Coaching",
 };
 export default function ServicePageTemplate({
   slug,
@@ -34,6 +34,9 @@ export default function ServicePageTemplate({
   const source = sourceData[sourceSlug];
   const title = interviewTitles[sourceSlug] || service.heroStatement;
   const assets = getLegacyServiceAssets(legacyVariant ?? slug);
+  const clientLabel = assets.clientLabel || (sourceSlug === "medical-residency-interview"
+    ? "Medical Residency Interview Coaching Clients Have Gone To:"
+    : `${title} Clients Have Gone To:`);
   const videos = assets.extraVideos ?? [];
   const features = source?.features.length ? source.features : service.features;
   const schema = {
@@ -72,7 +75,7 @@ export default function ServicePageTemplate({
       </section>
       <TrustBar />
       {assets.clientStrip && (
-        <ClientSchools image={assets.clientStrip} label={assets.clientLabel || `${title} Clients Have Gone To:`} />
+        <ClientSchools image={assets.clientStrip} label={clientLabel} />
       )}
       <RelatedServices slug={sourceSlug} />
       <section className="py-9 px-4">

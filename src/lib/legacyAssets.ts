@@ -275,7 +275,8 @@ const legacyServiceAssets: Record<string, LegacyAssetPack> = {
   },
   "nurse-practitioner-admissions": {
     featuredStrip: LEGACY_IMAGES.sosFeaturedIn,
-    clientStrip: LEGACY_IMAGES.sosClients,
+    clientStrip: LEGACY_IMAGES.nursingClients,
+    clientLabel: "SOS Admissions Nursing Clients Have Gone To:",
     extraVideos: [
       { id: "hIow44Vl5d0", title: "Nurse Practitioner Admissions Consulting" },
     ],

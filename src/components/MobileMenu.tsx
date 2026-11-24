@@ -5,7 +5,7 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { useState, useEffect, useRef } from "react";
 import { X, ChevronDown, Phone } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import { BrandLockup } from "./BrandLockup";
 
 const mobileNavItems = [
   { label: "Home", href: "/" },
@@ -73,8 +73,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     >
       {/* Header */}
       <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between">
-        <Link href="/" onClick={onClose} aria-label="SOS Admissions home" className="min-w-0 mr-4">
-          <Image src="/images/legacy/sosheader.webp" alt="SOS Admissions" width={473} height={85} className="h-auto w-52 max-w-full object-contain" />
+        <Link href="/" onClick={onClose} className="min-w-0 mr-4">
+          <BrandLockup />
         </Link>
         <button
           onClick={onClose}

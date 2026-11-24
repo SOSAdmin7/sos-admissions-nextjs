@@ -5,7 +5,7 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { useState, useEffect, useRef } from "react";
 import { Menu, ChevronDown, Phone } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import { BrandLockup } from "./BrandLockup";
 import dynamic from "next/dynamic";
 
 const MobileMenu = dynamic(() => import("./MobileMenu"), { ssr: false });
@@ -68,18 +68,10 @@ export default function Header() {
           isScrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
-          <div className="flex items-center justify-between h-[72px] xl:h-[76px]">
-            {/* Logo + Tagline — shrinks on narrow screens so the phone pill never wraps */}
-            <Link href="/" className="flex-shrink min-w-0 mr-2">
-              <Image
-                src="/images/legacy/sosheader.webp"
-                alt="SOS Admissions"
-                width={473}
-                height={85}
-                priority
-                className="h-7 min-[420px]:h-8 sm:h-11 w-auto object-contain object-left"
-              />
+        <div className="max-w-7xl mx-auto px-3 min-[480px]:px-4 sm:px-6 xl:px-8">
+          <div className="grid min-h-[72px] grid-cols-[minmax(0,1fr)_auto] items-center gap-y-0.5 py-1 min-[480px]:flex min-[480px]:justify-between xl:min-h-[76px]">
+            <Link href="/" className="min-w-0 mr-2">
+              <BrandLockup />
             </Link>
 
             {/* Desktop Navigation */}
@@ -167,10 +159,10 @@ export default function Header() {
             </div>
 
             {/* Mobile Phone + Menu */}
-            <div className="xl:hidden flex items-center gap-1 flex-shrink-0">
+            <div className="contents min-[480px]:flex min-[480px]:shrink-0 min-[480px]:items-center min-[480px]:gap-1 xl:hidden">
               <PhoneLink
                 href="tel:+13109514008"
-                className="flex items-center gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-navy hover:text-[#B94224] transition-colors px-3 py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
+                className="row-start-2 flex min-h-11 items-center justify-self-start gap-1.5 whitespace-nowrap text-[13px] sm:text-sm font-bold text-navy hover:text-[#B94224] transition-colors px-2 py-1 min-[480px]:px-3 min-[480px]:py-2 rounded-full bg-[#F8F9FA] border border-gray-200"
               >
                 <Phone size={15} className="flex-shrink-0" />
                 (310) 951-4008
@@ -178,7 +170,7 @@ export default function Header() {
               <button
                 ref={menuButtonRef}
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="p-2 text-[#495057] hover:text-navy transition-colors"
+                className="col-start-2 row-start-1 row-span-2 flex size-11 items-center justify-center text-[#495057] hover:text-navy transition-colors"
                 aria-label="Open menu"
               >
                 <Menu size={26} />
